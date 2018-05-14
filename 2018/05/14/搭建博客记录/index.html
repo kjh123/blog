@@ -79,13 +79,25 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="HuiBlog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="动手搭建 Hexo 博客, 写个日志记录一下   安装 Git Windows: 点击跳转到Git下载 Linux: Ubuntu/Debian: sudo apt-get install git-core Red Hat/Center OS  sudo yum install git-core    安装 Node.js Hexo 推荐使用 NVM (Node Version Manager)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搭建博客记录">
+<meta property="og:url" content="http://yoursite.com/2018/05/14/搭建博客记录/index.html">
 <meta property="og:site_name" content="HuiBlog">
+<meta property="og:description" content="动手搭建 Hexo 博客, 写个日志记录一下   安装 Git Windows: 点击跳转到Git下载 Linux: Ubuntu/Debian: sudo apt-get install git-core Red Hat/Center OS  sudo yum install git-core    安装 Node.js Hexo 推荐使用 NVM (Node Version Manager)">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://oyvpp7gqd.bkt.clouddn.com/18-5-14/1022082.jpg">
+<meta property="og:image" content="http://oyvpp7gqd.bkt.clouddn.com/18-5-14/15765643.jpg">
+<meta property="og:image" content="http://oyvpp7gqd.bkt.clouddn.com/18-5-14/67034961.jpg">
+<meta property="og:image" content="http://oyvpp7gqd.bkt.clouddn.com/18-5-14/78195897.jpg">
+<meta property="og:image" content="http://oyvpp7gqd.bkt.clouddn.com/18-5-14/88681793.jpg">
+<meta property="og:image" content="http://oyvpp7gqd.bkt.clouddn.com/18-5-14/99272918.jpg">
+<meta property="og:image" content="http://oyvpp7gqd.bkt.clouddn.com/18-5-14/9649267.jpg">
+<meta property="og:updated_time" content="2018-05-14T08:31:42.857Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="HuiBlog">
+<meta name="twitter:title" content="搭建博客记录">
+<meta name="twitter:description" content="动手搭建 Hexo 博客, 写个日志记录一下   安装 Git Windows: 点击跳转到Git下载 Linux: Ubuntu/Debian: sudo apt-get install git-core Red Hat/Center OS  sudo yum install git-core    安装 Node.js Hexo 推荐使用 NVM (Node Version Manager)">
+<meta name="twitter:image" content="http://oyvpp7gqd.bkt.clouddn.com/18-5-14/1022082.jpg">
 
 
 
@@ -115,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/05/14/搭建博客记录/"/>
 
 
 
 
 
-  <title>HuiBlog</title>
+  <title>搭建博客记录 | HuiBlog</title>
   
 
 
@@ -140,8 +152,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -224,9 +235,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -256,9 +267,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/14/搭建博客记录/" itemprop="url">搭建博客记录</a></h1>
+          <h1 class="post-title" itemprop="name headline">搭建博客记录</h1>
         
 
         <div class="post-meta">
@@ -308,9 +317,7 @@
       
 
       
-        
-          
-            <blockquote>
+        <blockquote>
 <p>动手搭建 Hexo 博客, 写个日志记录一下</p>
 </blockquote>
 <hr>
@@ -350,8 +357,6 @@
 <h2 id="Hexo-配置"><a href="#Hexo-配置" class="headerlink" title="Hexo 配置"></a>Hexo 配置</h2><p>在blog文件夹下，修改 _config.yml 文件中 <code>deploy</code> 的 repo 地址<br><img src="http://oyvpp7gqd.bkt.clouddn.com/18-5-14/9649267.jpg" alt="dev-repo"><br>要同步部署文章还需要再添加一个npm扩展：<code>npm install hexo-deployer-git --save</code></p>
 <h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>使用 <code>hexo new post &quot;hello hexo&quot;</code> 新建一遍文章，新生成的文章在 <code>blog/source/_posts</code> 下，使用MarkDown语法编辑<br>完成后先在本地预览 <code>http://localhost:4000</code><br>最后使用 hexo d -g 命令同步到github上，可以在浏览器上使用 <a href="https://username.github.io" target="_blank" rel="noopener">https://username.github.io</a> 查看</p>
 
-          
-        
       
     </div>
     
@@ -368,131 +373,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/14/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Hui">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/picture.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="HuiBlog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/14/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-14T11:42:55+08:00">
-                2018-05-14
-              </time>
+              <a href="/2018/05/14/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h2 id="Hello-Hexo"><a href="#Hello-Hexo" class="headerlink" title="Hello Hexo"></a>Hello Hexo</h2><h2 id="Hello-Github-io"><a href="#Hello-Github-io" class="headerlink" title="Hello Github.io"></a>Hello Github.io</h2><h2 id="Hello-Myblog"><a href="#Hello-Myblog" class="headerlink" title="Hello Myblog"></a>Hello Myblog</h2>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -502,10 +404,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -513,6 +416,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -533,8 +440,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -580,6 +496,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-Git"><span class="nav-number">1.</span> <span class="nav-text">安装 Git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-Node-js"><span class="nav-number">2.</span> <span class="nav-text">安装 Node.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-Hexo"><span class="nav-number">3.</span> <span class="nav-text">安装 Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建博客项目"><span class="nav-number">4.</span> <span class="nav-text">创建博客项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub-上新建项目"><span class="nav-number">5.</span> <span class="nav-text">GitHub 上新建项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo-配置"><span class="nav-number">6.</span> <span class="nav-text">Hexo 配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试"><span class="nav-number">7.</span> <span class="nav-text">测试</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -714,6 +646,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
