@@ -95,7 +95,7 @@
 <meta property="og:description" content="本文为Hexo博客的Next主题的一些常用配置项">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg">
-<meta property="og:updated_time" content="2018-06-05T09:10:25.344Z">
+<meta property="og:updated_time" content="2018-06-06T03:03:21.431Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo博客Next主题配置">
 <meta name="twitter:description" content="本文为Hexo博客的Next主题的一些常用配置项">
@@ -135,6 +135,16 @@
 
 
 
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
   <title>Hexo博客Next主题配置 | HuiBlog</title>
   
 
@@ -374,7 +384,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" rel="gallery_cji1gzquw0000oswmgw14zurn"
+                 href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" rel="gallery_cji2hqahr00023kwm0ucimttj"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" itemprop="contentUrl"/>
               </a>
@@ -399,11 +409,14 @@
 <h1 id="统计访问量"><a href="#统计访问量" class="headerlink" title="统计访问量"></a>统计访问量</h1><blockquote>
 <p>注册并登录百度统计获取你的统计代码。</p>
 </blockquote>
-<p>编辑配置文件 <em>hexo\themes\next_config.yml</em>, 增加配置选项：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">baidu_tongji: true</span><br></pre></td></tr></table></figure></p>
-<p>新建文件 <em>hexo\themes\next\layout_partial\baidu_tongji.swig</em>，内容如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (theme.baidu_tongji)&#123; %&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">    #你的百度统计代码</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure></p>
-<p>编辑文件 <em>hexo\themes\next\layout_partial\head.swig</em>，在『/head』之前增加：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- partial(&apos;baidu_tongji&apos;) %&gt;</span><br></pre></td></tr></table></figure></p>
+<p>编辑配置文件 <code>hexo\themes\next\_config.yml</code>, 增加配置选项：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">baidu_tongji: true</span><br></pre></td></tr></table></figure></p>
+<p>新建文件 <code>hexo\themes\next\layout\_partial\baidu_tongji.swig</code>，内容如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (theme.baidu_tongji)&#123; %&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">    #你的百度统计代码</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure></p>
+<p>编辑文件 <code>hexo\themes\next\layout\_partial\head.swig</code>，在『/head』之前增加：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- partial(&apos;baidu_tongji&apos;) %&gt;</span><br></pre></td></tr></table></figure></p>
 <hr>
-<h1 id="网站图标"><a href="#网站图标" class="headerlink" title="网站图标"></a>网站图标</h1><p>在文件 <em>hexo\themes\next\layout_partial\head.swig</em> 中，<img src="https://oyvpp7gqd.bkt.clouddn.com/18-6-5/24288758.jpg" alt="图标">可以看到，网站图标文件是在 <em>hexo\themes\next\source\images</em> 这个路径下，替换即可</p>
+<h1 id="网站图标"><a href="#网站图标" class="headerlink" title="网站图标"></a>网站图标</h1><p>在文件 <code>hexo\themes\next\layout\_partial\head.swig</code> 中，<img src="https://oyvpp7gqd.bkt.clouddn.com/18-6-5/24288758.jpg" alt="图标">可以看到，网站图标文件是在 <em>hexo\themes\next\source\images</em> 这个路径下，替换即可</p>
+<hr>
+<h1 id="为文章添加密码"><a href="#为文章添加密码" class="headerlink" title="为文章添加密码"></a>为文章添加密码</h1><p>定位到文件 <code>hexo\themes\next\layout\_partial\head.swig</code> 中，添加下面的代码到文件最后面<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    (<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="string">'&#123;&#123; page.password &#125;&#125;'</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span> (prompt(<span class="string">'请输入文章密码'</span>) !== <span class="string">'&#123;&#123; page.password &#125;&#125;'</span>)&#123;</span><br><span class="line">                alert(<span class="string">'密码错误！'</span>);</span><br><span class="line">                history.back();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)();</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>然后在编辑文章时添加 password: password即可<br><img src="https://oyvpp7gqd.bkt.clouddn.com/18-6-6/45085843.jpg" alt="password"></p>
 <hr>
 
       
@@ -608,7 +621,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#设置「阅读全文」"><span class="nav-number">1.</span> <span class="nav-text">设置「阅读全文」</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#统计访问量"><span class="nav-number">2.</span> <span class="nav-text">统计访问量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#网站图标"><span class="nav-number">3.</span> <span class="nav-text">网站图标</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#设置「阅读全文」"><span class="nav-number">1.</span> <span class="nav-text">设置「阅读全文」</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#统计访问量"><span class="nav-number">2.</span> <span class="nav-text">统计访问量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#网站图标"><span class="nav-number">3.</span> <span class="nav-text">网站图标</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#为文章添加密码"><span class="nav-number">4.</span> <span class="nav-text">为文章添加密码</span></a></li></ol></div>
             
 
           </div>
