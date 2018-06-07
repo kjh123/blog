@@ -115,7 +115,7 @@
     root: '/',
     scheme: 'Mist',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -170,7 +170,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -186,7 +186,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle"></p>
+        <h1 class="site-subtitle" itemprop="description"></h1>
       
   </div>
 
@@ -305,7 +305,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">搭建博客记录</h1>
+          <h2 class="post-title" itemprop="name headline">搭建博客记录</h2>
         
 
         <div class="post-meta">
@@ -405,18 +405,18 @@
 <h2 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h2><blockquote>
 <p>Hexo 推荐使用 <strong>NVM</strong> (Node Version Manager) 安装</p>
 </blockquote>
-<p>cURL:<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash</span><br></pre></td></tr></table></figure></p>
-<p>Wget:<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash</span><br></pre></td></tr></table></figure></p>
-<p>nvm安装成功后，重新启动终端并运行以下命令来安装Node.js：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm install stable</span><br></pre></td></tr></table></figure></p>
+<p>cURL:<br><figure class="highlight shell"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash</div></pre></div></div></figure></p>
+<p>Wget:<br><figure class="highlight shell"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash</div></pre></div></div></figure></p>
+<p>nvm安装成功后，重新启动终端并运行以下命令来安装Node.js：<br><figure class="highlight shell"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">nvm install stable</div></pre></div></div></figure></p>
 <p>或者<a href="https://nodejs.org" target="_blank" rel="noopener">点击此处</a>下载并安装</p>
 <blockquote>
 <p><img src="https://oyvpp7gqd.bkt.clouddn.com/18-5-14/1022082.jpg" alt="检查node"></p>
 </blockquote>
-<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo</span><br></pre></td></tr></table></figure>
+<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><figure class="highlight plain"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">npm install -g hexo</div></pre></div></div></figure>
 <blockquote>
 <p><img src="https://oyvpp7gqd.bkt.clouddn.com/18-5-14/15765643.jpg" alt="检查Hexo"></p>
 </blockquote>
-<h2 id="创建博客项目"><a href="#创建博客项目" class="headerlink" title="创建博客项目"></a>创建博客项目</h2><p>在合适的位置下初始化hexo,比如 <em>d:/blog</em><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init		# 初始化 hexo</span><br><span class="line">npm install		# 安装组件</span><br><span class="line">hexo g			# hexo generated</span><br></pre></td></tr></table></figure></p>
+<h2 id="创建博客项目"><a href="#创建博客项目" class="headerlink" title="创建博客项目"></a>创建博客项目</h2><p>在合适的位置下初始化hexo,比如 <em>d:/blog</em><br><figure class="highlight plain"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></div><div class="code"><pre><div class="line">hexo init		# 初始化 hexo</div><div class="line">npm install		# 安装组件</div><div class="line">hexo g			# hexo generated</div></pre></div></div></figure></p>
 <p>安装完成后，输入 hexo s 开启 hexo 服务器</p>
 <blockquote>
 <p>正常情况下会显示 Hexo is running at <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>. Press <code>Ctrl+C</code> to stop.<br>如果4000端口被占用可以ctrl+c停止服务器然后输入 <code>hexo server -p 端口号</code> 访问</p>
@@ -565,7 +565,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -576,7 +576,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -587,7 +587,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -720,8 +720,6 @@
   
 
 
-  
-
 
 
 
@@ -760,11 +758,6 @@
   
   
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
   
 
 
@@ -872,6 +865,7 @@
 
   
 
+  <script type="text/javascript" src="/lib/zclip/clipboard.min.js"></script>	
+<script type="text/javascript" src="/js/src/custom.js"></script>
 </body>
 </html>
-<script type="text/javescript" src="/js/src/love.js"></script>

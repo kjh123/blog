@@ -95,7 +95,7 @@
 <meta property="og:description" content="本文为Hexo博客的Next主题的一些常用配置项">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg">
-<meta property="og:updated_time" content="2018-06-06T03:11:47.312Z">
+<meta property="og:updated_time" content="2018-06-06T12:27:30.740Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo博客Next主题配置">
 <meta name="twitter:description" content="本文为Hexo博客的Next主题的一些常用配置项">
@@ -109,7 +109,7 @@
     root: '/',
     scheme: 'Mist',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -164,7 +164,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -180,7 +180,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle"></p>
+        <h1 class="site-subtitle" itemprop="description"></h1>
       
   </div>
 
@@ -299,7 +299,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hexo博客Next主题配置</h1>
+          <h2 class="post-title" itemprop="name headline">Hexo博客Next主题配置</h2>
         
 
         <div class="post-meta">
@@ -384,7 +384,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" rel="gallery_cji2ql34j0000ugwm0nqdk50j"
+                 href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" rel="gallery_cji4jg2d30002xcwms06xk201"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" itemprop="contentUrl"/>
               </a>
@@ -402,20 +402,20 @@
 <ol>
 <li>在文章中使用<code>&lt;!-- more --&gt;</code>手动进行截断，Hexo 提供的方式</li>
 <li>在文章的 <a href="https://hexo.io/docs/front-matter.html" target="_blank" rel="noopener">front-matter</a> 中添加 description，并提供文章摘录</li>
-<li>自动形成摘要，在主题配置文件中添加：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">auto_excerpt:</span><br><span class="line">    enable: true</span><br><span class="line">    length: 200</span><br></pre></td></tr></table></figure>
+<li>自动形成摘要，在主题配置文件中添加：<figure class="highlight plain"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></div><div class="code"><pre><div class="line">auto_excerpt:</div><div class="line">    enable: true</div><div class="line">    length: 200</div></pre></div></div></figure>
 </li>
 </ol>
 <hr>
 <h1 id="统计访问量"><a href="#统计访问量" class="headerlink" title="统计访问量"></a>统计访问量</h1><blockquote>
 <p>注册并登录百度统计获取你的统计代码。</p>
 </blockquote>
-<p>编辑配置文件 <code>hexo\themes\next\_config.yml</code>, 增加配置选项：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">baidu_tongji: true</span><br></pre></td></tr></table></figure></p>
-<p>新建文件 <code>hexo\themes\next\layout\_partial\baidu_tongji.swig</code>，内容如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (theme.baidu_tongji)&#123; %&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">    #你的百度统计代码</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure></p>
-<p>编辑文件 <code>hexo\themes\next\layout\_partial\head.swig</code>，在『/head』之前增加：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- partial(&apos;baidu_tongji&apos;) %&gt;</span><br></pre></td></tr></table></figure></p>
+<p>编辑配置文件 <code>hexo\themes\next\_config.yml</code>, 增加配置选项：<br><figure class="highlight plain"><figcaption><span class="fileDir">file:  hexo\themes\next\</span><span class="caption">_config</span><span class="suffix">.yml</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">baidu_tongji: true</div></pre></div></div></figure></p>
+<p>新建文件 <code>hexo\themes\next\layout\_partial\baidu_tongji.swig</code>，内容如下：<br><figure class="highlight plain"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></div><div class="code"><pre><div class="line">&lt;% if (theme.baidu_tongji)&#123; %&gt;</div><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">    #你的百度统计代码</div><div class="line">&lt;/script&gt;</div><div class="line">&lt;% &#125; %&gt;</div></pre></div></div></figure></p>
+<p>编辑文件 <code>hexo\themes\next\layout\_partial\head.swig</code>，在『/head』之前增加：<br><figure class="highlight plain"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">&lt;%- partial(&apos;baidu_tongji&apos;) %&gt;</div></pre></div></div></figure></p>
 <hr>
 <h1 id="网站图标"><a href="#网站图标" class="headerlink" title="网站图标"></a>网站图标</h1><p>在文件 <code>hexo\themes\next\layout\_partial\head.swig</code> 中，<img src="https://oyvpp7gqd.bkt.clouddn.com/18-6-5/24288758.jpg" alt="图标">可以看到，网站图标文件是在 <em>hexo\themes\next\source\images</em> 这个路径下，替换即可</p>
 <hr>
-<h1 id="为文章添加密码"><a href="#为文章添加密码" class="headerlink" title="为文章添加密码"></a>为文章添加密码</h1><p>定位到文件 <code>hexo\themes\next\layout\_partial\head.swig</code> 中，添加下面的代码到文件最后面<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    (<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="string">'&#123;&#123; page.password &#125;&#125;'</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span> (prompt(<span class="string">'请输入文章密码'</span>) !== <span class="string">'&#123;&#123; page.password &#125;&#125;'</span>)&#123;</span><br><span class="line">                alert(<span class="string">'密码错误！'</span>);</span><br><span class="line">                history.back();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)();</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="为文章添加密码"><a href="#为文章添加密码" class="headerlink" title="为文章添加密码"></a>为文章添加密码</h1><p>定位到文件 <code>hexo\themes\next\layout\_partial\head.swig</code> 中，添加下面的代码到文件最后面<br><figure class="highlight javascript"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></div><div class="code"><pre><div class="line">&lt;script&gt;</div><div class="line">    (<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        <span class="keyword">if</span>(<span class="string">'&#123;&#123; page.password &#125;&#125;'</span>)&#123;</div><div class="line">            <span class="keyword">if</span> (prompt(<span class="string">'请输入文章密码'</span>) !== <span class="string">'&#123;&#123; page.password &#125;&#125;'</span>)&#123;</div><div class="line">                alert(<span class="string">'密码错误！'</span>);</div><div class="line">                history.back();</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;)();</div><div class="line">&lt;<span class="regexp">/script&gt;</span></div></pre></div></div></figure></p>
 <p>然后在编辑文章时添加 password: password即可<br><img src="https://oyvpp7gqd.bkt.clouddn.com/18-6-6/45085843.jpg" alt="password"></p>
 <hr>
 
@@ -463,6 +463,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/06/07/阿里图标库爬虫/" rel="prev" title="阿里图标库爬虫">
+                阿里图标库爬虫 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -548,7 +552,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -559,7 +563,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -570,7 +574,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -703,8 +707,6 @@
   
 
 
-  
-
 
 
 
@@ -743,11 +745,6 @@
   
   
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
   
 
 
@@ -855,6 +852,7 @@
 
   
 
+  <script type="text/javascript" src="/lib/zclip/clipboard.min.js"></script>	
+<script type="text/javascript" src="/js/src/custom.js"></script>
 </body>
 </html>
-<script type="text/javescript" src="/js/src/love.js"></script>

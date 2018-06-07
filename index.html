@@ -102,7 +102,7 @@
     root: '/',
     scheme: 'Mist',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -157,7 +157,7 @@
     
   
 
-  <div class="container sidebar-position-left 
+  <div class="container sidebar-position-right 
   page-home">
     <div class="headband"></div>
 
@@ -174,7 +174,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle"></p>
+        <h1 class="site-subtitle" itemprop="description"></h1>
       
   </div>
 
@@ -276,6 +276,162 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/07/阿里图标库爬虫/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Hui">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/picture.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HuiBlog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/06/07/阿里图标库爬虫/" itemprop="url">阿里图标库爬虫</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-07T15:56:08+08:00">
+                2018-06-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/代码/" itemprop="url" rel="index">
+                    <span itemprop="name">代码</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/06/07/阿里图标库爬虫/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/06/07/阿里图标库爬虫/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <figure class="highlight php"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div></pre></div><div class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"><span class="comment"> * 阿里图标库素材爬虫</span></div><div class="line"><span class="comment"> * Author：Hui</span></div><div class="line"><span class="comment"> * Date：18/06/07</span></div><div class="line"><span class="comment"> * Time：14:22</span></div><div class="line"><span class="comment"> */</span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Icon</span> </span></div><div class="line"><span class="class"></span>&#123;</div><div class="line">    <span class="comment">// 图标分类集合</span></div><div class="line">    <span class="keyword">CONST</span> COLLECTIONS_URL = <span class="string">"http://iconfont.cn/api/collections.json?"</span>;</div><div class="line">    <span class="comment">// 分类详情</span></div><div class="line">    <span class="keyword">CONST</span> COLLECTIONS_DETAIL_URL = <span class="string">"http://iconfont.cn/api/collection/detail.json?"</span>;</div><div class="line">    <span class="comment">// 爬取的初始页数</span></div><div class="line">    <span class="keyword">public</span> $page = <span class="number">1</span>;</div><div class="line">    <span class="comment">// 每页爬取的数量</span></div><div class="line">    <span class="keyword">public</span> $limit = <span class="number">9</span>;</div><div class="line">	</div><div class="line">    <span class="comment">// 认证信息</span></div><div class="line">    <span class="keyword">public</span> $ctoken = <span class="string">'6LQwjc6zvc9P5knLf9LMicon-font'</span>;</div><div class="line">	</div><div class="line">    <span class="comment">// 图标分类集合</span></div><div class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">collection</span><span class="params">()</span></span></div><div class="line"><span class="function">    </span>&#123;</div><div class="line">        $url = <span class="keyword">self</span>::COLLECTIONS_URL . <span class="string">"type=4&amp;sort=time&amp;limit="</span>.<span class="keyword">$this</span> -&gt; limit.<span class="string">"&amp;page="</span>.<span class="keyword">$this</span> -&gt; page.<span class="string">"&amp;keyword=&amp;t=1528351142196&amp;ctoken="</span>.<span class="keyword">$this</span> -&gt; ctoken;</div><div class="line">        $collections = <span class="keyword">$this</span> -&gt; request($url);</div><div class="line">        <span class="keyword">self</span>::saveFile(<span class="string">'icon'</span>, <span class="string">'log'</span>, $collections, <span class="string">'log'</span>);</div><div class="line">        $collections_arr = json_decode($collections, <span class="keyword">true</span>);</div><div class="line">        <span class="comment">// 页数记录日志</span></div><div class="line">        @array_unshift($collections_arr, [<span class="string">'page'</span>=&gt; <span class="keyword">$this</span> -&gt; page]);</div><div class="line">        <span class="keyword">if</span>($collections_arr[<span class="string">'code'</span>] == <span class="number">200</span>) &#123;</div><div class="line">            <span class="keyword">self</span>::saveFile(<span class="string">'icon'</span>, <span class="string">'collection_lists'</span>, $collections_arr);</div><div class="line">            <span class="keyword">$this</span> -&gt; getListDetail($collections_arr[<span class="string">'data'</span>][<span class="string">'lists'</span>]);</div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            <span class="keyword">self</span>::saveFile(<span class="string">'icon'</span>, <span class="string">'error_collection'</span>, $collections_arr, <span class="string">'log'</span>);</div><div class="line">            <span class="keyword">echo</span> <span class="string">'提取失败'</span>; </div><div class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">        &#125;</div><div class="line">        sleep(<span class="number">5</span>); <span class="comment">// 间隔爬取</span></div><div class="line">        <span class="keyword">if</span>(ceil($collections_arr[<span class="string">'data'</span>][<span class="string">'count'</span>] / <span class="keyword">$this</span> -&gt; limit) &gt; <span class="keyword">$this</span> -&gt; page) &#123;</div><div class="line">            <span class="keyword">$this</span> -&gt; page += <span class="number">1</span>;</div><div class="line">            <span class="keyword">$this</span> -&gt; collection();</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">	</div><div class="line">    <span class="comment">// 分类详情</span></div><div class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">getListDetail</span><span class="params">($lists)</span></span></div><div class="line"><span class="function">    </span>&#123;</div><div class="line">        <span class="keyword">foreach</span> ($lists <span class="keyword">as</span> $key =&gt; $value) </div><div class="line">        &#123;</div><div class="line">            $url =  <span class="keyword">self</span>::COLLECTIONS_DETAIL_URL . <span class="string">"id="</span> . $value[<span class="string">'id'</span>].<span class="string">"&amp;t=1528352609403&amp;ctoken="</span> . <span class="keyword">$this</span> -&gt; ctoken;</div><div class="line">            $icons = <span class="keyword">$this</span> -&gt; request($url);</div><div class="line">            $icons_arr = json_decode($icons, <span class="keyword">true</span>);</div><div class="line">            <span class="keyword">if</span>($icons_arr[<span class="string">'code'</span>] == <span class="number">200</span>) &#123;</div><div class="line">                $cate = $icons_arr[<span class="string">'data'</span>][<span class="string">'collection'</span>][<span class="string">'name'</span>];</div><div class="line">                $slug = $icons_arr[<span class="string">'data'</span>][<span class="string">'collection'</span>][<span class="string">'slug'</span>];</div><div class="line">                $data = $icons_arr[<span class="string">'data'</span>][<span class="string">'icons'</span>];</div><div class="line">                <span class="keyword">self</span>::saveFile(<span class="string">'icon/cate'</span>, $cate, [<span class="string">'slug'</span>=&gt; $slug, <span class="string">'data'</span>=&gt; $data]);</div><div class="line">            &#125; <span class="keyword">else</span> &#123;</div><div class="line">                <span class="keyword">self</span>::saveFile(<span class="string">'icon'</span>, <span class="string">'error_detail'</span>, $icons_arr, <span class="string">'log'</span>);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        </div><div class="line">    &#125;</div><div class="line">	</div><div class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">request</span><span class="params">($url)</span></span></div><div class="line"><span class="function">    </span>&#123;</div><div class="line">          $curl = curl_init();</div><div class="line">          curl_setopt_array($curl, <span class="keyword">array</span>(</div><div class="line">          CURLOPT_URL =&gt; $url,</div><div class="line">          CURLOPT_RETURNTRANSFER =&gt; <span class="keyword">true</span>,</div><div class="line">          CURLOPT_ENCODING =&gt; <span class="string">""</span>,</div><div class="line">          CURLOPT_MAXREDIRS =&gt; <span class="number">10</span>,</div><div class="line">          CURLOPT_TIMEOUT =&gt; <span class="number">30</span>,</div><div class="line">          CURLOPT_HTTP_VERSION =&gt; CURL_HTTP_VERSION_1_1,</div><div class="line">          CURLOPT_CUSTOMREQUEST =&gt; <span class="string">"GET"</span>,</div><div class="line">          CURLOPT_HTTPHEADER =&gt; <span class="keyword">array</span>(</div><div class="line">            <span class="string">"Cookie: cna=5BdjEtZmvXcCAXJwfKJoE/H4; ctoken=6LQwjc6zvc9P5knLf9LMicon-font; trace=AQAAAKn2MUvYlgYAfjhI3636rvjKjRtI; EGG_SESS=Jy6H0NqsswjXTGxPm7tDsBXmfSCQsVxkM0P6_YvCY0U6eqzm1xar-rSrDYL16dovQD3JbIUf6wyM_iE5RvVhxcXR3QRHilxa7hA_7HO1dPf8dNLmGXnH50MptGouw16S-uzeG7PRQKiNoKr-4f2FhcUHFPYgJPfhiTLjmdM22TE=; isg=BPT0I8QQEz_FhIZT7Fy0CplOxbKmZRjDZcwowI5VgH8C-ZRDtt3oR6qbfTEhGlAP"</span></div><div class="line">          ),</div><div class="line">        ));</div><div class="line">        </div><div class="line">        $response = curl_exec($curl);</div><div class="line">        curl_close($curl);</div><div class="line">        <span class="keyword">return</span> $response;</div><div class="line">    &#125;</div><div class="line">	</div><div class="line">    <span class="comment">/**</span></div><div class="line"><span class="comment">     * 保存文件到指定目录</span></div><div class="line"><span class="comment">     */</span></div><div class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="function"><span class="keyword">function</span> <span class="title">saveFile</span><span class="params">($path, $filename, $content,$saveType = <span class="string">'json'</span>, $mode = <span class="string">'w'</span>)</span></span></div><div class="line"><span class="function">    </span>&#123;</div><div class="line">        <span class="comment">// 创建目录</span></div><div class="line">        <span class="keyword">if</span>(!is_dir($path)) <span class="keyword">self</span>::createDir($path);</div><div class="line">        <span class="keyword">if</span>(is_array($content)) $content = json_encode($content);</div><div class="line">        $handle = fopen($path .<span class="string">'/'</span>. $filename . <span class="string">'.'</span> . $saveType, $mode);</div><div class="line">        fwrite($handle, $content);</div><div class="line">        fclose($handle);</div><div class="line">    &#125;</div><div class="line">	</div><div class="line">    <span class="comment">/**</span></div><div class="line"><span class="comment">     * 新建目录</span></div><div class="line"><span class="comment">     */</span></div><div class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="function"><span class="keyword">function</span> <span class="title">createDir</span><span class="params">($path)</span></span></div><div class="line"><span class="function">    </span>&#123;</div><div class="line">        <span class="keyword">if</span> (is_dir($path) || @mkdir($path)) <span class="keyword">return</span> <span class="keyword">True</span>;</div><div class="line">        <span class="keyword">if</span> ( !<span class="keyword">self</span>::createDir(dirname($path))) <span class="keyword">return</span> <span class="keyword">False</span>;</div><div class="line">        <span class="keyword">return</span> mkdir($path);</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">/********************************************/</span></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">IconToSvg</span></span></div><div class="line"><span class="class"></span>&#123;</div><div class="line">    <span class="comment">// 文件目录</span></div><div class="line">    <span class="keyword">public</span> $path = <span class="string">'icon/cate0'</span>;</div><div class="line">    </div><div class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">getFile</span><span class="params">(array $dir = [], bool $deep=true)</span></span></div><div class="line"><span class="function">    </span>&#123;</div><div class="line">        <span class="keyword">if</span>(<span class="keyword">empty</span>($dir)) <span class="keyword">return</span> <span class="keyword">false</span>;</div><div class="line">        <span class="keyword">while</span> (count($dir) &gt; <span class="number">0</span> &amp;&amp; $path = array_pop($dir)) &#123;</div><div class="line">            <span class="comment"># code...</span></div><div class="line">            <span class="keyword">if</span>(!is_dir($path)) <span class="keyword">continue</span>;</div><div class="line">            $handle = opendir($path);</div><div class="line">            <span class="keyword">while</span> ($file = readdir($handle)) &#123;</div><div class="line">                <span class="keyword">if</span>($file == <span class="string">'.'</span> || $file == <span class="string">'..'</span>) <span class="keyword">continue</span>;</div><div class="line">                $real_file = $path . <span class="string">'/'</span> . $file;</div><div class="line">                <span class="keyword">if</span>($deep &amp;&amp; is_dir($real_file)) &#123;</div><div class="line">                    $dir[] = $real_file;</div><div class="line">                &#125; <span class="keyword">else</span> &#123;</div><div class="line">                    <span class="keyword">yield</span> $file =&gt; file_get_contents($real_file);</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">            closedir($handle);</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="comment">/**</span></div><div class="line"><span class="comment">     *  SVG 源文件生成 SVG 图标文件</span></div><div class="line"><span class="comment">     */</span></div><div class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">conver</span><span class="params">()</span></span></div><div class="line"><span class="function">    </span>&#123;</div><div class="line">        <span class="keyword">foreach</span> (<span class="keyword">$this</span> -&gt; getFile([<span class="keyword">$this</span> -&gt; path]) <span class="keyword">as</span> $item =&gt; $file)</div><div class="line">        &#123;</div><div class="line">            $file = json_decode($file, <span class="keyword">true</span>);</div><div class="line">            <span class="keyword">foreach</span> ($file[<span class="string">'data'</span>] <span class="keyword">as</span> $key =&gt; $value)</div><div class="line">            &#123;</div><div class="line">                <span class="keyword">if</span>(<span class="keyword">empty</span>($value[<span class="string">'slug'</span>])) $value[<span class="string">'slug'</span>] = $item;</div><div class="line">                <span class="comment">// 保存文件</span></div><div class="line">                Icon::saveFile(<span class="string">'icon/icon/'</span>.$file[<span class="string">'slug'</span>], $value[<span class="string">'name'</span>], $value[<span class="string">'show_svg'</span>], <span class="string">'svg'</span>);</div><div class="line">                sleep(<span class="number">1</span>);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">	</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 获取 svg 源文件图标</span></div><div class="line"><span class="comment">//set_time_limit(0);</span></div><div class="line"><span class="comment">//(new Icon) -&gt; collection();</span></div><div class="line"></div><div class="line"><span class="comment">// 导出 源文件到svg 图标文件</span></div><div class="line">(<span class="keyword">new</span> IconToSvg()) -&gt; conver();</div></pre></div></div></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    <div>
+      
+    </div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/05/Hexo博客Next主题配置/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -293,9 +449,9 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/06/05/Hexo博客Next主题配置/" itemprop="url">Hexo博客Next主题配置</a></h1>
+                <a class="post-title-link" href="/2018/06/05/Hexo博客Next主题配置/" itemprop="url">Hexo博客Next主题配置</a></h2>
         
 
         <div class="post-meta">
@@ -380,7 +536,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" rel="gallery_cji2ql34j0000ugwm0nqdk50j"
+                 href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" rel="gallery_cji4jg2d30002xcwms06xk201"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" itemprop="contentUrl"/>
               </a>
@@ -469,9 +625,9 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/14/搭建博客记录/" itemprop="url">搭建博客记录</a></h1>
+                <a class="post-title-link" href="/2018/05/14/搭建博客记录/" itemprop="url">搭建博客记录</a></h2>
         
 
         <div class="post-meta">
@@ -633,9 +789,9 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/14/hello-world/" itemprop="url">Hello World</a></h1>
+                <a class="post-title-link" href="/2018/05/14/hello-world/" itemprop="url">Hello World</a></h2>
         
 
         <div class="post-meta">
@@ -788,7 +944,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -799,7 +955,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -810,7 +966,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -927,8 +1083,6 @@
   
 
 
-  
-
 
 
 
@@ -967,11 +1121,6 @@
   
   
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
   
 
 
@@ -1075,6 +1224,7 @@
 
   
 
+  <script type="text/javascript" src="/lib/zclip/clipboard.min.js"></script>	
+<script type="text/javascript" src="/js/src/custom.js"></script>
 </body>
 </html>
-<script type="text/javescript" src="/js/src/love.js"></script>
