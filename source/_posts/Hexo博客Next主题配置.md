@@ -23,11 +23,11 @@ auto_excerpt:
 # 统计访问量
 > 注册并登录百度统计获取你的统计代码。
 
-编辑配置文件 *hexo\themes\next\_config.yml*, 增加配置选项：
-```
+编辑配置文件 `hexo\themes\next\_config.yml`, 增加配置选项：
+``` :file:  hexo\themes\next\_config.yml
 baidu_tongji: true
 ```
-新建文件 *hexo\themes\next\layout\_partial\baidu_tongji.swig*，内容如下：
+新建文件 `hexo\themes\next\layout\_partial\baidu_tongji.swig`，内容如下：
 ```
 <% if (theme.baidu_tongji){ %>
 <script type="text/javascript">
@@ -35,15 +35,33 @@ baidu_tongji: true
 </script>
 <% } %>
 ```
-编辑文件 *hexo\themes\next\layout\_partial\head.swig*，在『/head』之前增加：
+编辑文件 `hexo\themes\next\layout\_partial\head.swig`，在『/head』之前增加：
 ```
 <%- partial('baidu_tongji') %>
 ```
 -----
 
 # 网站图标
-在文件 *hexo\themes\next\layout\_partial\head.swig* 中，![图标](https://oyvpp7gqd.bkt.clouddn.com/18-6-5/24288758.jpg)可以看到，网站图标文件是在 *hexo\themes\next\source\images* 这个路径下，替换即可
+在文件 `hexo\themes\next\layout\_partial\head.swig` 中，![图标](https://oyvpp7gqd.bkt.clouddn.com/18-6-5/24288758.jpg)可以看到，网站图标文件是在 *hexo\themes\next\source\images* 这个路径下，替换即可
 
 -----
 
+# 为文章添加密码
+定位到文件 `hexo\themes\next\layout\_partial\head.swig` 中，添加下面的代码到文件最后面
+```javascript
+<script>
+    (function(){
+        if('{{ page.password }}'){
+            if (prompt('请输入文章密码') !== '{{ page.password }}'){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
+```
+然后在编辑文章时添加 password: password即可
+![password](https://oyvpp7gqd.bkt.clouddn.com/18-6-6/45085843.jpg)
+
+-----
 
