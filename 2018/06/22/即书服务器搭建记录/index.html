@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="记录,服务器," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="学而践行之">
+<meta name="keywords" content="记录,服务器">
+<meta property="og:type" content="article">
+<meta property="og:title" content="即书服务器搭建记录">
+<meta property="og:url" content="http://yoursite.com/2018/06/22/即书服务器搭建记录/index.html">
+<meta property="og:site_name" content="HuiBlog">
+<meta property="og:description" content="学而践行之">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-06-22T08:49:37.666Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="即书服务器搭建记录">
+<meta name="twitter:description" content="学而践行之">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/06/22/即书服务器搭建记录/"/>
+
+
+
+
+
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
+  <title>即书服务器搭建记录 | HuiBlog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">HuiBlog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description"></h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/22/即书服务器搭建记录/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Hui">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/picture.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HuiBlog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">即书服务器搭建记录</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-22T11:35:38+08:00">
+                2018-06-22
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-06-22T16:49:37+08:00">
+                2018-06-22
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/服务器/" itemprop="url" rel="index">
+                    <span itemprop="name">服务器</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/06/22/即书服务器搭建记录/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/06/22/即书服务器搭建记录/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote class="blockquote-center">学而践行之</blockquote>
+
+<a id="more"></a>
+<p>服务器环境： <em>Ubuntu: V16.04</em></p>
+<h1 id="软件列表"><a href="#软件列表" class="headerlink" title="软件列表"></a>软件列表</h1><table>
+<thead>
+<tr>
+<th>环境</th>
+<th>版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nginx</td>
+<td>V1.10.3</td>
+</tr>
+<tr>
+<td>PHP</td>
+<td>V7.1.18</td>
+</tr>
+<tr>
+<td>MySQL</td>
+<td>V5.7.22</td>
+</tr>
+<tr>
+<td>libreoffice</td>
+<td>V5.4</td>
+</tr>
+<tr>
+<td>inkscape</td>
+<td>-</td>
+</tr>
+<tr>
+<td>lrzsz</td>
+<td>V0.12.21-8</td>
+</tr>
+<tr>
+<td>tmux</td>
+<td>V2.1.3</td>
+</tr>
+</tbody>
+</table>
+<h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><figure class="highlight shell"><figcaption><span class="caption">#@Ubuntu:>_</span></figcaption><div class="figcode"><div class="code"><pre><div class="line">sudo apt-add-repository ppa:ondrej/php   # 添加 PHP 软件源</div><div class="line">sudo add-apt-repository ppa:libreoffice/libreoffice-5-4    # 添加 Libreoffice5.4 软件源</div><div class="line">报错则执行：</div><div class="line">    1. sudo apt-get install python-software-properties</div><div class="line">    2. sudo apt-get install software-properties-common</div><div class="line"></div><div class="line">sudo apt-get update    # 更新软件源</div></pre></div></div></figure>
+<hr>
+<h1 id="安装-Web-服务器环境"><a href="#安装-Web-服务器环境" class="headerlink" title="安装 Web 服务器环境"></a>安装 Web 服务器环境</h1><p> <a href="#Nginx">Nginx</a>, <a href="#PHP">PHP</a>, <a href="#MySql">MySql</a></p>
+<h2 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h2><p>直接命令安装：<code>sudo apt-get install nginx</code><br>启动 Nginx ：<code>sudo service nginx start</code></p>
+<blockquote>
+<p>相关命令：</p>
+<ul>
+<li>netstat -anp | grep nginx    查看Nginx进程</li>
+<li>lsof -i:80                   查看80端口状态</li>
+</ul>
+</blockquote>
+<h2 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h2><p>命令安装：<code>sudo apt-get install php7.1</code><br>安装fpm：<code>sudo apt-get install php7.1-fpm</code></p>
+<blockquote>
+<p>相关命令：</p>
+<ul>
+<li>php -v  安装完后检查</li>
+<li>php -m  已安装的 PHP 模块</li>
+</ul>
+</blockquote>
+<h2 id="MySql"><a href="#MySql" class="headerlink" title="MySql"></a>MySql</h2><p>命令安装：<code>apt-get install mysql-server mysql-client php7.1-mysql</code></p>
+<blockquote>
+<p>在安装过程中会提示输入 root 用户的登录密码</p>
+</blockquote>
+<h2 id="Nginx-解析-PHP"><a href="#Nginx-解析-PHP" class="headerlink" title="Nginx 解析 PHP"></a>Nginx 解析 PHP</h2><blockquote>
+<p>PHP-FPM 与 Nginx 通信方式有两种，一种是基于TCP的 Internet domain socket 方式，一种是 UNIX domain socket 方式。 推荐使用第二种连接方式 Socket 路径为：/run/php/php7.1-fpm.sock</p>
+</blockquote>
+<figure class="highlight nginx"><figcaption><span class="caption">nginx</span><span class="suffix">.conf</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></div><div class="code"><pre><div class="line"><span class="attribute">location</span> <span class="regexp">~ \.php$</span> &#123;</div><div class="line">    <span class="attribute">include</span> snippets/fastcgi-php.conf;</div><div class="line">    <span class="comment"># With php7.0-cgi alone:</span></div><div class="line">    <span class="comment"># fastcgi_pass 127.0.0.1:9000;</span></div><div class="line">    <span class="comment"># With php7.0-fpm:</span></div><div class="line">    <span class="attribute">fastcgi_pass</span> unix:/run/php/php7.1-fpm.sock;</div><div class="line">    <span class="attribute">fastcgi_index</span>  index.php;</div><div class="line">    <span class="attribute">fastcgi_param</span>  SCRIPT_FILENAME  <span class="variable">$document_root</span><span class="variable">$fastcgi_script_name</span>;</div><div class="line">    <span class="attribute">include</span>        fastcgi_params;</div><div class="line">&#125;</div></pre></div></div></figure>
+<figure class="highlight ini"><figcaption><span class="fileDir">/etc/php/7.1/fpm/pool.d/</span><span class="caption">www</span><span class="suffix">.conf</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></div><div class="code"><pre><div class="line"><span class="comment">; 与 Nginx监听同一个 sock</span></div><div class="line"><span class="attr">listen</span> = /run/php/php7.<span class="number">1</span>-fpm.sock</div></pre></div></div></figure>
+<h1 id="应用软件"><a href="#应用软件" class="headerlink" title="应用软件"></a>应用软件</h1><ol>
+<li><p>sudo apt-get install libreoffice   # 开源办公套件</p>
+<blockquote>
+<p>eg： 将 word/ppt/excel 转换为 pdf ： <code>libreoffice  --invisible --convert-to pdf  demo.docx</code></p>
+</blockquote>
+</li>
+<li><p>sudo apt-get install inksacpe      # 矢量图转换工具</p>
+<blockquote>
+<p>eg： 将 emf 转换为 png ： <code>inkscape -e output.png input.emf</code></p>
+</blockquote>
+</li>
+<li><p>sudo apt-get install lrzsz         # linux 快速传输工具</p>
+<blockquote>
+<p>eg： 上传文件 <code>rz</code>， 下载文件 <code>sz filename</code></p>
+</blockquote>
+</li>
+</ol>
+<h1 id="其他配置"><a href="#其他配置" class="headerlink" title="其他配置"></a>其他配置</h1><h2 id="tmux-配置"><a href="#tmux-配置" class="headerlink" title="tmux 配置"></a>tmux 配置</h2><figure class="highlight"><figcaption><span class="fileDir">~/</span><span class="caption">.tmux</span><span class="suffix">.conf</span><a href="https://gitee.com/kongvip/config/blob/master/tmux.config" target="_blank">链接地址</a></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></div><div class="code"><pre><div class="line"><span class="comment"># 设置前缀为Ctrl + a</span></div><div class="line">set -g prefix C-x</div><div class="line"></div><div class="line"><span class="comment">#解除Ctrl+b 与前缀的对应关系</span></div><div class="line">unbind C-b</div><div class="line"></div><div class="line"><span class="comment">## 切换面板</span></div><div class="line"><span class="comment">#up</span></div><div class="line">bind-key k select-pane -U</div><div class="line"><span class="comment">#down</span></div><div class="line">bind-key j select-pane -D</div><div class="line"><span class="comment">#left</span></div><div class="line">bind-key h select-pane -L</div><div class="line"><span class="comment">#right</span></div><div class="line">bind-key l select-pane -R</div></pre></div></div></figure>
+<h2 id="vim-配置"><a href="#vim-配置" class="headerlink" title="vim 配置"></a>vim 配置</h2><figure class="highlight vim"><figcaption><span class="fileDir">~/</span><span class="caption">.vimrc</span><a href="https://gitee.com/kongvip/config/blob/master/vimrc" target="_blank">链接地址</a></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div><div class="line">173</div><div class="line">174</div><div class="line">175</div><div class="line">176</div><div class="line">177</div><div class="line">178</div><div class="line">179</div><div class="line">180</div><div class="line">181</div><div class="line">182</div><div class="line">183</div><div class="line">184</div><div class="line">185</div><div class="line">186</div><div class="line">187</div><div class="line">188</div><div class="line">189</div><div class="line">190</div><div class="line">191</div><div class="line">192</div><div class="line">193</div><div class="line">194</div><div class="line">195</div><div class="line">196</div><div class="line">197</div><div class="line">198</div><div class="line">199</div><div class="line">200</div><div class="line">201</div><div class="line">202</div><div class="line">203</div><div class="line">204</div><div class="line">205</div><div class="line">206</div><div class="line">207</div><div class="line">208</div><div class="line">209</div><div class="line">210</div><div class="line">211</div><div class="line">212</div><div class="line">213</div><div class="line">214</div><div class="line">215</div><div class="line">216</div><div class="line">217</div><div class="line">218</div><div class="line">219</div><div class="line">220</div><div class="line">221</div><div class="line">222</div><div class="line">223</div><div class="line">224</div><div class="line">225</div><div class="line">226</div><div class="line">227</div><div class="line">228</div><div class="line">229</div><div class="line">230</div><div class="line">231</div><div class="line">232</div><div class="line">233</div><div class="line">234</div><div class="line">235</div><div class="line">236</div><div class="line">237</div><div class="line">238</div><div class="line">239</div><div class="line">240</div><div class="line">241</div><div class="line">242</div><div class="line">243</div><div class="line">244</div><div class="line">245</div><div class="line">246</div><div class="line">247</div><div class="line">248</div><div class="line">249</div><div class="line">250</div><div class="line">251</div><div class="line">252</div><div class="line">253</div><div class="line">254</div><div class="line">255</div><div class="line">256</div><div class="line">257</div><div class="line">258</div><div class="line">259</div><div class="line">260</div><div class="line">261</div><div class="line">262</div><div class="line">263</div><div class="line">264</div><div class="line">265</div><div class="line">266</div><div class="line">267</div><div class="line">268</div><div class="line">269</div><div class="line">270</div><div class="line">271</div><div class="line">272</div><div class="line">273</div><div class="line">274</div><div class="line">275</div><div class="line">276</div><div class="line">277</div></pre></div><div class="code"><pre><div class="line"><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span></div><div class="line"><span class="comment">" 显示相关  </span></div><div class="line"><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span></div><div class="line"></div><div class="line"><span class="string">"set shortmess=atI   "</span> 启动的时候不显示那个援助乌干达儿童的提示  </div><div class="line"><span class="string">"winpos 5 5          "</span> 设定窗口位置  </div><div class="line"><span class="string">"set lines=40 columns=155    "</span> 设定窗口大小  </div><div class="line"><span class="string">"set nu              "</span> 显示行号  </div><div class="line"><span class="keyword">set</span> <span class="keyword">go</span>=              <span class="comment">" 不要图形按钮  </span></div><div class="line"><span class="string">"color asmanian2     "</span> 设置背景主题  </div><div class="line"><span class="string">"syntax on           "</span> 语法高亮  </div><div class="line"><span class="keyword">autocmd</span> InsertLeave * <span class="keyword">se</span> nocul  <span class="comment">" 用浅色高亮当前行  </span></div><div class="line"><span class="keyword">autocmd</span> InsertEnter * <span class="keyword">se</span> cul    <span class="comment">" 用浅色高亮当前行  </span></div><div class="line"><span class="string">"set ruler           "</span> 显示标尺  </div><div class="line"><span class="keyword">set</span> showcmd         <span class="comment">" 输入的命令显示出来，看的清楚些  </span></div><div class="line"><span class="string">"set cmdheight=1     "</span> 命令行（在状态行下）的高度，设置为<span class="number">1</span>  </div><div class="line"><span class="string">"set whichwrap+=&lt;,&gt;,h,l   "</span> 允许backspace和光标键跨越行边界(不建议)  </div><div class="line"><span class="string">"set scrolloff=3     "</span> 光标移动到<span class="keyword">buffer</span>的顶部和底部时保持<span class="number">3</span>行距离  </div><div class="line"></div><div class="line"><span class="keyword">set</span> statusline=%F%<span class="keyword">m</span>%r%h%<span class="keyword">w</span>\ [FORMAT=%&#123;&amp;ff&#125;]\ [TYPE=%Y]\ [POS=%<span class="keyword">l</span>,%v][%<span class="keyword">p</span>%%]\ %&#123;<span class="built_in">strftime</span>(\<span class="string">"%d/%m/%y\ -\ %H:%M\")&#125;   "</span>状态行显示的内容  </div><div class="line"><span class="keyword">set</span> laststatus=<span class="number">1</span>    <span class="comment">" 启动显示状态行(1),总是显示状态行(2)  </span></div><div class="line"><span class="keyword">set</span> foldenable      <span class="comment">" 允许折叠  </span></div><div class="line"><span class="keyword">set</span> foldmethod=manual   <span class="comment">" 手动折叠  </span></div><div class="line"><span class="string">"set background=dark "</span>背景使用黑色 </div><div class="line"><span class="keyword">set</span> nocompatible  <span class="comment">"去掉讨厌的有关vi一致性模式，避免以前版本的一些bug和局限  </span></div><div class="line"></div><div class="line"><span class="comment">" 显示中文帮助</span></div><div class="line"><span class="keyword">if</span> <span class="keyword">version</span> &gt;= <span class="number">603</span></div><div class="line">    <span class="keyword">set</span> helplang=<span class="keyword">cn</span></div><div class="line">    <span class="keyword">set</span> encoding=utf-<span class="number">8</span></div><div class="line"><span class="keyword">endif</span></div><div class="line"></div><div class="line"><span class="comment">" 设置配色方案</span></div><div class="line"><span class="comment">"colorscheme murphy</span></div><div class="line"></div><div class="line"><span class="keyword">set</span> fencs=utf-<span class="number">8</span>,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936</div><div class="line"><span class="keyword">set</span> termencoding=utf-<span class="number">8</span></div><div class="line"><span class="keyword">set</span> encoding=utf-<span class="number">8</span></div><div class="line"><span class="keyword">set</span> fileencodings=ucs-bom,utf-<span class="number">8</span>,cp936</div><div class="line"><span class="keyword">set</span> fileencoding=utf-<span class="number">8</span></div><div class="line"></div><div class="line"><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span></div><div class="line"><span class="string">""</span><span class="string">""</span><span class="comment">"新文件标题</span></div><div class="line"><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span></div><div class="line"></div><div class="line"><span class="comment">"新建.c,.h,.sh,.java文件，自动插入文件头 </span></div><div class="line"><span class="keyword">autocmd</span> BufNewFile *.cpp,*.[ch],*.<span class="keyword">sh</span>,*.java exec <span class="string">":call SetTitle()"</span> </div><div class="line"></div><div class="line"><span class="string">""</span>定义函数SetTitle，自动插入文件头 </div><div class="line">func SetTitle() </div><div class="line">    <span class="comment">"如果文件类型为.sh文件 </span></div><div class="line">    <span class="keyword">if</span> &amp;<span class="keyword">filetype</span> == <span class="string">'sh'</span> </div><div class="line">        <span class="keyword">call</span> <span class="built_in">setline</span>(<span class="number">1</span>,<span class="string">"\#########################################################################"</span>) </div><div class="line">        <span class="keyword">call</span> <span class="keyword">append</span>(<span class="built_in">line</span>(<span class="string">"."</span>), <span class="string">"\# File Name: "</span>.<span class="built_in">expand</span>(<span class="string">"%"</span>)) </div><div class="line">        <span class="keyword">call</span> <span class="keyword">append</span>(<span class="built_in">line</span>(<span class="string">"."</span>)+<span class="number">3</span>, <span class="string">"\# Created Time: "</span>.<span class="built_in">strftime</span>(<span class="string">"%c"</span>)) </div><div class="line">        <span class="keyword">call</span> <span class="keyword">append</span>(<span class="built_in">line</span>(<span class="string">"."</span>)+<span class="number">4</span>, <span class="string">"\#########################################################################"</span>) </div><div class="line">        <span class="keyword">call</span> <span class="keyword">append</span>(<span class="built_in">line</span>(<span class="string">"."</span>)+<span class="number">5</span>, <span class="string">"\#!/bin/bash"</span>) </div><div class="line">        <span class="keyword">call</span> <span class="keyword">append</span>(<span class="built_in">line</span>(<span class="string">"."</span>)+<span class="number">6</span>, <span class="string">""</span>) </div><div class="line">    <span class="keyword">else</span> </div><div class="line">        <span class="keyword">call</span> <span class="built_in">setline</span>(<span class="number">1</span>, <span class="string">"/*************************************************************************"</span>) </div><div class="line">        <span class="keyword">call</span> <span class="keyword">append</span>(<span class="built_in">line</span>(<span class="string">"."</span>), <span class="string">"    &gt; File Name: "</span>.<span class="built_in">expand</span>(<span class="string">"%"</span>)) </div><div class="line">        <span class="keyword">call</span> <span class="keyword">append</span>(<span class="built_in">line</span>(<span class="string">"."</span>)+<span class="number">3</span>, <span class="string">"    &gt; Created Time: "</span>.<span class="built_in">strftime</span>(<span class="string">"%c"</span>)) </div><div class="line">        <span class="keyword">call</span> <span class="keyword">append</span>(<span class="built_in">line</span>(<span class="string">"."</span>)+<span class="number">4</span>, <span class="string">" ************************************************************************/"</span>) </div><div class="line">        <span class="keyword">call</span> <span class="keyword">append</span>(<span class="built_in">line</span>(<span class="string">"."</span>)+<span class="number">5</span>, <span class="string">""</span>)</div><div class="line">    <span class="keyword">endif</span></div><div class="line"></div><div class="line">    <span class="keyword">if</span> &amp;<span class="keyword">filetype</span> == <span class="string">'cpp'</span></div><div class="line">        <span class="keyword">call</span> <span class="keyword">append</span>(<span class="built_in">line</span>(<span class="string">"."</span>)+<span class="number">6</span>, <span class="string">"#include&lt;iostream&gt;"</span>)</div><div class="line">        <span class="keyword">call</span> <span class="keyword">append</span>(<span class="built_in">line</span>(<span class="string">"."</span>)+<span class="number">7</span>, <span class="string">"using namespace std;"</span>)</div><div class="line">        <span class="keyword">call</span> <span class="keyword">append</span>(<span class="built_in">line</span>(<span class="string">"."</span>)+<span class="number">8</span>, <span class="string">""</span>)</div><div class="line">    <span class="keyword">endif</span></div><div class="line"></div><div class="line">    <span class="keyword">if</span> &amp;<span class="keyword">filetype</span> == <span class="string">'c'</span></div><div class="line">        <span class="keyword">call</span> <span class="keyword">append</span>(<span class="built_in">line</span>(<span class="string">"."</span>)+<span class="number">6</span>, <span class="string">"#include&lt;stdio.h&gt;"</span>)</div><div class="line">        <span class="keyword">call</span> <span class="keyword">append</span>(<span class="built_in">line</span>(<span class="string">"."</span>)+<span class="number">7</span>, <span class="string">""</span>)</div><div class="line">    <span class="keyword">endif</span></div><div class="line">    <span class="comment">"新建文件后，自动定位到文件末尾</span></div><div class="line">    <span class="keyword">autocmd</span> BufNewFile * <span class="keyword">normal</span> G</div><div class="line">endfunc </div><div class="line"></div><div class="line"><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span></div><div class="line"><span class="comment">"键盘命令</span></div><div class="line"><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span></div><div class="line"></div><div class="line"><span class="keyword">nmap</span> <span class="symbol">&lt;leader&gt;</span><span class="keyword">w</span> :w!<span class="symbol">&lt;cr&gt;</span></div><div class="line"><span class="keyword">nmap</span> <span class="symbol">&lt;leader&gt;</span><span class="keyword">f</span> :<span class="keyword">find</span><span class="symbol">&lt;cr&gt;</span></div><div class="line"></div><div class="line"><span class="comment">"去空行  </span></div><div class="line"><span class="keyword">nnoremap</span> <span class="symbol">&lt;F2&gt;</span> :g/^\s*$/d<span class="symbol">&lt;CR&gt;</span> </div><div class="line"></div><div class="line"><span class="comment">"比较文件  </span></div><div class="line"><span class="keyword">nnoremap</span> <span class="symbol">&lt;C-F2&gt;</span> :<span class="keyword">vert</span> <span class="keyword">diffsplit</span> </div><div class="line"></div><div class="line"><span class="comment">"新建标签  </span></div><div class="line"><span class="keyword">map</span> <span class="symbol">&lt;M-F2&gt;</span> :<span class="keyword">tabnew</span><span class="symbol">&lt;CR&gt;</span>  </div><div class="line"></div><div class="line"><span class="comment">"列出当前目录文件  </span></div><div class="line"><span class="keyword">map</span> <span class="symbol">&lt;F3&gt;</span> :<span class="keyword">tabnew</span> .<span class="symbol">&lt;CR&gt;</span>  </div><div class="line"></div><div class="line"><span class="comment">"打开树状文件目录  </span></div><div class="line"><span class="keyword">map</span> <span class="symbol">&lt;C-F3&gt;</span> \<span class="keyword">be</span>  </div><div class="line"></div><div class="line"></div><div class="line"><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span></div><div class="line"><span class="string">""</span>实用设置</div><div class="line"><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="comment">"</span></div><div class="line"></div><div class="line"><span class="comment">" 设置当文件被改动时自动载入</span></div><div class="line"><span class="keyword">set</span> autoread</div><div class="line"></div><div class="line"><span class="comment">" quickfix模式</span></div><div class="line"><span class="keyword">autocmd</span> FileType <span class="keyword">c</span>,cpp <span class="keyword">map</span> <span class="symbol">&lt;buffer&gt;</span> <span class="symbol">&lt;leader&gt;</span><span class="symbol">&lt;space&gt;</span> :<span class="keyword">w</span><span class="symbol">&lt;cr&gt;</span>:<span class="keyword">make</span><span class="symbol">&lt;cr&gt;</span></div><div class="line"></div><div class="line"><span class="comment">"代码补全 </span></div><div class="line"><span class="keyword">set</span> completeopt=preview,<span class="keyword">menu</span> </div><div class="line"></div><div class="line"><span class="comment">"允许插件  </span></div><div class="line"><span class="keyword">filetype</span> plugin <span class="keyword">on</span></div><div class="line"></div><div class="line"><span class="comment">"共享剪贴板  </span></div><div class="line"><span class="keyword">set</span> clipboard+=unnamed </div><div class="line"></div><div class="line"><span class="comment">"从不备份  </span></div><div class="line"><span class="keyword">set</span> nobackup</div><div class="line"></div><div class="line"><span class="comment">"make 运行</span></div><div class="line">:<span class="keyword">set</span> makeprg=g++\ -Wall\ \ %</div><div class="line"></div><div class="line"><span class="comment">"自动保存</span></div><div class="line"><span class="keyword">set</span> autowrite</div><div class="line"><span class="keyword">set</span> ruler                   <span class="comment">" 打开状态栏标尺</span></div><div class="line"><span class="keyword">set</span> cursorline              <span class="comment">" 突出显示当前行</span></div><div class="line"><span class="keyword">set</span> magic                   <span class="comment">" 设置魔术</span></div><div class="line"><span class="keyword">set</span> guioptions-=T           <span class="comment">" 隐藏工具栏</span></div><div class="line"><span class="keyword">set</span> guioptions-=<span class="keyword">m</span>           <span class="comment">" 隐藏菜单栏</span></div><div class="line"></div><div class="line"><span class="comment">"set statusline=\ %&lt;%F[%1*%M%*%n%R%H]%=\ %y\ %0(%&#123;&amp;fileformat&#125;\ %&#123;&amp;encoding&#125;\ %c:%l/%L%)\</span></div><div class="line"><span class="comment">" 设置在状态行显示的信息</span></div><div class="line"><span class="keyword">set</span> foldcolumn=<span class="number">0</span></div><div class="line"><span class="keyword">set</span> foldmethod=<span class="built_in">indent</span> </div><div class="line"></div><div class="line"><span class="comment">" 不要使用vi的键盘模式，而是vim自己的</span></div><div class="line"><span class="keyword">set</span> nocompatible</div><div class="line"></div><div class="line"><span class="comment">" 语法高亮</span></div><div class="line"><span class="keyword">set</span> <span class="keyword">syntax</span>=<span class="keyword">on</span></div><div class="line"></div><div class="line"><span class="comment">" 去掉输入错误的提示声音</span></div><div class="line"><span class="keyword">set</span> noeb</div><div class="line"></div><div class="line"><span class="comment">" 在处理未保存或只读文件的时候，弹出确认</span></div><div class="line"><span class="keyword">set</span> <span class="keyword">confirm</span></div><div class="line"></div><div class="line"><span class="comment">" 自动缩进</span></div><div class="line"><span class="keyword">set</span> autoindent</div><div class="line"><span class="keyword">set</span> <span class="built_in">cindent</span></div><div class="line"></div><div class="line"><span class="comment">" Tab键的宽度</span></div><div class="line"><span class="keyword">set</span> tabstop=<span class="number">4</span></div><div class="line"></div><div class="line"><span class="comment">" 统一缩进为4</span></div><div class="line"><span class="keyword">set</span> softtabstop=<span class="number">4</span></div><div class="line"><span class="keyword">set</span> <span class="built_in">shiftwidth</span>=<span class="number">4</span></div><div class="line"></div><div class="line"><span class="comment">" 不要用空格代替制表符</span></div><div class="line"><span class="keyword">set</span> noexpandtab</div><div class="line"></div><div class="line"><span class="comment">" 在行和段开始处使用制表符</span></div><div class="line"><span class="keyword">set</span> smarttab</div><div class="line"></div><div class="line"><span class="comment">" 显示行号</span></div><div class="line"><span class="keyword">set</span> <span class="keyword">number</span></div><div class="line"></div><div class="line"><span class="comment">" 历史记录数</span></div><div class="line"><span class="keyword">set</span> <span class="keyword">history</span>=<span class="number">1000</span></div><div class="line"></div><div class="line"><span class="comment">"禁止生成临时文件</span></div><div class="line"><span class="keyword">set</span> nobackup</div><div class="line"><span class="keyword">set</span> noswapfile</div><div class="line"></div><div class="line"><span class="comment">"搜索忽略大小写</span></div><div class="line"><span class="keyword">set</span> ignorecase</div><div class="line"></div><div class="line"><span class="comment">"搜索逐字符高亮</span></div><div class="line"><span class="keyword">set</span> hlsearch</div><div class="line"><span class="keyword">set</span> incsearch</div><div class="line"></div><div class="line"><span class="comment">"行内替换</span></div><div class="line"><span class="keyword">set</span> gdefault</div><div class="line"></div><div class="line"><span class="comment">"编码设置</span></div><div class="line"><span class="keyword">set</span> enc=utf-<span class="number">8</span></div><div class="line"><span class="keyword">set</span> fencs=utf-<span class="number">8</span>,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936</div><div class="line"></div><div class="line"><span class="comment">"语言设置</span></div><div class="line"><span class="keyword">set</span> langmenu=zh_CN.UTF-<span class="number">8</span></div><div class="line"><span class="keyword">set</span> helplang=<span class="keyword">cn</span></div><div class="line"></div><div class="line"><span class="comment">" 我的状态行显示的内容（包括文件类型和解码）</span></div><div class="line"><span class="string">"set statusline=%F%m%r%h%w\ [FORMAT=%&#123;&amp;ff&#125;]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %&#123;strftime(\"%d/%m/%y\ -\ %H:%M\"</span>)&#125;</div><div class="line"><span class="comment">"set statusline=[%F]%y%r%m%*%=[Line:%l/%L,Column:%c][%p%%]</span></div><div class="line"></div><div class="line"><span class="comment">" 总是显示状态行</span></div><div class="line"><span class="keyword">set</span> laststatus=<span class="number">2</span></div><div class="line"></div><div class="line"><span class="comment">" 命令行（在状态行下）的高度，默认为1，这里是2</span></div><div class="line"><span class="keyword">set</span> cmdheight=<span class="number">2</span></div><div class="line"></div><div class="line"><span class="comment">" 侦测文件类型</span></div><div class="line"><span class="keyword">filetype</span> <span class="keyword">on</span></div><div class="line"></div><div class="line"><span class="comment">" 载入文件类型插件</span></div><div class="line"><span class="keyword">filetype</span> plugin <span class="keyword">on</span></div><div class="line"></div><div class="line"><span class="comment">" 为特定文件类型载入相关缩进文件</span></div><div class="line"><span class="keyword">filetype</span> <span class="built_in">indent</span> <span class="keyword">on</span></div><div class="line"></div><div class="line"><span class="comment">" 保存全局变量</span></div><div class="line"><span class="keyword">set</span> viminfo+=!</div><div class="line"></div><div class="line"><span class="comment">" 带有如下符号的单词不要被换行分割</span></div><div class="line"><span class="keyword">set</span> iskeyword+=_,$,@,%,#,-</div><div class="line"></div><div class="line"><span class="comment">" 字符间插入的像素行数目</span></div><div class="line"><span class="keyword">set</span> linespace=<span class="number">0</span></div><div class="line"></div><div class="line"><span class="comment">" 通过使用: commands命令，告诉我们文件的哪一行被改变过</span></div><div class="line"><span class="keyword">set</span> report=<span class="number">0</span></div><div class="line"></div><div class="line"><span class="comment">" 在被分割的窗口间显示空白，便于阅读</span></div><div class="line"><span class="keyword">set</span> fillchars=ver<span class="variable">t:</span>\ ,<span class="keyword">st</span><span class="variable">l:</span>\ ,stlnc:\</div><div class="line"></div><div class="line"><span class="comment">" 高亮显示匹配的括号</span></div><div class="line"><span class="keyword">set</span> showmatch</div><div class="line"></div><div class="line"><span class="comment">" 匹配括号高亮的时间（单位是十分之一秒）</span></div><div class="line"><span class="keyword">set</span> matchtime=<span class="number">1</span></div><div class="line"></div><div class="line"><span class="comment">" 光标移动到buffer的顶部和底部时保持3行距离</span></div><div class="line"><span class="keyword">set</span> scrolloff=<span class="number">3</span></div><div class="line"></div><div class="line"><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="comment">"</span></div><div class="line"><span class="comment">" CTags的设定  </span></div><div class="line"><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="comment">"</span></div><div class="line"></div><div class="line"><span class="keyword">let</span> Tlist_Sort_Type = <span class="string">"name"</span>    <span class="comment">" 按照名称排序  </span></div><div class="line"><span class="keyword">let</span> Tlist_Use_Right_Window = <span class="number">1</span>  <span class="comment">" 在右侧显示窗口  </span></div><div class="line"><span class="keyword">let</span> Tlist_Compart_Format = <span class="number">1</span>    <span class="comment">" 压缩方式  </span></div><div class="line"><span class="keyword">let</span> Tlist_Exist_OnlyWindow = <span class="number">1</span>  <span class="comment">" 如果只有一个buffer，kill窗口也kill掉buffer  </span></div><div class="line"><span class="keyword">let</span> Tlist_File_Fold_Auto_Close = <span class="number">0</span>  <span class="comment">" 不要关闭其他文件的tags  </span></div><div class="line"><span class="keyword">let</span> Tlist_Enable_Fold_Column = <span class="number">0</span>    <span class="comment">" 不要显示折叠树  </span></div><div class="line"><span class="string">"let Tlist_Show_One_File=1            "</span>不同时显示多个文件的<span class="keyword">tag</span>，只显示当前文件的</div><div class="line"></div><div class="line"><span class="comment">"设置tags  </span></div><div class="line"><span class="keyword">set</span> <span class="keyword">tags</span>=<span class="keyword">tags</span>  </div><div class="line"><span class="comment">"set autochdir </span></div><div class="line"></div><div class="line"></div><div class="line"><span class="comment">"默认打开Taglist </span></div><div class="line"><span class="keyword">let</span> Tlist_Auto_Open=<span class="number">1</span> </div><div class="line"></div><div class="line"><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span> </div><div class="line"><span class="comment">" Tag list (ctags) </span></div><div class="line"><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span> </div><div class="line"></div><div class="line"><span class="keyword">let</span> Tlist_Ctags_Cmd = <span class="string">'/usr/bin/ctags'</span> </div><div class="line"><span class="keyword">let</span> Tlist_Show_One_File = <span class="number">1</span> <span class="comment">"不同时显示多个文件的tag，只显示当前文件的 </span></div><div class="line"><span class="keyword">let</span> Tlist_Exit_OnlyWindow = <span class="number">1</span> <span class="comment">"如果taglist窗口是最后一个窗口，则退出vim </span></div><div class="line"><span class="keyword">let</span> Tlist_Use_Right_Window = <span class="number">1</span> <span class="comment">"在右侧窗口中显示taglist窗口</span></div><div class="line"></div><div class="line"><span class="comment">" minibufexpl插件的一般设置</span></div><div class="line"><span class="keyword">let</span> <span class="variable">g:miniBufExplMapWindowNavVim</span> = <span class="number">1</span></div><div class="line"></div><div class="line"><span class="keyword">let</span> <span class="variable">g:miniBufExplMapWindowNavArrows</span> = <span class="number">1</span></div><div class="line"></div><div class="line"><span class="keyword">let</span> <span class="variable">g:miniBufExplMapCTabSwitchBufs</span> = <span class="number">1</span></div><div class="line"><span class="keyword">let</span> <span class="variable">g:miniBufExplModSelTarget</span> = <span class="number">1</span></div></pre></div></div></figure>
+
+      
+    </div>
+    
+    
+    
+
+    <div>
+      
+        
+      
+    </div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/记录/" rel="tag"># 记录</a>
+          
+            <a href="/tags/服务器/" rel="tag"># 服务器</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/07/阿里图标库爬虫/" rel="next" title="阿里图标库爬虫">
+                <i class="fa fa-chevron-left"></i> 阿里图标库爬虫
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/picture.jpg"
+                alt="Hui" />
+            
+              <p class="site-author-name" itemprop="name">Hui</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/kjh123" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:kongjiahuivip@163.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+<div>
+    <script type="text/javascript" src="https://api.imjad.cn/hitokoto/?cat=&charset=utf-8&length=50&encode=js&fun=sync&source="></script><div id="hitokoto"><script>hitokoto()</script></div>
+</div>
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#软件列表"><span class="nav-number">1.</span> <span class="nav-text">软件列表</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#准备"><span class="nav-number">2.</span> <span class="nav-text">准备</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装-Web-服务器环境"><span class="nav-number">3.</span> <span class="nav-text">安装 Web 服务器环境</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Nginx"><span class="nav-number">3.1.</span> <span class="nav-text">Nginx</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PHP"><span class="nav-number">3.2.</span> <span class="nav-text">PHP</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MySql"><span class="nav-number">3.3.</span> <span class="nav-text">MySql</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Nginx-解析-PHP"><span class="nav-number">3.4.</span> <span class="nav-text">Nginx 解析 PHP</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#应用软件"><span class="nav-number">4.</span> <span class="nav-text">应用软件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#其他配置"><span class="nav-number">5.</span> <span class="nav-text">其他配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#tmux-配置"><span class="nav-number">5.1.</span> <span class="nav-text">tmux 配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vim-配置"><span class="nav-number">5.2.</span> <span class="nav-text">vim 配置</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Hui</span>
+
+  
+</div>
+
+
+
+
+
+
+
+
+  <div class="footer-custom">Hosted by <a target="_blank" href="https://github.com/kjh123">GitHub</a></div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazyload/1.9.3/jquery.lazyload.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'ppsm5Wh9vOPNbja0WokKbyDH-gzGzoHsz',
+        appKey: 'y2s7zv2YqENSNPK1HhFsKfiT',
+        placeholder: '',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/src/js.cookie.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/scroll-cookie.js?v=5.1.4"></script>
+
+
+  
+
+  <script type="text/javascript" src="/lib/zclip/clipboard.min.js"></script>	
+<script type="text/javascript" src="/js/src/custom.js"></script>
+</body>
+</html>

@@ -1896,7 +1896,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #6f1b8b;
+  background: #7c40b8;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3015,20 +3015,12 @@ hr {
   color: #0477ab;
   text-decoration: underline;
 }
-code {
+# 橙色代码块,
+#code {
   color: #ff7600;
   background: #fbf7f8;
   margin: 2px;
   font-size: 16px;
-}
-.highlight,
-pre {
-  font-size: 14px;
-}
-.highlight,
-code,
-pre {
-  border: 1px solid #d6d6d6;
 }
 body {
   background: #fff;
@@ -3064,6 +3056,7 @@ p+p {
   padding-bottom: 150px;
 }
 .main-inner {
+  width: 800px;
   position: relative;
 }
 .post ul {
@@ -3088,6 +3081,7 @@ blockquote {
   padding: 5px 15px;
 }
 .header-inner {
+  transition: padding 2s;
   padding: 80px 0 80px;
 }
 .footer {
@@ -4286,7 +4280,7 @@ pre .attr {
     opacity: 0;
   }
 }
-.sidebar {
+#.sidebar {
   box-shadow: 0 2px 10px #333;
   left: 0;
   background: $black-sidebar;
@@ -4311,7 +4305,7 @@ pre .attr {
   transition: opacity 1s;
   opacity: 0;
 }
-.sidebar-toggle {
+#.sidebar-toggle {
   right: 0px;
   left: 50px;
   width: 15px;
@@ -4666,7 +4660,7 @@ a[rel="section"]:hover:after {
   margin-left: -23px;
   align-self: start;
 }
-#copyBtn {
+copyBtn {
   opacity: 0;
   position: fixed;
   display: block;
