@@ -95,7 +95,7 @@
 <meta property="og:description" content="本文为Hexo博客的Next主题的一些常用配置项">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg">
-<meta property="og:updated_time" content="2018-06-06T12:27:30.740Z">
+<meta property="og:updated_time" content="2018-06-22T09:42:09.163Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo博客Next主题配置">
 <meta name="twitter:description" content="本文为Hexo博客的Next主题的一些常用配置项">
@@ -109,7 +109,7 @@
     root: '/',
     scheme: 'Mist',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -168,32 +168,7 @@
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">HuiBlog</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-      
-        <h1 class="site-subtitle" itemprop="description"></h1>
-      
-  </div>
-
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
-</div>
-
-<nav class="site-nav">
+      <div class="header-inner"><nav class="site-nav">
   
 
   
@@ -256,6 +231,31 @@
 
   
 </nav>
+
+<div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">HuiBlog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description"></h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
 
 
 
@@ -327,8 +327,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-06-06T20:27:30+08:00">
-                2018-06-06
+              <time title="更新于" itemprop="dateModified" datetime="2018-06-22T17:42:09+08:00">
+                2018-06-22
               </time>
             
           </span>
@@ -396,7 +396,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" rel="gallery_cjiprpv000000nswmqc9rla9d"
+                 href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" rel="gallery_cjiwrt45r000bpwwm7nrudpzz"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" itemprop="contentUrl"/>
               </a>
@@ -413,7 +413,7 @@
 <h1 id="设置「阅读全文」"><a href="#设置「阅读全文」" class="headerlink" title="设置「阅读全文」"></a>设置「阅读全文」</h1><p>NexT 提供三种方式来控制文章在首页的显示方式。 也就是说，在首页显示文章的摘录并显示 阅读全文 按钮，可以通过以下方法：</p>
 <ol>
 <li>在文章中使用<code>&lt;!-- more --&gt;</code>手动进行截断，Hexo 提供的方式</li>
-<li>在文章的 <a href="https://hexo.io/docs/front-matter.html" target="_blank" rel="noopener">front-matter</a> 中添加 description，并提供文章摘录</li>
+<li>在文章的 <a href="http://hexo.io/docs/front-matter.html" target="_blank" rel="noopener">front-matter</a> 中添加 description，并提供文章摘录</li>
 <li>自动形成摘要，在主题配置文件中添加：<figure class="highlight plain"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></div><div class="code"><pre><div class="line">auto_excerpt:</div><div class="line">    enable: true</div><div class="line">    length: 200</div></pre></div></div></figure>
 </li>
 </ol>
@@ -425,10 +425,10 @@
 <p>新建文件 <code>hexo\themes\next\layout\_partial\baidu_tongji.swig</code>，内容如下：<br><figure class="highlight plain"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></div><div class="code"><pre><div class="line">&lt;% if (theme.baidu_tongji)&#123; %&gt;</div><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">    #你的百度统计代码</div><div class="line">&lt;/script&gt;</div><div class="line">&lt;% &#125; %&gt;</div></pre></div></div></figure></p>
 <p>编辑文件 <code>hexo\themes\next\layout\_partial\head.swig</code>，在『/head』之前增加：<br><figure class="highlight plain"><div class="figcode"><div class="gutter"><pre><div class="line">1</div></pre></div><div class="code"><pre><div class="line">&lt;%- partial(&apos;baidu_tongji&apos;) %&gt;</div></pre></div></div></figure></p>
 <hr>
-<h1 id="网站图标"><a href="#网站图标" class="headerlink" title="网站图标"></a>网站图标</h1><p>在文件 <code>hexo\themes\next\layout\_partial\head.swig</code> 中，<img src="https://oyvpp7gqd.bkt.clouddn.com/18-6-5/24288758.jpg" alt="图标">可以看到，网站图标文件是在 <em>hexo\themes\next\source\images</em> 这个路径下，替换即可</p>
+<h1 id="网站图标"><a href="#网站图标" class="headerlink" title="网站图标"></a>网站图标</h1><p>在文件 <code>hexo\themes\next\layout\_partial\head.swig</code> 中，<img src="http://oyvpp7gqd.bkt.clouddn.com/18-6-5/24288758.jpg" alt="图标">可以看到，网站图标文件是在 <em>hexo\themes\next\source\images</em> 这个路径下，替换即可</p>
 <hr>
-<h1 id="为文章添加密码"><a href="#为文章添加密码" class="headerlink" title="为文章添加密码"></a>为文章添加密码</h1><p>定位到文件 <code>hexo\themes\next\layout\_partial\head.swig</code> 中，添加下面的代码到文件最后面<br><figure class="highlight javascript"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></div><div class="code"><pre><div class="line">&lt;script&gt;</div><div class="line">    (<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">        <span class="keyword">if</span>(<span class="string">'&#123;&#123; page.password &#125;&#125;'</span>)&#123;</div><div class="line">            <span class="keyword">if</span> (prompt(<span class="string">'请输入文章密码'</span>) !== <span class="string">'&#123;&#123; page.password &#125;&#125;'</span>)&#123;</div><div class="line">                alert(<span class="string">'密码错误！'</span>);</div><div class="line">                history.back();</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;)();</div><div class="line">&lt;<span class="regexp">/script&gt;</span></div></pre></div></div></figure></p>
-<p>然后在编辑文章时添加 password: password即可<br><img src="https://oyvpp7gqd.bkt.clouddn.com/18-6-6/45085843.jpg" alt="password"></p>
+<h1 id="为文章添加密码"><a href="#为文章添加密码" class="headerlink" title="为文章添加密码"></a>为文章添加密码</h1><p>定位到文件 <code>hexo\themes\next\layout\_partial\head.swig</code> 中，添加下面的代码到文件最后面<br><figure class="highlight javascript"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></div><div class="code"><pre><div class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">if</span>(<span class="string">'&#123;&#123; page.password &#125;&#125;'</span>)&#123;</div><div class="line">        <span class="keyword">if</span> (prompt(<span class="string">'请输入文章密码'</span>) !== <span class="string">'&#123;&#123; page.password &#125;&#125;'</span>)&#123;</div><div class="line">            alert(<span class="string">'密码错误！'</span>);</div><div class="line">            history.back();</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;)();</div></pre></div></div></figure></p>
+<p>然后在编辑文章时添加 password: password即可<br><img src="http://oyvpp7gqd.bkt.clouddn.com/18-6-6/45085843.jpg" alt="password"></p>
 <hr>
 
       
@@ -526,7 +526,7 @@
     </div>
   </div>
 
-  <aside id="sidebar" class="sidebar">
+  <aside id="sidebar" class="sidebar sidebar-active">
     
       <div id="sidebar-dimmer"></div>
     
@@ -564,7 +564,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -575,7 +575,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -586,7 +586,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
