@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="HuiBlog">
 <meta property="og:description" content="本文主要记录在学习或者工作中用到的一些 Linux 命令">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-28T07:01:44.792Z">
+<meta property="og:updated_time" content="2018-06-29T02:38:15.230Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux命令学习">
 <meta name="twitter:description" content="本文主要记录在学习或者工作中用到的一些 Linux 命令">
@@ -325,8 +325,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-06-28T15:01:44+08:00">
-                2018-06-28
+              <time title="更新于" itemprop="dateModified" datetime="2018-06-29T10:38:15+08:00">
+                2018-06-29
               </time>
             
           </span>
@@ -395,6 +395,29 @@
 <a id="more"></a>
 <h2 id="文件批量重命名"><a href="#文件批量重命名" class="headerlink" title="文件批量重命名"></a>文件批量重命名</h2><figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line"><span class="comment"># 使用 for 循环</span></div><div class="line"><span class="keyword">for</span> fn <span class="keyword">in</span> *.jpg; <span class="keyword">do</span> convert <span class="string">"<span class="variable">$fn</span>"</span> `<span class="built_in">echo</span> <span class="variable">$fn</span> | sed <span class="string">'s/jpg$/png/'</span>`; <span class="keyword">done</span></div><div class="line"></div><div class="line"><span class="comment"># 使用 xargs </span></div><div class="line">ls *.jpg | xargs -I&#123;&#125; convert <span class="string">"&#123;&#125;"</span> `<span class="built_in">echo</span> &#123;&#125; | sed <span class="string">'s/jpg$/png/'</span>`</div></pre></div></div></figure>
 <h2 id="文件查找命令"><a href="#文件查找命令" class="headerlink" title="文件查找命令 "></a>文件查找命令 </h2><figure class="highlight bash"><figcaption><span class="caption">Find 命令</span><a href="https://linux.cn/article-9648-1.html" target="_blank">相关链接</a></figcaption><div class="figcode"><div class="code"><pre><div class="line"><span class="comment"># 查找最后修改的时间为7天前的，jpg 或 jpeg 格式的图片 </span></div><div class="line">find ./ \(-iname <span class="string">'*.jpeg'</span> -o -iname <span class="string">'*.jpg'</span> \) -<span class="built_in">type</span> f -mtime + 7</div></pre></div></div></figure>
+<h2 id="查找某个时间段内服务器的访问IP"><a href="#查找某个时间段内服务器的访问IP" class="headerlink" title="查找某个时间段内服务器的访问IP"></a>查找某个时间段内服务器的访问IP</h2><p><em>在此感谢某位大佬</em> <a href="https://gitee.com/alwaysthanksFel" target="_blank" rel="noopener">@大佬</a></p>
+<figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line">sed -n <span class="string">'/2018:06:25:59/,/2018:09:50/p'</span> access.log | awk <span class="string">'&#123;print $1&#125;'</span> | sort -nrk1 | uniq -c | tee</div></pre></div></div></figure>
+<blockquote>
+<p>uniq -c       统计去重的行数<br>  sort -nrk1    k : 第几列 n：以数字模式排序 r：倒序排序<br>  sed ‘/^$/d’   删除空行</p>
+</blockquote>
+<h2 id="OpenSSL-生成秘钥文件"><a href="#OpenSSL-生成秘钥文件" class="headerlink" title="OpenSSL 生成秘钥文件"></a>OpenSSL 生成秘钥文件</h2><blockquote>
+<p>输入<code>openssl</code>进入openssl交互界面 </p>
+</blockquote>
+<ol>
+<li><p>生成私钥：       </p>
+<figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line">genrsa -out rsa_private_key.pem 1024</div></pre></div></div></figure>
+</li>
+<li><p>转换成pckcs8格式：</p>
+<figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line">pkcs8 -topk8 -nocrypt -inform PEM -<span class="keyword">in</span> rsa_private_key.pem -outform PEM outform</div></pre></div></div></figure>
+</li>
+<li><p>根据私钥生成公钥： </p>
+<figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line">rsa -<span class="keyword">in</span> rsa_private_key.pem -pubout -out rsa_public_key.pem</div></pre></div></div></figure>
+</li>
+</ol>
+<h2 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令"></a>其他命令</h2><ul>
+<li><code>grep -C 5 foo file</code> 显示file文件里匹配foo字串那行以及上下5行</li>
+<li><code>cut -d &#39;,&#39; -f 1</code>   d：以逗号切割  f：每行切割的第几份</li>
+</ul>
 
       
     </div>
@@ -444,6 +467,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/06/29/CentOS7配置LNMP/" rel="prev" title="CentOS7配置LNMP">
+                CentOS7配置LNMP <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -529,7 +556,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -551,7 +578,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -602,7 +629,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#文件批量重命名"><span class="nav-number">1.</span> <span class="nav-text">文件批量重命名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文件查找命令"><span class="nav-number">2.</span> <span class="nav-text">文件查找命令 </span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#文件批量重命名"><span class="nav-number">1.</span> <span class="nav-text">文件批量重命名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文件查找命令"><span class="nav-number">2.</span> <span class="nav-text">文件查找命令 </span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查找某个时间段内服务器的访问IP"><span class="nav-number">3.</span> <span class="nav-text">查找某个时间段内服务器的访问IP</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#OpenSSL-生成秘钥文件"><span class="nav-number">4.</span> <span class="nav-text">OpenSSL 生成秘钥文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他命令"><span class="nav-number">5.</span> <span class="nav-text">其他命令</span></a></li></ol></div>
             
 
           </div>
