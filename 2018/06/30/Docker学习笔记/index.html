@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Linux,记录,命令," />
+  <meta name="keywords" content="Linux,Docker,CenterOS," />
 
 
 
@@ -86,18 +86,18 @@
 
 
 
-<meta name="description" content="本文主要记录在学习或者工作中用到的一些 Linux 命令">
-<meta name="keywords" content="Linux,记录,命令">
+<meta name="description" content="前段时间有学过一些 Docker 的相关知识，但最近忙于工作，对这方面还是有些疏忽了，就再次学习下，然后做个笔记">
+<meta name="keywords" content="Linux,Docker,CenterOS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux命令学习">
-<meta property="og:url" content="http://yoursite.com/2018/06/27/Linux命令学习/index.html">
+<meta property="og:title" content="Docker学习笔记">
+<meta property="og:url" content="http://yoursite.com/2018/06/30/Docker学习笔记/index.html">
 <meta property="og:site_name" content="HuiBlog">
-<meta property="og:description" content="本文主要记录在学习或者工作中用到的一些 Linux 命令">
+<meta property="og:description" content="前段时间有学过一些 Docker 的相关知识，但最近忙于工作，对这方面还是有些疏忽了，就再次学习下，然后做个笔记">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-29T02:38:15.230Z">
+<meta property="og:updated_time" content="2018-07-01T10:33:01.669Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux命令学习">
-<meta name="twitter:description" content="本文主要记录在学习或者工作中用到的一些 Linux 命令">
+<meta name="twitter:title" content="Docker学习笔记">
+<meta name="twitter:description" content="前段时间有学过一些 Docker 的相关知识，但最近忙于工作，对这方面还是有些疏忽了，就再次学习下，然后做个笔记">
 
 
 
@@ -127,7 +127,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/06/27/Linux命令学习/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/30/Docker学习笔记/"/>
 
 
 
@@ -143,7 +143,7 @@
         }
     })();
 </script>
-  <title>Linux命令学习 | HuiBlog</title>
+  <title>Docker学习笔记 | HuiBlog</title>
   
 
 
@@ -280,7 +280,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/27/Linux命令学习/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/30/Docker学习笔记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Hui">
@@ -297,7 +297,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Linux命令学习</h2>
+          <h2 class="post-title" itemprop="name headline">Docker学习笔记</h2>
         
 
         <div class="post-meta">
@@ -309,8 +309,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-27T14:54:32+08:00">
-                2018-06-27
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-30T15:30:34+08:00">
+                2018-06-30
               </time>
             
 
@@ -325,8 +325,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-06-29T10:38:15+08:00">
-                2018-06-29
+              <time title="更新于" itemprop="dateModified" datetime="2018-07-01T18:33:01+08:00">
+                2018-07-01
               </time>
             
           </span>
@@ -362,8 +362,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/06/27/Linux命令学习/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/06/27/Linux命令学习/" itemprop="commentCount"></span>
+                <a href="/2018/06/30/Docker学习笔记/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/06/30/Docker学习笔记/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -391,33 +391,52 @@
       
 
       
-        <p>本文主要记录在学习或者工作中用到的一些 <code>Linux</code> 命令</p>
+        <blockquote>
+<p>前段时间有学过一些 <code>Docker</code> 的相关知识，但最近忙于工作，对这方面还是有些疏忽了，就再次学习下，然后做个笔记</p>
+</blockquote>
 <a id="more"></a>
-<h2 id="文件批量重命名"><a href="#文件批量重命名" class="headerlink" title="文件批量重命名"></a>文件批量重命名</h2><figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line"><span class="comment"># 使用 for 循环</span></div><div class="line"><span class="keyword">for</span> fn <span class="keyword">in</span> *.jpg; <span class="keyword">do</span> convert <span class="string">"<span class="variable">$fn</span>"</span> `<span class="built_in">echo</span> <span class="variable">$fn</span> | sed <span class="string">'s/jpg$/png/'</span>`; <span class="keyword">done</span></div><div class="line"></div><div class="line"><span class="comment"># 使用 xargs </span></div><div class="line">ls *.jpg | xargs -I&#123;&#125; convert <span class="string">"&#123;&#125;"</span> `<span class="built_in">echo</span> &#123;&#125; | sed <span class="string">'s/jpg$/png/'</span>`</div></pre></div></div></figure>
-<h2 id="文件查找命令"><a href="#文件查找命令" class="headerlink" title="文件查找命令 "></a>文件查找命令 </h2><figure class="highlight bash"><figcaption><span class="caption">Find 命令</span><a href="https://linux.cn/article-9648-1.html" target="_blank">相关链接</a></figcaption><div class="figcode"><div class="code"><pre><div class="line"><span class="comment"># 查找最后修改的时间为7天前的，jpg 或 jpeg 格式的图片 </span></div><div class="line">find ./ \(-iname <span class="string">'*.jpeg'</span> -o -iname <span class="string">'*.jpg'</span> \) -<span class="built_in">type</span> f -mtime + 7</div></pre></div></div></figure>
-<h2 id="查找某个时间段内服务器的访问IP"><a href="#查找某个时间段内服务器的访问IP" class="headerlink" title="查找某个时间段内服务器的访问IP"></a>查找某个时间段内服务器的访问IP</h2><p><em>在此感谢某位大佬</em> <a href="https://gitee.com/alwaysthanksFel" target="_blank" rel="noopener">@大佬</a></p>
-<figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line">sed -n <span class="string">'/2018:06:25:59/,/2018:09:50/p'</span> access.log | awk <span class="string">'&#123;print $1&#125;'</span> | sort -nrk1 | uniq -c | tee</div></pre></div></div></figure>
-<blockquote>
-<p>uniq -c       统计去重的行数<br>  sort -nrk1    k : 第几列 n：以数字模式排序 r：倒序排序<br>  sed ‘/^$/d’   删除空行</p>
+<hr>
+<p><em>系统环境 <code>CenterOS 7</code></em></p>
+<h1 id="安装-Docker"><a href="#安装-Docker" class="headerlink" title="安装 Docker"></a>安装 Docker</h1><blockquote>
+<p>版本：社区版（Docker Community Edition）<br>介绍：<a href="https://avnpc.com/pages/build-php-develop-env-by-docker" target="_blank" rel="noopener">Docker在PHP项目开发中的应用</a><br>如果之前有安装过的旧版本 先卸载 <code>yum remove docker  docker-common docker-selinux docker-engine</code></p>
 </blockquote>
-<h2 id="OpenSSL-生成秘钥文件"><a href="#OpenSSL-生成秘钥文件" class="headerlink" title="OpenSSL 生成秘钥文件"></a>OpenSSL 生成秘钥文件</h2><blockquote>
-<p>输入<code>openssl</code>进入openssl交互界面 </p>
-</blockquote>
-<ol>
-<li><p>生成私钥：       </p>
-<figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line">genrsa -out rsa_private_key.pem 1024</div></pre></div></div></figure>
+<ul>
+<li><p>添加软件源:</p>
+<figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line">yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo</div><div class="line"></div><div class="line"><span class="comment"># 如果没有 yum-config-manager 命令则执行下面</span></div><div class="line">yum install -y yum-utils device-mapper-persistent-data lvm2</div></pre></div></div></figure>
 </li>
-<li><p>转换成pckcs8格式：</p>
-<figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line">pkcs8 -topk8 -nocrypt -inform PEM -<span class="keyword">in</span> rsa_private_key.pem -outform PEM outform</div></pre></div></div></figure>
+<li><p>查看软件仓库中所有的 <code>Docker</code> 版本</p>
+<figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line">yum list docker-ce --showduplicates | sort -r</div></pre></div></div></figure>
 </li>
-<li><p>根据私钥生成公钥： </p>
-<figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line">rsa -<span class="keyword">in</span> rsa_private_key.pem -pubout -out rsa_public_key.pem</div></pre></div></div></figure>
+<li><p>安装最新版本 [ 指定版本 ]</p>
+<figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line"><span class="comment"># [docker-ce] 替换指定版本</span></div><div class="line">sudo yum install [docker-ce]</div></pre></div></div></figure>
 </li>
-</ol>
-<h2 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令"></a>其他命令</h2><ul>
-<li><code>grep -C 5 foo file</code> 显示file文件里匹配foo字串那行以及上下5行</li>
-<li><code>cut -d &#39;,&#39; -f 1</code>   d：以逗号切割  f：每行切割的第几份</li>
+<li><p>加入 <code>Docker</code> 到开机启动</p>
+<figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line">systemctl <span class="built_in">enable</span> docker</div></pre></div></div></figure>
+</li>
+<li><p>启动 <code>Docker</code> </p>
+<figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line">systemctl start docker</div></pre></div></div></figure>
+</li>
+<li><p>查看 <code>Docker</code> 状态</p>
+<figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line">systemctl status docker</div></pre></div></div></figure>
+</li>
+<li><p>安装 <code>docker-compose</code> <a href="http://dockone.io/article/34" target="_blank" rel="noopener">docker-compose介绍</a></p>
+<figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line">pip install docker-compose</div></pre></div></div></figure>
+</li>
+<li><p>加速 <code>Docker</code> </p>
+<figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line">curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://9d4cd35f.m.daocloud.io</div><div class="line"></div><div class="line"><span class="comment"># 修改完成后会提示重启</span></div><div class="line">systemctl restart docker</div></pre></div></div></figure>
+</li>
 </ul>
+<h1 id="在-Docker-上构建-LNMP-环境"><a href="#在-Docker-上构建-LNMP-环境" class="headerlink" title="在 Docker 上构建 LNMP 环境"></a>在 <code>Docker</code> 上构建 <code>LNMP</code> 环境</h1><h2 id="分别拉取需要的镜像文件"><a href="#分别拉取需要的镜像文件" class="headerlink" title="分别拉取需要的镜像文件"></a>分别拉取需要的镜像文件</h2><h3 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h3><figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line"><span class="comment"># 获取 mysql5.6 版本的docker镜像</span></div><div class="line">docker pull mysql:5.6</div><div class="line"><span class="comment"># 创建mysql容器</span></div><div class="line">docker run -d -p 3307:3306 -e MYSQL_ROOT_PASSWORD=admin --name mysql5.6 mysql:5.6</div><div class="line"><span class="comment"># -d：让容器在后台运行</span></div><div class="line"><span class="comment"># -p：添加主机到容器的端口映射</span></div><div class="line"><span class="comment"># -e：设置环境变量，这里是设置MySQL的root账户的初始密码 （必选）</span></div><div class="line"><span class="comment"># -name：容器的名字，必须唯一</span></div></pre></div></div></figure>
+<h3 id="PHP-FPM"><a href="#PHP-FPM" class="headerlink" title="PHP-FPM"></a>PHP-FPM</h3><figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line"><span class="comment"># 拉取php-fpm </span></div><div class="line">docker pull php:7.1-fpm</div><div class="line"><span class="comment"># 创建 php-fpm 容器</span></div><div class="line">docker run -d -v /www:/var/www/html -p 9001:9000 --link mysql5.6:mysql --name phpfpm7.1 php:7.1-fpm </div><div class="line"><span class="comment"># -v 目录映射，把主机的 /www 目录映射到容器中的 /var/www/html 目录</span></div><div class="line"><span class="comment"># –link 与另外一个容器建立起联系，这样我们就可以在当前容器中去使用另一个容器里的服务。</span></div><div class="line"><span class="comment">#      或者使用 ip 去访问其它容器的服务</span></div></pre></div></div></figure>
+<h3 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h3><h3 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h3><h2 id="使用-dockerfile-构建环境"><a href="#使用-dockerfile-构建环境" class="headerlink" title="使用 dockerfile 构建环境"></a>使用 <code>dockerfile</code> 构建环境</h2><h1 id="Docker-相关命令"><a href="#Docker-相关命令" class="headerlink" title="Docker 相关命令"></a>Docker 相关命令</h1><ol>
+<li><code>docker images</code>  查看本地<strong>docker</strong>镜像文件</li>
+<li><code>docker ps -a</code>   查看所有正在运行容器的进程情况</li>
+<li><code>docker exec -ti docker_names /bin/bash</code> 进入docker容器中<blockquote>
+<p>-t 在容器里生产一个伪终端<br>-i 对容器内的标准输入 (STDIN) 进行交互</p>
+</blockquote>
+</li>
+<li></li>
+</ol>
 
       
     </div>
@@ -443,9 +462,9 @@
           
             <a href="/tags/Linux/" rel="tag"># Linux</a>
           
-            <a href="/tags/记录/" rel="tag"># 记录</a>
+            <a href="/tags/Docker/" rel="tag"># Docker</a>
           
-            <a href="/tags/命令/" rel="tag"># 命令</a>
+            <a href="/tags/CenterOS/" rel="tag"># CenterOS</a>
           
         </div>
       
@@ -458,8 +477,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/06/22/即书服务器搭建记录/" rel="next" title="即书服务器搭建记录">
-                <i class="fa fa-chevron-left"></i> 即书服务器搭建记录
+              <a href="/2018/06/29/CentOS7配置LNMP/" rel="next" title="CentOS7配置LNMP">
+                <i class="fa fa-chevron-left"></i> CentOS7配置LNMP
               </a>
             
           </div>
@@ -467,10 +486,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/06/29/CentOS7配置LNMP/" rel="prev" title="CentOS7配置LNMP">
-                CentOS7配置LNMP <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -629,7 +644,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#文件批量重命名"><span class="nav-number">1.</span> <span class="nav-text">文件批量重命名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文件查找命令"><span class="nav-number">2.</span> <span class="nav-text">文件查找命令 </span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查找某个时间段内服务器的访问IP"><span class="nav-number">3.</span> <span class="nav-text">查找某个时间段内服务器的访问IP</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#OpenSSL-生成秘钥文件"><span class="nav-number">4.</span> <span class="nav-text">OpenSSL 生成秘钥文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他命令"><span class="nav-number">5.</span> <span class="nav-text">其他命令</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#安装-Docker"><span class="nav-number">1.</span> <span class="nav-text">安装 Docker</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#在-Docker-上构建-LNMP-环境"><span class="nav-number">2.</span> <span class="nav-text">在 Docker 上构建 LNMP 环境</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#分别拉取需要的镜像文件"><span class="nav-number">2.1.</span> <span class="nav-text">分别拉取需要的镜像文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL"><span class="nav-number">2.1.1.</span> <span class="nav-text">MySQL</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PHP-FPM"><span class="nav-number">2.1.2.</span> <span class="nav-text">PHP-FPM</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Nginx"><span class="nav-number">2.1.3.</span> <span class="nav-text">Nginx</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PHP"><span class="nav-number">2.1.4.</span> <span class="nav-text">PHP</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用-dockerfile-构建环境"><span class="nav-number">2.2.</span> <span class="nav-text">使用 dockerfile 构建环境</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Docker-相关命令"><span class="nav-number">3.</span> <span class="nav-text">Docker 相关命令</span></a></li></ol></div>
             
 
           </div>
