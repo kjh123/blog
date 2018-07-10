@@ -276,6 +276,190 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/10/shell代码自动部署脚本/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Hui">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/picture.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HuiBlog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/10/shell代码自动部署脚本/" itemprop="url">shell代码自动部署脚本</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-10T12:44:47+08:00">
+                2018-07-10
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-07-10T16:27:34+08:00">
+                2018-07-10
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/07/10/shell代码自动部署脚本/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/10/shell代码自动部署脚本/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote>
+<p>服务器环境：Ubuntu 16.04<br>此脚本仅适用于在多个服务器中有相同环境配置，以及相同的项目路径</p>
+</blockquote>
+<ul>
+<li><p>待优化的功能</p>
+<ul>
+<li>操作日志记录</li>
+<li>脚本执行文件锁</li>
+<li>代码回滚操作</li>
+</ul>
+</li>
+<li><p>使用到的工具</p>
+<figure class="highlight bash"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></div><div class="code"><pre><div class="line"><span class="comment"># Git 代码版本管理</span></div><div class="line">sudo apt-get install git</div><div class="line"><span class="comment"># expect 可以实现交互式通信</span></div><div class="line">sudo  apt-get install expect</div></pre></div></div></figure>
+</li>
+<li><p>相关代码</p>
+<figure class="highlight bash"><figcaption><span class="caption">deploy</span><span class="suffix">.sh</span></figcaption><div class="figcode"><div class="code"><pre><div class="line"><span class="meta">#!/bin/bash</span></div><div class="line"><span class="comment"># User: Hui</span></div><div class="line"><span class="comment"># Date: 07/10</span></div><div class="line"></div><div class="line"><span class="comment">#########################  ENV  ###############################</span></div><div class="line">TIME=$(date <span class="string">"+%H-%M-%S"</span>)</div><div class="line">CODE_DIR=<span class="string">"/vagrant/jishu"</span></div><div class="line">NETWORK=<span class="string">'enp0s8'</span></div><div class="line"></div><div class="line">NAME=(<span class="string">'测试1'</span> <span class="string">'测试2'</span>)</div><div class="line">HOST=(<span class="string">'192.168.33.10'</span> <span class="string">'192.168.0.186'</span>)</div><div class="line">ACCOUNT=(<span class="string">'vagrant'</span> <span class="string">'vagrant'</span>)</div><div class="line">PASSWORD=(<span class="string">'vagrant'</span> <span class="string">'vagrant'</span>)</div><div class="line"></div><div class="line"><span class="comment">#########################  BASH  ##############################</span></div><div class="line"><span class="function"><span class="title">usage</span></span>()&#123;</div><div class="line">	<span class="built_in">echo</span> </div><div class="line">	<span class="built_in">echo</span> -e $<span class="string">"\e[1;32mUsage:\e[0m"</span> </div><div class="line">	<span class="built_in">echo</span> <span class="string">"     <span class="variable">$0</span> pull      拉取代码"</span></div><div class="line">	<span class="built_in">echo</span> <span class="string">"     <span class="variable">$0</span> rollback  回滚代码"</span></div><div class="line">	<span class="built_in">echo</span> </div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment"># 检测当前运行的主机</span></div><div class="line"><span class="function"><span class="title">check_host</span></span>()&#123;</div><div class="line">	IP=$(ifconfig <span class="variable">$NETWORK</span>| grep <span class="string">'inet'</span> | grep -oE <span class="string">"[0-9\.]+"</span> | head -n1)</div><div class="line">	<span class="keyword">for</span>((i=0; i &lt; <span class="variable">$&#123;#HOST[*]&#125;</span>; i++))</div><div class="line">	<span class="keyword">do</span></div><div class="line">		<span class="keyword">if</span> [ <span class="variable">$&#123;HOST[$i]&#125;</span> == <span class="variable">$IP</span> ]; <span class="keyword">then</span></div><div class="line">			<span class="comment"># check_git_status $&#123;HOST[$i]&#125; $&#123;i&#125;;</span></div><div class="line">			<span class="built_in">echo</span></div><div class="line">		<span class="keyword">else</span></div><div class="line">			origin_pull <span class="variable">$&#123;HOST[$i]&#125;</span> <span class="variable">$&#123;i&#125;</span>;	</div><div class="line">		<span class="keyword">fi</span></div><div class="line">	<span class="keyword">done</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment"># 检测当前的分支状态</span></div><div class="line"><span class="function"><span class="title">check_git_status</span></span>()&#123;</div><div class="line">	<span class="built_in">echo</span> -e $<span class="string">"\e[1;32m正在同步 <span class="variable">$&#123;NAME[$2]&#125;</span>：<span class="variable">$1</span> ------------\e[0m"</span></div><div class="line"></div><div class="line">	<span class="built_in">cd</span> <span class="variable">$CODE_DIR</span></div><div class="line">	<span class="built_in">local</span> git_status=$(git status 2&gt; /dev/null | tail -n1) || $(git status 2&gt; /dev/null | head -n 2 | tail -n1);</div><div class="line">	<span class="keyword">if</span> [[ <span class="string">"<span class="variable">$git_status</span>"</span> =~ nothing\ to\ commit || <span class="string">"<span class="variable">$git_status</span>"</span> =~  Your\ branch\ is\ up\-to\-date\ with ]]; <span class="keyword">then</span></div><div class="line">		code_pull;</div><div class="line">	<span class="keyword">else</span>	</div><div class="line">		<span class="built_in">echo</span> <span class="variable">$&#123;NAME[$2]&#125;</span>：<span class="variable">$1</span> 存在未提交的修改，请手动处理</div><div class="line">	<span class="keyword">fi</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment"># 同步本地代码</span></div><div class="line"><span class="function"><span class="title">code_pull</span></span>()&#123;</div><div class="line">	<span class="built_in">cd</span> <span class="variable">$CODE_DIR</span></div><div class="line">	git pull origin master</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment"># 同步远程主机代码</span></div><div class="line"><span class="function"><span class="title">origin_pull</span></span>()&#123;</div><div class="line">	<span class="built_in">local</span> _host=<span class="variable">$1</span></div><div class="line">	<span class="built_in">local</span> _account=<span class="variable">$&#123;ACCOUNT[$2]&#125;</span></div><div class="line">	<span class="built_in">local</span> _password=<span class="variable">$&#123;PASSWORD[$2]&#125;</span></div><div class="line">	<span class="built_in">local</span> _dir=<span class="variable">$&#123;CODE_DIR&#125;</span></div><div class="line">	/usr/bin/expect &lt;&lt;-EOF</div><div class="line">	<span class="built_in">set</span> timeout 2</div><div class="line">	spawn ssh <span class="variable">$&#123;_account&#125;</span>@<span class="variable">$&#123;_host&#125;</span> <span class="string">"cd <span class="variable">$&#123;_dir&#125;</span> &amp;&amp; git pull origin master"</span></div><div class="line">	expect &#123;</div><div class="line">		<span class="string">"*yes/no"</span> &#123; send <span class="string">"yes\r"</span>; exp_continue &#125;</div><div class="line">		<span class="string">"*password:"</span> &#123; send <span class="string">"<span class="variable">$&#123;_password&#125;</span>\r"</span>; exp_continue &#125; </div><div class="line">		<span class="string">"*https://gitee.com"</span>: &#123; send <span class="string">"GitName"</span>; exp_continue &#125; </div><div class="line">		<span class="string">"Password*"</span>: &#123; send <span class="string">"GitPassWord"</span>; exp_continue &#125;</div><div class="line">	&#125;</div><div class="line">EOF</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment"># 代码回滚操作</span></div><div class="line"><span class="function"><span class="title">roll_back</span></span>()&#123;</div><div class="line">	<span class="built_in">echo</span> rollback;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="title">main</span></span>()&#123;</div><div class="line">	<span class="keyword">case</span> <span class="variable">$1</span> <span class="keyword">in</span></div><div class="line">	pull)</div><div class="line">	    check_host;</div><div class="line">		;;</div><div class="line">	rollback)</div><div class="line">		roll_back;</div><div class="line">		;;</div><div class="line">	*)</div><div class="line">		usage;</div><div class="line">	<span class="keyword">esac</span></div><div class="line">&#125;</div><div class="line">main <span class="variable">$1</span></div></pre></div></div></figure></li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    <div>
+      
+    </div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/30/Docker学习笔记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -323,8 +507,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-07-01T18:33:01+08:00">
-                2018-07-01
+              <time title="更新于" itemprop="dateModified" datetime="2018-07-05T10:11:02+08:00">
+                2018-07-05
               </time>
             
           </span>
@@ -669,8 +853,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-06-29T10:38:15+08:00">
-                2018-06-29
+              <time title="更新于" itemprop="dateModified" datetime="2018-07-09T18:15:33+08:00">
+                2018-07-09
               </time>
             
           </span>
@@ -841,8 +1025,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-06-30T15:39:19+08:00">
-                2018-06-30
+              <time title="更新于" itemprop="dateModified" datetime="2018-07-10T14:04:01+08:00">
+                2018-07-10
               </time>
             
           </span>
@@ -1256,7 +1440,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" rel="gallery_cjj13b6k9000668wmryxgb67j"
+                 href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" rel="gallery_cjjf7pd3n0011sgwmxesz0zfg"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" itemprop="contentUrl"/>
               </a>
@@ -1688,7 +1872,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
