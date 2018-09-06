@@ -95,7 +95,7 @@
 <meta property="og:description" content="服务器环境 CentOS 7">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://oyvpp7gqd.bkt.clouddn.com/18-6-29/84311977.jpg">
-<meta property="og:updated_time" content="2018-06-30T07:38:29.451Z">
+<meta property="og:updated_time" content="2018-08-06T12:45:55.149Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CentOS7配置LNMP">
 <meta name="twitter:description" content="服务器环境 CentOS 7">
@@ -327,8 +327,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-06-30T15:38:29+08:00">
-                2018-06-30
+              <time title="更新于" itemprop="dateModified" datetime="2018-08-06T20:45:55+08:00">
+                2018-08-06
               </time>
             
           </span>
@@ -417,7 +417,8 @@
 </blockquote>
 <figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line"><span class="comment"># 安装扩展依赖包</span></div><div class="line">yum -y install gcc libjpeg libjpeg-devel libpng libpng-devel freetype freetype-devel libxml2 libxml2-devel zlib zlib-devel curl curl-devel openssl openssl-devel</div><div class="line"></div><div class="line"><span class="comment"># 配置 PHP</span></div><div class="line">./configure --prefix=/usr/<span class="built_in">local</span>/php-7.1.5 --<span class="built_in">enable</span>-fpm --with-fpm-user=nginx --with-fpm-group=nginx --with-mysqli --with-pdo-mysql --with-zlib --with-curl --with-gd --with-jpeg-dir --with-png-dir --with-freetype-dir --with-openssl --<span class="built_in">enable</span>-mbstring --<span class="built_in">enable</span>-ftp --<span class="built_in">enable</span>-zip</div><div class="line"></div><div class="line"><span class="comment"># 安装</span></div><div class="line">make &amp;&amp; make install</div><div class="line"></div><div class="line"><span class="comment"># copy php.ini</span></div><div class="line">cp php.ini-development /usr/<span class="built_in">local</span>/php-7.1.5/lib/php.ini</div><div class="line"></div><div class="line"><span class="comment"># 修改 php.ini 文件</span></div><div class="line">mysqli.default_socket = /var/lib/mysql/mysql.sock</div><div class="line">date.timezone = PRC</div><div class="line"></div><div class="line"><span class="comment"># 将 /usr/local/php-7.1.5 软链到 /usr/local/php</span></div><div class="line">ln -s /usr/<span class="built_in">local</span>/php-7.1.5 /usr/<span class="built_in">local</span>/php</div><div class="line"><span class="comment"># 将一些常用的可执行文件（例如 php, pecl, pear 和 phpize）软链到 PATH 环境变量中。</span></div><div class="line">ln -s /usr/<span class="built_in">local</span>/php/bin/php /usr/sbin/php</div><div class="line">ln -s /usr/<span class="built_in">local</span>/php/bin/pecl /usr/sbin/pecl</div><div class="line">ln -s /usr/<span class="built_in">local</span>/php/bin/pear /usr/sbin/pear</div><div class="line">ln -s /usr/<span class="built_in">local</span>/php/bin/phpize /usr/sbin/phpize</div><div class="line"></div><div class="line"><span class="comment"># 配置 php-fpm</span></div><div class="line">cp /usr/<span class="built_in">local</span>/php-7.1.5/etc/php-fpm.conf.default /usr/<span class="built_in">local</span>/php-7.1.5/etc/php-fpm.conf</div><div class="line">cp /usr/<span class="built_in">local</span>/php-7.1.5/etc/php-fpm.d/www.conf.default /usr/<span class="built_in">local</span>/php-7.1.5/etc/php-fpm.d/www.conf</div><div class="line"></div><div class="line"><span class="comment"># 查找 /usr/local/php-7.1.5/etc/php-fpm.d/www.conf user 和 group 看看是不是安装时指定的 nginx </span></div><div class="line">user = nginx</div><div class="line">group = nginx</div><div class="line"></div><div class="line"><span class="comment"># 配置 php-fpm 启动服务脚本</span></div><div class="line">cp /usr/<span class="built_in">local</span>/src/php-7.1.5/sapi/fpm/php-fpm.service /usr/lib/systemd/system/php71-fpm.service</div><div class="line"><span class="comment"># php-fpm 随机启动</span></div><div class="line">systemctl <span class="built_in">enable</span> php71-fpm</div><div class="line"></div><div class="line"><span class="comment"># 重新载入 systemd</span></div><div class="line">systemctl daemon-reload</div><div class="line"></div><div class="line"><span class="comment"># 启动 php71-fpm</span></div><div class="line">systemctl start php71-fpm</div><div class="line"><span class="comment"># 查看php71-fpm当前状态</span></div><div class="line">systemctl status php71-fpm</div></pre></div></div></figure>
 <h1 id="end"><a href="#end" class="headerlink" title="end"></a>end</h1><p>添加 nginx 配置文件<br> <figure class="highlight nginx"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></div><div class="code"><pre><div class="line"><span class="section">server</span> &#123;</div><div class="line">    <span class="attribute">listen</span>       <span class="number">80</span>;</div><div class="line">    <span class="attribute">server_name</span>  localhost;</div><div class="line">    <span class="attribute">root</span>         /www/web;</div><div class="line">    <span class="attribute">location</span> / &#123;</div><div class="line">        <span class="attribute">index</span>  index.php index.html index.htm;</div><div class="line">    &#125;</div><div class="line">    <span class="attribute">location</span> <span class="regexp">~ \.php$</span> &#123;</div><div class="line">        <span class="attribute">fastcgi_pass</span>   <span class="number">127.0.0.1:9000</span>;</div><div class="line">        <span class="attribute">fastcgi_index</span>  index.php;</div><div class="line">        <span class="attribute">fastcgi_param</span>  SCRIPT_FILENAME  <span class="variable">$document_root</span><span class="variable">$fastcgi_script_name</span>;</div><div class="line">        <span class="attribute">include</span>        fastcgi_params;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></div></div></figure></p>
-<p> 重新加载<strong>Nginx</strong>配置 <code>systemctl reload nginx</code><br> 测试验证~<br> <img src="http://oyvpp7gqd.bkt.clouddn.com/18-6-29/84311977.jpg" alt="phpinfo"></p>
+<p> 重新加载<strong>Nginx</strong>配置 <code>systemctl reload nginx</code><br> 测试验证~<br> <img src="http://oyvpp7gqd.bkt.clouddn.com/18-6-29/84311977.jpg" alt="phpinfo"><br><code>`</code></p>
+<h1 id="CentOS7-安装-Nodejs"><a href="#CentOS7-安装-Nodejs" class="headerlink" title="CentOS7 安装 Nodejs"></a>CentOS7 安装 Nodejs</h1><p><code>curl --silent --location https://rpm.nodesource.com/setup_10.x | bash -</code> 10.x 可切换为对应版本号安装其他版本 执行完后再执行 <code>sudo yum install -y nodejs</code> 安装</p>
 
       
     </div>
@@ -558,7 +559,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -580,7 +581,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -631,7 +632,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Nginx-安装"><span class="nav-number">1.</span> <span class="nav-text">Nginx 安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#MySQL-V5-7-安装"><span class="nav-number">2.</span> <span class="nav-text">MySQL V5.7 安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#PHP-V7-安装"><span class="nav-number">3.</span> <span class="nav-text">PHP V7 安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#end"><span class="nav-number">4.</span> <span class="nav-text">end</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Nginx-安装"><span class="nav-number">1.</span> <span class="nav-text">Nginx 安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#MySQL-V5-7-安装"><span class="nav-number">2.</span> <span class="nav-text">MySQL V5.7 安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#PHP-V7-安装"><span class="nav-number">3.</span> <span class="nav-text">PHP V7 安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#end"><span class="nav-number">4.</span> <span class="nav-text">end</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CentOS7-安装-Nodejs"><span class="nav-number">5.</span> <span class="nav-text">CentOS7 安装 Nodejs</span></a></li></ol></div>
             
 
           </div>
