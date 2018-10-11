@@ -214,7 +214,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            关于
+            关于我
           </a>
         </li>
       
@@ -323,8 +323,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-09-25T19:48:31+08:00">
-                2018-09-25
+              <time title="更新于" itemprop="dateModified" datetime="2018-10-11T18:27:59+08:00">
+                2018-10-11
               </time>
             
           </span>
@@ -368,62 +368,16 @@
 
       
         
-          
-            <h1 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h1><blockquote>
-<p>官网： <a href="https://nginx.org/" target="_blank" rel="noopener">Nginx</a><br><code>Nginx</code> 是一个高性能、轻量级的 Web 服务器 和 反向代理服务器，支持灵活简单的配置以及高达 50,000 个并发连接数的响应<br><a href="https://baike.baidu.com/item/nginx/3817705?fr=aladdin" target="_blank" rel="noopener">点击此处查看具体介绍</a></p>
+          <blockquote>
+<p>B/S 运行原理剖析 <code>Nignx</code> <code>FastCGI</code> <code>PHP-FPM</code></p>
 </blockquote>
-<h2 id="Nginx-的工作原理"><a href="#Nginx-的工作原理" class="headerlink" title="Nginx 的工作原理"></a>Nginx 的工作原理</h2><p>  <code>Nginx</code> 在启动后，会生成一个 <strong>Master</strong> 进程和fork多个 <strong>Worker</strong> 进程</p>
-<ul>
-<li><p><strong>Master</strong> 进程主要是用来管理 <strong>Worker</strong> 进程 『 向各 <strong>Worker</strong> 进程发送信号，监控 <strong>Worker</strong> 进程的运行状态，重启 <strong>Worker</strong> 进程 等 』 </p>
-</li>
-<li><p><strong>Worker</strong> 进程来处理 <code>Nginx</code> 的事件，多个 <strong>Worker</strong> 同时获取网络请求，每个 <strong>Worker</strong> 之间是相互独立的，一个网络请求只能被一个 <strong>Worker</strong> 进程处理，一个 <strong>Worker</strong> 进程不能处理其他进程的请求，<strong>Worker</strong> 进程的个数是可以设置的，一般与机器的 CPU 核数一致</p>
-<blockquote>
-<p>为了保证只有一个进程处理一个网络请求，所有的 <strong>Worker</strong> 进程在注册 <strong>listenfd读事件</strong> 之前抢占 <strong>accept_mutex</strong> 抢到互斥锁的那个进程注册 <strong>listenfd读事件</strong> ，在读事件里调用 <strong>accept</strong> 接收该连接，当一个 <strong>Workder</strong> 进程拿到 <strong>accept</strong> 这个连接之后就开始读取请求，并且解析处理，产生数据后再返回给客户端，最后才断开连接。</p>
-</blockquote>
-</li>
-</ul>
-<h1 id="FastCGI"><a href="#FastCGI" class="headerlink" title="FastCGI"></a>FastCGI</h1><h2 id="CGI"><a href="#CGI" class="headerlink" title="CGI"></a>CGI</h2><p>  <strong>CGI</strong> 是 Web Server 与后台语言交互的协议，有了这个协议，开发者可以使用任何语言处理 Web Server 发来的请求，动态的生成内容</p>
-<h2 id="FastCGI-1"><a href="#FastCGI-1" class="headerlink" title="FastCGI"></a>FastCGI</h2><p>  传统的 <strong>CGI</strong> 在每次处理请求时 都需要fork一个全新的进程去处理，而且安全性差，不适合在高并发的场景中使用，所以产生了 <code>FastCGI</code> 它允许在一个进程内处理多个请求，而不是一个请求处理完毕就直接结束进程，性能上有了很大的提高</p>
-<h2 id="Nginx-FastCGI"><a href="#Nginx-FastCGI" class="headerlink" title="Nginx + FastCGI"></a>Nginx + FastCGI</h2><p>  为了使 <code>Nginx</code> 能够理解 <code>FastCGI</code> 协议，<code>Nginx</code> 提供了 <code>FastCGI</code> 模块来将 HTTP 请求 映射为对应的 <code>FastCGI</code> 请求 <a href="https://github.com/nginx/nginx/blob/master/conf/fastcgi_params" target="_blank" rel="noopener">参见fastcgi_params</a><br>  <code>Nginx</code> 不支持对外部程序的直接调用或者解析， 外部程序必须通过 <code>FastCGI</code> 接口来调用。</p>
-<blockquote>
-<p><code>FastCGI</code> 接口在 Linux 下是 Socket</p>
-</blockquote>
-<h1 id="PHP-FPM"><a href="#PHP-FPM" class="headerlink" title="PHP-FPM"></a>PHP-FPM</h1><h2 id="FPM-『-FastCGI-Process-Manager-』"><a href="#FPM-『-FastCGI-Process-Manager-』" class="headerlink" title="FPM 『 FastCGI Process Manager 』"></a>FPM 『 FastCGI Process Manager 』</h2><p>  <code>FPM</code> 是 <strong>FastCGI</strong> 的实现， 任何实现了 <strong>FastCGI</strong> 协议的 Web Server 都能够与之通信</p>
-<h2 id="PHP-FPM-1"><a href="#PHP-FPM-1" class="headerlink" title="PHP-FPM"></a>PHP-FPM</h2><p>  <code>PHP-FPM</code> 是一个 PHP 的进程管理器，包含 <strong>Master</strong> 和 <strong>Worker</strong> 进程 </p>
-<ul>
-<li><strong>Master</strong> 进程负责监听端口，接收来自 Web Server 的请求</li>
-<li><strong>Worker</strong> 进程会有多个(可配置)，每个进程内部都嵌入了一个 PHP 解释器，是 PHP 代码真正执行的地方<blockquote>
-<p>从 <code>PHP-FPM</code> 接收到请求，到处理完毕 其流程如下</p>
-<ol>
-<li><code>PHP-FPM</code> 的 <strong>Master</strong> 进程接收到请求</li>
-<li><strong>Master</strong> 进程根据配置指派特定的 <strong>Worker</strong> 。进程进行请求处理，如果没有可用进程，返回错误，这也是我们配合 <strong>Nginx</strong> 遇到 502 错误比较多的原因</li>
-<li><strong>Worker</strong> 进程处理请求，如果超时，返回 504 错误</li>
-<li>请求处理结束，返回结果</li>
-</ol>
-</blockquote>
-</li>
-</ul>
-<h2 id="Nginx-PHP-FPM"><a href="#Nginx-PHP-FPM" class="headerlink" title="Nginx + PHP-FPM"></a>Nginx + PHP-FPM</h2><p>  在 <strong>Nginx</strong> 的配置文件中，通过 <strong>location</strong> 指令，将所有以 .php 结尾的文件都交给 php7.1-fpm.sock 来处理<br>  <figure class="highlight bash"><figcaption><span class="caption">Nginx</span><span class="suffix">.conf</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></div><div class="code"><pre><div class="line">····· </div><div class="line">location ~ \.php$ &#123;</div><div class="line">    fastcgi_index  index.php;</div><div class="line">    fastcgi_param  SCRIPT_FILENAME <span class="variable">$document_root</span><span class="variable">$fastcgi_script_name</span>;</div><div class="line">    include        fastcgi_params;</div><div class="line marked">    fastcgi_pass   unix:/run/php/php7.1-fpm.sock;</div><div class="line">&#125;</div><div class="line">·····</div></pre></div></div></figure></p>
-<h1 id="配置优化"><a href="#配置优化" class="headerlink" title="配置优化"></a>配置优化</h1><h2 id="Nginx-Conf-配置优化"><a href="#Nginx-Conf-配置优化" class="headerlink" title="Nginx.Conf 配置优化"></a>Nginx.Conf 配置优化</h2><p>if (!-e $request_filename) {<br>    rewrite . /index.php last;<br>}</p>
-<ul>
-<li>使用 『 try_files 』： try_files $uri $uri/ /index.php;</li>
-<li>开启 gzip</li>
-<li>设置 limit_rate 限制客户端的相应速度</li>
-</ul>
-<h3 id="Nginx-常见错误"><a href="#Nginx-常见错误" class="headerlink" title="Nginx 常见错误"></a>Nginx 常见错误</h3><ol>
-<li>502 Bad Gateway<br>php-cgi进程数不够用、php执行时间长（mysql慢）、或者是php-cgi进程死掉，都会出现502错误, 一般来说 Nginx 502 Bad Gateway 和 php-fpm.conf 的设置有关，而 Nginx 504 Gateway Time-out 则是与 nginx.conf 的设置有关</li>
-<li>413 Request Entity Too Large<br>Nignx.conf 中配置 <code>client_max_body_size</code><br>php.ini    中配置 <code>post_max_size</code> 和 <code>upload_max_filesize</code></li>
-</ol>
-<h2 id="PHP-FPM-配置优化"><a href="#PHP-FPM-配置优化" class="headerlink" title="PHP-FPM 配置优化"></a>PHP-FPM 配置优化</h2><ol>
-<li>适当调高 PHP FastCGI 的子进程数</li>
-<li>适当增加 max_requests</li>
-</ol>
-<p>更多配置：<br> <a href="https://laravel-china.org/topics/14952/php-fpm-tuning-use-pm-static-to-maximize-your-server-load-capability" target="_blank" rel="noopener">PHP-FPM 调优：使用 <code>pm static</code>来最大化你的服务器负载能力</a><br> <a href="http://www.php.cn/php-weizijiaocheng-391985.html" target="_blank" rel="noopener">php配置php-fpm启动参数及配置详解</a></p>
-<blockquote>
-<p>参考文章<br><a href="https://zhuanlan.zhihu.com/p/20694204" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/20694204</a><br><a href="https://blog.csdn.net/hguisu/article/details/8930668" target="_blank" rel="noopener">https://blog.csdn.net/hguisu/article/details/8930668</a></p>
-</blockquote>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/22/深入理解 Nginx 和 PHP-FPM/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1781,7 +1735,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://oyvpp7gqd.bkt.clouddn.com/18-9-25/4256436.jpg" rel="gallery_cjmh3slcs000p7wwmsmyjk8sr"
+                 href="http://oyvpp7gqd.bkt.clouddn.com/18-9-25/4256436.jpg" rel="gallery_cjn4f76ur0006gcwmzqgjcuvc"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://oyvpp7gqd.bkt.clouddn.com/18-9-25/4256436.jpg" itemprop="contentUrl"/>
               </a>

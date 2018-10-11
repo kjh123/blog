@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Linux,PHP-FPM,Nginx,FastCGI," />
+  <meta name="keywords" content="Linux,Nginx,FastCGI,PHP-FPM," />
 
 
 
@@ -86,18 +86,18 @@
 
 
 
-<meta name="description" content="Nginx 官网： NginxNginx 是一个高性能、轻量级的 Web 服务器 和 反向代理服务器，支持灵活简单的配置以及高达 50,000 个并发连接数的响应点击此处查看具体介绍  Nginx 的工作原理  Nginx 在启动后，会生成一个 Master 进程和fork多个 Worker 进程  Master 进程主要是用来管理 Worker 进程 『 向各 Worker 进程发送信号，监控">
-<meta name="keywords" content="Linux,PHP-FPM,Nginx,FastCGI">
+<meta name="description" content="B/S 运行原理剖析 Nignx FastCGI PHP-FPM">
+<meta name="keywords" content="Linux,Nginx,FastCGI,PHP-FPM">
 <meta property="og:type" content="article">
 <meta property="og:title" content="深入理解 Nginx 和 PHP-FPM">
 <meta property="og:url" content="http://yoursite.com/2018/09/22/深入理解 Nginx 和 PHP-FPM/index.html">
 <meta property="og:site_name" content="HuiBlog">
-<meta property="og:description" content="Nginx 官网： NginxNginx 是一个高性能、轻量级的 Web 服务器 和 反向代理服务器，支持灵活简单的配置以及高达 50,000 个并发连接数的响应点击此处查看具体介绍  Nginx 的工作原理  Nginx 在启动后，会生成一个 Master 进程和fork多个 Worker 进程  Master 进程主要是用来管理 Worker 进程 『 向各 Worker 进程发送信号，监控">
+<meta property="og:description" content="B/S 运行原理剖析 Nignx FastCGI PHP-FPM">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-25T11:48:31.011Z">
+<meta property="og:updated_time" content="2018-10-11T10:27:59.284Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="深入理解 Nginx 和 PHP-FPM">
-<meta name="twitter:description" content="Nginx 官网： NginxNginx 是一个高性能、轻量级的 Web 服务器 和 反向代理服务器，支持灵活简单的配置以及高达 50,000 个并发连接数的响应点击此处查看具体介绍  Nginx 的工作原理  Nginx 在启动后，会生成一个 Master 进程和fork多个 Worker 进程  Master 进程主要是用来管理 Worker 进程 『 向各 Worker 进程发送信号，监控">
+<meta name="twitter:description" content="B/S 运行原理剖析 Nignx FastCGI PHP-FPM">
 
 
 
@@ -218,7 +218,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            关于
+            关于我
           </a>
         </li>
       
@@ -325,8 +325,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-09-25T19:48:31+08:00">
-                2018-09-25
+              <time title="更新于" itemprop="dateModified" datetime="2018-10-11T18:27:59+08:00">
+                2018-10-11
               </time>
             
           </span>
@@ -369,7 +369,11 @@
       
 
       
-        <h1 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h1><blockquote>
+        <blockquote>
+<p>B/S 运行原理剖析 <code>Nignx</code> <code>FastCGI</code> <code>PHP-FPM</code></p>
+</blockquote>
+<a id="more"></a>
+<h1 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h1><blockquote>
 <p>官网： <a href="https://nginx.org/" target="_blank" rel="noopener">Nginx</a><br><code>Nginx</code> 是一个高性能、轻量级的 Web 服务器 和 反向代理服务器，支持灵活简单的配置以及高达 50,000 个并发连接数的响应<br><a href="https://baike.baidu.com/item/nginx/3817705?fr=aladdin" target="_blank" rel="noopener">点击此处查看具体介绍</a></p>
 </blockquote>
 <h2 id="Nginx-的工作原理"><a href="#Nginx-的工作原理" class="headerlink" title="Nginx 的工作原理"></a>Nginx 的工作原理</h2><p>  <code>Nginx</code> 在启动后，会生成一个 <strong>Master</strong> 进程和fork多个 <strong>Worker</strong> 进程</p>
@@ -447,11 +451,11 @@
           
             <a href="/tags/Linux/" rel="tag"># Linux</a>
           
-            <a href="/tags/PHP-FPM/" rel="tag"># PHP-FPM</a>
-          
             <a href="/tags/Nginx/" rel="tag"># Nginx</a>
           
             <a href="/tags/FastCGI/" rel="tag"># FastCGI</a>
+          
+            <a href="/tags/PHP-FPM/" rel="tag"># PHP-FPM</a>
           
         </div>
       
