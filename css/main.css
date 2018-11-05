@@ -1896,7 +1896,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4d53e3;
+  background: #ffa7c2;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3007,20 +3007,10 @@ hr {
 .post-body {
   font-size: 16px;
 }
-.post-body p a {
-  color: #0593d3;
+.post-body a {
+  color: #4183c4;
   border-bottom: none;
-}
-.post-body p a:hover {
-  color: #0477ab;
-  text-decoration: underline;
-}
-# 橙色代码块,
-#code {
-  color: #ff7600;
-  background: #fbf7f8;
-  margin: 2px;
-  font-size: 16px;
+  border-bottom-color: #9e9e9e;
 }
 body {
   background: #fff;
@@ -3076,7 +3066,7 @@ ol {
   border: none;
 }
 blockquote {
-  background-color: $BKblockquote;
+  background-color: #f5f8fc;
   border-radius: 4px;
   padding: 5px 15px;
 }
@@ -3558,15 +3548,10 @@ p+figure {
   margin-top: 0 !important;
 }
 code {
-  color: #111;
-  background: #fff;
-  border: 1px solid #bbb;
-  padding: 0.1em 0.4em;
-  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-  font-size: 0.96em;
-  border-radius: 3px;
-  vertical-align: bottom;
-  word-wrap: break-word;
+  color: #ff7600;
+  background: #fbf7f8;
+  margin: 2px;
+  font-size: 16px;
 }
 pre code {
   border: 0px solid #d1d1d1;
@@ -4345,12 +4330,6 @@ pre .attr {
   animation-delay: 0.3s;
   -webkit-animation-duration: 0.4s;
   -webkit-animation-delay: 0.3s;
-}
-.custom-logo-site-title:hover {
-  -moz-animation: play-shake 0.15s linear infinite alternate;
-  -ms-animation: play-shake 0.15s linear infinite alternate;
-  animation: play-shake 0.15s linear infinite alternate;
-  -webkit-animation: play-shake 0.15s linear infinite alternate;
 }
 @-moz-keyframes play-shake {
   0% {
