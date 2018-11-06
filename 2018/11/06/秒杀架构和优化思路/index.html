@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Linux,Nginx,FastCGI,PHP-FPM," />
+  <meta name="keywords" content="服务器,MySQL,PHP," />
 
 
 
@@ -86,18 +86,18 @@
 
 
 
-<meta name="description" content="B/S 运行原理剖析 Nignx FastCGI PHP-FPM">
-<meta name="keywords" content="Linux,Nginx,FastCGI,PHP-FPM">
+<meta name="description" content="转自 “58沈剑-架构师之路”原文地址：秒杀系统架构优化思路部分有整理">
+<meta name="keywords" content="服务器,MySQL,PHP">
 <meta property="og:type" content="article">
-<meta property="og:title" content="深入理解 Nginx 和 PHP-FPM">
-<meta property="og:url" content="http://yoursite.com/2018/09/22/深入理解 Nginx 和 PHP-FPM/index.html">
+<meta property="og:title" content="[转]秒杀架构和优化思路">
+<meta property="og:url" content="http://yoursite.com/2018/11/06/秒杀架构和优化思路/index.html">
 <meta property="og:site_name" content="HuiBlog">
-<meta property="og:description" content="B/S 运行原理剖析 Nignx FastCGI PHP-FPM">
+<meta property="og:description" content="转自 “58沈剑-架构师之路”原文地址：秒杀系统架构优化思路部分有整理">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-11T12:24:00.085Z">
+<meta property="og:updated_time" content="2018-11-06T09:52:34.471Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="深入理解 Nginx 和 PHP-FPM">
-<meta name="twitter:description" content="B/S 运行原理剖析 Nignx FastCGI PHP-FPM">
+<meta name="twitter:title" content="[转]秒杀架构和优化思路">
+<meta name="twitter:description" content="转自 “58沈剑-架构师之路”原文地址：秒杀系统架构优化思路部分有整理">
 
 
 
@@ -127,7 +127,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/09/22/深入理解 Nginx 和 PHP-FPM/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/11/06/秒杀架构和优化思路/"/>
 
 
 
@@ -143,7 +143,7 @@
         }
     })();
 </script>
-  <title>深入理解 Nginx 和 PHP-FPM | HuiBlog</title>
+  <title>[转]秒杀架构和优化思路 | HuiBlog</title>
   
 
 
@@ -278,7 +278,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/22/深入理解 Nginx 和 PHP-FPM/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/06/秒杀架构和优化思路/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Hui">
@@ -295,7 +295,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">深入理解 Nginx 和 PHP-FPM</h2>
+          <h2 class="post-title" itemprop="name headline">[转]秒杀架构和优化思路</h2>
         
 
         <div class="post-meta">
@@ -307,8 +307,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-22T11:32:03+08:00">
-                2018-09-22
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-06T16:57:38+08:00">
+                2018-11-06
               </time>
             
 
@@ -323,8 +323,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-10-11T20:24:00+08:00">
-                2018-10-11
+              <time title="更新于" itemprop="dateModified" datetime="2018-11-06T17:52:34+08:00">
+                2018-11-06
               </time>
             
           </span>
@@ -342,8 +342,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/PHP/" itemprop="url" rel="index">
-                    <span itemprop="name">PHP</span>
+                  <a href="/categories/MySQL/" itemprop="url" rel="index">
+                    <span itemprop="name">MySQL</span>
                   </a>
                 </span>
 
@@ -360,8 +360,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/09/22/深入理解 Nginx 和 PHP-FPM/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/09/22/深入理解 Nginx 和 PHP-FPM/" itemprop="commentCount"></span>
+                <a href="/2018/11/06/秒杀架构和优化思路/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/11/06/秒杀架构和优化思路/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -390,62 +390,36 @@
 
       
         <blockquote>
-<p>B/S 运行原理剖析 <code>Nignx</code> <code>FastCGI</code> <code>PHP-FPM</code></p>
+<p>转自 “58沈剑-架构师之路”<br>原文地址：<a href="https://mp.weixin.qq.com/s?__biz=MjM5ODYxMDA5OQ==&amp;mid=2651959391&amp;idx=1&amp;sn=fb28fd5e5f0895ddb167406d8a735548&amp;scene=21#wechat_redirect" target="_blank" rel="noopener">秒杀系统架构优化思路</a><br>部分有整理</p>
 </blockquote>
 <a id="more"></a>
-<h1 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h1><blockquote>
-<p>官网： <a href="https://nginx.org/" target="_blank" rel="noopener">Nginx</a><br><code>Nginx</code> 是一个高性能、轻量级的 Web 服务器 和 反向代理服务器，支持灵活简单的配置以及高达 50,000 个并发连接数的响应<br><a href="https://baike.baidu.com/item/nginx/3817705?fr=aladdin" target="_blank" rel="noopener">点击此处查看具体介绍</a></p>
-</blockquote>
-<h2 id="Nginx-的工作原理"><a href="#Nginx-的工作原理" class="headerlink" title="Nginx 的工作原理"></a>Nginx 的工作原理</h2><p>  <code>Nginx</code> 在启动后，会生成一个 <strong>Master</strong> 进程和fork多个 <strong>Worker</strong> 进程</p>
-<ul>
-<li><p><strong>Master</strong> 进程主要是用来管理 <strong>Worker</strong> 进程 『 向各 <strong>Worker</strong> 进程发送信号，监控 <strong>Worker</strong> 进程的运行状态，重启 <strong>Worker</strong> 进程 等 』 </p>
-</li>
-<li><p><strong>Worker</strong> 进程来处理 <code>Nginx</code> 的事件，多个 <strong>Worker</strong> 同时获取网络请求，每个 <strong>Worker</strong> 之间是相互独立的，一个网络请求只能被一个 <strong>Worker</strong> 进程处理，一个 <strong>Worker</strong> 进程不能处理其他进程的请求，<strong>Worker</strong> 进程的个数是可以设置的，一般与机器的 CPU 核数一致</p>
-<blockquote>
-<p>为了保证只有一个进程处理一个网络请求，所有的 <strong>Worker</strong> 进程在注册 <strong>listenfd读事件</strong> 之前抢占 <strong>accept_mutex</strong> 抢到互斥锁的那个进程注册 <strong>listenfd读事件</strong> ，在读事件里调用 <strong>accept</strong> 接收该连接，当一个 <strong>Workder</strong> 进程拿到 <strong>accept</strong> 这个连接之后就开始读取请求，并且解析处理，产生数据后再返回给客户端，最后才断开连接。</p>
-</blockquote>
-</li>
-</ul>
-<h1 id="FastCGI"><a href="#FastCGI" class="headerlink" title="FastCGI"></a>FastCGI</h1><h2 id="CGI"><a href="#CGI" class="headerlink" title="CGI"></a>CGI</h2><p>  <strong>CGI</strong> 是 Web Server 与后台语言交互的协议，有了这个协议，开发者可以使用任何语言处理 Web Server 发来的请求，动态的生成内容</p>
-<h2 id="FastCGI-1"><a href="#FastCGI-1" class="headerlink" title="FastCGI"></a>FastCGI</h2><p>  传统的 <strong>CGI</strong> 在每次处理请求时 都需要fork一个全新的进程去处理，而且安全性差，不适合在高并发的场景中使用，所以产生了 <code>FastCGI</code> 它允许在一个进程内处理多个请求，而不是一个请求处理完毕就直接结束进程，性能上有了很大的提高</p>
-<h2 id="Nginx-FastCGI"><a href="#Nginx-FastCGI" class="headerlink" title="Nginx + FastCGI"></a>Nginx + FastCGI</h2><p>  为了使 <code>Nginx</code> 能够理解 <code>FastCGI</code> 协议，<code>Nginx</code> 提供了 <code>FastCGI</code> 模块来将 HTTP 请求 映射为对应的 <code>FastCGI</code> 请求 <a href="https://github.com/nginx/nginx/blob/master/conf/fastcgi_params" target="_blank" rel="noopener">参见fastcgi_params</a><br>  <code>Nginx</code> 不支持对外部程序的直接调用或者解析， 外部程序必须通过 <code>FastCGI</code> 接口来调用。</p>
-<blockquote>
-<p><code>FastCGI</code> 接口在 Linux 下是 Socket</p>
-</blockquote>
-<h1 id="PHP-FPM"><a href="#PHP-FPM" class="headerlink" title="PHP-FPM"></a>PHP-FPM</h1><h2 id="FPM-『-FastCGI-Process-Manager-』"><a href="#FPM-『-FastCGI-Process-Manager-』" class="headerlink" title="FPM 『 FastCGI Process Manager 』"></a>FPM 『 FastCGI Process Manager 』</h2><p>  <code>FPM</code> 是 <strong>FastCGI</strong> 的实现， 任何实现了 <strong>FastCGI</strong> 协议的 Web Server 都能够与之通信</p>
-<h2 id="PHP-FPM-1"><a href="#PHP-FPM-1" class="headerlink" title="PHP-FPM"></a>PHP-FPM</h2><p>  <code>PHP-FPM</code> 是一个 PHP 的进程管理器，包含 <strong>Master</strong> 和 <strong>Worker</strong> 进程 </p>
-<ul>
-<li><strong>Master</strong> 进程负责监听端口，接收来自 Web Server 的请求</li>
-<li><strong>Worker</strong> 进程会有多个(可配置)，每个进程内部都嵌入了一个 PHP 解释器，是 PHP 代码真正执行的地方<blockquote>
-<p>从 <code>PHP-FPM</code> 接收到请求，到处理完毕 其流程如下</p>
-<ol>
-<li><code>PHP-FPM</code> 的 <strong>Master</strong> 进程接收到请求</li>
-<li><strong>Master</strong> 进程根据配置指派特定的 <strong>Worker</strong> 。进程进行请求处理，如果没有可用进程，返回错误，这也是我们配合 <strong>Nginx</strong> 遇到 502 错误比较多的原因</li>
-<li><strong>Worker</strong> 进程处理请求，如果超时，返回 504 错误</li>
-<li>请求处理结束，返回结果</li>
+<h1 id="秒杀业务为什么难做"><a href="#秒杀业务为什么难做" class="headerlink" title="秒杀业务为什么难做"></a>秒杀业务为什么难做</h1><ol>
+<li>IM 系统，例如 QQ 或者 微博 ，『 每个人都读自己的数据 』（好友列表、群列表、个人信息）</li>
+<li>微博系统，每个人读你关注的人的数据，『 一个人读多个人的数据 』</li>
+<li>秒杀系统，库存只有一份，所有人会在集中的时间读和写这些数据，『 多个人读一个数据 』</li>
 </ol>
-</blockquote>
-</li>
-</ul>
-<h2 id="Nginx-PHP-FPM"><a href="#Nginx-PHP-FPM" class="headerlink" title="Nginx + PHP-FPM"></a>Nginx + PHP-FPM</h2><p>  在 <strong>Nginx</strong> 的配置文件中，通过 <strong>location</strong> 指令，将所有以 .php 结尾的文件都交给 php7.1-fpm.sock 来处理<br>  <figure class="highlight bash"><figcaption><span class="caption">Nginx</span><span class="suffix">.conf</span></figcaption><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></div><div class="code"><pre><div class="line">····· </div><div class="line">location ~ \.php$ &#123;</div><div class="line">    fastcgi_index  index.php;</div><div class="line">    fastcgi_param  SCRIPT_FILENAME <span class="variable">$document_root</span><span class="variable">$fastcgi_script_name</span>;</div><div class="line">    include        fastcgi_params;</div><div class="line marked">    fastcgi_pass   unix:/run/php/php7.1-fpm.sock;</div><div class="line">&#125;</div><div class="line">·····</div></pre></div></div></figure></p>
-<h1 id="配置优化"><a href="#配置优化" class="headerlink" title="配置优化"></a>配置优化</h1><h2 id="Nginx-Conf-配置优化"><a href="#Nginx-Conf-配置优化" class="headerlink" title="Nginx.Conf 配置优化"></a>Nginx.Conf 配置优化</h2><p>if (!-e $request_filename) {<br>    rewrite . /index.php last;<br>}</p>
-<ul>
-<li>使用 『 try_files 』： try_files $uri $uri/ /index.php;</li>
-<li>开启 gzip</li>
-<li>设置 limit_rate 限制客户端的相应速度</li>
-</ul>
-<h3 id="Nginx-常见错误"><a href="#Nginx-常见错误" class="headerlink" title="Nginx 常见错误"></a>Nginx 常见错误</h3><ol>
-<li>502 Bad Gateway<br>php-cgi进程数不够用、php执行时间长（mysql慢）、或者是php-cgi进程死掉，都会出现502错误, 一般来说 Nginx 502 Bad Gateway 和 php-fpm.conf 的设置有关，而 Nginx 504 Gateway Time-out 则是与 nginx.conf 的设置有关</li>
-<li>413 Request Entity Too Large<br>Nignx.conf 中配置 <code>client_max_body_size</code><br>php.ini    中配置 <code>post_max_size</code> 和 <code>upload_max_filesize</code></li>
-</ol>
-<h2 id="PHP-FPM-配置优化"><a href="#PHP-FPM-配置优化" class="headerlink" title="PHP-FPM 配置优化"></a>PHP-FPM 配置优化</h2><ol>
-<li>适当调高 PHP FastCGI 的子进程数</li>
-<li>适当增加 max_requests</li>
-</ol>
-<p>更多配置：<br> <a href="https://laravel-china.org/topics/14952/php-fpm-tuning-use-pm-static-to-maximize-your-server-load-capability" target="_blank" rel="noopener">PHP-FPM 调优：使用 <code>pm static</code>来最大化你的服务器负载能力</a><br> <a href="http://www.php.cn/php-weizijiaocheng-391985.html" target="_blank" rel="noopener">php配置php-fpm启动参数及配置详解</a></p>
 <blockquote>
-<p>参考文章<br><a href="https://zhuanlan.zhihu.com/p/20694204" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/20694204</a><br><a href="https://blog.csdn.net/hguisu/article/details/8930668" target="_blank" rel="noopener">https://blog.csdn.net/hguisu/article/details/8930668</a></p>
+<p>例如：小米手机每周二的秒杀，可能手机只有1万部，但瞬时进入的流量可能是几百几千万。<br>又例如：12306抢票，票是有限的，库存一份，瞬时流量非常多，都读相同的库存。 『 读写冲突，锁非常严重，这是秒杀业务难的地方 』 。那我们怎么优化秒杀业务的架构呢？</p>
 </blockquote>
+<h1 id="优化方向"><a href="#优化方向" class="headerlink" title="优化方向"></a>优化方向</h1><p>优化方向有两个：</p>
+<p>（1）『 将请求尽量拦截在系统上游 』（不要让锁冲突落到数据库上去）。传统秒杀系统之所以挂，请求都压倒了后端数据层，数据读写锁冲突严重，并发高响应慢，几乎所有请求都超时，流量虽大，下单成功的有效流量甚小。以12306为例，一趟火车其实只有2000张票，200w个人来买，基本没有人能买成功，请求有效率为0。</p>
+<p>（2）『 充分利用缓存，秒杀买票 』 ，这是一个典型的读多些少的应用场景，大部分请求是车次查询，票查询，下单和支付才是写请求。一趟火车其实只有2000张票，200w个人来买，最多2000个人下单成功，其他人都是查询库存，写比例只有0.1%，读比例占99.9%，非常适合使用缓存来优化。好，后续讲讲怎么个“将请求尽量拦截在系统上游”法，以及怎么个“缓存”法，讲讲细节。</p>
+<h1 id="常见秒杀架构"><a href="#常见秒杀架构" class="headerlink" title="常见秒杀架构"></a>常见秒杀架构</h1><p>常见的站点架构基本是这样的：<br><figure class="highlight plain"><div class="figcode"><div class="code"><pre><div class="line">（1）浏览器端   最上层，会执行到一些 JS 代码</div><div class="line">       ↓</div><div class="line">（2）站点层     这一层会访问后端数据，拼 HTML 页面返回给浏览器</div><div class="line">       ↓</div><div class="line">（3）服务层     向上游屏蔽底层数据细节，提供数据访问</div><div class="line">       ↓</div><div class="line">（4）数据层     最终的库存是存在这里的，MySQL 是一个典型（当然还有会缓存）</div></pre></div></div></figure></p>
+<p>这个图虽然简单，但能形象的说明大流量高并发的秒杀业务架构，大家要记得这一张图。 </p>
+<h1 id="各层次优化细节"><a href="#各层次优化细节" class="headerlink" title="各层次优化细节"></a>各层次优化细节</h1><h2 id="第一层，客户端怎么优化（浏览器层，APP层）"><a href="#第一层，客户端怎么优化（浏览器层，APP层）" class="headerlink" title="第一层，客户端怎么优化（浏览器层，APP层）"></a>第一层，客户端怎么优化（浏览器层，APP层）</h2><p>问大家一个问题，大家都玩过微信的摇一摇抢红包对吧，『 每次摇一摇，就会往后端发送请求么 』？回顾我们下单抢票的场景，点击了“查询”按钮之后，系统那个卡呀，进度条涨的慢呀，作为用户，我会不自觉的再去点击“查询”，对么？继续点，继续点，点点点。。。有用么？平白无故的增加了系统负载，一个用户点5次，80%的请求是这么多出来的，怎么整？</p>
+<ul>
+<li><strong>产品层面</strong>，用户点击“查询”或者“购票”后，『 按钮置灰 』 ，禁止用户重复提交请求</li>
+<li><strong>JS层面</strong>，限制用户在 『 x秒之内只能提交一次请求 』<br>APP层面，可以做类似的事情，虽然你疯狂的在摇微信，其实x秒才向后端发起一次请求。这就是所谓的“将请求尽量拦截在系统上游”，越上游越好，浏览器层，APP 层就给拦住，这样就能挡住 80%+ 的请求，这种办法只能拦住普通用户（但 99% 的用户是普通用户）对于群内的 『 高端程序员是拦不住的 』 。 FireBug 一抓包， Http 长啥样都知道， JS 是万万拦不住程序员写 For 循环，调用 Http 接口的，这部分请求怎么处理？</li>
+</ul>
+<h2 id="第二层，站点层面的请求拦截"><a href="#第二层，站点层面的请求拦截" class="headerlink" title="第二层，站点层面的请求拦截"></a>第二层，站点层面的请求拦截</h2><p>怎么拦截？ 『 怎么防止程序员写 For 循环调用 』 ，有去重依据么？ Ip？ Cookie-id？ … 想复杂了，这类业务都需要登录，用 <code>uid</code> 即可。 <strong>在站点层面</strong>，『 对 uid 进行请求计数和去重 』 ，甚至不需要统一存储计数，直接站点层内存存储（这样计数会不准，但最简单）。一个 uid ， 5 秒只准透过 1 个请求，这样又能拦住 99% 的 For 循环请求。</p>
+<p> 5s 只透过一个请求，其余的请求怎么办？缓存，『 页面缓存 』 ，同一个 uid ，限制访问频度，做页面缓存，x秒内到达站点层的请求，均返回同一页面。同一个 item 的查询，例如车次，做页面缓存，x秒内到达站点层的请求，均返回同一页面。如此限流，既能保证用户有良好的用户体验（没有返回404）又能保证系统的健壮性（利用页面缓存，把请求拦截在站点层了）。<br>页面缓存不一定要保证所有站点返回一致的页面，直接放在每个站点的内存也是可以的。优点是简单，坏处是http请求落到不同的站点，返回的车票数据可能不一样，这是站点层的请求拦截与缓存优化。</p>
+<p>好，这个方式拦住了写 For 循环发 Http 请求的程序员，有些高端程序员（黑客）控制了 10w 个肉鸡，手里有 10w 个 uid ，同时发请求（先不考虑实名制的问题，小米抢手机不需要实名制），这下怎么办，站点层按照 uid 限流拦不住了。</p>
+<h2 id="第三层-服务层来拦截（反正就是不要让请求落到数据库上去）"><a href="#第三层-服务层来拦截（反正就是不要让请求落到数据库上去）" class="headerlink" title="第三层 服务层来拦截（反正就是不要让请求落到数据库上去）"></a>第三层 服务层来拦截（反正就是不要让请求落到数据库上去）</h2><p>服务层怎么拦截？大哥，我是服务层，我清楚的知道小米只有 1 万部手机，我清楚的知道一列火车只有2000张车票，我透 10w 个请求去数据库有什么意义呢？没错，『 请求队列 』<br>对于写请求，做请求队列，每次只透有限的写请求去数据层（下订单，支付这样的写业务）<br><strong>1w</strong> 部手机，只透 <strong>1w</strong> 个下单请求去db<br><strong>3k</strong> 张火车票，只透 <strong>3k</strong> 个下单请求去db<br>如果均成功再放下一批，如果库存不够则队列里的写请求全部返回“已售完”。 </p>
+<p>对于读请求，怎么优化？Cache抗，不管是 <code>Memcached</code> 还是 <code>Redis</code> ，单机抗个每秒 10w 应该都是没什么问题的。如此限流，只有非常少的写请求，和非常少的读缓存mis的请求会透到数据层去，又有 99.9% 的请求被拦住了。</p>
+<p>当然，还有业务规则上的一些优化。回想 12306 所做的，分时分段售票，原来统一10点卖票，现在8点，8点半，9点，…每隔半个小时放出一批：将流量摊匀。<br>其次，『 数据粒度的优化 』 ：你去购票，对于余票查询这个业务，票剩了58张，还是26张，你真的关注么，其实我们只关心有票和无票？流量大的时候，做一个粗粒度的“有票”“无票”缓存即可。<br>第三，一些业务逻辑的异步：例如下单业务与 支付业务的分离。这些优化都是结合 业务 来的，我之前分享过一个观点“ <strong>一切脱离业务的架构设计都是耍流氓</strong> ”架构的优化也要针对业务。</p>
+<h2 id="最后是数据库层"><a href="#最后是数据库层" class="headerlink" title="最后是数据库层"></a>最后是数据库层</h2><p>浏览器拦截了 80% ，站点层拦截了 99.9% 并做了页面缓存，服务层又做了写请求队列与数据缓存，每次透到数据库层的请求都是可控的。db基本就没什么压力了，闲庭信步，单机也能扛得住，还是那句话，库存是有限的，小米的产能有限，透这么多请求来数据库没有意义。</p>
+<p>全部透到数据库， 100w 个下单， 0 个成功，请求有效率 0% 。透 3k 个到数据，全部成功，请求有效率 100% </p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>上文应该描述的非常清楚了，没什么总结了，对于秒杀系统，再次重复下我个人经验的两个架构优化思路：<br>（1）『 尽量将请求拦截在系统上游 』（越上游越好）<br>（2）『 读多写少的常用多使用缓存 』（缓存抗读压力）<br>浏览器 和 APP：做限速<br>站点层：按照uid做限速，做页面缓存<br>服务层：按照业务做写请求队列控制流量，做数据缓存<br>数据层：闲庭信步<br>并且：结合业务做优化</p>
 
       
     </div>
@@ -469,13 +443,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Linux/" rel="tag"># Linux</a>
+            <a href="/tags/服务器/" rel="tag"># 服务器</a>
           
-            <a href="/tags/Nginx/" rel="tag"># Nginx</a>
+            <a href="/tags/MySQL/" rel="tag"># MySQL</a>
           
-            <a href="/tags/FastCGI/" rel="tag"># FastCGI</a>
-          
-            <a href="/tags/PHP-FPM/" rel="tag"># PHP-FPM</a>
+            <a href="/tags/PHP/" rel="tag"># PHP</a>
           
         </div>
       
@@ -488,8 +460,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/09/02/Form表单校验插件/" rel="next" title="Form表单校验插件">
-                <i class="fa fa-chevron-left"></i> Form表单校验插件
+              <a href="/2018/11/01/MySQL要点/" rel="next" title="MySQL要点">
+                <i class="fa fa-chevron-left"></i> MySQL要点
               </a>
             
           </div>
@@ -497,10 +469,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/11/01/MySQL要点/" rel="prev" title="MySQL要点">
-                MySQL要点 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -659,7 +627,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Nginx"><span class="nav-number">1.</span> <span class="nav-text">Nginx</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Nginx-的工作原理"><span class="nav-number">1.1.</span> <span class="nav-text">Nginx 的工作原理</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#FastCGI"><span class="nav-number">2.</span> <span class="nav-text">FastCGI</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#CGI"><span class="nav-number">2.1.</span> <span class="nav-text">CGI</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FastCGI-1"><span class="nav-number">2.2.</span> <span class="nav-text">FastCGI</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Nginx-FastCGI"><span class="nav-number">2.3.</span> <span class="nav-text">Nginx + FastCGI</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#PHP-FPM"><span class="nav-number">3.</span> <span class="nav-text">PHP-FPM</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#FPM-『-FastCGI-Process-Manager-』"><span class="nav-number">3.1.</span> <span class="nav-text">FPM 『 FastCGI Process Manager 』</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PHP-FPM-1"><span class="nav-number">3.2.</span> <span class="nav-text">PHP-FPM</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Nginx-PHP-FPM"><span class="nav-number">3.3.</span> <span class="nav-text">Nginx + PHP-FPM</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置优化"><span class="nav-number">4.</span> <span class="nav-text">配置优化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Nginx-Conf-配置优化"><span class="nav-number">4.1.</span> <span class="nav-text">Nginx.Conf 配置优化</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Nginx-常见错误"><span class="nav-number">4.1.1.</span> <span class="nav-text">Nginx 常见错误</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PHP-FPM-配置优化"><span class="nav-number">4.2.</span> <span class="nav-text">PHP-FPM 配置优化</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#秒杀业务为什么难做"><span class="nav-number">1.</span> <span class="nav-text">秒杀业务为什么难做</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#优化方向"><span class="nav-number">2.</span> <span class="nav-text">优化方向</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#常见秒杀架构"><span class="nav-number">3.</span> <span class="nav-text">常见秒杀架构</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#各层次优化细节"><span class="nav-number">4.</span> <span class="nav-text">各层次优化细节</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#第一层，客户端怎么优化（浏览器层，APP层）"><span class="nav-number">4.1.</span> <span class="nav-text">第一层，客户端怎么优化（浏览器层，APP层）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二层，站点层面的请求拦截"><span class="nav-number">4.2.</span> <span class="nav-text">第二层，站点层面的请求拦截</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第三层-服务层来拦截（反正就是不要让请求落到数据库上去）"><span class="nav-number">4.3.</span> <span class="nav-text">第三层 服务层来拦截（反正就是不要让请求落到数据库上去）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最后是数据库层"><span class="nav-number">4.4.</span> <span class="nav-text">最后是数据库层</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#总结"><span class="nav-number">5.</span> <span class="nav-text">总结</span></a></li></ol></div>
             
 
           </div>
