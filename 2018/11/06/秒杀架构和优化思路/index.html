@@ -90,11 +90,11 @@
 <meta name="keywords" content="服务器,MySQL,PHP">
 <meta property="og:type" content="article">
 <meta property="og:title" content="[转]秒杀架构和优化思路">
-<meta property="og:url" content="http://yoursite.com/2018/11/06/秒杀架构和优化思路/index.html">
+<meta property="og:url" content="https://hui.1222.store/2018/11/06/秒杀架构和优化思路/index.html">
 <meta property="og:site_name" content="HuiBlog">
 <meta property="og:description" content="转自 “58沈剑-架构师之路”原文地址：秒杀系统架构优化思路部分有整理">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-06T09:52:34.471Z">
+<meta property="og:updated_time" content="2018-11-07T03:52:09.869Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="[转]秒杀架构和优化思路">
 <meta name="twitter:description" content="转自 “58沈剑-架构师之路”原文地址：秒杀系统架构优化思路部分有整理">
@@ -127,7 +127,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/11/06/秒杀架构和优化思路/"/>
+  <link rel="canonical" href="https://hui.1222.store/2018/11/06/秒杀架构和优化思路/"/>
 
 
 
@@ -278,7 +278,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/06/秒杀架构和优化思路/">
+    <link itemprop="mainEntityOfPage" href="https://hui.1222.store/2018/11/06/秒杀架构和优化思路/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Hui">
@@ -323,8 +323,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-11-06T17:52:34+08:00">
-                2018-11-06
+              <time title="更新于" itemprop="dateModified" datetime="2018-11-07T11:52:09+08:00">
+                2018-11-07
               </time>
             
           </span>
@@ -414,12 +414,12 @@
 <h2 id="第二层，站点层面的请求拦截"><a href="#第二层，站点层面的请求拦截" class="headerlink" title="第二层，站点层面的请求拦截"></a>第二层，站点层面的请求拦截</h2><p>怎么拦截？ 『 怎么防止程序员写 For 循环调用 』 ，有去重依据么？ Ip？ Cookie-id？ … 想复杂了，这类业务都需要登录，用 <code>uid</code> 即可。 <strong>在站点层面</strong>，『 对 uid 进行请求计数和去重 』 ，甚至不需要统一存储计数，直接站点层内存存储（这样计数会不准，但最简单）。一个 uid ， 5 秒只准透过 1 个请求，这样又能拦住 99% 的 For 循环请求。</p>
 <p> 5s 只透过一个请求，其余的请求怎么办？缓存，『 页面缓存 』 ，同一个 uid ，限制访问频度，做页面缓存，x秒内到达站点层的请求，均返回同一页面。同一个 item 的查询，例如车次，做页面缓存，x秒内到达站点层的请求，均返回同一页面。如此限流，既能保证用户有良好的用户体验（没有返回404）又能保证系统的健壮性（利用页面缓存，把请求拦截在站点层了）。<br>页面缓存不一定要保证所有站点返回一致的页面，直接放在每个站点的内存也是可以的。优点是简单，坏处是http请求落到不同的站点，返回的车票数据可能不一样，这是站点层的请求拦截与缓存优化。</p>
 <p>好，这个方式拦住了写 For 循环发 Http 请求的程序员，有些高端程序员（黑客）控制了 10w 个肉鸡，手里有 10w 个 uid ，同时发请求（先不考虑实名制的问题，小米抢手机不需要实名制），这下怎么办，站点层按照 uid 限流拦不住了。</p>
-<h2 id="第三层-服务层来拦截（反正就是不要让请求落到数据库上去）"><a href="#第三层-服务层来拦截（反正就是不要让请求落到数据库上去）" class="headerlink" title="第三层 服务层来拦截（反正就是不要让请求落到数据库上去）"></a>第三层 服务层来拦截（反正就是不要让请求落到数据库上去）</h2><p>服务层怎么拦截？大哥，我是服务层，我清楚的知道小米只有 1 万部手机，我清楚的知道一列火车只有2000张车票，我透 10w 个请求去数据库有什么意义呢？没错，『 请求队列 』<br>对于写请求，做请求队列，每次只透有限的写请求去数据层（下订单，支付这样的写业务）<br><strong>1w</strong> 部手机，只透 <strong>1w</strong> 个下单请求去db<br><strong>3k</strong> 张火车票，只透 <strong>3k</strong> 个下单请求去db<br>如果均成功再放下一批，如果库存不够则队列里的写请求全部返回“已售完”。 </p>
-<p>对于读请求，怎么优化？Cache抗，不管是 <code>Memcached</code> 还是 <code>Redis</code> ，单机抗个每秒 10w 应该都是没什么问题的。如此限流，只有非常少的写请求，和非常少的读缓存mis的请求会透到数据层去，又有 99.9% 的请求被拦住了。</p>
+<h2 id="第三层-服务层来拦截（反正就是不要让请求落到数据库上去）"><a href="#第三层-服务层来拦截（反正就是不要让请求落到数据库上去）" class="headerlink" title="第三层 服务层来拦截（反正就是不要让请求落到数据库上去）"></a>第三层 服务层来拦截（反正就是不要让请求落到数据库上去）</h2><p>服务层怎么拦截？大哥，我是服务层，我清楚的知道小米只有1万部手机，我清楚的知道一列火车只有2000张车票，我透 10w 个请求去数据库有什么意义呢？没错，『 请求队列 』<br>对于写请求，做请求队列，每次只透有限的写请求去数据层（下订单，支付这样的写业务）<br><strong>1w</strong> 部手机，只透 <strong>1w</strong> 个下单请求去db<br><strong>3k</strong> 张火车票，只透 <strong>3k</strong> 个下单请求去db<br>如果均成功再放下一批，如果库存不够则队列里的写请求全部返回“已售完”。 </p>
+<p>对于读请求，怎么优化？ Cache 抗，不管是 <code>Memcached</code> 还是 <code>Redis</code> ，单机抗个每秒 10w 应该都是没什么问题的。如此限流，只有非常少的写请求，和非常少的读缓存mis的请求会透到数据层去，又有 99.9% 的请求被拦住了。</p>
 <p>当然，还有业务规则上的一些优化。回想 12306 所做的，分时分段售票，原来统一10点卖票，现在8点，8点半，9点，…每隔半个小时放出一批：将流量摊匀。<br>其次，『 数据粒度的优化 』 ：你去购票，对于余票查询这个业务，票剩了58张，还是26张，你真的关注么，其实我们只关心有票和无票？流量大的时候，做一个粗粒度的“有票”“无票”缓存即可。<br>第三，一些业务逻辑的异步：例如下单业务与 支付业务的分离。这些优化都是结合 业务 来的，我之前分享过一个观点“ <strong>一切脱离业务的架构设计都是耍流氓</strong> ”架构的优化也要针对业务。</p>
 <h2 id="最后是数据库层"><a href="#最后是数据库层" class="headerlink" title="最后是数据库层"></a>最后是数据库层</h2><p>浏览器拦截了 80% ，站点层拦截了 99.9% 并做了页面缓存，服务层又做了写请求队列与数据缓存，每次透到数据库层的请求都是可控的。db基本就没什么压力了，闲庭信步，单机也能扛得住，还是那句话，库存是有限的，小米的产能有限，透这么多请求来数据库没有意义。</p>
 <p>全部透到数据库， 100w 个下单， 0 个成功，请求有效率 0% 。透 3k 个到数据，全部成功，请求有效率 100% </p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>上文应该描述的非常清楚了，没什么总结了，对于秒杀系统，再次重复下我个人经验的两个架构优化思路：<br>（1）『 尽量将请求拦截在系统上游 』（越上游越好）<br>（2）『 读多写少的常用多使用缓存 』（缓存抗读压力）<br>浏览器 和 APP：做限速<br>站点层：按照uid做限速，做页面缓存<br>服务层：按照业务做写请求队列控制流量，做数据缓存<br>数据层：闲庭信步<br>并且：结合业务做优化</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>上文应该描述的非常清楚了，没什么总结了，对于秒杀系统，再次重复下我个人经验的两个架构优化思路：<br>（1）『 尽量将请求拦截在系统上游 』（越上游越好）<br>（2）『 读多写少的常用多使用缓存 』（缓存抗读压力）<br>浏览器 和 APP：做限速<br>站点层：按照 <code>uid</code> 做限速，做页面缓存<br>服务层：按照业务做写请求队列控制流量，做数据缓存<br>数据层：闲庭信步<br>并且：结合业务做优化</p>
 
       
     </div>
@@ -437,6 +437,24 @@
 
     
 
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Hui
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://hui.1222.store/2018/11/06/秒杀架构和优化思路/" title="[转]秒杀架构和优化思路">https://hui.1222.store/2018/11/06/秒杀架构和优化思路/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
     
 
     <footer class="post-footer">
@@ -614,6 +632,17 @@
 <div>
     <script type="text/javascript" src="https://api.imjad.cn/hitokoto/?cat=&charset=utf-8&length=50&encode=js&fun=sync&source="></script><div id="hitokoto"><script>hitokoto()</script></div>
 </div>
+
+
+<div style="margin-top:20%">
+  <span>
+    <ul>
+
+    </ul>
+  </span>
+</div>
+
+
         </div>
       </section>
 

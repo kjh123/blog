@@ -90,11 +90,11 @@
 <meta name="keywords" content="记录,Linux,命令">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux命令学习">
-<meta property="og:url" content="http://yoursite.com/2018/06/27/Linux命令学习/index.html">
+<meta property="og:url" content="https://hui.1222.store/2018/06/27/Linux命令学习/index.html">
 <meta property="og:site_name" content="HuiBlog">
 <meta property="og:description" content="本文主要记录在学习或者工作中用到的一些 Linux 命令">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-01T09:04:14.803Z">
+<meta property="og:updated_time" content="2018-11-07T12:15:03.039Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux命令学习">
 <meta name="twitter:description" content="本文主要记录在学习或者工作中用到的一些 Linux 命令">
@@ -127,7 +127,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/06/27/Linux命令学习/"/>
+  <link rel="canonical" href="https://hui.1222.store/2018/06/27/Linux命令学习/"/>
 
 
 
@@ -278,7 +278,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/27/Linux命令学习/">
+    <link itemprop="mainEntityOfPage" href="https://hui.1222.store/2018/06/27/Linux命令学习/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Hui">
@@ -323,8 +323,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-11-01T17:04:14+08:00">
-                2018-11-01
+              <time title="更新于" itemprop="dateModified" datetime="2018-11-07T20:15:03+08:00">
+                2018-11-07
               </time>
             
           </span>
@@ -391,14 +391,29 @@
       
         <p>本文主要记录在学习或者工作中用到的一些 <code>Linux</code> 命令</p>
 <a id="more"></a>
-<h2 id="文件批量重命名"><a href="#文件批量重命名" class="headerlink" title="文件批量重命名"></a>文件批量重命名</h2><figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line"><span class="comment"># 使用 for 循环</span></div><div class="line"><span class="keyword">for</span> fn <span class="keyword">in</span> *.jpg; <span class="keyword">do</span> convert <span class="string">"<span class="variable">$fn</span>"</span> `<span class="built_in">echo</span> <span class="variable">$fn</span> | sed <span class="string">'s/jpg$/png/'</span>`; <span class="keyword">done</span></div><div class="line"></div><div class="line"><span class="comment"># 使用 xargs </span></div><div class="line">ls *.jpg | xargs -I&#123;&#125; convert <span class="string">"&#123;&#125;"</span> `<span class="built_in">echo</span> &#123;&#125; | sed <span class="string">'s/jpg$/png/'</span>`</div></pre></div></div></figure>
-<h2 id="文件查找命令"><a href="#文件查找命令" class="headerlink" title="文件查找命令 "></a>文件查找命令 </h2><figure class="highlight bash"><figcaption><span class="caption">Find 命令</span><a href="https://linux.cn/article-9648-1.html" target="_blank">相关链接</a></figcaption><div class="figcode"><div class="code"><pre><div class="line"><span class="comment"># 查找最后修改的时间为7天前的，jpg 或 jpeg 格式的图片 【注意括号后面需要添加一个空格】</span></div><div class="line">find ./ \( -iname <span class="string">'*.jpeg'</span> -o -iname <span class="string">'*.jpg'</span> \) -<span class="built_in">type</span> f -mtime + 7</div></pre></div></div></figure>
-<h2 id="查找某个时间段内服务器的访问IP"><a href="#查找某个时间段内服务器的访问IP" class="headerlink" title="查找某个时间段内服务器的访问IP"></a>查找某个时间段内服务器的访问IP</h2><p><em>在此感谢某位大佬</em> <a href="https://gitee.com/alwaysthanksFel" target="_blank" rel="noopener">@大佬</a></p>
+<h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><h2 id="ls-命令详细"><a href="#ls-命令详细" class="headerlink" title="ls 命令详细"></a>ls 命令详细</h2><ul>
+<li>按文件大小列出： <code>ls -s</code></li>
+<li>按时间和日期排序： <code>ls -t</code></li>
+<li>按扩展名排序： <code>ls -X</code></li>
+<li>按文件大小排序：<code>ls -S</code></li>
+</ul>
+<h2 id="find-文件查找"><a href="#find-文件查找" class="headerlink" title="find 文件查找"></a>find 文件查找</h2><figure class="highlight bash"><figcaption><span class="caption">Find 命令</span><a href="https://linux.cn/article-9648-1.html" target="_blank">相关链接</a></figcaption><div class="figcode"><div class="code"><pre><div class="line"><span class="comment"># 查找最后修改的时间为7天前的，jpg 或 jpeg 格式的图片 【注意括号后面需要添加一个空格】</span></div><div class="line">find ./ \( -iname <span class="string">'*.jpeg'</span> -o -iname <span class="string">'*.jpg'</span> \) -<span class="built_in">type</span> f -mtime + 7</div></pre></div></div></figure>
+<h1 id="awk-amp-sed"><a href="#awk-amp-sed" class="headerlink" title="awk &amp; sed"></a>awk &amp; sed</h1><blockquote>
+<p>sed是一种行编辑器，它一次处理一行内容</p>
+</blockquote>
+<h2 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a>使用方式</h2><p><code>sed [options] &#39;command&#39; file(s)</code></p>
+<blockquote>
+<p>  示例： 输出某个文本里面全部的内容：<br>    <code>sed -n p 11-07.log</code> # 输出 11月07号的日志<br>        -n：sed会在处理一行文本前，将待处理的文本打印出来，-n参数关闭了这个功能<br>        p：命令表示打印当前行<br>    若要输出某几行显示 则可以在 P 前面加上行数 并以 , 分割 格式为 sed -n ‘第几行,输出几行’p file(s)<br>    sed -n ‘1,2’p 11-07.log  # 输出11月7号第一行开始 共输出两行内容<br>    如果要输出第几行到最后的内容可以使用 $<br>    sed -n ‘5,$’p 11-07.log  # 输出11月7号第五行开始一直到最后的所有内容 </p>
+</blockquote>
+<h2 id="相关命令"><a href="#相关命令" class="headerlink" title="相关命令"></a>相关命令</h2><h3 id="将匹配行删除"><a href="#将匹配行删除" class="headerlink" title="将匹配行删除"></a>将匹配行删除</h3><p><code>sed &#39;/hello/&#39;d 11-07.log</code> 改命令会输出 11-07.log 文件中的内容，同时把匹配到 hello 的行会删除</p>
+<h3 id="将匹配行替换"><a href="#将匹配行替换" class="headerlink" title="将匹配行替换"></a>将匹配行替换</h3><p>命令： s/pattern-to-find/replacement-pattern/g<br>        pattern-to-find：被替换的串<br>        replacement-pattern：替换成这个串<br>        g：全部替换，默认只替换匹配到的第一个<br><code>sed &#39;s/php/python/g&#39; 11-07.log</code> 改命令会输出 11-07.log 文件中的内容，同时把文件中出现的 <code>php</code> 全部替换为 <code>python</code></p>
+<h2 id="实例：-查找某个时间段内服务器的访问IP"><a href="#实例：-查找某个时间段内服务器的访问IP" class="headerlink" title="实例： 查找某个时间段内服务器的访问IP"></a>实例： 查找某个时间段内服务器的访问IP</h2><hr>
+<p><em>在此感谢某位大佬</em> <a href="https://gitee.com/alwaysthanksFel" target="_blank" rel="noopener">@大佬</a></p>
 <figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line">sed -n <span class="string">'/2018:06:25:59/,/2018:09:50/p'</span> access.log | awk <span class="string">'&#123;print $1&#125;'</span> | sort -nrk1 | uniq -c | tee</div></pre></div></div></figure>
 <blockquote>
 <p>uniq -c       统计去重的行数<br>  sort -nrk1    k : 第几列 n：以数字模式排序 r：倒序排序<br>  sed ‘/^$/d’   删除空行</p>
 </blockquote>
-<h2 id="OpenSSL-生成秘钥文件"><a href="#OpenSSL-生成秘钥文件" class="headerlink" title="OpenSSL 生成秘钥文件"></a>OpenSSL 生成秘钥文件</h2><blockquote>
+<h1 id="OpenSSL-生成秘钥文件"><a href="#OpenSSL-生成秘钥文件" class="headerlink" title="OpenSSL 生成秘钥文件"></a>OpenSSL 生成秘钥文件</h1><blockquote>
 <p>输入<code>openssl</code>进入openssl交互界面 </p>
 </blockquote>
 <ol>
@@ -412,17 +427,12 @@
 <figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line">rsa -<span class="keyword">in</span> rsa_private_key.pem -pubout -out rsa_public_key.pem</div></pre></div></div></figure>
 </li>
 </ol>
-<h1 id="ls-命令详细"><a href="#ls-命令详细" class="headerlink" title="ls 命令详细"></a>ls 命令详细</h1><ul>
-<li>按文件大小列出： <code>ls -s</code></li>
-<li>按时间和日期排序： <code>ls -t</code></li>
-<li>按扩展名排序： <code>ls -X</code></li>
-<li>按文件大小排序：<code>ls -S</code></li>
-</ul>
-<h2 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令"></a>其他命令</h2><ul>
+<h1 id="其他命令"><a href="#其他命令" class="headerlink" title="其他命令"></a>其他命令</h1><ul>
 <li><code>grep -C 5 foo file</code> 显示file文件里匹配foo字串那行以及上下5行</li>
 <li><code>cut -d &#39;,&#39; -f 1</code>   d：以逗号切割  f：每行切割的第几份</li>
 <li><code>ps -eo %mem,%cpu,comm --sort=-%mem | head -n 6</code> 查看使用内存最多的五个进程</li>
 </ul>
+<h2 id="文件批量重命名"><a href="#文件批量重命名" class="headerlink" title="文件批量重命名"></a>文件批量重命名</h2><figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line"><span class="comment"># 使用 for 循环</span></div><div class="line"><span class="keyword">for</span> fn <span class="keyword">in</span> *.jpg; <span class="keyword">do</span> convert <span class="string">"<span class="variable">$fn</span>"</span> `<span class="built_in">echo</span> <span class="variable">$fn</span> | sed <span class="string">'s/jpg$/png/'</span>`; <span class="keyword">done</span></div><div class="line"></div><div class="line"><span class="comment"># 使用 xargs </span></div><div class="line">ls *.jpg | xargs -I&#123;&#125; convert <span class="string">"&#123;&#125;"</span> `<span class="built_in">echo</span> &#123;&#125; | sed <span class="string">'s/jpg$/png/'</span>`</div></pre></div></div></figure>
 
       
     </div>
@@ -440,6 +450,24 @@
 
     
 
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Hui
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://hui.1222.store/2018/06/27/Linux命令学习/" title="Linux命令学习">https://hui.1222.store/2018/06/27/Linux命令学习/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
     
 
     <footer class="post-footer">
@@ -621,6 +649,17 @@
 <div>
     <script type="text/javascript" src="https://api.imjad.cn/hitokoto/?cat=&charset=utf-8&length=50&encode=js&fun=sync&source="></script><div id="hitokoto"><script>hitokoto()</script></div>
 </div>
+
+
+<div style="margin-top:20%">
+  <span>
+    <ul>
+
+    </ul>
+  </span>
+</div>
+
+
         </div>
       </section>
 
@@ -634,7 +673,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#文件批量重命名"><span class="nav-number">1.</span> <span class="nav-text">文件批量重命名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文件查找命令"><span class="nav-number">2.</span> <span class="nav-text">文件查找命令 </span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查找某个时间段内服务器的访问IP"><span class="nav-number">3.</span> <span class="nav-text">查找某个时间段内服务器的访问IP</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#OpenSSL-生成秘钥文件"><span class="nav-number">4.</span> <span class="nav-text">OpenSSL 生成秘钥文件</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ls-命令详细"><span class="nav-number"></span> <span class="nav-text">ls 命令详细</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#其他命令"><span class="nav-number">1.</span> <span class="nav-text">其他命令</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#常用命令"><span class="nav-number">1.</span> <span class="nav-text">常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ls-命令详细"><span class="nav-number">1.1.</span> <span class="nav-text">ls 命令详细</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#find-文件查找"><span class="nav-number">1.2.</span> <span class="nav-text">find 文件查找</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#awk-amp-sed"><span class="nav-number">2.</span> <span class="nav-text">awk &amp; sed</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用方式"><span class="nav-number">2.1.</span> <span class="nav-text">使用方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#相关命令"><span class="nav-number">2.2.</span> <span class="nav-text">相关命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#将匹配行删除"><span class="nav-number">2.2.1.</span> <span class="nav-text">将匹配行删除</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#将匹配行替换"><span class="nav-number">2.2.2.</span> <span class="nav-text">将匹配行替换</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实例：-查找某个时间段内服务器的访问IP"><span class="nav-number">2.3.</span> <span class="nav-text">实例： 查找某个时间段内服务器的访问IP</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#OpenSSL-生成秘钥文件"><span class="nav-number">3.</span> <span class="nav-text">OpenSSL 生成秘钥文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#其他命令"><span class="nav-number">4.</span> <span class="nav-text">其他命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#文件批量重命名"><span class="nav-number">4.1.</span> <span class="nav-text">文件批量重命名</span></a></li></ol></li></ol></div>
             
 
           </div>
