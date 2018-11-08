@@ -3,7 +3,7 @@ title: Hexo博客Next主题配置
 date: 2018-06-05 14:16:25
 tags: [记录]
 categories: 记录
-photos: http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg
+photos: http://oyvpp7gqd.bkt.clouddn.com/18-9-25/4256436.jpg
 ---
 本文为`Hexo`博客的`Next`主题的一些常用配置项
 <!--more-->
@@ -11,7 +11,7 @@ photos: http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg
 # 设置「阅读全文」
 NexT 提供三种方式来控制文章在首页的显示方式。 也就是说，在首页显示文章的摘录并显示 阅读全文 按钮，可以通过以下方法：
 1. 在文章中使用`<!-- more -->`手动进行截断，Hexo 提供的方式
-2. 在文章的 [front-matter](https://hexo.io/docs/front-matter.html) 中添加 description，并提供文章摘录
+2. 在文章的 [front-matter](http://hexo.io/docs/front-matter.html) 中添加 description，并提供文章摘录
 3. 自动形成摘要，在主题配置文件中添加：
 ```
 auto_excerpt:
@@ -42,14 +42,13 @@ baidu_tongji: true
 -----
 
 # 网站图标
-在文件 `hexo\themes\next\layout\_partial\head.swig` 中，![图标](https://oyvpp7gqd.bkt.clouddn.com/18-6-5/24288758.jpg)可以看到，网站图标文件是在 *hexo\themes\next\source\images* 这个路径下，替换即可
+在文件 `hexo\themes\next\layout\_partial\head.swig` 中，![图标](http://oyvpp7gqd.bkt.clouddn.com/18-6-5/24288758.jpg)可以看到，网站图标文件是在 *hexo\themes\next\source\images* 这个路径下，替换即可
 
 -----
 
 # 为文章添加密码
 定位到文件 `hexo\themes\next\layout\_partial\head.swig` 中，添加下面的代码到文件最后面
 ```javascript
-<script>
     (function(){
         if('{{ page.password }}'){
             if (prompt('请输入文章密码') !== '{{ page.password }}'){
@@ -58,10 +57,9 @@ baidu_tongji: true
             }
         }
     })();
-</script>
 ```
 然后在编辑文章时添加 password: password即可
-![password](https://oyvpp7gqd.bkt.clouddn.com/18-6-6/45085843.jpg)
+![password](http://oyvpp7gqd.bkt.clouddn.com/18-6-6/45085843.jpg)
 
 -----
 
