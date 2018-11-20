@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="HuiBlog">
 <meta property="og:description" content="在一个中大型项目中，随着时间的积累和业务的不断升级，数据的优化处理愈发关键，一个好的数据库设计和优化是项目业务稳定运行的根本">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-07T04:21:15.893Z">
+<meta property="og:updated_time" content="2018-11-08T04:19:01.035Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MySQL要点">
 <meta name="twitter:description" content="在一个中大型项目中，随着时间的积累和业务的不断升级，数据的优化处理愈发关键，一个好的数据库设计和优化是项目业务稳定运行的根本">
@@ -323,8 +323,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-11-07T12:21:15+08:00">
-                2018-11-07
+              <time title="更新于" itemprop="dateModified" datetime="2018-11-08T12:19:01+08:00">
+                2018-11-08
               </time>
             
           </span>
@@ -361,7 +361,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2018/11/01/MySQL要点/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/11/01/MySQL要点/" itemprop="commentCount"></span>
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/11/01/MySQL要点/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -578,7 +578,11 @@
 
   
     <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
     </div>
+
   
 
 
@@ -691,9 +695,9 @@
 
           
 <div>
-    <script type="text/javascript" src="https://api.imjad.cn/hitokoto/?cat=&charset=utf-8&length=50&encode=js&fun=sync&source="></script><div id="hitokoto"><script>hitokoto()</script></div>
+    <script type="text/javascript" src="https://api.imjad.cn/hitokoto/?cat=&charset=utf-8&length=50&encode=js&fun=sync&source="></script>
+    <div><script>hitokoto()</script></div>
 </div>
-
 
 <div style="margin-top:20%">
   <span>
@@ -893,30 +897,50 @@
 
 
 
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'kjh123',
+            repo: 'kjh123.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '7a91abfbc703e700893692461cbba26ec3d8f5b9',
+            
+                client_id: '7b209d8fb2e098efe782'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
 
 
 
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-  
-  <script type="text/javascript">
-    var GUEST = ['nick','mail','link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item=>{
-      return GUEST.indexOf(item)>-1;
-    });
-    new Valine({
-        el: '#comments' ,
-        verify: false,
-        notify: false,
-        appId: 'ppsm5Wh9vOPNbja0WokKbyDH-gzGzoHsz',
-        appKey: 'y2s7zv2YqENSNPK1HhFsKfiT',
-        placeholder: '',
-        avatar:'mm',
-        guest_info:guest,
-        pageSize:'10' || 10,
-    });
-  </script>
+
 
 
 
@@ -943,6 +967,8 @@
 
 
   
+  <script type="text/javascript" src="/js/src/exturl.js?v=5.1.4"></script>
+
 
   <script type="text/javascript" src="/lib/zclip/clipboard.min.js"></script>	
 <script type="text/javascript" src="/js/src/custom.js"></script>

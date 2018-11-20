@@ -93,7 +93,7 @@
 <meta property="og:site_name" content="HuiBlog">
 <meta property="og:description" content="我天性不宜交际。在多数场合，我不是觉得对方乏味，就是害怕对方觉得我乏味。可是我既不愿忍受对方的乏味，也不愿费劲使自己显得有趣，那都太累了。我独处时最轻松，因为我不觉得自己乏味，即使乏味，也自己承受，不累及他人，无需感到不安。                        ——周国平《人与永恆》   运动爱好者 热爱开源 代码洁癖 发呆一万年">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-08T03:58:36.736Z">
+<meta property="og:updated_time" content="2018-11-08T04:19:01.075Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="About">
 <meta name="twitter:description" content="我天性不宜交际。在多数场合，我不是觉得对方乏味，就是害怕对方觉得我乏味。可是我既不愿忍受对方的乏味，也不愿费劲使自己显得有趣，那都太累了。我独处时最轻松，因为我不觉得自己乏味，即使乏味，也自己承受，不累及他人，无需感到不安。                        ——周国平《人与永恆》   运动爱好者 热爱开源 代码洁癖 发呆一万年">
@@ -311,7 +311,11 @@
 
   
     <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
     </div>
+
   
 
 
@@ -415,9 +419,9 @@
 
           
 <div>
-    <script type="text/javascript" src="https://api.imjad.cn/hitokoto/?cat=&charset=utf-8&length=50&encode=js&fun=sync&source="></script><div id="hitokoto"><script>hitokoto()</script></div>
+    <script type="text/javascript" src="https://api.imjad.cn/hitokoto/?cat=&charset=utf-8&length=50&encode=js&fun=sync&source="></script>
+    <div><script>hitokoto()</script></div>
 </div>
-
 
 <div style="margin-top:20%">
   <span>
@@ -601,30 +605,50 @@
 
 
 
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'kjh123',
+            repo: 'kjh123.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '7a91abfbc703e700893692461cbba26ec3d8f5b9',
+            
+                client_id: '7b209d8fb2e098efe782'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
 
 
 
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-  
-  <script type="text/javascript">
-    var GUEST = ['nick','mail','link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item=>{
-      return GUEST.indexOf(item)>-1;
-    });
-    new Valine({
-        el: '#comments' ,
-        verify: false,
-        notify: false,
-        appId: 'ppsm5Wh9vOPNbja0WokKbyDH-gzGzoHsz',
-        appKey: 'y2s7zv2YqENSNPK1HhFsKfiT',
-        placeholder: '',
-        avatar:'mm',
-        guest_info:guest,
-        pageSize:'10' || 10,
-    });
-  </script>
+
 
 
 
@@ -651,6 +675,8 @@
 
 
   
+  <script type="text/javascript" src="/js/src/exturl.js?v=5.1.4"></script>
+
 
   <script type="text/javascript" src="/lib/zclip/clipboard.min.js"></script>	
 <script type="text/javascript" src="/js/src/custom.js"></script>
