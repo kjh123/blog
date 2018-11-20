@@ -876,6 +876,7 @@
         
         <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
         <script src="https://learner-hui.oss-cn-beijing.aliyuncs.com/gitmint.js"></script>
+        <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
     
 <!-- END LOCAL -->
 
@@ -890,7 +891,7 @@
       <script type="text/javascript">
       function renderGitment(){
         var gitment = new Gitmint({
-            id: window.location.pathname,
+            id: md5(window.location.pathname),
             owner: 'kjh123',
             repo: 'kjh123.github.io',
             
