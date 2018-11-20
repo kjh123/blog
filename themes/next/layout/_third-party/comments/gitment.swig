@@ -1,14 +1,16 @@
 {% if not (theme.duoshuo and theme.duoshuo.shortname) and not theme.duoshuo_shortname %}
 {% if theme.gitment.enable and theme.gitment.client_id %}
-<!-- LOCAL: You can save these files to your site and update links -->
+<!-- LOCAL: You can save these files to your site and update links\ -->
     {% if theme.gitment.mint %}
         {% set CommentsClass = "Gitmint" %}
         <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
-        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+        <script src="https://learner-hui.oss-cn-beijing.aliyuncs.com/gitmint.js"></script>
+        <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
     {% else %}
         {% set CommentsClass = "Gitment" %}
         <link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
         <script src="https://jjeejj.github.io/js/gitment.js"></script>
+        <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
     {% endif %}
 <!-- END LOCAL -->
 
@@ -23,7 +25,7 @@
       <script type="text/javascript">
       function renderGitment(){
         var gitment = new {{CommentsClass}}({
-            id: window.location.pathname,
+            id: md5(window.location.pathname),
             owner: '{{ theme.gitment.github_user }}',
             repo: '{{ theme.gitment.github_repo }}',
             {% if theme.gitment.mint %}

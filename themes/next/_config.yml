@@ -393,11 +393,11 @@ valine:
 # You can get your Github ID from https://api.github.com/users/<Github username>
 gitment:
   enable: true
-  mint: false # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
+  mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
   count: true # Show comments count in post meta area
   lazy: false # Comments lazy loading with a button
   cleanly: true # Hide 'Powered by ...' on footer, and more
-  language:  # Force language, or auto switch by theme
+  language: zh-Hans # Force language, or auto switch by theme
   github_user: kjh123 # MUST HAVE, Your Github ID
   github_repo: kjh123.github.io # MUST HAVE, The repo you use to store Gitment comments
   client_id: 7b209d8fb2e098efe782 # MUST HAVE, Github client id for the Gitment
