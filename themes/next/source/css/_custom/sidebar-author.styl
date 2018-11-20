@@ -1,0 +1,49 @@
+
+.custom-logo-site-title,
+.site-author-image {
+  margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	-webkit-box-orient: horizontal;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	text-align: center
+}
+
+.site-author-image {
+  /* 头像圆形 */
+  padding: 0;
+  border-radius: 5em;
+  -webkit-border-radius: 5em;
+  -moz-border-radius: 5em;
+  box-shadow: 0px 0px 40px rgba(63, 81, 181, 0.72);
+  display: table;
+  overflow: visible;
+  transition: all 1.0s;
+	animation: changeBorderColor 60s infinite linear;
+}
+
+.custom-logo-site-title/*,
+.site-author-image img */{
+	-moz-animation-duration: .4s;
+	-ms-animation-duration: .4s;
+	animation-duration: .4s;
+	-moz-animation-delay: .3s;
+	-ms-animation-delay: .3s;
+	animation-delay: .3s;
+	-webkit-animation-duration: .4s;
+	-webkit-animation-delay: .3s
+}
+
+@keyframes play-shake {
+	0% {
+		right: 4px;
+		top: 1x
+	}
+
+	100% {
+		right: 0;
+		top: -1px
+	}
+}
+
