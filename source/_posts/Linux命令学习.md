@@ -102,6 +102,24 @@ categories: Linux
   
 ----
 
+# Git 技巧
+ 由于在项目中经常要用到 `git log` 来查看提交历史，分享一个不错的 `git log` 的配置
+```bash line_number:false
+git log --graph --abbrev-commit --decorate --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)'
+```
+
+效果如图：
+![git-log效果图](http://learner-hui.oss-cn-beijing.aliyuncs.com/18-11-27/47269758.jpg)
+
+添加到 bash alias :
+```bash line_number:false
+alias gitlog="git log --graph --abbrev-commit --decorate --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)'"
+```
+
+> 分享来自 [分享一个自定义的 git log 配置](https://www.codecasts.com/blog/post/a-beautiful-git-log-format)
+
+----
+
 # OpenSSL 生成秘钥文件
 >输入`openssl`进入openssl交互界面 
 

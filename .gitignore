@@ -3,3 +3,4 @@
 public/
 .deploy*/
 .idea/*
+db.json
