@@ -1,7 +1,7 @@
 ---
 title: CentOS7配置LNMP
 date: 2018-06-29 13:11:28
-tags: [记录, 服务器, linux, CenterOS]
+tags: [记录, 服务器, Linux, CenterOS]
 categories: Linux
 ---
 
