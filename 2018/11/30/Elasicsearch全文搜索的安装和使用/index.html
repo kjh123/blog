@@ -95,7 +95,7 @@
 <meta property="og:description" content="Elasicsearch 介绍Elasticsearch 是一个基于 Apache Lucene(TM) 的开源搜索引擎。无论在开源还是专有领域， Lucene 可以被认为是迄今为止最先进、性能最好的、功能最全的搜索引擎库。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://learner-hui.oss-cn-beijing.aliyuncs.com/18-11-30/88442110.jpg">
-<meta property="og:updated_time" content="2018-11-30T08:47:04.126Z">
+<meta property="og:updated_time" content="2018-12-06T03:08:42.332Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Elasicsearch全文搜索的安装和使用">
 <meta name="twitter:description" content="Elasicsearch 介绍Elasticsearch 是一个基于 Apache Lucene(TM) 的开源搜索引擎。无论在开源还是专有领域， Lucene 可以被认为是迄今为止最先进、性能最好的、功能最全的搜索引擎库。">
@@ -325,8 +325,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-11-30T16:47:04+08:00">
-                2018-11-30
+              <time title="更新于" itemprop="dateModified" datetime="2018-12-06T11:08:42+08:00">
+                2018-12-06
               </time>
             
           </span>
@@ -397,7 +397,7 @@
 <h3 id="安装-apt-transport-https-package"><a href="#安装-apt-transport-https-package" class="headerlink" title="安装 apt-transport-https package"></a>安装 apt-transport-https package</h3><figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line">sudo apt-get install apt-transport-https</div></pre></div></div></figure>
 <h3 id="安装软件源"><a href="#安装软件源" class="headerlink" title="安装软件源"></a>安装软件源</h3><figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line"><span class="built_in">echo</span> <span class="string">"deb https://artifacts.elastic.co/packages/6.x/apt stable main"</span>  | sudo tee -a /etc/apt/sources.list.d/elastic-6.x.list</div></pre></div></div></figure>
 <h3 id="更新软件源并安装-Elasicsearch"><a href="#更新软件源并安装-Elasicsearch" class="headerlink" title="更新软件源并安装 Elasicsearch"></a>更新软件源并安装 Elasicsearch</h3><figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line">sudo apt-get update &amp;&amp; sudo apt-get install elasticsearch</div></pre></div></div></figure>
-<h3 id="配置自动启动"><a href="#配置自动启动" class="headerlink" title="配置自动启动"></a>配置自动启动</h3><h4 id="查看系统使用-SysV-init-还是-systemd"><a href="#查看系统使用-SysV-init-还是-systemd" class="headerlink" title="查看系统使用 SysV  init 还是 systemd"></a>查看系统使用 SysV  init 还是 systemd</h4><figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line">ps - p 1</div></pre></div></div></figure>
+<h3 id="配置自动启动"><a href="#配置自动启动" class="headerlink" title="配置自动启动"></a>配置自动启动</h3><h4 id="查看系统使用-SysV-init-还是-systemd"><a href="#查看系统使用-SysV-init-还是-systemd" class="headerlink" title="查看系统使用 SysV  init 还是 systemd"></a>查看系统使用 SysV  init 还是 systemd</h4><figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line">ps -p 1</div></pre></div></div></figure>
 <h4 id="init-方式"><a href="#init-方式" class="headerlink" title="init 方式"></a>init 方式</h4><p>使用 <code>update-rc.d</code> 命令将 Elasticsearch 配置为在系统启动时自动启动：<br><figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line">sudo update-rc.d elasticsearch defaults 95 10</div></pre></div></div></figure></p>
 <p>启动 和 停止命令<br><figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line">sudo -i service elasticsearch start</div><div class="line">sudo -i service elasticsearch stop</div></pre></div></div></figure></p>
 <blockquote>
