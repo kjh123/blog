@@ -95,7 +95,7 @@
 <meta property="og:description" content="本文主要记录在学习或者工作中用到的一些 Linux 命令">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://learner-hui.oss-cn-beijing.aliyuncs.com/18-11-27/47269758.jpg">
-<meta property="og:updated_time" content="2018-11-27T07:16:57.942Z">
+<meta property="og:updated_time" content="2018-12-11T01:41:32.540Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux命令学习">
 <meta name="twitter:description" content="本文主要记录在学习或者工作中用到的一些 Linux 命令">
@@ -325,8 +325,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-11-27T15:16:57+08:00">
-                2018-11-27
+              <time title="更新于" itemprop="dateModified" datetime="2018-12-11T09:41:32+08:00">
+                2018-12-11
               </time>
             
           </span>
@@ -475,6 +475,7 @@
 <li><code>grep -C 5 foo file</code> 显示file文件里匹配foo字串那行以及上下5行</li>
 <li><code>cut -d &#39;,&#39; -f 1</code>   d：以逗号切割  f：每行切割的第几份</li>
 <li><code>ps -eo %mem,%cpu,comm --sort=-%mem | head -n 6</code> 查看使用内存最多的五个进程</li>
+<li><code>cat /proc/cpuinfo | grep processor | wc -l</code> 查看 CPU 核数</li>
 </ul>
 <h2 id="文件批量重命名"><a href="#文件批量重命名" class="headerlink" title="文件批量重命名"></a>文件批量重命名</h2><figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line"><span class="comment"># 使用 for 循环</span></div><div class="line"><span class="keyword">for</span> fn <span class="keyword">in</span> *.jpg; <span class="keyword">do</span> convert <span class="string">"<span class="variable">$fn</span>"</span> `<span class="built_in">echo</span> <span class="variable">$fn</span> | sed <span class="string">'s/jpg$/png/'</span>`; <span class="keyword">done</span></div><div class="line"></div><div class="line"><span class="comment"># 使用 xargs </span></div><div class="line">ls *.jpg | xargs -I&#123;&#125; convert <span class="string">"&#123;&#125;"</span> `<span class="built_in">echo</span> &#123;&#125; | sed <span class="string">'s/jpg$/png/'</span>`</div></pre></div></div></figure>
 
