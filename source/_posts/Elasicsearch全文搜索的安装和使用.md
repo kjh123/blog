@@ -36,7 +36,7 @@ sudo apt-get update && sudo apt-get install elasticsearch
 ### 配置自动启动
 #### 查看系统使用 SysV  init 还是 systemd
 ```bash line_number:false
-ps - p 1
+ps -p 1
 ```
 
 #### init 方式

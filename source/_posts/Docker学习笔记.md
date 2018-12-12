@@ -2,7 +2,7 @@
 title: Docker学习笔记
 date: 2018-06-30 15:30:34
 tags: [Linux, Docker, CenterOS]
-categories: Linux
+categories: Docker
 ---
 >前段时间有学过一些 `Docker` 的相关知识，但最近忙于工作，对这方面还是有些疏忽了，就再次学习下，然后做个笔记
 

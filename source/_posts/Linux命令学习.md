@@ -142,6 +142,7 @@ alias gitlog="git log --graph --abbrev-commit --decorate --all --format=format:'
 - `grep -C 5 foo file` 显示file文件里匹配foo字串那行以及上下5行
 - `cut -d ',' -f 1`   d：以逗号切割  f：每行切割的第几份
 - `ps -eo %mem,%cpu,comm --sort=-%mem | head -n 6` 查看使用内存最多的五个进程
+- `cat /proc/cpuinfo | grep processor | wc -l` 查看 CPU 核数
 
 ## 文件批量重命名
 ```bash line_number:false
