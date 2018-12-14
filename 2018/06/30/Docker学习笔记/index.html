@@ -94,13 +94,13 @@
 <meta property="og:site_name" content="HuiBlog">
 <meta property="og:description" content="前段时间有学过一些 Docker 的相关知识，但最近忙于工作，对这方面还是有些疏忽了，就再次学习下，然后做个笔记">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://oyvpp7gqd.bkt.clouddn.com/18-7-2/11032690.jpg">
-<meta property="og:image" content="http://oyvpp7gqd.bkt.clouddn.com/18-7-2/8082419.jpg">
-<meta property="og:updated_time" content="2018-12-10T02:11:16.133Z">
+<meta property="og:image" content="http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/72736621.jpg">
+<meta property="og:image" content="http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/81984913.jpg">
+<meta property="og:updated_time" content="2018-12-14T04:40:08.374Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Docker学习笔记">
 <meta name="twitter:description" content="前段时间有学过一些 Docker 的相关知识，但最近忙于工作，对这方面还是有些疏忽了，就再次学习下，然后做个笔记">
-<meta name="twitter:image" content="http://oyvpp7gqd.bkt.clouddn.com/18-7-2/11032690.jpg">
+<meta name="twitter:image" content="http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/72736621.jpg">
 
 
 
@@ -326,8 +326,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-12-10T10:11:16+08:00">
-                2018-12-10
+              <time title="更新于" itemprop="dateModified" datetime="2018-12-14T12:40:08+08:00">
+                2018-12-14
               </time>
             
           </span>
@@ -436,12 +436,12 @@
 <blockquote>
 <p><strong>在Nginx容器中</strong> 修改nginx配置文件<br><figure class="highlight bash"><figcaption><span class="fileDir">/etc/nginx/conf.d/</span><span class="caption">default</span><span class="suffix">.conf</span></figcaption><div class="figcode"><div class="code"><pre><div class="line">location ~ \.php$ &#123;</div><div class="line">    root           /var/www/html;</div><div class="line">    fastcgi_index  index.php;</div><div class="line">    fastcgi_pass   phpfpm:9001;</div><div class="line">    fastcgi_param  SCRIPT_FILENAME <span class="variable">$document_root</span><span class="variable">$fastcdi_script_name</span>;</div><div class="line">    include        fastcgi_params;</div><div class="line">&#125;</div></pre></div></div></figure></p>
 </blockquote>
-<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p><img src="http://oyvpp7gqd.bkt.clouddn.com/18-7-2/11032690.jpg" alt="info"></p>
+<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p><img src="http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/72736621.jpg" alt="info"></p>
 <h2 id="使用-DockerFile-构建环境"><a href="#使用-DockerFile-构建环境" class="headerlink" title="使用 DockerFile 构建环境"></a>使用 <code>DockerFile</code> 构建环境</h2><blockquote>
 <p>推荐阅读：<a href="http://www.phpchina.com/portal.php?mod=view&amp;aid=41111" target="_blank" rel="noopener">如何编写最佳的Dockerfile</a></p>
 </blockquote>
 <h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p><code>DockerFile</code> 是 <code>Docker</code> 用来构建镜像的一个文件，包含自定义的指令，类似于shell脚本，把一系列的指令集和放在一个 .sh 文件中去执行<br><strong>DockerFile</strong>分为四部分组成：<strong>基础镜像信</strong>、<strong>维护者信息</strong>、<strong>镜像操作指令</strong> 和 <strong>容器启动时执行指令</strong>。例如：<br><figure class="highlight bash"><figcaption><span class="caption">dockerfile</span><a href="https://blog.csdn.net/mozf881/article/details/55798811" target="_blank">相关链接</a></figcaption><div class="figcode"><div class="code"><pre><div class="line"><span class="comment"># 第一行必须指令基于的基础镜像</span></div><div class="line">From ubutu</div><div class="line"></div><div class="line"><span class="comment"># 维护者信息</span></div><div class="line">MAINTAINER docker_user  docker_user@mail.com</div><div class="line"></div><div class="line"><span class="comment"># 镜像的操作指令</span></div><div class="line">apt/sourcelist.list</div><div class="line"></div><div class="line">RUN apt-get update &amp;&amp; apt-get install -y ngnix </div><div class="line">RUN <span class="built_in">echo</span> <span class="string">"\ndaemon off;"</span>&gt;&gt;/etc/ngnix/nignix.conf</div><div class="line"></div><div class="line"><span class="comment"># 容器启动时执行指令</span></div><div class="line">CMD /usr/sbin/ngnix</div></pre></div></div></figure></p>
-<p><img src="http://oyvpp7gqd.bkt.clouddn.com/18-7-2/8082419.jpg" alt="dockerfile"></p>
+<p><img src="http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/81984913.jpg" alt="dockerfile"></p>
 <h1 id="Docker-相关命令"><a href="#Docker-相关命令" class="headerlink" title="Docker 相关命令"></a>Docker 相关命令</h1><ol>
 <li><code>docker images</code>  查看本地<strong>docker</strong>镜像文件</li>
 <li><code>docker ps -a</code>   查看所有容器的进程情况</li>
