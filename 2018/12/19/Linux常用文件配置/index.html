@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Linux,Ubuntu,CentOS," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="记录一些常用的 Linux 软件的配置文件    软件名称 版本号 配置文件 对应路径     Vim 8.0 .vimrc /home   tmux 1.8 .tmux.conf /home   bash_aliases - .bash_aliases /home   shadowsocks - shadowsocks.json /etc/">
+<meta name="keywords" content="Linux,Ubuntu,CentOS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux常用文件配置">
+<meta property="og:url" content="https://hui.1222.store/2018/12/19/Linux常用文件配置/index.html">
+<meta property="og:site_name" content="HuiBlog">
+<meta property="og:description" content="记录一些常用的 Linux 软件的配置文件    软件名称 版本号 配置文件 对应路径     Vim 8.0 .vimrc /home   tmux 1.8 .tmux.conf /home   bash_aliases - .bash_aliases /home   shadowsocks - shadowsocks.json /etc/">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-12-19T09:04:51.023Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Linux常用文件配置">
+<meta name="twitter:description" content="记录一些常用的 Linux 软件的配置文件    软件名称 版本号 配置文件 对应路径     Vim 8.0 .vimrc /home   tmux 1.8 .tmux.conf /home   bash_aliases - .bash_aliases /home   shadowsocks - shadowsocks.json /etc/">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://hui.1222.store/2018/12/19/Linux常用文件配置/"/>
+
+
+
+
+
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
+  <title>Linux常用文件配置 | HuiBlog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于我
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+<div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="site-title">HuiBlog</span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description"></h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://hui.1222.store/2018/12/19/Linux常用文件配置/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Hui">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/picture.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HuiBlog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">Linux常用文件配置</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-19T15:05:36+08:00">
+                2018-12-19
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-12-19T17:04:51+08:00">
+                2018-12-19
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/12/19/Linux常用文件配置/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/12/19/Linux常用文件配置/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>记录一些常用的 Linux 软件的配置文件</p>
+<table>
+<thead>
+<tr>
+<th>软件名称</th>
+<th>版本号</th>
+<th>配置文件</th>
+<th>对应路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#vim">Vim</a></td>
+<td>8.0</td>
+<td>.vimrc</td>
+<td>/home</td>
+</tr>
+<tr>
+<td><a href="#tmux">tmux</a></td>
+<td>1.8</td>
+<td>.tmux.conf</td>
+<td>/home</td>
+</tr>
+<tr>
+<td><a href="#bash_aliases">bash_aliases</a></td>
+<td>-</td>
+<td>.bash_aliases</td>
+<td>/home</td>
+</tr>
+<tr>
+<td><a href="#shadowsocks">shadowsocks</a></td>
+<td>-</td>
+<td>shadowsocks.json</td>
+<td>/etc/</td>
+</tr>
+</tbody>
+</table>
+<a id="more"></a>
+<h1 id="vim"><a href="#vim" class="headerlink" title="vim"></a>vim</h1><figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line"><span class="string">"插件安装</span></div><div class="line"><span class="string">let <span class="variable">$BUNDLE</span> = expand("</span><span class="variable">$HOME</span>/.dotfiles/data/vimdata/bundle<span class="string">")</span></div><div class="line"><span class="string">let <span class="variable">$PLUG_DIR</span> = expand("</span><span class="variable">$BUNDLE</span>/vim-plug<span class="string">")</span></div><div class="line"><span class="string">if empty(glob(expand("</span><span class="variable">$PLUG_DIR</span>/plug.vim<span class="string">")))</span></div><div class="line"><span class="string">    silent !curl -fLo <span class="variable">$PLUG_DIR</span>/plug.vim --create-dirs</span></div><div class="line"><span class="string">          \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim</span></div><div class="line"><span class="string">    autocmd VimEnter * PlugInstall --sync | source ~/.vimrc</span></div><div class="line"><span class="string">endif</span></div><div class="line"><span class="string">source <span class="variable">$PLUG_DIR</span>/plug.vim</span></div><div class="line"><span class="string">call plug#begin(expand(<span class="variable">$BUNDLE</span>))</span></div><div class="line"><span class="string">"</span> GO 插件</div><div class="line">Plug <span class="string">'https://github.com/fatih/vim-go.git'</span>, &#123;<span class="string">'for'</span>: [<span class="string">'go'</span>, <span class="string">'golang'</span>]&#125;</div><div class="line"><span class="string">" 有道翻译  命令：:Ydc  翻译当前光标所在的单词</span></div><div class="line"><span class="string">Plug 'https://github.com/ianva/vim-youdao-translater.git' </span></div><div class="line"><span class="string">"</span> 标签管理 命令： Tlist 打开/关闭标签窗口</div><div class="line">Plug <span class="string">'https://github.com/vim-scripts/taglist.vim.git'</span></div><div class="line"><span class="string">" 树形列表文件展示</span></div><div class="line"><span class="string">"</span> &lt;C-w+w&gt; 切换目录</div><div class="line">Plug <span class="string">'https://github.com/Xuyuanp/nerdtree-git-plugin.git'</span></div><div class="line"><span class="string">" 窗口管理</span></div><div class="line"><span class="string">Plug 'https://github.com/vim-scripts/winmanager.git'</span></div><div class="line"><span class="string">"</span> 快速浏览操作多个文件</div><div class="line">Plug <span class="string">'https://github.com/jlanzarotta/bufexplorer.git'</span></div><div class="line"></div><div class="line">call plug<span class="comment">#end() " Should run at last</span></div><div class="line"><span class="string">" 安装光标所指的当前行的插件</span></div><div class="line"><span class="string">function! GetPlugNameFronCurrentLine(cmd)</span></div><div class="line"><span class="string">    let plugin_name = getline("</span>.<span class="string">")</span></div><div class="line"><span class="string">    if plugin_name !~ "</span>^Plug<span class="string">"</span></div><div class="line"><span class="string">        execute(a:cmd . '!')</span></div><div class="line"><span class="string">        return</span></div><div class="line"><span class="string">    endif</span></div><div class="line"><span class="string">    let plugin_name = split(split(plugin_name, "</span><span class="string">'")[1], '</span>/<span class="string">')[-1]</span></div><div class="line"><span class="string">    let plugin_name = substitute(plugin_name, '</span>\.git$<span class="string">', '</span><span class="string">', '</span>g<span class="string">')</span></div><div class="line"><span class="string">    execute(a:cmd .'</span> <span class="string">'. plugin_name)</span></div><div class="line"><span class="string">endfunction</span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">"按 ,pi 安装光标所在行的插件   或者 :PlugInstall</span></div><div class="line"><span class="string">nmap ,pi :w&lt;CR&gt;:call GetPlugNameFronCurrentLine('</span>PlugInstall<span class="string">')&lt;CR&gt;</span></div><div class="line"><span class="string">"按 ,pu 更新光标所在行的插件   或者 :PlugUpdate</span></div><div class="line"><span class="string">nmap ,pu :call GetPlugNameFronCurrentLine('</span>PlugUpdate<span class="string">')&lt;CR&gt;</span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">map &lt;F4&gt; :tabnew .&lt;CR&gt;              " 列出当前目录文件   </span></div><div class="line"><span class="string">map &lt;C-F4&gt; \be                      " 打开树状文件目录    </span></div><div class="line"><span class="string">nmap &lt;silent&gt; &lt;F7&gt; :WMToggle&lt;CR&gt;</span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">autocmd InsertLeave * se nocul  " 用浅色高亮当前行  </span></div><div class="line"><span class="string">autocmd InsertEnter * se cul    " 用浅色高亮当前行  </span></div><div class="line"><span class="string">autocmd FileType c,cpp map &lt;buffer&gt; &lt;leader&gt;&lt;space&gt; :w&lt;cr&gt;:make&lt;cr&gt;  " quickfix模式</span></div><div class="line"><span class="string">"新建.c,.h,.sh,.java文件，自动插入文件头 </span></div><div class="line"><span class="string">autocmd BufNewFile *.cpp,*.[ch],*.sh,*.java exec ":call SetFileTitle()" </span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">set tags=tags; </span></div><div class="line"><span class="string">set autochdir</span></div><div class="line"><span class="string">set showcmd                 " 输入的命令显示出来，看的清楚些  </span></div><div class="line"><span class="string">set laststatus=1            " 启动显示状态行(1),总是显示状态行(2)  </span></div><div class="line"><span class="string">set foldenable              " 允许折叠  </span></div><div class="line"><span class="string">set foldmethod=manual       " 手动折叠  </span></div><div class="line"><span class="string">set nocompatible            " 去掉讨厌的有关vi一致性模式，避免以前版本的一些bug和局限  </span></div><div class="line"><span class="string">set autoread                " 设置当文件被改动时自动载入</span></div><div class="line"><span class="string">set autowrite</span></div><div class="line"><span class="string">set ruler                   " 打开状态栏标尺</span></div><div class="line"><span class="string">set cursorline              " Vim 带下划线</span></div><div class="line"><span class="string">set magic                   " 设置魔术</span></div><div class="line"><span class="string">set guioptions-=T           " 隐藏工具栏</span></div><div class="line"><span class="string">set guioptions-=m           " 隐藏菜单栏</span></div><div class="line"><span class="string">set foldcolumn=0            " 设置在状态行显示的信息</span></div><div class="line"><span class="string">set foldmethod=indent </span></div><div class="line"><span class="string">set foldlevel=3 </span></div><div class="line"><span class="string">set foldenable              " 开始折叠</span></div><div class="line"><span class="string">set nocompatible            " 不要使用vi的键盘模式，而是vim自己的</span></div><div class="line"><span class="string">set syntax=on               " 语法高亮  </span></div><div class="line"><span class="string">set noeb                    " 去掉输入错误的提示声音       </span></div><div class="line"><span class="string">set confirm                 " 在处理未保存或只读文件的时候，弹出确认</span></div><div class="line"><span class="string">set cindent</span></div><div class="line"><span class="string">set tabstop=4               " Tab键的宽度</span></div><div class="line"><span class="string">set softtabstop=4           " 统一缩进为4</span></div><div class="line"><span class="string">set shiftwidth=4</span></div><div class="line"><span class="string">set smarttab                " 在行和段开始处使用制表符</span></div><div class="line"><span class="string">set number</span></div><div class="line"><span class="string">set history=1000            " 历史记录数</span></div><div class="line"><span class="string">set nobackup                " 禁止生成临时文件</span></div><div class="line"><span class="string">set noswapfile</span></div><div class="line"><span class="string">set ignorecase              " 搜索忽略大小写</span></div><div class="line"><span class="string">set hlsearch                " 搜索逐字符高亮</span></div><div class="line"><span class="string">set incsearch</span></div><div class="line"><span class="string">set completeopt=preview,menu " 代码补全 </span></div><div class="line"><span class="string">set langmenu=zh_CN.UTF-8</span></div><div class="line"><span class="string">set helplang=cn</span></div><div class="line"><span class="string">set laststatus=2            " 总是显示状态行</span></div><div class="line"><span class="string">set cmdheight=2             " 命令行（在状态行下）的高度，默认为1，这里是2</span></div><div class="line"><span class="string">set viminfo+=!              " 保存全局变量</span></div><div class="line"><span class="string">set iskeyword+=_,$,@,%,#,-          " 带有如下符号的单词不要被换行分割</span></div><div class="line"><span class="string">set linespace=0             " 字符间插入的像素行数目</span></div><div class="line"><span class="string">set wildmenu                " 增强模式中的命令行自动完成操作</span></div><div class="line"><span class="string">set backspace=2             " 使回格键（backspace）正常处理indent, eol, start等</span></div><div class="line"><span class="string">set whichwrap+=&lt;,&gt;,h,l      " 允许backspace和光标键跨越行边界</span></div><div class="line"><span class="string">set report=0                " 通过使用: commands命令，告诉我们文件的哪一行被改变过</span></div><div class="line"><span class="string">set fillchars=vert:\ ,stl:\ ,stlnc:\    " 在被分割的窗口间显示空白，便于阅读</span></div><div class="line"><span class="string">set showmatch               " 高亮显示匹配的括号</span></div><div class="line"><span class="string">set matchtime=1             " 匹配括号高亮的时间（单位是十分之一秒）</span></div><div class="line"><span class="string">set scrolloff=3             " 光标移动到buffer的顶部和底部时保持3行距离 </span></div><div class="line"><span class="string">set clipboard+=unnamed      "共享剪贴板  </span></div><div class="line"><span class="string">set nobackup                "从不备份  </span></div><div class="line"><span class="string">:set makeprg=g++\ -Wall\ \ % "make 运行</span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">set statusline=%F%m%r%h%w\ [FORMAT=%&#123;&amp;ff&#125;]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %&#123;strftime(\"%d/%m/%y\ -\ %H:%M\")&#125;   "状态行显示的内容  </span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">" 显示中文帮助</span></div><div class="line"><span class="string">if version &gt;= 603</span></div><div class="line"><span class="string">    set enc=utf-8</span></div><div class="line"><span class="string">    set helplang=cn</span></div><div class="line"><span class="string">    set encoding=utf-8</span></div><div class="line"><span class="string">    set fencs=utf-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936</span></div><div class="line"><span class="string">    set termencoding=utf-8</span></div><div class="line"><span class="string">    set fileencodings=ucs-bom,utf-8,cp936</span></div><div class="line"><span class="string">    set fileencoding=utf-8</span></div><div class="line"><span class="string">endif</span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">if (has("gui_running")) </span></div><div class="line"><span class="string">   set guifont=Bitstream\ Vera\ Sans\ Mono\ 10 </span></div><div class="line"><span class="string">endif </span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">""定义函数SetFileTitle，自动插入文件头 </span></div><div class="line"><span class="string">func SetFileTitle() </span></div><div class="line"><span class="string">    "如果文件类型为.sh文件 </span></div><div class="line"><span class="string">    if &amp;filetype == '</span>sh<span class="string">' </span></div><div class="line"><span class="string">        call setline(1,"\#########################################################################") </span></div><div class="line"><span class="string">        call append(line("."), "\# File Name: ".expand("%")) </span></div><div class="line"><span class="string">        call append(line(".")+3, "\# Created Time: ".strftime("%c")) </span></div><div class="line"><span class="string">        call append(line(".")+4, "\#########################################################################") </span></div><div class="line"><span class="string">        call append(line(".")+5, "\#!/bin/bash") </span></div><div class="line"><span class="string">        call append(line(".")+6, "") </span></div><div class="line"><span class="string">    else </span></div><div class="line"><span class="string">        call setline(1, "/*************************************************************************") </span></div><div class="line"><span class="string">        call append(line("."), "    &gt; File Name: ".expand("%")) </span></div><div class="line"><span class="string">        call append(line(".")+3, "    &gt; Created Time: ".strftime("%c")) </span></div><div class="line"><span class="string">        call append(line(".")+4, " ************************************************************************/") </span></div><div class="line"><span class="string">        call append(line(".")+5, "")</span></div><div class="line"><span class="string">    endif</span></div><div class="line"><span class="string">    if &amp;filetype == '</span>cpp<span class="string">'</span></div><div class="line"><span class="string">        call append(line(".")+6, "#include&lt;iostream&gt;")</span></div><div class="line"><span class="string">        call append(line(".")+7, "using namespace std;")</span></div><div class="line"><span class="string">        call append(line(".")+8, "")</span></div><div class="line"><span class="string">    endif</span></div><div class="line"><span class="string">    if &amp;filetype == '</span>c<span class="string">'</span></div><div class="line"><span class="string">        call append(line(".")+6, "#include&lt;stdio.h&gt;")</span></div><div class="line"><span class="string">        call append(line(".")+7, "")</span></div><div class="line"><span class="string">    endif</span></div><div class="line"><span class="string">    "新建文件后，自动定位到文件末尾</span></div><div class="line"><span class="string">    autocmd BufNewFile * normal G</span></div><div class="line"><span class="string">endfunc </span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">" 侦测文件类型</span></div><div class="line"><span class="string">filetype on</span></div><div class="line"><span class="string">" 载入文件类型插件</span></div><div class="line"><span class="string">filetype plugin on</span></div><div class="line"><span class="string">" 为特定文件类型载入相关缩进文件</span></div><div class="line"><span class="string">filetype indent on</span></div><div class="line"><span class="string">" 高亮显示普通txt文件（需要txt.vim脚本）</span></div><div class="line"><span class="string">au BufRead,BufNewFile *  setfiletype txt</span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">let Tlist_Auto_Open=1 </span></div><div class="line"><span class="string">let Tlist_Sort_Type = "name"    " 按照名称排序  </span></div><div class="line"><span class="string">let Tlist_Compart_Format = 1    " 压缩方式  </span></div><div class="line"><span class="string">let Tlist_File_Fold_Auto_Close = 0  " 不要关闭其他文件的tags  </span></div><div class="line"><span class="string">let Tlist_Enable_Fold_Column=0    " 不要显示折叠树  </span></div><div class="line"><span class="string">let Tlist_Ctags_Cmd = '</span>/usr/bin/ctags<span class="string">' </span></div><div class="line"><span class="string">let Tlist_Show_One_File = 1 "不同时显示多个文件的tag，只显示当前文件的 </span></div><div class="line"><span class="string">let Tlist_Exit_OnlyWindow = 1 "如果taglist窗口是最后一个窗口，则退出vim </span></div><div class="line"><span class="string">let Tlist_Use_Right_Window = 0 "在右侧窗口中显示taglist窗口  1:右侧 0:左侧</span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">let g:NERDTree_title="[NERDTree]"  </span></div><div class="line"><span class="string">let g:winManagerWindowLayout='</span>NERDTree|TagList,BufExplorer<span class="string">'</span></div><div class="line"><span class="string">let g:winManagerWidth = 30</span></div><div class="line"><span class="string">let NERDTreeShowBookmarks=1</span></div><div class="line"><span class="string">let g:bufExplorerDefaultHelp=0       " Do not show default help.</span></div><div class="line"><span class="string">let g:bufExplorerShowRelativePath=1  " Show relative paths.</span></div><div class="line"><span class="string">let g:bufExplorerSortBy='</span>mru<span class="string">'        " Sort by most recently used.</span></div><div class="line"><span class="string">let g:bufExplorerSplitRight=0        " Split left.</span></div><div class="line"><span class="string">let g:bufExplorerSplitVertical=1     " Split vertically.</span></div><div class="line"><span class="string">let g:bufExplorerSplitVertSize = 30  " Split width</span></div></pre></div></div></figure>
+<h1 id="tmux"><a href="#tmux" class="headerlink" title="tmux"></a>tmux</h1><figure class="highlight bash"><figcaption><span class="caption"> </span></figcaption><div class="figcode"><div class="code"><pre><div class="line"><span class="comment"># 设置前缀为Ctrl + a</span></div><div class="line"><span class="built_in">set</span> -g prefix C-x</div><div class="line"></div><div class="line"><span class="comment">#解除Ctrl+b 与前缀的对应关系</span></div><div class="line">unbind C-b</div><div class="line"></div><div class="line"><span class="comment">## 切换面板</span></div><div class="line"><span class="comment">#up</span></div><div class="line"><span class="built_in">bind</span>-key k select-pane -U</div><div class="line"><span class="comment">#down</span></div><div class="line"><span class="built_in">bind</span>-key j select-pane -D</div><div class="line"><span class="comment">#left</span></div><div class="line"><span class="built_in">bind</span>-key h select-pane -L</div><div class="line"><span class="comment">#right</span></div><div class="line"><span class="built_in">bind</span>-key l select-pane -R</div></pre></div></div></figure>
+<h1 id="bash-aliases"><a href="#bash-aliases" class="headerlink" title="bash_aliases"></a>bash_aliases</h1><blockquote>
+<p>改配置为 LC(Laravel-China) 官方镜像推荐配置</p>
+</blockquote>
+<figure class="highlight bash"><div class="figcode"><div class="code"><pre><div class="line"><span class="built_in">alias</span> ..=<span class="string">"cd .."</span></div><div class="line"><span class="built_in">alias</span> ...=<span class="string">"cd ../.."</span></div><div class="line"></div><div class="line"><span class="built_in">alias</span> h=<span class="string">'cd ~'</span></div><div class="line"><span class="built_in">alias</span> c=<span class="string">'clear'</span></div><div class="line"><span class="built_in">alias</span> art=artisan</div><div class="line"></div><div class="line"><span class="built_in">alias</span> phpspec=<span class="string">'vendor/bin/phpspec'</span></div><div class="line"><span class="built_in">alias</span> phpunit=<span class="string">'vendor/bin/phpunit'</span></div><div class="line"><span class="built_in">alias</span> serve=serve-laravel</div><div class="line"></div><div class="line"><span class="built_in">alias</span> xoff=<span class="string">'sudo phpdismod -s cli xdebug'</span></div><div class="line"><span class="built_in">alias</span> xon=<span class="string">'sudo phpenmod -s cli xdebug'</span></div><div class="line"></div><div class="line"><span class="built_in">alias</span> nrd=<span class="string">"npm run dev"</span></div><div class="line"><span class="built_in">alias</span> nrw=<span class="string">"npm run watch"</span></div><div class="line"><span class="built_in">alias</span> nrww=<span class="string">"npm run watch-poll"</span></div><div class="line"><span class="built_in">alias</span> nrh=<span class="string">"npm run hot"</span></div><div class="line"><span class="built_in">alias</span> nrp=<span class="string">"npm run production"</span></div><div class="line"></div><div class="line"><span class="built_in">alias</span> yrd=<span class="string">"yarn run dev"</span></div><div class="line"><span class="built_in">alias</span> yrw=<span class="string">"yarn run watch"</span></div><div class="line"><span class="built_in">alias</span> yrwp=<span class="string">"yarn run watch-poll"</span></div><div class="line"><span class="built_in">alias</span> yrh=<span class="string">"yarn run hot"</span></div><div class="line"><span class="built_in">alias</span> yrp=<span class="string">"yarn run production"</span></div><div class="line"></div><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">artisan</span></span>() &#123;</div><div class="line">    php artisan <span class="string">"<span class="variable">$@</span>"</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">dusk</span></span>() &#123;</div><div class="line">    pids=$(pidof /usr/bin/Xvfb)</div><div class="line">    <span class="keyword">if</span> [ ! -n <span class="string">"<span class="variable">$pids</span>"</span> ]; <span class="keyword">then</span></div><div class="line">        Xvfb :0 -screen 0 1280x960x24 &amp;</div><div class="line">    <span class="keyword">fi</span></div><div class="line">    php artisan dusk <span class="string">"<span class="variable">$@</span>"</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">php56</span></span>() &#123;</div><div class="line">    sudo update-alternatives --<span class="built_in">set</span> php /usr/bin/php5.6</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">php70</span></span>() &#123;</div><div class="line">    sudo update-alternatives --<span class="built_in">set</span> php /usr/bin/php7.0</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">php71</span></span>() &#123;</div><div class="line">    sudo update-alternatives --<span class="built_in">set</span> php /usr/bin/php7.1</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">php72</span></span>() &#123;</div><div class="line">    sudo update-alternatives --<span class="built_in">set</span> php /usr/bin/php7.2</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">function</span> serve-<span class="function"><span class="title">apache</span></span>() &#123;</div><div class="line">    <span class="keyword">if</span> [[ <span class="string">"<span class="variable">$1</span>"</span> &amp;&amp; <span class="string">"<span class="variable">$2</span>"</span> ]]</div><div class="line">    <span class="keyword">then</span></div><div class="line">        sudo bash /vagrant/scripts/create-certificate.sh <span class="string">"<span class="variable">$1</span>"</span></div><div class="line">        sudo dos2unix /vagrant/scripts/serve-apache.sh</div><div class="line">        sudo bash /vagrant/scripts/serve-apache.sh <span class="string">"<span class="variable">$1</span>"</span> <span class="string">"<span class="variable">$2</span>"</span> 80 443 <span class="string">"<span class="variable">$&#123;3:-7.1&#125;</span>"</span></div><div class="line">    <span class="keyword">else</span></div><div class="line">        <span class="built_in">echo</span> <span class="string">"Error: missing required parameters."</span></div><div class="line">        <span class="built_in">echo</span> <span class="string">"Usage: "</span></div><div class="line">        <span class="built_in">echo</span> <span class="string">"  serve-apache domain path"</span></div><div class="line">    <span class="keyword">fi</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">function</span> serve-<span class="function"><span class="title">laravel</span></span>() &#123;</div><div class="line">    <span class="keyword">if</span> [[ <span class="string">"<span class="variable">$1</span>"</span> &amp;&amp; <span class="string">"<span class="variable">$2</span>"</span> ]]</div><div class="line">    <span class="keyword">then</span></div><div class="line">        sudo bash /vagrant/scripts/create-certificate.sh <span class="string">"<span class="variable">$1</span>"</span></div><div class="line">        sudo dos2unix /vagrant/scripts/serve-laravel.sh</div><div class="line">        sudo bash /vagrant/scripts/serve-laravel.sh <span class="string">"<span class="variable">$1</span>"</span> <span class="string">"<span class="variable">$2</span>"</span> 80 443 <span class="string">"<span class="variable">$&#123;3:-7.1&#125;</span>"</span></div><div class="line">    <span class="keyword">else</span></div><div class="line">        <span class="built_in">echo</span> <span class="string">"Error: missing required parameters."</span></div><div class="line">        <span class="built_in">echo</span> <span class="string">"Usage: "</span></div><div class="line">        <span class="built_in">echo</span> <span class="string">"  serve domain path"</span></div><div class="line">    <span class="keyword">fi</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">function</span> serve-<span class="function"><span class="title">proxy</span></span>() &#123;</div><div class="line">    <span class="keyword">if</span> [[ <span class="string">"<span class="variable">$1</span>"</span> &amp;&amp; <span class="string">"<span class="variable">$2</span>"</span> ]]</div><div class="line">    <span class="keyword">then</span></div><div class="line">        sudo dos2unix /vagrant/scripts/serve-proxy.sh</div><div class="line">        sudo bash /vagrant/scripts/serve-proxy.sh <span class="string">"<span class="variable">$1</span>"</span> <span class="string">"<span class="variable">$2</span>"</span> 80 443 <span class="string">"<span class="variable">$&#123;3:-7.1&#125;</span>"</span></div><div class="line">    <span class="keyword">else</span></div><div class="line">        <span class="built_in">echo</span> <span class="string">"Error: missing required parameters."</span></div><div class="line">        <span class="built_in">echo</span> <span class="string">"Usage: "</span></div><div class="line">        <span class="built_in">echo</span> <span class="string">"  serve-proxy domain port"</span></div><div class="line">    <span class="keyword">fi</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">function</span> serve-<span class="function"><span class="title">silverstripe</span></span>() &#123;</div><div class="line">    <span class="keyword">if</span> [[ <span class="string">"<span class="variable">$1</span>"</span> &amp;&amp; <span class="string">"<span class="variable">$2</span>"</span> ]]</div><div class="line">    <span class="keyword">then</span></div><div class="line">        sudo bash /vagrant/scripts/create-certificate.sh <span class="string">"<span class="variable">$1</span>"</span></div><div class="line">        sudo dos2unix /vagrant/scripts/serve-silverstripe.sh</div><div class="line">        sudo bash /vagrant/scripts/serve-silverstripe.sh <span class="string">"<span class="variable">$1</span>"</span> <span class="string">"<span class="variable">$2</span>"</span> 80 443 <span class="string">"<span class="variable">$&#123;3:-7.1&#125;</span>"</span></div><div class="line">    <span class="keyword">else</span></div><div class="line">        <span class="built_in">echo</span> <span class="string">"Error: missing required parameters."</span></div><div class="line">        <span class="built_in">echo</span> <span class="string">"Usage: "</span></div><div class="line">        <span class="built_in">echo</span> <span class="string">"  serve-silverstripe domain path"</span></div><div class="line">    <span class="keyword">fi</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">function</span> serve-<span class="function"><span class="title">spa</span></span>() &#123;</div><div class="line">  <span class="keyword">if</span> [[ <span class="string">"<span class="variable">$1</span>"</span> &amp;&amp; <span class="string">"<span class="variable">$2</span>"</span> ]]</div><div class="line">  <span class="keyword">then</span></div><div class="line">    sudo bash /vagrant/scripts/create-certificate.sh <span class="string">"<span class="variable">$1</span>"</span></div><div class="line">    sudo dos2unix /vagrant/scripts/serve-spa.sh</div><div class="line">    sudo bash /vagrant/scripts/serve-spa.sh <span class="string">"<span class="variable">$1</span>"</span> <span class="string">"<span class="variable">$2</span>"</span> 80 443 <span class="string">"<span class="variable">$&#123;3:-7.1&#125;</span>"</span></div><div class="line">  <span class="keyword">else</span></div><div class="line">    <span class="built_in">echo</span> <span class="string">"Error: missing required parameters."</span></div><div class="line">    <span class="built_in">echo</span> <span class="string">"Usage: "</span></div><div class="line">    <span class="built_in">echo</span> <span class="string">"  serve-spa domain path"</span></div><div class="line">  <span class="keyword">fi</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">function</span> serve-<span class="function"><span class="title">statamic</span></span>() &#123;</div><div class="line">    <span class="keyword">if</span> [[ <span class="string">"<span class="variable">$1</span>"</span> &amp;&amp; <span class="string">"<span class="variable">$2</span>"</span> ]]</div><div class="line">    <span class="keyword">then</span></div><div class="line">        sudo bash /vagrant/scripts/create-certificate.sh <span class="string">"<span class="variable">$1</span>"</span></div><div class="line">        sudo dos2unix /vagrant/scripts/serve-statamic.sh</div><div class="line">        sudo bash /vagrant/scripts/serve-statamic.sh <span class="string">"<span class="variable">$1</span>"</span> <span class="string">"<span class="variable">$2</span>"</span> 80 443 <span class="string">"<span class="variable">$&#123;3:-7.1&#125;</span>"</span></div><div class="line">    <span class="keyword">else</span></div><div class="line">        <span class="built_in">echo</span> <span class="string">"Error: missing required parameters."</span></div><div class="line">        <span class="built_in">echo</span> <span class="string">"Usage: "</span></div><div class="line">        <span class="built_in">echo</span> <span class="string">"  serve-statamic domain path"</span></div><div class="line">    <span class="keyword">fi</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">function</span> serve-<span class="function"><span class="title">symfony2</span></span>() &#123;</div><div class="line">    <span class="keyword">if</span> [[ <span class="string">"<span class="variable">$1</span>"</span> &amp;&amp; <span class="string">"<span class="variable">$2</span>"</span> ]]</div><div class="line">    <span class="keyword">then</span></div><div class="line">        sudo bash /vagrant/scripts/create-certificate.sh <span class="string">"<span class="variable">$1</span>"</span></div><div class="line">        sudo dos2unix /vagrant/scripts/serve-symfony2.sh</div><div class="line">        sudo bash /vagrant/scripts/serve-symfony2.sh <span class="string">"<span class="variable">$1</span>"</span> <span class="string">"<span class="variable">$2</span>"</span> 80 443 <span class="string">"<span class="variable">$&#123;3:-7.1&#125;</span>"</span></div><div class="line">    <span class="keyword">else</span></div><div class="line">        <span class="built_in">echo</span> <span class="string">"Error: missing required parameters."</span></div><div class="line">        <span class="built_in">echo</span> <span class="string">"Usage: "</span></div><div class="line">        <span class="built_in">echo</span> <span class="string">"  serve-symfony2 domain path"</span></div><div class="line">    <span class="keyword">fi</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">function</span> serve-<span class="function"><span class="title">symfony4</span></span>() &#123;</div><div class="line">    <span class="keyword">if</span> [[ <span class="string">"<span class="variable">$1</span>"</span> &amp;&amp; <span class="string">"<span class="variable">$2</span>"</span> ]]</div><div class="line">    <span class="keyword">then</span></div><div class="line">        sudo bash /vagrant/scripts/create-certificate.sh <span class="string">"<span class="variable">$1</span>"</span></div><div class="line">        sudo dos2unix /vagrant/scripts/serve-symfony4.sh</div><div class="line">        sudo bash /vagrant/scripts/serve-symfony4.sh <span class="string">"<span class="variable">$1</span>"</span> <span class="string">"<span class="variable">$2</span>"</span> 80 443 <span class="string">"<span class="variable">$&#123;3:-7.1&#125;</span>"</span></div><div class="line">    <span class="keyword">else</span></div><div class="line">        <span class="built_in">echo</span> <span class="string">"Error: missing required parameters."</span></div><div class="line">        <span class="built_in">echo</span> <span class="string">"Usage: "</span></div><div class="line">        <span class="built_in">echo</span> <span class="string">"  serve-symfony4 domain path"</span></div><div class="line">    <span class="keyword">fi</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">function</span> serve-<span class="function"><span class="title">pimcore</span></span>() &#123;</div><div class="line">    <span class="keyword">if</span> [[ <span class="string">"<span class="variable">$1</span>"</span> &amp;&amp; <span class="string">"<span class="variable">$2</span>"</span> ]]</div><div class="line">    <span class="keyword">then</span></div><div class="line">        sudo bash /vagrant/scripts/create-certificate.sh <span class="string">"<span class="variable">$1</span>"</span></div><div class="line">        sudo dos2unix /vagrant/scripts/serve-pimcore.sh</div><div class="line">        sudo bash /vagrant/scripts/serve-pimcore.sh <span class="string">"<span class="variable">$1</span>"</span> <span class="string">"<span class="variable">$2</span>"</span> 80 443 <span class="string">"<span class="variable">$&#123;3:-7.1&#125;</span>"</span></div><div class="line">    <span class="keyword">else</span></div><div class="line">        <span class="built_in">echo</span> <span class="string">"Error: missing required parameters."</span></div><div class="line">        <span class="built_in">echo</span> <span class="string">"Usage: "</span></div><div class="line">        <span class="built_in">echo</span> <span class="string">"  serve-pimcore domain path"</span></div><div class="line">    <span class="keyword">fi</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">share</span></span>() &#123;</div><div class="line">    <span class="keyword">if</span> [[ <span class="string">"<span class="variable">$1</span>"</span> ]]</div><div class="line">    <span class="keyword">then</span></div><div class="line">        ngrok http <span class="variable">$&#123;@:2&#125;</span> -host-header=<span class="string">"<span class="variable">$1</span>"</span> 80</div><div class="line">    <span class="keyword">else</span></div><div class="line">        <span class="built_in">echo</span> <span class="string">"Error: missing required parameters."</span></div><div class="line">        <span class="built_in">echo</span> <span class="string">"Usage: "</span></div><div class="line">        <span class="built_in">echo</span> <span class="string">"  share domain"</span></div><div class="line">        <span class="built_in">echo</span> <span class="string">"Invocation with extra params passed directly to ngrok"</span></div><div class="line">        <span class="built_in">echo</span> <span class="string">"  share domain -region=eu -subdomain=test1234"</span></div><div class="line">    <span class="keyword">fi</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">flip</span></span>() &#123;</div><div class="line">    sudo bash /vagrant/scripts/flip-webserver.sh</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">__has_pv</span></span>() &#123;</div><div class="line">    $(<span class="built_in">hash</span> pv 2&gt;/dev/null);</div><div class="line"></div><div class="line">    <span class="built_in">return</span> $?</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">__pv_install_message</span></span>() &#123;</div><div class="line">    <span class="keyword">if</span> ! __has_pv; <span class="keyword">then</span></div><div class="line">        <span class="built_in">echo</span> <span class="variable">$1</span></div><div class="line">        <span class="built_in">echo</span> <span class="string">"Install pv with \`sudo apt-get install -y pv\` then run this command again."</span></div><div class="line">        <span class="built_in">echo</span> <span class="string">""</span></div><div class="line">    <span class="keyword">fi</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">dbexport</span></span>() &#123;</div><div class="line">    FILE=<span class="variable">$&#123;1:-/vagrant/mysqldump.sql.gz&#125;</span></div><div class="line"></div><div class="line">    <span class="comment"># This gives an estimate of the size of the SQL file</span></div><div class="line">    <span class="comment"># It appears that 80% is a good approximation of</span></div><div class="line">    <span class="comment"># the ratio of estimated size to actual size</span></div><div class="line">    SIZE_QUERY=<span class="string">"select ceil(sum(data_length) * 0.8) as size from information_schema.TABLES"</span></div><div class="line"></div><div class="line">    __pv_install_message <span class="string">"Want to see export progress?"</span></div><div class="line"></div><div class="line">    <span class="built_in">echo</span> <span class="string">"Exporting databases to '<span class="variable">$FILE</span>'"</span></div><div class="line"></div><div class="line">    <span class="keyword">if</span> __has_pv; <span class="keyword">then</span></div><div class="line">        ADJUSTED_SIZE=$(mysql --vertical -uhomestead -psecret -e <span class="string">"<span class="variable">$SIZE_QUERY</span>"</span> 2&gt;/dev/null | grep <span class="string">'size'</span> | awk <span class="string">'&#123;print $2&#125;'</span>)</div><div class="line">        HUMAN_READABLE_SIZE=$(numfmt --to=iec-i --suffix=B --format=<span class="string">"%.3f"</span> <span class="variable">$ADJUSTED_SIZE</span>)</div><div class="line"></div><div class="line">        <span class="built_in">echo</span> <span class="string">"Estimated uncompressed size: <span class="variable">$HUMAN_READABLE_SIZE</span>"</span></div><div class="line">        mysqldump -uhomestead -psecret --all-databases --skip-lock-tables 2&gt;/dev/null | pv  --size=<span class="variable">$ADJUSTED_SIZE</span> | gzip &gt; <span class="string">"<span class="variable">$FILE</span>"</span></div><div class="line">    <span class="keyword">else</span></div><div class="line">        mysqldump -uhomestead -psecret --all-databases --skip-lock-tables 2&gt;/dev/null | gzip &gt; <span class="string">"<span class="variable">$FILE</span>"</span></div><div class="line">    <span class="keyword">fi</span></div><div class="line"></div><div class="line">    <span class="built_in">echo</span> <span class="string">"Done."</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">dbimport</span></span>() &#123;</div><div class="line">    FILE=<span class="variable">$&#123;1:-/vagrant/mysqldump.sql.gz&#125;</span></div><div class="line"></div><div class="line">    __pv_install_message <span class="string">"Want to see import progress?"</span></div><div class="line"></div><div class="line">    <span class="built_in">echo</span> <span class="string">"Importing databases from '<span class="variable">$FILE</span>'"</span></div><div class="line"></div><div class="line">    <span class="keyword">if</span> __has_pv; <span class="keyword">then</span></div><div class="line">        pv <span class="string">"<span class="variable">$FILE</span>"</span> --progress --eta | zcat | mysql -uhomestead -psecret 2&gt;/dev/null</div><div class="line">    <span class="keyword">else</span></div><div class="line">        cat <span class="string">"<span class="variable">$FILE</span>"</span> | zcat | mysql -uhomestead -psecret 2&gt;/dev/null</div><div class="line">    <span class="keyword">fi</span></div><div class="line"></div><div class="line">    <span class="built_in">echo</span> <span class="string">"Done."</span></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">xphp</span></span>() &#123;</div><div class="line">    (php -m | grep -q xdebug)</div><div class="line">    <span class="keyword">if</span> [[ $? -eq 0 ]]</div><div class="line">    <span class="keyword">then</span></div><div class="line">        XDEBUG_ENABLED=<span class="literal">true</span></div><div class="line">    <span class="keyword">else</span></div><div class="line">        XDEBUG_ENABLED=<span class="literal">false</span></div><div class="line">    <span class="keyword">fi</span></div><div class="line"></div><div class="line">    <span class="keyword">if</span> ! <span class="variable">$XDEBUG_ENABLED</span>; <span class="keyword">then</span> xon; <span class="keyword">fi</span></div><div class="line"></div><div class="line">    php \</div><div class="line">        -dxdebug.remote_host=192.168.10.1 \</div><div class="line">        -dxdebug.remote_autostart=1 \</div><div class="line">        <span class="string">"<span class="variable">$@</span>"</span></div><div class="line"></div><div class="line">    <span class="keyword">if</span> ! <span class="variable">$XDEBUG_ENABLED</span>; <span class="keyword">then</span> xoff; <span class="keyword">fi</span></div><div class="line">&#125;</div></pre></div></div></figure>
+<h1 id="shadowsocks"><a href="#shadowsocks" class="headerlink" title="shadowsocks"></a>shadowsocks</h1><figure class="highlight json"><div class="figcode"><div class="code"><pre><div class="line">&#123;</div><div class="line">    <span class="attr">"server"</span>:<span class="string">"XXX.XXX.XX.XXX"</span>,</div><div class="line">    <span class="attr">"server_port"</span>:<span class="number">8388</span>,</div><div class="line">    <span class="attr">"local_address"</span>: <span class="string">"127.0.0.1"</span>,</div><div class="line">    <span class="attr">"local_port"</span>:<span class="number">1080</span>,</div><div class="line">    <span class="attr">"password"</span>:<span class="string">"admin"</span>,</div><div class="line">    <span class="attr">"timeout"</span>:<span class="number">300</span>,</div><div class="line">    <span class="attr">"method"</span>:<span class="string">"aes-256-cfb"</span></div><div class="line">&#125;</div></pre></div></div></figure>
+      
+    </div>
+    
+    
+    
+
+    <div>
+      
+        
+      
+    </div>
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Hui
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://hui.1222.store/2018/12/19/Linux常用文件配置/" title="Linux常用文件配置">https://hui.1222.store/2018/12/19/Linux常用文件配置/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Linux/" rel="tag"># Linux</a>
+          
+            <a href="/tags/Ubuntu/" rel="tag"># Ubuntu</a>
+          
+            <a href="/tags/CentOS/" rel="tag"># CentOS</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/12/10/使用Docker搭建自己的Sentry服务/" rel="next" title="使用Docker搭建自己的Sentry服务">
+                <i class="fa fa-chevron-left"></i> 使用Docker搭建自己的Sentry服务
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar sidebar-active">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/picture.jpg"
+                alt="Hui" />
+            
+              <p class="site-author-name" itemprop="name">Hui</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/kjh123" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:learner.hui@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+<div>
+    <script type="text/javascript" src="https://api.imjad.cn/hitokoto/?cat=&charset=utf-8&length=50&encode=js&fun=sync&source="></script>
+    <div><script>hitokoto()</script></div>
+</div>
+
+<div class="links-of-blogroll motion-element links-of-blogroll-inline" style="opacity: 1; display: block; transform: translateX(0px); margin-top: 25%;">
+
+  <ul class="links-of-blogroll-list">
+
+      <li class="links-of-blogroll-item">
+        <a href="https://laravel-china.org/" title="Laravel-China" target="_blank"><i class="fa fa-fw fa-link"></i>Laravel-China</a>
+      </li>
+
+
+  </ul>
+</div>
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#vim"><span class="nav-number">1.</span> <span class="nav-text">vim</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#tmux"><span class="nav-number">2.</span> <span class="nav-text">tmux</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#bash-aliases"><span class="nav-number">3.</span> <span class="nav-text">bash_aliases</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#shadowsocks"><span class="nav-number">4.</span> <span class="nav-text">shadowsocks</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Hui</span>
+
+  
+</div>
+
+
+
+
+
+
+
+
+  <div class="footer-custom">Hosted by <a target="_blank" href="https://github.com/kjh123">GitHub</a></div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazyload/1.9.3/jquery.lazyload.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links\ -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://learner-hui.oss-cn-beijing.aliyuncs.com/gitmint.js"></script>
+        <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: md5(window.location.pathname),
+            owner: 'kjh123',
+            repo: 'kjh123.github.io',
+            
+            lang: "zh-Hans" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: '7a91abfbc703e700893692461cbba26ec3d8f5b9',
+            
+                client_id: '7b209d8fb2e098efe782'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+  <script type="text/javascript" src="/js/src/js.cookie.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/scroll-cookie.js?v=5.1.4"></script>
+
+
+  
+  <script type="text/javascript" src="/js/src/exturl.js?v=5.1.4"></script>
+
+
+  <script type="text/javascript" src="/lib/zclip/clipboard.min.js"></script>	
+<script type="text/javascript" src="/js/src/custom.js"></script>
+</body>
+</html>
