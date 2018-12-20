@@ -14,10 +14,10 @@ categories: JavaScript
 
 # 示例
 功能示例：
-[代码示例](http://oyvpp7gqd.bkt.clouddn.com/18-9-2/10786793.jpg)
-[校验结果（失败：不能为空）](http://oyvpp7gqd.bkt.clouddn.com/18-9-3/57556757.jpg)
-[校验结果（失败：长度不符）](http://oyvpp7gqd.bkt.clouddn.com/18-9-3/4882940.jpg)
-[校验结果（成功）](http://oyvpp7gqd.bkt.clouddn.com/18-9-3/29547995.jpg)
+[代码示例](http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/49406133.jpg)
+[校验结果（失败：不能为空）](http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/18923734.jpg)
+[校验结果（失败：长度不符）](http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/18079569.jpg)
+[校验结果（成功）](http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/15306891.jpg)
 示例说明：
 ```html
 <!-- 为更好的说明 已省略非必要部分 -->

@@ -1,0 +1,502 @@
+---
+title: Linux常用文件配置
+date: 2018-12-19 15:05:36
+tags: [Linux, Ubuntu, CentOS]
+categories: Linux
+---
+
+记录一些常用的 Linux 软件的配置文件
+
+|软件名称|版本号|配置文件|对应路径|
+|----|----|----|----|
+|[Vim](#vim)|8.0|.vimrc|/home|
+|[tmux](#tmux)|1.8|.tmux.conf|/home|
+|[bash_aliases](#bash_aliases)|-|.bash_aliases|/home|
+|[shadowsocks](#shadowsocks)|-|shadowsocks.json|/etc/|
+
+<!-- more -->
+
+# vim
+```bash line_number:false
+"插件安装
+let $BUNDLE = expand("$HOME/.dotfiles/data/vimdata/bundle")
+let $PLUG_DIR = expand("$BUNDLE/vim-plug")
+if empty(glob(expand("$PLUG_DIR/plug.vim")))
+    silent !curl -fLo $PLUG_DIR/plug.vim --create-dirs
+          \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall --sync | source ~/.vimrc
+endif
+source $PLUG_DIR/plug.vim
+call plug#begin(expand($BUNDLE))
+" GO 插件
+Plug 'https://github.com/fatih/vim-go.git', {'for': ['go', 'golang']}
+" 有道翻译  命令：:Ydc  翻译当前光标所在的单词
+Plug 'https://github.com/ianva/vim-youdao-translater.git' 
+" 标签管理 命令： Tlist 打开/关闭标签窗口
+Plug 'https://github.com/vim-scripts/taglist.vim.git'
+" 树形列表文件展示
+" <C-w+w> 切换目录
+Plug 'https://github.com/Xuyuanp/nerdtree-git-plugin.git'
+" 窗口管理
+Plug 'https://github.com/vim-scripts/winmanager.git'
+" 快速浏览操作多个文件
+Plug 'https://github.com/jlanzarotta/bufexplorer.git'
+" undo 
+Plug 'https://github.com/mbbill/undotree.git'
+
+call plug#end() " Should run at last
+" 安装光标所指的当前行的插件
+function! GetPlugNameFronCurrentLine(cmd)
+    let plugin_name = getline(".")
+    if plugin_name !~ "^Plug"
+        execute(a:cmd . '!')
+        return
+    endif
+    let plugin_name = split(split(plugin_name, "'")[1], '/')[-1]
+    let plugin_name = substitute(plugin_name, '\.git$', '', 'g')
+    execute(a:cmd .' '. plugin_name)
+endfunction
+
+"按 ,pi 安装光标所在行的插件   或者 :PlugInstall
+nmap ,pi :w<CR>:call GetPlugNameFronCurrentLine('PlugInstall')<CR>
+"按 ,pu 更新光标所在行的插件   或者 :PlugUpdate
+nmap ,pu :call GetPlugNameFronCurrentLine('PlugUpdate')<CR>
+
+map <F4> :tabnew .<CR>              " 列出当前目录文件   
+map <C-F4> \be                      " 打开树状文件目录    
+nmap <silent> <F7> :WMToggle<CR>
+
+autocmd InsertLeave * se nocul  " 用浅色高亮当前行  
+autocmd InsertEnter * se cul    " 用浅色高亮当前行  
+autocmd FileType c,cpp map <buffer> <leader><space> :w<cr>:make<cr>  " quickfix模式
+"新建.c,.h,.sh,.java文件，自动插入文件头 
+autocmd BufNewFile *.cpp,*.[ch],*.sh,*.java exec ":call SetFileTitle()" 
+
+set tags=tags; 
+set autochdir
+set showcmd                 " 输入的命令显示出来，看的清楚些  
+set laststatus=1            " 启动显示状态行(1),总是显示状态行(2)  
+set foldenable              " 允许折叠  
+set foldmethod=manual       " 手动折叠  
+set nocompatible            " 去掉讨厌的有关vi一致性模式，避免以前版本的一些bug和局限  
+set autoread                " 设置当文件被改动时自动载入
+set autowrite
+set ruler                   " 打开状态栏标尺
+set cursorline              " Vim 带下划线
+set magic                   " 设置魔术
+set guioptions-=T           " 隐藏工具栏
+set guioptions-=m           " 隐藏菜单栏
+set foldcolumn=0            " 设置在状态行显示的信息
+set foldmethod=indent 
+set foldlevel=3 
+set foldenable              " 开始折叠
+set nocompatible            " 不要使用vi的键盘模式，而是vim自己的
+set syntax=on               " 语法高亮  
+set noeb                    " 去掉输入错误的提示声音       
+set confirm                 " 在处理未保存或只读文件的时候，弹出确认
+set cindent
+set tabstop=4               " Tab键的宽度
+set softtabstop=4           " 统一缩进为4
+set shiftwidth=4
+set smarttab                " 在行和段开始处使用制表符
+set number
+set history=1000            " 历史记录数
+set nobackup                " 禁止生成临时文件
+set noswapfile
+set ignorecase              " 搜索忽略大小写
+set hlsearch                " 搜索逐字符高亮
+set incsearch
+set completeopt=preview,menu " 代码补全 
+set langmenu=zh_CN.UTF-8
+set helplang=cn
+set laststatus=2            " 总是显示状态行
+set cmdheight=2             " 命令行（在状态行下）的高度，默认为1，这里是2
+set viminfo+=!              " 保存全局变量
+set iskeyword+=_,$,@,%,#,-          " 带有如下符号的单词不要被换行分割
+set linespace=0             " 字符间插入的像素行数目
+set wildmenu                " 增强模式中的命令行自动完成操作
+set backspace=2             " 使回格键（backspace）正常处理indent, eol, start等
+set whichwrap+=<,>,h,l      " 允许backspace和光标键跨越行边界
+set report=0                " 通过使用: commands命令，告诉我们文件的哪一行被改变过
+set fillchars=vert:\ ,stl:\ ,stlnc:\    " 在被分割的窗口间显示空白，便于阅读
+set showmatch               " 高亮显示匹配的括号
+set matchtime=1             " 匹配括号高亮的时间（单位是十分之一秒）
+set scrolloff=3             " 光标移动到buffer的顶部和底部时保持3行距离 
+set clipboard+=unnamed      "共享剪贴板  
+set nobackup                "从不备份  
+:set makeprg=g++\ -Wall\ \ % "make 运行
+
+set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}   "状态行显示的内容  
+
+" 显示中文帮助
+if version >= 603
+    set enc=utf-8
+    set helplang=cn
+    set encoding=utf-8
+    set fencs=utf-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936
+    set termencoding=utf-8
+    set fileencodings=ucs-bom,utf-8,cp936
+    set fileencoding=utf-8
+endif
+
+if (has("gui_running")) 
+   set guifont=Bitstream\ Vera\ Sans\ Mono\ 10 
+endif 
+
+""定义函数SetFileTitle，自动插入文件头 
+func SetFileTitle() 
+    "如果文件类型为.sh文件 
+    if &filetype == 'sh' 
+        call setline(1,"\#########################################################################") 
+        call append(line("."), "\# File Name: ".expand("%")) 
+        call append(line(".")+3, "\# Created Time: ".strftime("%c")) 
+        call append(line(".")+4, "\#########################################################################") 
+        call append(line(".")+5, "\#!/bin/bash") 
+        call append(line(".")+6, "") 
+    else 
+        call setline(1, "/*************************************************************************") 
+        call append(line("."), "    > File Name: ".expand("%")) 
+        call append(line(".")+3, "    > Created Time: ".strftime("%c")) 
+        call append(line(".")+4, " ************************************************************************/") 
+        call append(line(".")+5, "")
+    endif
+    if &filetype == 'cpp'
+        call append(line(".")+6, "#include<iostream>")
+        call append(line(".")+7, "using namespace std;")
+        call append(line(".")+8, "")
+    endif
+    if &filetype == 'c'
+        call append(line(".")+6, "#include<stdio.h>")
+        call append(line(".")+7, "")
+    endif
+    "新建文件后，自动定位到文件末尾
+    autocmd BufNewFile * normal G
+endfunc 
+
+" 侦测文件类型
+filetype on
+" 载入文件类型插件
+filetype plugin on
+" 为特定文件类型载入相关缩进文件
+filetype indent on
+" 高亮显示普通txt文件（需要txt.vim脚本）
+au BufRead,BufNewFile *  setfiletype txt
+
+let Tlist_Auto_Open=1 
+let Tlist_Sort_Type = "name"    " 按照名称排序  
+let Tlist_Compart_Format = 1    " 压缩方式  
+let Tlist_File_Fold_Auto_Close = 0  " 不要关闭其他文件的tags  
+let Tlist_Enable_Fold_Column=0    " 不要显示折叠树  
+let Tlist_Ctags_Cmd = '/usr/bin/ctags' 
+let Tlist_Show_One_File = 1 "不同时显示多个文件的tag，只显示当前文件的 
+let Tlist_Exit_OnlyWindow = 1 "如果taglist窗口是最后一个窗口，则退出vim 
+let Tlist_Use_Right_Window = 0 "在右侧窗口中显示taglist窗口  1:右侧 0:左侧
+
+let g:NERDTree_title="[NERDTree]"  
+let g:winManagerWindowLayout='NERDTree|TagList,BufExplorer'
+let g:winManagerWidth = 30
+let NERDTreeShowBookmarks=1
+let g:bufExplorerDefaultHelp=0       " Do not show default help.
+let g:bufExplorerShowRelativePath=1  " Show relative paths.
+let g:bufExplorerSortBy='mru'        " Sort by most recently used.
+let g:bufExplorerSplitRight=0        " Split left.
+let g:bufExplorerSplitVertical=1     " Split vertically.
+let g:bufExplorerSplitVertSize = 30  " Split width
+```
+
+# tmux
+```bash :line_number:false
+# 设置前缀为Ctrl + a
+set -g prefix C-x
+
+#解除Ctrl+b 与前缀的对应关系
+unbind C-b
+
+## 切换面板
+#up
+bind-key k select-pane -U
+#down
+bind-key j select-pane -D
+#left
+bind-key h select-pane -L
+#right
+bind-key l select-pane -R
+```
+# bash_aliases
+> 改配置为 LC(Laravel-China) 官方镜像推荐配置
+
+```bash line_number:false
+alias ..="cd .."
+alias ...="cd ../.."
+
+alias h='cd ~'
+alias c='clear'
+alias art=artisan
+
+alias phpspec='vendor/bin/phpspec'
+alias phpunit='vendor/bin/phpunit'
+alias serve=serve-laravel
+
+alias xoff='sudo phpdismod -s cli xdebug'
+alias xon='sudo phpenmod -s cli xdebug'
+
+alias nrd="npm run dev"
+alias nrw="npm run watch"
+alias nrww="npm run watch-poll"
+alias nrh="npm run hot"
+alias nrp="npm run production"
+
+alias yrd="yarn run dev"
+alias yrw="yarn run watch"
+alias yrwp="yarn run watch-poll"
+alias yrh="yarn run hot"
+alias yrp="yarn run production"
+
+function artisan() {
+    php artisan "$@"
+}
+
+function dusk() {
+    pids=$(pidof /usr/bin/Xvfb)
+    if [ ! -n "$pids" ]; then
+        Xvfb :0 -screen 0 1280x960x24 &
+    fi
+    php artisan dusk "$@"
+}
+
+function php56() {
+    sudo update-alternatives --set php /usr/bin/php5.6
+}
+
+function php70() {
+    sudo update-alternatives --set php /usr/bin/php7.0
+}
+
+function php71() {
+    sudo update-alternatives --set php /usr/bin/php7.1
+}
+
+function php72() {
+    sudo update-alternatives --set php /usr/bin/php7.2
+}
+
+function serve-apache() {
+    if [[ "$1" && "$2" ]]
+    then
+        sudo bash /vagrant/scripts/create-certificate.sh "$1"
+        sudo dos2unix /vagrant/scripts/serve-apache.sh
+        sudo bash /vagrant/scripts/serve-apache.sh "$1" "$2" 80 443 "${3:-7.1}"
+    else
+        echo "Error: missing required parameters."
+        echo "Usage: "
+        echo "  serve-apache domain path"
+    fi
+}
+
+function serve-laravel() {
+    if [[ "$1" && "$2" ]]
+    then
+        sudo bash /vagrant/scripts/create-certificate.sh "$1"
+        sudo dos2unix /vagrant/scripts/serve-laravel.sh
+        sudo bash /vagrant/scripts/serve-laravel.sh "$1" "$2" 80 443 "${3:-7.1}"
+    else
+        echo "Error: missing required parameters."
+        echo "Usage: "
+        echo "  serve domain path"
+    fi
+}
+
+function serve-proxy() {
+    if [[ "$1" && "$2" ]]
+    then
+        sudo dos2unix /vagrant/scripts/serve-proxy.sh
+        sudo bash /vagrant/scripts/serve-proxy.sh "$1" "$2" 80 443 "${3:-7.1}"
+    else
+        echo "Error: missing required parameters."
+        echo "Usage: "
+        echo "  serve-proxy domain port"
+    fi
+}
+
+function serve-silverstripe() {
+    if [[ "$1" && "$2" ]]
+    then
+        sudo bash /vagrant/scripts/create-certificate.sh "$1"
+        sudo dos2unix /vagrant/scripts/serve-silverstripe.sh
+        sudo bash /vagrant/scripts/serve-silverstripe.sh "$1" "$2" 80 443 "${3:-7.1}"
+    else
+        echo "Error: missing required parameters."
+        echo "Usage: "
+        echo "  serve-silverstripe domain path"
+    fi
+}
+
+function serve-spa() {
+  if [[ "$1" && "$2" ]]
+  then
+    sudo bash /vagrant/scripts/create-certificate.sh "$1"
+    sudo dos2unix /vagrant/scripts/serve-spa.sh
+    sudo bash /vagrant/scripts/serve-spa.sh "$1" "$2" 80 443 "${3:-7.1}"
+  else
+    echo "Error: missing required parameters."
+    echo "Usage: "
+    echo "  serve-spa domain path"
+  fi
+}
+
+function serve-statamic() {
+    if [[ "$1" && "$2" ]]
+    then
+        sudo bash /vagrant/scripts/create-certificate.sh "$1"
+        sudo dos2unix /vagrant/scripts/serve-statamic.sh
+        sudo bash /vagrant/scripts/serve-statamic.sh "$1" "$2" 80 443 "${3:-7.1}"
+    else
+        echo "Error: missing required parameters."
+        echo "Usage: "
+        echo "  serve-statamic domain path"
+    fi
+}
+
+function serve-symfony2() {
+    if [[ "$1" && "$2" ]]
+    then
+        sudo bash /vagrant/scripts/create-certificate.sh "$1"
+        sudo dos2unix /vagrant/scripts/serve-symfony2.sh
+        sudo bash /vagrant/scripts/serve-symfony2.sh "$1" "$2" 80 443 "${3:-7.1}"
+    else
+        echo "Error: missing required parameters."
+        echo "Usage: "
+        echo "  serve-symfony2 domain path"
+    fi
+}
+
+function serve-symfony4() {
+    if [[ "$1" && "$2" ]]
+    then
+        sudo bash /vagrant/scripts/create-certificate.sh "$1"
+        sudo dos2unix /vagrant/scripts/serve-symfony4.sh
+        sudo bash /vagrant/scripts/serve-symfony4.sh "$1" "$2" 80 443 "${3:-7.1}"
+    else
+        echo "Error: missing required parameters."
+        echo "Usage: "
+        echo "  serve-symfony4 domain path"
+    fi
+}
+
+function serve-pimcore() {
+    if [[ "$1" && "$2" ]]
+    then
+        sudo bash /vagrant/scripts/create-certificate.sh "$1"
+        sudo dos2unix /vagrant/scripts/serve-pimcore.sh
+        sudo bash /vagrant/scripts/serve-pimcore.sh "$1" "$2" 80 443 "${3:-7.1}"
+    else
+        echo "Error: missing required parameters."
+        echo "Usage: "
+        echo "  serve-pimcore domain path"
+    fi
+}
+
+function share() {
+    if [[ "$1" ]]
+    then
+        ngrok http ${@:2} -host-header="$1" 80
+    else
+        echo "Error: missing required parameters."
+        echo "Usage: "
+        echo "  share domain"
+        echo "Invocation with extra params passed directly to ngrok"
+        echo "  share domain -region=eu -subdomain=test1234"
+    fi
+}
+
+function flip() {
+    sudo bash /vagrant/scripts/flip-webserver.sh
+}
+
+function __has_pv() {
+    $(hash pv 2>/dev/null);
+
+    return $?
+}
+
+function __pv_install_message() {
+    if ! __has_pv; then
+        echo $1
+        echo "Install pv with \`sudo apt-get install -y pv\` then run this command again."
+        echo ""
+    fi
+}
+
+function dbexport() {
+    FILE=${1:-/vagrant/mysqldump.sql.gz}
+
+    # This gives an estimate of the size of the SQL file
+    # It appears that 80% is a good approximation of
+    # the ratio of estimated size to actual size
+    SIZE_QUERY="select ceil(sum(data_length) * 0.8) as size from information_schema.TABLES"
+
+    __pv_install_message "Want to see export progress?"
+
+    echo "Exporting databases to '$FILE'"
+
+    if __has_pv; then
+        ADJUSTED_SIZE=$(mysql --vertical -uhomestead -psecret -e "$SIZE_QUERY" 2>/dev/null | grep 'size' | awk '{print $2}')
+        HUMAN_READABLE_SIZE=$(numfmt --to=iec-i --suffix=B --format="%.3f" $ADJUSTED_SIZE)
+
+        echo "Estimated uncompressed size: $HUMAN_READABLE_SIZE"
+        mysqldump -uhomestead -psecret --all-databases --skip-lock-tables 2>/dev/null | pv  --size=$ADJUSTED_SIZE | gzip > "$FILE"
+    else
+        mysqldump -uhomestead -psecret --all-databases --skip-lock-tables 2>/dev/null | gzip > "$FILE"
+    fi
+
+    echo "Done."
+}
+
+function dbimport() {
+    FILE=${1:-/vagrant/mysqldump.sql.gz}
+
+    __pv_install_message "Want to see import progress?"
+
+    echo "Importing databases from '$FILE'"
+
+    if __has_pv; then
+        pv "$FILE" --progress --eta | zcat | mysql -uhomestead -psecret 2>/dev/null
+    else
+        cat "$FILE" | zcat | mysql -uhomestead -psecret 2>/dev/null
+    fi
+
+    echo "Done."
+}
+
+function xphp() {
+    (php -m | grep -q xdebug)
+    if [[ $? -eq 0 ]]
+    then
+        XDEBUG_ENABLED=true
+    else
+        XDEBUG_ENABLED=false
+    fi
+
+    if ! $XDEBUG_ENABLED; then xon; fi
+
+    php \
+        -dxdebug.remote_host=192.168.10.1 \
+        -dxdebug.remote_autostart=1 \
+        "$@"
+
+    if ! $XDEBUG_ENABLED; then xoff; fi
+}
+```
+
+# shadowsocks
+```json line_number:false
+{
+    "server":"XXX.XXX.XX.XXX",
+    "server_port":8388,
+    "local_address": "127.0.0.1",
+    "local_port":1080,
+    "password":"admin",
+    "timeout":300,
+    "method":"aes-256-cfb"
+}
+```

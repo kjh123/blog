@@ -1,7 +1,7 @@
 ---
 title: Elasicsearch全文搜索的安装和使用
 date: 2018-11-30 10:07:47
-tags: [记录，Linux]
+tags: [记录, Linux]
 category: 记录
 ---
 

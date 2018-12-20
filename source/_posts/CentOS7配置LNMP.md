@@ -105,7 +105,7 @@ server {
 ```
  重新加载**Nginx**配置 `systemctl reload nginx`
  测试验证~
- ![phpinfo](http://oyvpp7gqd.bkt.clouddn.com/18-6-29/84311977.jpg)
+ ![phpinfo](http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/32360315.jpg)
 ```
 
 # CentOS7 安装 Nodejs
