@@ -94,10 +94,15 @@
 <meta property="og:site_name" content="HuiBlog">
 <meta property="og:description" content="FormCheck 为了解决开发中经常用到的前端表单验证，避免重复开发，一方面又为了加强前端知识理解，所以写一个小插件  项目地址： GitHub">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-14T04:46:07.732Z">
+<meta property="og:image" content="http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/49406133.jpg">
+<meta property="og:image" content="http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/18923734.jpg">
+<meta property="og:image" content="http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/18079569.jpg">
+<meta property="og:image" content="http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/15306891.jpg">
+<meta property="og:updated_time" content="2018-12-25T04:10:23.705Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Form表单校验插件">
 <meta name="twitter:description" content="FormCheck 为了解决开发中经常用到的前端表单验证，避免重复开发，一方面又为了加强前端知识理解，所以写一个小插件  项目地址： GitHub">
+<meta name="twitter:image" content="http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/49406133.jpg">
 
 
 
@@ -323,8 +328,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-12-14T12:46:07+08:00">
-                2018-12-14
+              <time title="更新于" itemprop="dateModified" datetime="2018-12-25T12:10:23+08:00">
+                2018-12-25
               </time>
             
           </span>
@@ -394,7 +399,9 @@
 </blockquote>
 <p>项目地址： <a href="https://github.com/kjh123/FormCheck" target="_blank" rel="noopener">GitHub</a> </p>
 <a id="more"></a>
-<h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><p>功能示例：<br><a href="http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/49406133.jpg" target="_blank" rel="noopener">代码示例</a><br><a href="http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/18923734.jpg" target="_blank" rel="noopener">校验结果（失败：不能为空）</a><br><a href="http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/18079569.jpg" target="_blank" rel="noopener">校验结果（失败：长度不符）</a><br><a href="http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/15306891.jpg" target="_blank" rel="noopener">校验结果（成功）</a><br>示例说明：<br><figure class="highlight html"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></div><div class="code"><pre><div class="line"><span class="comment">&lt;!-- 为更好的说明 已省略非必要部分 --&gt;</span></div><div class="line"></div><div class="line"> <span class="comment">&lt;!-- 在表单的 Form 元素上添加 `id="FormCheck"`  用于指定监听需要校验的表单 --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">id</span>=<span class="string">"FormCheck"</span>&gt;</span></div><div class="line">    ···</div><div class="line">     <span class="comment">&lt;!-- 在需要校验的表单元素上添加 `data-rules` 属性 </span></div><div class="line"><span class="comment">     该属性为一个含有 attribute 属性 和 rules 属性的对象，</span></div><div class="line"><span class="comment">     该 attribute 为提示信息的字段名称 rules 为校验规则 --&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> </span></div><div class="line"><span class="tag">    <span class="attr">data-rules</span>=<span class="string">'&#123;"attribute":"姓名","rules":["required", "length:2,8"]&#125;'</span> </span></div><div class="line"><span class="tag">    <span class="attr">name</span>=<span class="string">"name"</span> <span class="attr">value</span>=<span class="string">""</span> <span class="attr">placeholder</span>=<span class="string">"请输入姓名"</span> /&gt;</span></div><div class="line"></div><div class="line">    ----------------------------</div><div class="line"></div><div class="line">    该示例如果校验不通过则会提示：</div><div class="line">        - 若为空（required）：姓名不能为空</div><div class="line">        - 若长度不符（length:2,8）：姓名长度应该在2-8个字符之间</div><div class="line">            </div><div class="line">    ···</div><div class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></div></pre></div></div></figure></p>
+<h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><p>功能示例：<br><div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 50%;"><img src="http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/49406133.jpg" alt="代码示例"></div><div class="group-picture-column" style="width: 50%;"><img src="http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/18923734.jpg" alt="校验结果（失败：不能为空）"></div></div><div class="group-picture-row"></div></div></div></p>
+<div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 50%;"><img src="http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/18079569.jpg" alt="校验结果（失败：长度不符）"></div><div class="group-picture-column" style="width: 50%;"><img src="http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/15306891.jpg" alt="校验结果（成功）"></div></div><div class="group-picture-row"></div></div></div>
+<p>示例说明：<br><figure class="highlight html"><div class="figcode"><div class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></div><div class="code"><pre><div class="line"><span class="comment">&lt;!-- 为更好的说明 已省略非必要部分 --&gt;</span></div><div class="line"></div><div class="line"> <span class="comment">&lt;!-- 在表单的 Form 元素上添加 `id="FormCheck"`  用于指定监听需要校验的表单 --&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">id</span>=<span class="string">"FormCheck"</span>&gt;</span></div><div class="line">    ···</div><div class="line">     <span class="comment">&lt;!-- 在需要校验的表单元素上添加 `data-rules` 属性 </span></div><div class="line"><span class="comment">     该属性为一个含有 attribute 属性 和 rules 属性的对象，</span></div><div class="line"><span class="comment">     该 attribute 为提示信息的字段名称 rules 为校验规则 --&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> </span></div><div class="line"><span class="tag">    <span class="attr">data-rules</span>=<span class="string">'&#123;"attribute":"姓名","rules":["required", "length:2,8"]&#125;'</span> </span></div><div class="line"><span class="tag">    <span class="attr">name</span>=<span class="string">"name"</span> <span class="attr">value</span>=<span class="string">""</span> <span class="attr">placeholder</span>=<span class="string">"请输入姓名"</span> /&gt;</span></div><div class="line"></div><div class="line">    ----------------------------</div><div class="line"></div><div class="line">    该示例如果校验不通过则会提示：</div><div class="line">        - 若为空（required）：姓名不能为空</div><div class="line">        - 若长度不符（length:2,8）：姓名长度应该在2-8个字符之间</div><div class="line">            </div><div class="line">    ···</div><div class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></div></pre></div></div></figure></p>
 <h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><ol>
 <li>引入 <code>JQuery</code> （必须）</li>
 <li>引入 <code>layer</code> （非必须，主要用来美化错误提示，可更换）</li>
@@ -445,7 +452,7 @@
 <h1 id="其他规则"><a href="#其他规则" class="headerlink" title="其他规则"></a>其他规则</h1><ul>
 <li><code>sometime</code> 同 <code>sometimes</code> 表示可选校验，如果值为空，则不校验，反之，则校验</li>
 </ul>
-<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>个人能力有限，希望可以有志同道合的伙伴一起优化</p>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>此版本为最初版 还有很多待优化和改进的地方， 欢迎提PR<br>如果在使用过程中遇到问题 请提交 Issue 我看到后会及时答复</p>
 
       
     </div>
