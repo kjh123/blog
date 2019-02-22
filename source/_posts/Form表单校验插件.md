@@ -15,13 +15,13 @@ categories: JavaScript
 # 示例
 功能示例：
 {% gp 2 %}
-![代码示例](http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/49406133.jpg)
-![校验结果（失败：不能为空）](http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/18923734.jpg)
+![代码示例](/images/posts/49406133.jpg)
+![校验结果（失败：不能为空）](/images/posts/18923734.jpg)
 {% endgp %}
 
 {% gp 2 %}
-![校验结果（失败：长度不符）](http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/18079569.jpg)
-![校验结果（成功）](http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/15306891.jpg)
+![校验结果（失败：长度不符）](/images/posts/18079569.jpg)
+![校验结果（成功）](/images/posts/15306891.jpg)
 {% endgp %}
 
 示例说明：

@@ -3,7 +3,7 @@ title: Hexo博客Next主题配置
 date: 2018-06-05 14:16:25
 tags: [记录]
 categories: 记录
-photos: http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/75322921.jpg
+photos: /images/posts/75322921.jpg
 ---
 本文为`Hexo`博客的`Next`主题的一些常用配置项
 <!--more-->
@@ -42,7 +42,7 @@ baidu_tongji: true
 -----
 
 # 网站图标
-在文件 `hexo\themes\next\layout\_partial\head.swig` 中，![图标](http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/22171672.jpg)可以看到，网站图标文件是在 *hexo\themes\next\source\images* 这个路径下，替换即可
+在文件 `hexo\themes\next\layout\_partial\head.swig` 中，![图标](/images/posts/22171672.jpg)可以看到，网站图标文件是在 *hexo\themes\next\source\images* 这个路径下，替换即可
 
 -----
 
@@ -59,7 +59,7 @@ baidu_tongji: true
     })();
 ```
 然后在编辑文章时添加 password: password即可
-![password](http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/67716877.jpg)
+![password](/images/posts/67716877.jpg)
 
 -----
 

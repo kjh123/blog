@@ -113,7 +113,7 @@ git log --graph --abbrev-commit --decorate --all --format=format:'%C(bold blue)%
 ```
 
 效果如图：
-![git-log效果图](http://learner-hui.oss-cn-beijing.aliyuncs.com/18-11-27/47269758.jpg)
+![git-log效果图](/images/posts/47269758.jpg)
 
 添加到 bash alias :
 ```bash line_number:false

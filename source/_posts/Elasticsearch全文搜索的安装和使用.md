@@ -71,7 +71,7 @@ sudo systemctl stop elasticsearch.service
 
 ## 检查 Elasticsearch 是否在运行
 出现下面信息说明运行成功
-![Elasticsearch运行](http://learner-hui.oss-cn-beijing.aliyuncs.com/18-11-30/88442110.jpg)
+![Elasticsearch运行](/images/posts/88442110.jpg)
 
 默认情况下 Elasticsearch 的 RESTful 服务只有本机才能访问，如果需要在电脑访问的话。可以修改 /etc/elasticsearch/config/elasticsearch.yml 文件(线上项目不建议这么操作)：
 ```bash line_number:false

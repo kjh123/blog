@@ -137,7 +137,7 @@ location ~ \.php$ {
 }
 ```
 ## 测试
-![info](http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/72736621.jpg)
+![info](/images/posts/72736621.jpg)
 
 # 使用 DockerFile 构建环境
 > 推荐阅读：[如何编写最佳的Dockerfile](http://www.phpchina.com/portal.php?mod=view&aid=41111)
@@ -161,7 +161,7 @@ RUN echo "\ndaemon off;">>/etc/ngnix/nignix.conf
 # 容器启动时执行指令
 CMD /usr/sbin/ngnix
 ```
-![dockerfile](http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/81984913.jpg)
+![dockerfile](/images/posts/81984913.jpg)
 
 ## 使用 DockerFile 构建自己的 PHP 开发环境
 > 参考 https://github.com/laradock/laradock

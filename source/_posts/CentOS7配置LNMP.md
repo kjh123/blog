@@ -106,7 +106,7 @@ server {
 ```
  重新加载**Nginx**配置 `systemctl reload nginx`
  测试验证~
- ![phpinfo](http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/32360315.jpg)
+ ![phpinfo](/images/posts/32360315.jpg)
 
 # Redis V4.0 安装
 在 PHP 官网扩展包里下载 **Reids** 包 `wget -c http://pecl.php.net/get/redis-4.0.0RC2.tgz`

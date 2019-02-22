@@ -52,8 +52,7 @@ tags: ['MySQL']
 > [MySQL索引背后的数据结构及算法原理](http://blog.codinglabs.org/articles/theory-of-mysql-index.html)
 
 - 数据库索引用于加速查询
-- 虽然哈希索引是O(1)，树索引是O(log(n))，但SQL有很多“有序”需求，故数据库使用树型索引
-InnoDB不支持哈希索引
+- 虽然哈希索引是O(1)，树索引是O(log(n))，但SQL有很多“有序”需求，故数据库使用树型索引，InnoDB不支持哈希索引
 - 数据预读的思路是：磁盘读写并不是按需读取，而是按页预读，一次会读一页的数据，每次加载更多的数据，以便未来减少磁盘IO
 - 局部性原理：软件设计要尽量遵循“数据读取集中”与“使用到一个数据，大概率会使用其附近的数据”，这样磁盘预读能充分提高磁盘 IO
 
@@ -77,6 +76,7 @@ InnoDB不支持哈希索引
 |读提交`Read Committed` | 否 | 是 | 是 |
 |可重复读`Repeated Read` (默认) | 否 | 否 | 是 |
 |串行化`Serializable` | 否 | 否 | 否 |
+> 设置当前事务模式为读提交: `set session transaction isolation level read committed`;
 
 总结：
 - 并发事务之间相互干扰，可能导致事务出现读脏，不可重复度，幻读等问题
@@ -117,3 +117,6 @@ InnoDB不支持哈希索引
 - 以 **%** 开头 的 **like** 查询
 - 使用 **or** 的时候， **or** 的前后字段中存在没有索引的情况时
 - 在组合索引里使用非第一个索引字段时也不使用索引
+
+## MySQL B+Tree 演示
+点击直达： https://www.cs.usfca.edu/~galles/visualization/BPlusTree.html

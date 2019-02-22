@@ -52,7 +52,7 @@ cp .env.example .env
 ```bash line_number:false
 docker-compose run --rm web config generate-secret-key
 ```
-![getKey](http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-10/37763440.jpg)
+![getKey](/images/posts/37763440.jpg)
 
 6. 构建数据库， 并创建用户 
 ```bash line_number:false
@@ -159,7 +159,7 @@ docker-compose up -d
 ```
 
 在 Sentry 控制台上可以看到已经出现了 配置的邮箱信息
-![email配置](http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-11/41424988.jpg)
+![email配置](/images/posts/41424988.jpg)
 然后在下面点击发送测试邮件即可
 
 ## 钉钉即时提醒
