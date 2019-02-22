@@ -8,6 +8,8 @@ categories: Linux
 服务器环境 *CentOS 7*
 <!--more-->
 
+> 先查看当前服务器的版本： `cat /proc/version`
+
 # Nginx 安装
 > 安装 yum repo, 在 `http://nginx.org/packages/centos/` 找到对应的版本
 
