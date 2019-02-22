@@ -67,7 +67,7 @@ docker-compose up -d
 8. 访问并配置： http://127.0.0.1:9000
 
 ## CentOS 用 Python 安装 Sentry
-CentOS 安装： https://laravel-china.org/articles/4295/centos6-install-python-based-on-sentry 
+CentOS 安装： https://learnku.com/articles/4295/centos6-install-python-based-on-sentry 
 
 # Sentry 在 Laravel 框架中的使用
 

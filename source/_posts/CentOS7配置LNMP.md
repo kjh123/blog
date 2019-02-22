@@ -82,12 +82,13 @@ categories: Linux
     
     # 启动 php71-fpm
     systemctl start php71-fpm
+    
     # 查看php71-fpm当前状态
     systemctl status php71-fpm
 ```
 # end
 添加 nginx 配置文件
- ```nginx
+```nginx
 server {
     listen       80;
     server_name  localhost;
@@ -106,6 +107,21 @@ server {
  重新加载**Nginx**配置 `systemctl reload nginx`
  测试验证~
  ![phpinfo](http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/32360315.jpg)
+
+# Redis V4.0 安装
+在 PHP 官网扩展包里下载 **Reids** 包 `wget -c http://pecl.php.net/get/redis-4.0.0RC2.tgz`
+1. 解压 `tar zxf redis-4.0.0RC2.tgz && cd redis-4.0.0RC2`
+2. 执行 `phpize` 生成配置文件
+> 若提示没有安装 **autoconf**  则先执行 `yum install -y autoconf`
+
+3. 配置 `./configure --with-php-config=/usr/local/php/bin/php-config`
+4. 编译安装 `make && make install`
+5. 修改 php.ini 文件，添加 Redis 扩展
+```bash :/usr/local/php/lib/php.ini first_line:925
+ . . .
+ # 添加 Redis 扩展
+ extension=redis.so
+ . . .
 ```
 
 # CentOS7 安装 Nodejs

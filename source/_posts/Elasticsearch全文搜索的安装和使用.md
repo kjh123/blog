@@ -1,11 +1,11 @@
 ---
-title: Elasicsearch全文搜索的安装和使用
+title: Elasticsearch全文搜索的安装和使用
 date: 2018-11-30 10:07:47
 tags: [记录, Linux]
 category: 记录
 ---
 
-# Elasicsearch 介绍
+# Elasticsearch 介绍
 `Elasticsearch` 是一个基于 **Apache Lucene(TM)** 的开源搜索引擎。无论在开源还是专有领域， `Lucene` 可以被认为是迄今为止最先进、性能最好的、功能最全的搜索引擎库。
 
 <!-- more -->
@@ -28,7 +28,7 @@ sudo apt-get install apt-transport-https
 echo "deb https://artifacts.elastic.co/packages/6.x/apt stable main"  | sudo tee -a /etc/apt/sources.list.d/elastic-6.x.list
 ```
 
-### 更新软件源并安装 Elasicsearch
+### 更新软件源并安装 Elasticsearch
 ```bash line_number:false
 sudo apt-get update && sudo apt-get install elasticsearch
 ```
@@ -69,9 +69,9 @@ sudo systemctl stop elasticsearch.service
 ### [Docker 安装方式](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html)
 ### [Homestead 虚拟机安装](https://laravel-china.org/docs/laravel/5.7/homestead/2245#installing-elasticsearch)
 
-## 检查 Elasicsearch 是否在运行
+## 检查 Elasticsearch 是否在运行
 出现下面信息说明运行成功
-![Elasicsearch运行](http://learner-hui.oss-cn-beijing.aliyuncs.com/18-11-30/88442110.jpg)
+![Elasticsearch运行](http://learner-hui.oss-cn-beijing.aliyuncs.com/18-11-30/88442110.jpg)
 
 默认情况下 Elasticsearch 的 RESTful 服务只有本机才能访问，如果需要在电脑访问的话。可以修改 /etc/elasticsearch/config/elasticsearch.yml 文件(线上项目不建议这么操作)：
 ```bash line_number:false
@@ -102,7 +102,7 @@ mkdir /usr/share/elasticsearch/plugins/ik
 unzip target/releases/elasticsearch-analysis-ik-1.9.4.zip -d /usr/share/elasticsearch/plugins/ik/
 ```
 ### 插件方式安装
-在 Elasicsearch 安装目录下: `/usr/share/elasticsearch/` 执行
+在 Elasticsearch 安装目录下: `/usr/share/elasticsearch/` 执行
 ```bash line_number:false
 ./bin/elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v6.3.0/elasticsearch-analysis-ik-6.3.0.zip
 ```

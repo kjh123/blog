@@ -11,6 +11,9 @@
       <li class="links-of-blogroll-item">
         <a href="https://laravel-china.org/" title="Laravel-China" target="_blank"><i class="fa fa-fw fa-link"></i>Laravel-China</a>
       </li>
+      <li class="links-of-blogroll-item">
+        <a href="https://emoji.muan.co/" title="emoji" target="_blank"><i class="fa fa-fw fa-link"></i>emoji</a>
+      </li>
 
 
   </ul>

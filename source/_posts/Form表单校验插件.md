@@ -14,10 +14,16 @@ categories: JavaScript
 
 # 示例
 功能示例：
-[代码示例](http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/49406133.jpg)
-[校验结果（失败：不能为空）](http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/18923734.jpg)
-[校验结果（失败：长度不符）](http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/18079569.jpg)
-[校验结果（成功）](http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/15306891.jpg)
+{% gp 2 %}
+![代码示例](http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/49406133.jpg)
+![校验结果（失败：不能为空）](http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/18923734.jpg)
+{% endgp %}
+
+{% gp 2 %}
+![校验结果（失败：长度不符）](http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/18079569.jpg)
+![校验结果（成功）](http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-14/15306891.jpg)
+{% endgp %}
+
 示例说明：
 ```html
 <!-- 为更好的说明 已省略非必要部分 -->
@@ -90,4 +96,5 @@ categories: JavaScript
 - `sometime` 同 `sometimes` 表示可选校验，如果值为空，则不校验，反之，则校验
 
 # 最后
-个人能力有限，希望可以有志同道合的伙伴一起优化
+此版本为最初版 还有很多待优化和改进的地方， 欢迎提PR
+如果在使用过程中遇到问题 请提交 Issue 我看到后会及时答复
