@@ -107,6 +107,11 @@ categories: Linux
 ----
 
 # Git 技巧
+
+## Git 监听大小写设置
+Mac 开发默认大小写不敏感所以可能会遇到本地环境没问题，上线报错的问题
+解决： `git config core.ignorecase false`
+
  由于在项目中经常要用到 `git log` 来查看提交历史，分享一个不错的 `git log` 的配置
 ```bash line_number:false
 git log --graph --abbrev-commit --decorate --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)'
