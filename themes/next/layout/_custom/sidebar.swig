@@ -9,7 +9,7 @@
     >> 博客 & 网站 <<
       <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
-          <a href="https://laravel-china.org/" title="Laravel-China" target="_blank"><i class="fa fa-fw fa-link"></i>Laravel-China</a>
+          <a href="https://learnku.com/laravel/" title="Laravel-China" target="_blank"><i class="fa fa-fw fa-link"></i>Laravel-China</a>
         </li>
         <li class="links-of-blogroll-item">
           <a href="https://linux.cn/" title="Linux中国" target="_blank"><i class="fa fa-fw fa-link"></i>Linux中国</a>
