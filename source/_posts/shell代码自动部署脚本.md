@@ -1,8 +1,12 @@
 ---
 title: shell代码自动部署脚本
-date: 2018-07-10 12:44:47
-tags: [Linux, 命令, 服务器]
+tags:
+  - Linux
+  - 命令
+  - 服务器
 categories: Linux
+translate_title: shell-code-automatic-deployment-script
+date: 2018-07-10 12:44:47
 ---
 > 服务器环境：Ubuntu 16.04
 此脚本仅适用于在多个服务器中有相同环境配置，以及相同的项目路径

@@ -1,9 +1,11 @@
 ---
 title: Hexo博客Next主题配置
-date: 2018-06-05 14:16:25
-tags: [记录]
+tags:
+  - 记录
 categories: 记录
 photos: /images/posts/75322921.jpg
+translate_title: hexo-blog-next-theme-configuration
+date: 2018-06-05 14:16:25
 ---
 本文为`Hexo`博客的`Next`主题的一些常用配置项
 <!--more-->

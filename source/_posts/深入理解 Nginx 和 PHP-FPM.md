@@ -1,8 +1,13 @@
 ---
 title: 深入理解 Nginx 和 PHP-FPM
-date: 2018-09-22 11:32:03
-tags: [Linux, Nginx, FastCGI, PHP-FPM]
+tags:
+  - Linux
+  - Nginx
+  - FastCGI
+  - PHP-FPM
 categories: PHP
+translate_title: deep-understanding-of-nginx-and-php-fpm
+date: 2018-09-22 11:32:03
 ---
 
 > B/S 运行原理剖析 `Nignx` `FastCGI` `PHP-FPM`

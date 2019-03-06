@@ -1,5 +1,6 @@
 ---
 title: About
+translate_title: about
 date: 2018-05-14 12:56:52
 ---
 

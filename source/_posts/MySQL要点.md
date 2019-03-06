@@ -1,9 +1,11 @@
 ---
 title: MySQL要点
-date: 2018-11-01 11:45:27
 categories: MySQL
-tags: ['MySQL']
+tags:
+  - MySQL
 top: 99
+translate_title: mysql-points
+date: 2018-11-01 11:45:27
 ---
 
 在一个中大型项目中，随着时间的积累和业务的不断升级，数据的优化处理愈发关键，一个好的数据库设计和优化是项目业务稳定运行的根本

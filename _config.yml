@@ -16,8 +16,8 @@ avatar: /images/picture.jpg
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://hui.1222.store
 root: /
-permalink: :year/:month:day/:title
-# permalink: blog/:translate_title
+# permalink: :year/:month/:day/:title
+permalink: blog/:translate_title.html
 # permalink: blog/:title
 permalink_defaults: https://kjh123.github.io
 

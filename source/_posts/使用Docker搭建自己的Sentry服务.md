@@ -1,8 +1,13 @@
 ---
 title: 使用Docker搭建自己的Sentry服务
-date: 2018-12-10 10:10:02
-tags: [记录, Linux, Docker, Ubuntu]
+tags:
+  - 记录
+  - Linux
+  - Docker
+  - Ubuntu
 categories: Docker
+translate_title: build-your-own-sentry-service-with-docker
+date: 2018-12-10 10:10:02
 ---
 
 [Sentry](https://sentry.io/welcome/)（哨兵）， 是一款可以部署在生产环境的错误追踪工具， 可以实时通知开发者生产环境中的 `Exception` 等不可预知的系统异常， 开发者可以根据异常， 对代码进行快速修复

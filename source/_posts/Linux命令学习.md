@@ -1,8 +1,12 @@
 ---
 title: Linux命令学习
-date: 2018-06-27 14:54:32
-tags: [Linux, 记录, 命令]
+tags:
+  - Linux
+  - 记录
+  - 命令
 categories: Linux
+translate_title: linux-command-learning
+date: 2018-06-27 14:54:32
 ---
 
 本文主要记录在学习或者工作中用到的一些 **Linux** 命令

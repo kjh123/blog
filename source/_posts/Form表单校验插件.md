@@ -1,8 +1,11 @@
 ---
 title: Form表单校验插件
-date: 2018-09-02 00:14:47
-tags: [记录, 前端]
+tags:
+  - 记录
+  - 前端
 categories: JavaScript
+translate_title: form-form-validation-plug-in
+date: 2018-09-02 00:14:47
 ---
 
 > FormCheck 为了解决开发中经常用到的前端表单验证，避免重复开发，
