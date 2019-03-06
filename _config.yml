@@ -16,7 +16,9 @@ avatar: /images/picture.jpg
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://hui.1222.store
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :year/:month:day/:title
+# permalink: blog/:translate_title
+# permalink: blog/:title
 permalink_defaults: https://kjh123.github.io
 
 # Directory
@@ -93,3 +95,13 @@ deploy:
   type: git
   repository: git@github.com:kjh123/kjh123.github.io.git
   branch: master
+
+# PostTitle
+translate_title:
+  translate_way: baidu_no_appid  # google,youdao,baidu_with_appid,baidu_no_appid
+  youdao_api_key: '' # Your youdao_api_key
+  youdao_keyfrom: xxxx-blog # Your youdao_keyfrom
+  is_need_proxy: false     # true | false
+  proxy_url: http://localhost:50048 # Your proxy_url
+  baidu_appid: '' # Your baidu_appid
+  baidu_appkey: '' # Your baidu_appkey
