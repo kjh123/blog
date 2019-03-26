@@ -4,6 +4,7 @@ tags:
   - Linux
   - 记录
   - 命令
+top: 98
 categories: Linux
 translate_title: linux-command-learning
 date: 2018-06-27 14:54:32
@@ -356,10 +357,27 @@ global具体自行方法是 g/pattern/command
 ```
 
 # Git 技巧
+## 常用命令
+1. `git branch -a` 查看本地及线上所有分支
+2. `git checkout -b <new branch-name>` 新建并切换到该分支
+3. 回退远程分支
+```git
+git reset --hard HEAD~1
+git push --force
+```
+4. 暂存代码
+```git
+git stash 代码暂存
+git stash list 查看暂存区列表
+git stash apply <stash@{0}> 恢复暂存区的代码
+```
+
+
 ## Git 监听大小写设置
 Mac 开发默认大小写不敏感所以可能会遇到本地环境没问题，上线报错的问题
 解决： `git config core.ignorecase false`
 
+## 技巧
  由于在项目中经常要用到 `git log` 来查看提交历史，分享一个不错的 `git log` 的配置
 ```bash line_number:false
 git log --graph --abbrev-commit --decorate --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)'

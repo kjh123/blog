@@ -16,9 +16,11 @@
     "hexo-renderer-ejs": "^0.3.0",
     "hexo-renderer-marked": "^0.3.0",
     "hexo-renderer-stylus": "^0.3.1",
+    "hexo-ruby-character": "^1.0.6",
     "hexo-server": "^0.2.0",
     "hexo-translate-title": "^1.0.11",
     "hexo-wordcount": "^6.0.1",
+    "nodejieba": "^2.3.0",
     "peer": "^0.2.10",
     "request": "^2.88.0"
   }
