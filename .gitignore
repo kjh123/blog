@@ -2,5 +2,6 @@
 *.log
 public/
 .deploy*/
+.deploy_git*/
 .idea/*
 db.json

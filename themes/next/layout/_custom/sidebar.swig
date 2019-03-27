@@ -20,9 +20,6 @@
         <li class="links-of-blogroll-item">
           <a href="https://coolshell.cn/" title="CoolShell" target="_blank"><i class="fa fa-fw fa-link"></i>CoolShell</a>
         </li>
-        <li class="links-of-blogroll-item">
-          <a href="https://kebox.cn/" title="KeBox" target="_blank"><i class="fa fa-fw fa-link"></i>KeBox</a>
-        </li>
 
       </ul>
     >> 工具 <<
