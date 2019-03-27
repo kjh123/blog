@@ -5,3 +5,4 @@ public/
 .deploy_git*/
 .idea/*
 db.json
+node_modules/
