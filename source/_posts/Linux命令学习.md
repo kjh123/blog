@@ -358,20 +358,57 @@ global具体自行方法是 g/pattern/command
 
 # Git 技巧
 ## 常用命令
-1. `git branch -a` 查看本地及线上所有分支
-2. `git checkout -b <new branch-name>` 新建并切换到该分支
-3. 回退远程分支
-```git
-git reset --hard HEAD~1
-git push --force
-```
-4. 暂存代码
-```git
-git stash 代码暂存
-git stash list 查看暂存区列表
-git stash apply <stash@{0}> 恢复暂存区的代码
-```
+> 全部命令参考 [Git](/images/posts/git.png)
 
+```bash
+# 查看分支：
+git branch -r # 查看所有远程分支
+git branch -a # 查看本地及线上所有分支
+git branch -vv # 本地分支关联到远程仓库的情况
+
+# 新建分支：
+git branch <new branch-name> # 新建分支
+git checkout -b <new branch-name> # 新建并切换到该分支
+git checkout -b <branch-name> origin/<branch-name> # 从远程分支中创建并切换到本地分支
+
+# 回退分支：
+git reset --hard HEAD~1 # 回退本地当前分支
+    git push --force # 回退远程分支
+
+# 删除分支：
+git branch -d/-D <local-branch-name> # 删除一个本地分支
+git push origin --delete <remote-branchname> # 删除远程分支
+git push origin :<remote-branchname> # 删除远程分支
+git branch --merged master | grep -v '^\*\|  master' | xargs -n 1 git branch -d # 删除已经合并到 master 的分支
+
+# 代码暂存：
+git stash # 代码暂存
+git stash list # 查看暂存区列表
+git stash apply <stash@{0}> # 恢复暂存区的代码（恢复完之后还保留在暂存区）
+git stash pop # 恢复最后一个暂存内容，并删除该暂存
+git stash clear # 清空暂存区
+
+# 标签：
+git tag -ln # 查看所有标签以及详细信息
+git tag <version-number> # 新建本地标签
+git tag -a <version-number> -m "v1.0 发布(描述)" <commit-id>  # 默认 tag 是打在最近的一次 commit 上，如果需要指定 commit 打 tag
+git push origin <local-version-number> # 推送指定本地标签到远程
+git push origin --tags  # 一次性推送所有标签，同步到远程仓库
+git tag -d <tag-name> # 删除本地标签
+git push origin :refs/tags/<tag-name> # 删除远程标签（需要先删除本地标签）
+git checkout -b branch_name tag_name # 切换到某个标签
+
+# 其他操作：
+git revert <commit-id> # 以新增一个 commit 的方式还原某一个 commit 的修改
+git branch -m <new-branch-name> # 重命名本地分支
+git bundle create <file> <branch-name> # 把某一个分支到导出成一个文件
+git clean -X -f # 清除Ignore中记录的文件
+git show <branch-name>:<file-name> # 展示某一分支下的某个文件修改
+git clone -b <branch-name> --single-branch https://github.com/user/repo.git # 仅Clone下来指定的单一分支
+git config core.fileMode false # 忽略文件的权限变化
+git for-each-ref --sort=-committerdate --format='%(refname:short)' refs/heads/ # 以最后提交的顺序列出所有Git分支
+git remote set-url origin <URL> # 修改远程仓库的URL
+```
 
 ## Git 监听大小写设置
 Mac 开发默认大小写不敏感所以可能会遇到本地环境没问题，上线报错的问题

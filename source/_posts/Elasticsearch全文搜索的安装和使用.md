@@ -82,16 +82,16 @@ network.bind_host: “0.0.0.0"
 network.publish_host: \_non_loopback:ipv4_
 ```
 
-# 安装中文分词插件 [elasticsearch-analysis-ik](https://github.com/medcl/elasticsearch-analysis-ik)
+## 安装中文分词插件 [elasticsearch-analysis-ik](https://github.com/medcl/elasticsearch-analysis-ik)
 
-## 下载最新包
+ 下载最新包
 ```bash line_number:false
 wget https://github.com/medcl/elasticsearch-analysis-ik/archive/v6.5.1.tar.gz
 ```
 解压: `tar -zxvf v6.5.1.tar.gz`
 
 
-## 安装
+ 安装
 > 两种安装方式选择其一即可
 ### 打包方式安装
 使用 maven 打包该 java 项目
@@ -109,4 +109,32 @@ unzip target/releases/elasticsearch-analysis-ik-1.9.4.zip -d /usr/share/elastics
 ```bash line_number:false
 ./bin/elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v6.3.0/elasticsearch-analysis-ik-6.3.0.zip
 ```
+
+# 在 PHP 项目中使用
+新建一个 laravel 项目， 安装 相应的扩展包 （[scout-elasticsearch-driver](https://github.com/babenkoivan/scout-elasticsearch-driver)）
+> 这个扩展包会安装 laravel/scout 插件
+
+```bash
+composer require babenkoivan/scout-elasticsearch-driver
+```
+发布配置文件
+```bash
+php artisan vendor:publish --provider="Laravel\Scout\ScoutServiceProvider"
+php artisan vendor:publish --provider="ScoutElastic\ScoutElasticServiceProvider"
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
