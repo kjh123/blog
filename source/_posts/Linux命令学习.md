@@ -5,6 +5,7 @@ tags:
   - 记录
   - 命令
 top: 98
+sticky: 98
 categories: Linux
 translate_title: linux-command-learning
 date: 2018-06-27 14:54:32
@@ -16,6 +17,7 @@ date: 2018-06-27 14:54:32
   
 # 常用命令
 ## 查看 & 搜索
+- `cat /proc/version` 先查看当前服务器的版本
 - `du -sh` 查看当前目录所占空间大小
 - `grep -C 5 foo file` 显示file文件里匹配foo字串那行以及上下5行
 - `grep "<string>" . -R -n` 在多级目录中对文本递归搜索

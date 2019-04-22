@@ -114,27 +114,121 @@ unzip target/releases/elasticsearch-analysis-ik-1.9.4.zip -d /usr/share/elastics
 新建一个 laravel 项目， 安装 相应的扩展包 （[scout-elasticsearch-driver](https://github.com/babenkoivan/scout-elasticsearch-driver)）
 > 这个扩展包会安装 laravel/scout 插件
 
-```bash
+```php
 composer require babenkoivan/scout-elasticsearch-driver
 ```
-发布配置文件
-```bash
+## 发布配置文件
+```php
+// 全文索引配置文件
 php artisan vendor:publish --provider="Laravel\Scout\ScoutServiceProvider"
+// 扩展包配置文件
 php artisan vendor:publish --provider="ScoutElastic\ScoutElasticServiceProvider"
 ```
+## 创建索引文件
+> 每个索引都有一个对应的配置文件，所以需要先创建配置文件
+默认情况下，索引名称就是配置文件前面的部分：例如下面的 Demo
 
+```php
+// 索引配置文件
+php artisan make:index-configurator DemoIndexConfigurator
+// 索引文件
+php artisan elastic:create-index App\\DemoIndexConfigurator
+```
+创建完成后，查看已经生成的索引文件：
+```bash
+GET 127.0.0.1:9200/_cat/indices?v
 
+health status index uuid                   pri rep docs.count docs.deleted store.size pri.store.size
+yellow open   demo  8n45obLpTgSasMUTkmom3Q   5   1          0            0       460b           460b
+```
 
+## 导入测试数据
+新建模型并建立前面创建的索引: `php artisan make:searchable-model Demo --index-configurator=DemoConfigurator`
 
+```php
+<?php
 
+namespace App;
 
+use ScoutElastic\Searchable;
+use Illuminate\Database\Eloquent\Model;
 
+class Demo extends Model
+{
+    use Searchable;
 
+    /**
+     * @var string
+     */
+    protected $indexConfigurator = DemoConfigurator::class;
 
+    /**
+     * @var array
+     */
+    protected $searchRules = [
+        //
+    ];
 
+    /**
+     * @var array
+     */
+    protected $mapping = [
+        'properties' => [
+            'title' => [
+                'type' => 'text',
+                'analyzer' => 'ik_smart'
+            ],
+            'body' => [
+                'type' => 'text',
+                'analyzer' => 'ik_smart'
+            ],
+            'user_name' => [
+                'type' => 'keyword',
+            ]
+        ]
+    ];
 
+    public function toSearchableArray()
+    {
+        return [
+            'title'=> $this->title,
+            'body' => $this->body,
+            'user_name' => $this->user->name,
+        ];
+    }
 
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 
+}
+```
+> 如果是在已有的 Model 中建立索引， 则执行 `php artisan scout:import "App\Demo"` 导入数据
 
+## 查看索引中导入的数据
+```bash
+GET curl 127.0.0.1:9200/demo/demo/_search?pretty
+{
+  "took" : 115,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 5,
+    "successful" : 5,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 0,
+    "max_score" : null,
+    "hits" : [
+    	. . .
+    ]
+  }
+}
+```
 
-
+## 使用
+```php
+Demo::search('keyword')->get();
+```
