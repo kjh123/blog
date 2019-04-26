@@ -400,6 +400,12 @@ git tag -d <tag-name> # 删除本地标签
 git push origin :refs/tags/<tag-name> # 删除远程标签（需要先删除本地标签）
 git checkout -b branch_name tag_name # 切换到某个标签
 
+# git cherry-pick 向当前分支合并commit
+git cherry-pick <commit-id> 单独合并一个提交
+git cherry-pick -x <commit-id> 单独合并一个提交，并保留原来提交者信息
+git cherry-pick <start-commit-id>..<end-commit-id> 把 start 到 end 之间的提交合并到当前分支 (不包含 start)
+git cherry-pick <start-commit-id>^..<end-commit-id> 把 start 以及 end 之间的提交合并到当前分支 (包含 start)
+
 # 其他操作：
 git revert <commit-id> # 以新增一个 commit 的方式还原某一个 commit 的修改
 git branch -m <new-branch-name> # 重命名本地分支
@@ -415,6 +421,26 @@ git remote set-url origin <URL> # 修改远程仓库的URL
 ## Git 监听大小写设置
 Mac 开发默认大小写不敏感所以可能会遇到本地环境没问题，上线报错的问题
 解决： `git config core.ignorecase false`
+
+## Git硬回退补救方案
+> `git reflog` 查看Git所有分支的所有操作(包含已经删除的记录)
+> `git cherry-pick <commit id>` 向当前分支单独合并一个提交
+
+假定当前场景为： 在提交了 1，2，3，4，5 等多个 **feature commit**之后，然后执行了 `git reset --hard xxx1` 代码硬回退到第一次提交， 然后又提交了第 6 个 **feature commit**， 现在想要恢复 1，2，3，4，5，6 等 feature commit 提交
+恢复步骤
+1. 执行 `git reflog` 查看操作记录
+```git mark:2 diff:true 
+xxx7 HEAD@{0} commit: feature-6
+xxx6 HEAD@{1} commit: reset moving to xxx1
+-xxx5 HEAD@{2} commit: feature-5  ▔▔|
+-xxx4 HEAD@{3} commit: feature-4    |=> 硬回退部分
+-xxx3 HEAD@{4} commit: feature-3    |
+-xxx2 HEAD@{5} commit: feature-2  __|
+xxx1 HEAD@{6} commit: feature-1
+```
+记录硬回退之前的一次提交(xxx5) 和 后面需要保存的提交(xxx6)
+2. 执行 `git reset --hard xxx5` 恢复代码到硬回退之前的这次提交中
+3. 合并需要保存的提交 `git cherry-pick xxx6` 
 
 ## 技巧
  由于在项目中经常要用到 `git log` 来查看提交历史，分享一个不错的 `git log` 的配置
