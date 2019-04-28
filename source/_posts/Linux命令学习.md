@@ -360,7 +360,7 @@ global具体自行方法是 g/pattern/command
 
 # Git 技巧
 ## 常用命令
-> 全部命令参考 [Git](/images/posts/git.png)
+> 全部命令参考 [Git命令图解](/images/posts/git.png)
 
 ```bash
 # 查看分支：
