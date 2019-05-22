@@ -16,6 +16,12 @@ date: 2018-11-01 11:45:27
 > 整理参见 [关于MySQL，你未必知道的](https://mp.weixin.qq.com/s/pWHCieOwAdCrz8cauduWlQ)
 > 推荐阅读 [关于MySQL内核，一定要知道的](https://mp.weixin.qq.com/s/tmkRAmc1M_Y23ynduBeP3Q)
 
+# 19-04-30 更新
+## 小米 MySQL
+启发式规则建议 ： https://github.com/XiaoMi/soar/blob/master/doc/heuristic.md
+索引优化建议 ： https://github.com/XiaoMi/soar/blob/master/doc/indexing.md
+
+----
 # MySQL 的基础架构
 `MySQL` 是一种关系数据库产品，是建立在关系模型基础上的数据库。架构一般可分为 **应用层** ，**逻辑层**，**物理层**
 - 应用层 ： 负责和客户端以及用户进行交互

@@ -60,6 +60,11 @@ date: 2018-06-27 14:54:32
     ls *.jpg | xargs -I{} convert "{}" `echo {} | sed 's/jpg$/png/'`
 ```
 
+## 禁止 root 用户 SSH 登录服务器
+```bash
+sed -i -E 's/#?\s*(PermitRootLogin)(.*)$/\1 no/' /etc/ssh/sshd_config
+```
+
 ## vim 常用快捷键
 ```
 常用指令 (commands)
