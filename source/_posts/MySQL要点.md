@@ -5,7 +5,7 @@ tags:
   - MySQL
 top: 99
 sticky: 99
-translate_title: mysql-points
+translate_title: key-points-of-mysql
 date: 2018-11-01 11:45:27
 ---
 
@@ -15,6 +15,7 @@ date: 2018-11-01 11:45:27
 
 > 整理参见 [关于MySQL，你未必知道的](https://mp.weixin.qq.com/s/pWHCieOwAdCrz8cauduWlQ)
 > 推荐阅读 [关于MySQL内核，一定要知道的](https://mp.weixin.qq.com/s/tmkRAmc1M_Y23ynduBeP3Q)
+> [新手MySQL工程师必备命令速查手册](https://mp.weixin.qq.com/s?__biz=MzI4NTA1MDEwNg==&mid=2650767653&idx=1&sn=8d61b92ce782fca748822b5a314d1cb6&chksm=f3f934b0c48ebda6a01cbc9316bd70c87683d72014e965de61a9901f166c2a1617be7ba13878&scene=21#wechat_redirect)
 
 # 19-04-30 更新
 ## 小米 MySQL
