@@ -5,7 +5,7 @@ tags:
   - MySQL
 top: 99
 sticky: 99
-translate_title: key-points-of-mysql
+translate_title: mysql-points
 date: 2018-11-01 11:45:27
 ---
 
