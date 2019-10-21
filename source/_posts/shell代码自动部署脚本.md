@@ -5,7 +5,7 @@ tags:
   - 命令
   - 服务器
 categories: Linux
-translate_title: shell-code-automatic-deployment-script
+translate_title: shell-code-auto-deployment-script
 date: 2018-07-10 12:44:47
 ---
 > 服务器环境：Ubuntu 16.04

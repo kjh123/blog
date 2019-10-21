@@ -6,7 +6,7 @@ tags:
   - Linux
   - CenterOS
 categories: Linux
-translate_title: centos-7-configuration-lnmp
+translate_title: centos7-configure-lnmp
 date: 2018-06-29 13:11:28
 ---
 

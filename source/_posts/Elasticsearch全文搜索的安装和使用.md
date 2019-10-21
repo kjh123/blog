@@ -4,7 +4,7 @@ tags:
   - 记录
   - Linux
 category: 记录
-translate_title: installation-and-use-of-elastic-search-full-text-search
+translate_title: the-installation-and-use-of-elastic-search
 date: 2018-11-30 10:07:47
 ---
 

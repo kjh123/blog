@@ -4,7 +4,7 @@ tags:
   - 记录
   - 前端
 categories: JavaScript
-translate_title: form-form-validation-plug-in
+translate_title: form-form-verification-plug-in
 date: 2018-09-02 00:14:47
 ---
 
