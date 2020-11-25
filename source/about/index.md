@@ -11,5 +11,4 @@ date: 2018-05-14 12:56:52
 - 代码洁癖
 - 发呆一万年
 
-![pay](http://learner-hui.oss-cn-beijing.aliyuncs.com/18-12-20/72574671.jpg?x-oss-process=style/w)
 
