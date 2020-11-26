@@ -35,10 +35,10 @@
 - [MySQL基础知识](https://github.com/kjh123/blog/blob/master/mysql/mysql.md)
 
 ### Linux
-- [Linux常用命令](https://github.com/kjh123/blog/blob/master/linux/commands.md)
-- [Git常用命令和技巧](https://github.com/kjh123/blog/blob/master/linux/git.md)
+- [Linux常用命令](https://github.com/kjh123/blog/blob/master/linux/linux常用命令.md)
+- [Git常用命令和技巧](https://github.com/kjh123/blog/blob/master/linux/Git常用命令和技巧.md)
 - [CentOS7配置LNMP](https://github.com/kjh123/blog/blob/master/linux/CentOS7配置LNMP.md)
-- [Vim常用命令](https://github.com/kjh123/blog/blob/master/linux/vim.md)
+- [Vim常用命令](https://github.com/kjh123/blog/blob/master/linux/vim常用命令.md)
 
 ### 算法
 - [常见基础算法](https://github.com/kjh123/blog/blob/master/算法/常用算法.md)
