@@ -53,6 +53,9 @@
 - [其他开发问题](https://github.com/kjh123/blog/blob/master/others/other.md)
 - [Elasticsearch全文搜索的安装和使用](https://github.com/kjh123/blog/blob/master/others/Elasticsearch.md)
 
+### Learning
+- [东野圭吾读书笔记](https://github.com/kjh123/blog/blob/master/learning/东野圭吾.md)
+
 ### 设计模式
 链接：[PHP设计模式-learnku](https://learnku.com/docs/php-design-patterns/2018)
 
