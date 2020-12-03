@@ -70,13 +70,13 @@ Mac 开发默认大小写不敏感所以可能会遇到本地环境没问题，�
 1. 执行 `git reflog` 查看操作记录
 
 ```diff 
-xxx7 HEAD@{0} commit: feature-6
-xxx6 HEAD@{1} commit: reset moving to xxx1
+ xxx7 HEAD@{0} commit: feature-6
+!xxx6 HEAD@{1} commit: reset moving to xxx1
 -xxx5 HEAD@{2} commit: feature-5  ▔▔|
 -xxx4 HEAD@{3} commit: feature-4    |=> 硬回退部分
 -xxx3 HEAD@{4} commit: feature-3    |
 -xxx2 HEAD@{5} commit: feature-2  __|
-xxx1 HEAD@{6} commit: feature-1
+ xxx1 HEAD@{6} commit: feature-1
 ```
 
 记录硬回退之前的一次提交(xxx5) 和 后面需要保存的提交(xxx6)
