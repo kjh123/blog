@@ -114,7 +114,7 @@ server {
 3. 配置 `./configure --with-php-config=/usr/local/php/bin/php-config`
 4. 编译安装 `make && make install`
 5. 修改 php.ini 文件，添加 Redis 扩展
-```bash :/usr/local/php/lib/php.ini first_line:925
+```bash
  . . .
  # 添加 Redis 扩展
  extension=redis.so

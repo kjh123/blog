@@ -68,7 +68,8 @@ Mac 开发默认大小写不敏感所以可能会遇到本地环境没问题，�
 假定当前场景为： 在提交了 1，2，3，4，5 等多个 **feature commit**之后，然后执行了 `git reset --hard xxx1` 代码硬回退到第一次提交， 然后又提交了第 6 个 **feature commit**， 现在想要恢复 1，2，3，4，5，6 等 feature commit 提交
 恢复步骤
 1. 执行 `git reflog` 查看操作记录
-```git mark:2 diff:true 
+
+```diff 
 xxx7 HEAD@{0} commit: feature-6
 xxx6 HEAD@{1} commit: reset moving to xxx1
 -xxx5 HEAD@{2} commit: feature-5  ▔▔|
@@ -77,6 +78,7 @@ xxx6 HEAD@{1} commit: reset moving to xxx1
 -xxx2 HEAD@{5} commit: feature-2  __|
 xxx1 HEAD@{6} commit: feature-1
 ```
+
 记录硬回退之前的一次提交(xxx5) 和 后面需要保存的提交(xxx6)
 2. 执行 `git reset --hard xxx5` 恢复代码到硬回退之前的这次提交中
 3. 合并需要保存的提交 `git cherry-pick xxx6` 
