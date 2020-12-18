@@ -1,4 +1,10 @@
-Vim 常用命令整理
+# VIM 相关
+
+## Vim 配置
+
+Vim配置见： [vimconf-linux](https://github.com/kjh123/vimconf-linux "vimconf-linux")
+
+## Vim 常用命令整理
 
 ```
 常用指令 (commands)
