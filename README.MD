@@ -61,6 +61,9 @@
 - [跳跃表详细介绍（Skip List）](https://mp.weixin.qq.com/s/KN9irTdsuiREuiqujWYSTQ)
 - [Golang-context](https://github.com/cch123/golang-notes/blob/master/context.md)
 - [基于prometheus的微服务指标监控](https://github.com/tal-tech/zero-doc/blob/main/doc/metric.md)
+
+### 待读
+- [Go 语言设计与实现(大佬力荐)](https://draveness.me/golang/docs/part1-prerequisite/ch01-prepare/golang-debug/)
 - [web直播知识点](https://github.com/imweb/blog/issues/2)
 
 ### Books
