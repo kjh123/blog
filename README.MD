@@ -6,6 +6,7 @@
 # GitHub Start
 199.232.28.133    assets-cdn.github.com
 199.232.28.133    raw.githubusercontent.com
+199.232.28.133    raw.github.com
 199.232.28.133    gist.githubusercontent.com
 199.232.28.133    cloud.githubusercontent.com
 199.232.28.133    camo.githubusercontent.com
