@@ -71,12 +71,20 @@
 - [东野圭吾读书笔记](https://github.com/kjh123/blog/blob/master/books/东野圭吾.md)
 - [三体摘录](https://github.com/kjh123/blog/blob/master/books/三体.md)
 
-### 推荐博客
+### 推荐 社区/博客
 
+- [DBAPlus社群](https://dbaplus.cn/)
+- [Linux中国](https://linux.cn/tech/)
 - [小林coding](https://www.cnblogs.com/xiaolincoding/)
 - [为什么这么设计](https://draveness.me/)
 - [鸟窝](https://colobu.com/categories/Go/)
 - [mojotv](https://mojotv.cn/)
+- [运维派](http://www.yunweipai.com/)
+
+### 一些工具
+
+- [在线音视频处理](https://www.xunjieshipin.com/online-converter)
+- [Alfred Workflows](http://www.packal.org/workflow-list?sort_by=changed&sort_order=DESC&items_per_page=100)
 
 ### 设计模式
 链接：[PHP设计模式-learnku](https://learnku.com/docs/php-design-patterns/2018)
