@@ -62,6 +62,7 @@
 - [TCP拥塞控制详解](https://mp.weixin.qq.com/s/KTKVu3uCC5MFlU5oylZPFA)
 - [跳跃表详细介绍（Skip List）](https://mp.weixin.qq.com/s/KN9irTdsuiREuiqujWYSTQ)
 - [基于prometheus的微服务指标监控](https://github.com/tal-tech/zero-doc/blob/main/doc/metric.md)
+- [150行Go实现高性能socks5代理](https://mp.weixin.qq.com/s/WjRRCU3xKvDRKgru9dZ7hg)
 
 ### 待读
 - [Go 语言设计与实现(大佬力荐)](https://draveness.me/golang/docs/part1-prerequisite/ch01-prepare/golang-debug/)
