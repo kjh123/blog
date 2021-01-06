@@ -66,6 +66,7 @@
 
 ### 待读
 - [Go 语言设计与实现(大佬力荐)](https://draveness.me/golang/docs/part1-prerequisite/ch01-prepare/golang-debug/)
+- [Influxdb系列](https://www.cnblogs.com/zouhao/p/10997903.html)
 - [web直播知识点](https://github.com/imweb/blog/issues/2)
 
 ### Books
