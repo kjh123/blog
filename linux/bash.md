@@ -214,4 +214,50 @@ function cc() {
     unset TARGET_DIR;
 }
 
+function licenses() {
+  # 安装解压工具
+  command -v unar >/dev/null 2>&1 || brew install unar
+
+  wget "http://idea.medeming.com/jets/images/jihuoma.zip" && \
+    unar -e GBK jihuoma.zip && \
+    rm -f jihuoma.zip && \
+    pbcopy < jihuoma/2018.1* && \
+    rm -rf jihuoma/
+}
+
+# 获取 JSON 
+function get_json_value()
+{
+  local json=$1
+  local key=$2
+
+  if [[ -z "$3" ]]; then
+    local num=1
+  else
+    local num=$3
+  fi
+
+  local value=$(echo "${json}" | awk -F"[,:}]" '{for(i=1;i<=NF;i++){if($i~/'${key}'\042/){print $(i+1)}}}' | tr -d '"' | sed -n ${num}p)
+
+  echo ${value}
+}
+
+# 长链 转 短链
+function url() {
+  command -v jq >/dev/null 2>&1 || brew install jq
+  curl 'https://api.bejson.com/Bejson/Api/ShortUrl/getShortUrl' \
+    -X 'POST' \
+    -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36' \
+    -H 'content-type: application/x-www-form-urlencoded; charset=UTF-8' \
+    -H 'referer: https://www.bejson.com/' \
+    --data-raw 'url='$1 \
+    --compressed | jq '.' | tee /dev/null
+}
+
+# 文件共享
+function transfer() {
+    curl --progress-bar --upload-file "$1" https://transfer.sh/$(basename "$1") | tee /dev/null;
+    echo
+}
+
 ```
