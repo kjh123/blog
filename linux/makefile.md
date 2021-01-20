@@ -8,10 +8,10 @@ export PATH:=${PATH}:${GOPATH}/bin:$(shell pwd)/third/go/bin:$(shell pwd)/third/
 .PHONY: golang
 golang:
     @hash go 2>/dev/null || { \
-        echo "安装 golang 环境 go1.14" && \
+        echo "安装 golang 环境 go1.15.6" && \
         mkdir -p third && cd third && \
         wget https://golang.google.cn/dl/go1.15.6.linux-amd64.tar.gz && \
-        tar -xzvf go1.14.linux-amd64.tar.gz && \
+        tar -xzvf go1.15.6.linux-amd64.tar.gz && \
         sudo mv go/ /usr/local/ && \
         sudo ln -s /usr/local/go/bin/go /usr/local/bin/go && \
         cd .. && \
