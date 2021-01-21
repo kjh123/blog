@@ -75,7 +75,6 @@
 - [三体摘录](https://github.com/kjh123/blog/blob/master/books/三体.md)
 
 ### 推荐 社区/博客
-
 - [DBAPlus社群](https://dbaplus.cn/)
 - [Linux中国](https://linux.cn/tech/)
 - [小林coding](https://www.cnblogs.com/xiaolincoding/)
@@ -85,7 +84,6 @@
 - [运维派](http://www.yunweipai.com/)
 
 ### 一些工具
-
 - [在线音视频处理](https://www.xunjieshipin.com/online-converter)
 - [Alfred Workflows](http://www.packal.org/workflow-list?sort_by=changed&sort_order=DESC&items_per_page=100)
 
