@@ -164,12 +164,16 @@ sed命令的选项(option)：
 * -i ：直接修改文件内容
 * -p ：命令表示打印当前行
 
->   示例： 输出某个文本里面全部的内容： 
-    `sed -n p file` # 输出 file 文件的日志
-    若要输出某几行显示 则可以在 P 前面加上行数 并以 , 分割 格式为 sed -n '第几行,截止到第几行'p file(s)
-    sed -n '1,2'p file  # 输出 file 文件中第一行到第二行的内容
-    如果要输出第几行到最后的内容可以使用 $ 
-    sed -n '5,$'p file  # 输出 file 文件中第五行开始一直到最后的所有内容 
+```bash
+# 示例： 输出某个文本里面全部的内容： 
+sed -n p file # 输出 file 文件的日志
+
+# 若要输出某几行显示 则可以在 P 前面加上行数 并以 , 分割 格式为 sed -n '第几行,截止到第几行'p file(s)
+sed -n '1,2'p file  # 输出 file 文件中第一行到第二行的内容
+
+# 如果要输出第几行到最后的内容可以使用 $ 
+sed -n '5,$'p file  # 输出 file 文件中第五行开始一直到最后的所有内容 
+```
 
 ### 相关命令
 #### 将匹配行删除 d
@@ -185,9 +189,10 @@ sed命令的选项(option)：
 
 #### 将匹配行替换 s
 命令格式： `s/pattern-to-find/replacement-pattern/g`
-        **pattern-to-find**：被替换的串
-        **replacement-pattern**：替换成这个串
-        **g**：全部替换，如果不加 **g** 默认只替换匹配到的第一个
+> - **pattern-to-find**：被替换的串
+> - **replacement-pattern**：替换成这个串
+> - **g**：全部替换，如果不加 **g** 默认只替换匹配到的第一个
+
 `sed 's/php/python/g' file` 该命令会输出 file 文件中的内容，同时把文件中出现的 `php` 全部替换为 `python`
   
 ----
