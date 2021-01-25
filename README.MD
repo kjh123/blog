@@ -137,8 +137,7 @@
 - [实体属性值模式（EAV 模式）](https://learnku.com/docs/php-design-patterns/2018/EAV/1523)
 </details>
 
-设计模式的六大原则
-文章：[PHP设计模式的六大设计原则](https://blog.csdn.net/bushuwei/article/details/85234393)
+设计模式的六大原则：[PHP设计模式的六大设计原则](https://blog.csdn.net/bushuwei/article/details/85234393)
 1. **单一职责原则**(Single)：一个类只负责一个职责
 2. **开放封闭原则**(Open)：一个软件实体比如类/模块/函数，应该对扩展开放，对修改关闭
 3. **里氏替换原则**(Liskov)：所有引用基类的地方必须透明地使用其子类的对象，子类必须完全实现父类的方法，可以拓展自己的方法和属性，即子类可以扩展父类的功能，但是不能改变父类的原有功能
