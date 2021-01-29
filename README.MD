@@ -10,6 +10,7 @@
 199.232.28.133    gist.githubusercontent.com
 199.232.28.133    cloud.githubusercontent.com
 199.232.28.133    camo.githubusercontent.com
+199.232.28.133    avatars.githubusercontent.com
 199.232.28.133    avatars0.githubusercontent.com
 199.232.28.133    avatars1.githubusercontent.com
 199.232.28.133    avatars2.githubusercontent.com
