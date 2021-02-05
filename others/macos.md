@@ -77,3 +77,15 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
 ```
+
+## 其他
+
+```bash
+# 清除系统 DNS 缓存
+sudo killall -HUP mDNSResponder
+
+# 清除 Chrome 浏览器缓存
+chrome://net-internals/#dnsChrome
+
+
+```
