@@ -1,4 +1,6 @@
-<center> ![](images/tada.png) </center>
+<div align=center>
+  <img src="images/tada.png">
+</div>
 
 ## Articles
 
