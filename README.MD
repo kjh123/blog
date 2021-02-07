@@ -1,5 +1,5 @@
 <div align=center>
-  <img src="images/tada.png">
+  <img src="images/tada.png" link="https://github.com/kjh123/blog">
 </div>
 
 ## Articles
@@ -59,7 +59,7 @@
 - [秒杀架构和优化思路](https://github.com/kjh123/blog/blob/master/others/秒杀架构和优化思路.md)
 - [其他开发问题](https://github.com/kjh123/blog/blob/master/others/other.md)
 - [Elasticsearch全文搜索的安装和使用](https://github.com/kjh123/blog/blob/master/others/Elasticsearch.md)
-- [Mac OS 优化](https://github.com/kjh123/blog/blob/master/others/macos.md)
+- [Mac OS 优化](https://github.com/kjh123/blog/blob/master/macos/macos.md)
 
 ### Learning
 - [35张图解：被问千百遍的 TCP 三次握手和四次挥手面试题](https://www.cnblogs.com/xiaolincoding/p/12638546.html)
