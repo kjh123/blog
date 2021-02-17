@@ -174,9 +174,9 @@ RUN echo "\ndaemon off;">>/etc/ngnix/nignix.conf
 CMD /usr/sbin/ngnix
 ```
 
-![dockerfile](../images/81984913.jpg "DockerFile 文件")
+![dockerfile](../images/81984913.jpg "Dockerfile 文件")
 
-### 使用 DockerFile 构建自己的 PHP 开发环境
+### 使用 Dockerfile 构建自己的 PHP 开发环境
 > 参考 https://github.com/laradock/laradock
 
 目录结构：
@@ -184,9 +184,9 @@ CMD /usr/sbin/ngnix
 ```bash
  DockerFiles
 |--MySQL
-|  |--DockerFile
+|  |--Dockerfile
 |--PHP-FPM
-|  |--DockerFile
+|  |--Dockerfile
 |  |--xdebug.ini : https://raw.githubusercontent.com/Laradock/laradock/master/php-fpm/xdebug.ini
 |  |--opcache.ini : https://github.com/Laradock/laradock/blob/master/php-fpm/opcache.ini
 |--Nginx
@@ -196,23 +196,23 @@ CMD /usr/sbin/ngnix
 |  |--DcokerFile
 |--docker-compose.yml 
 ```
-#### MySQL DockerFile：
+#### MySQL Dockerfile
 
 ```bash
 FROM mysql:latest
 
-MAINTAINER learner.hui "learner.hui@gmail.com"
+MAINTAINER hui "learner.hui@gmail.com"
 
 # Set Timezone
 ENV TZ=Asia/Shanghai
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone && chown -R mysql:root /var/lib/mysql/
 ```
 
-#### PHP-FPM DockerFile：
+#### PHP-FPM Dockerfile
 
 ```bash
 FROM php:7.2-fpm
-MAINTAINER learner.hui "learner.hui@gmail.com"
+MAINTAINER hui "learner.hui@gmail.com"
 
 # 设置时区
 ENV TZ=Asia/Shanghai
@@ -305,10 +305,11 @@ RUN usermod -u 1000 www-data
 WORKDIR /var/www
 ```
 
-#### Nginx DockerFile：
+#### Nginx Dockerfile
 ```bash
 FROM nginx:alpine
-MAINTAINER learner.hui "learner.hui@gmail.com"
+MAINTAINER hui "learner.hui@gmail.com"
+
 COPY nginx.conf /etc/nginx/
 sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/' /etc/apk/repositories \
 RUN apk update \
@@ -320,16 +321,33 @@ ARG PHP_UPSTREAM_CONTAINER=php-fpm
 ARG PHP_UPSTREAM_PORT=9000
 ```
 
-#### Redis DockerFile
+#### Redis Dockerfile
 ```bash
 FROM redis:latest
-MAINTAINER learner.hui "learner.hui@gmail.com"
+MAINTAINER hui "learner.hui@gmail.com"
 # set timezome
 ENV TZ=Asia/Shanghai
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 ```
 
+### Golang Dockerfile
+
+```bash
+FROM golang:latest
+MAINTAINER hui "learner.hui@gmail.com"
+
+ENV GOPROXY https://goproxy.cn,direct
+RUN mkdir /app
+ADD . /app/
+WORKDIR /app
+RUN go mod download
+RUN go build -o main .
+
+ENTRYPOINT ["/app/main"]
+```
+
 #### docker-compose.yml
+
 ```bash
 version: '1.0'
 services:
