@@ -48,8 +48,7 @@
 - [Vim常用命令](https://github.com/kjh123/blog/blob/master/linux/vim常用命令.md)
 
 ### 算法
-- [常见基础算法](https://github.com/kjh123/blog/blob/master/算法/常用算法.md)
-- [约瑟夫环](https://github.com/kjh123/blog/blob/master/算法/约瑟夫环问题.md)
+- [袁厨的算法小屋](https://mp.weixin.qq.com/s/7jd6U03Drd6HGhHyd10FqQ)
 
 ### Others
 - [Redis笔记](https://github.com/kjh123/blog/blob/master/others/redis.md)
@@ -69,7 +68,6 @@
 - [基于prometheus的微服务指标监控](https://github.com/tal-tech/zero-doc/blob/main/doc/metric.md)
 - [150行Go实现高性能socks5代理](https://mp.weixin.qq.com/s/WjRRCU3xKvDRKgru9dZ7hg)
 - [开发内功修炼-网络篇](https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&album_id=1532487451997454337)
-- [袁厨的算法小屋](https://mp.weixin.qq.com/s/7jd6U03Drd6HGhHyd10FqQ)
 
 ### 待读
 - [Go 语言设计与实现(大佬力荐)](https://draveness.me/golang/docs/part1-prerequisite/ch01-prepare/golang-debug/)
