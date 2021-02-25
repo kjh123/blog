@@ -50,10 +50,14 @@
 ### 算法
 - [袁厨的算法小屋](https://mp.weixin.qq.com/s/7jd6U03Drd6HGhHyd10FqQ)
 
+### HTTP/TCP
+- [网络括朴图的演示(如果让你来设计网络)](https://mp.weixin.qq.com/s/jiPMUk6zUdOY6eKxAjNDbQ)
+- [TCP协议](https://mp.weixin.qq.com/s/Uf42QEL6WUSHOwJ403FwOA)
+- [HTTP协议](https://github.com/kjh123/blog/blob/master/others/http.md)
+
 ### Others
 - [Redis笔记](https://github.com/kjh123/blog/blob/master/others/redis.md)
 - [Docker学习笔记](https://github.com/kjh123/blog/blob/master/others/Docker学习笔记.md)
-- [HTTP协议](https://github.com/kjh123/blog/blob/master/others/http.md)
 - [常见面试题](https://github.com/kjh123/blog/blob/master/others/面试题.md)
 - [秒杀架构和优化思路](https://github.com/kjh123/blog/blob/master/others/秒杀架构和优化思路.md)
 - [其他开发问题](https://github.com/kjh123/blog/blob/master/others/other.md)
