@@ -3,7 +3,7 @@
 > * 一个 HTTP 请求报文由请求行（request line）、请求头部（header）、空行和请求数据 4 个部分组成
 > * HTTP 响应也由三个部分组成，分别是：状态行、消息响应头、响应正文。
 
-### TCP/UDP/HTTP的区别和联系
+### TCP/UDP/HTTP 的区别和联系
 
 > 参考: [TCP/UDP/HTTP的区别和联系](https://blog.csdn.net/qq_31332467/article/details/79217262)
 
@@ -11,20 +11,27 @@
 - UDP是一种不可靠的传输层协议，TCP为了实现网络通信的可靠性，使用了复杂的拥塞控制算法，建立了繁琐的握手过程以及重传策略
 - UDP在传送数据之前不需要先建立连接；TCP则提供面向连接的服务
 
-### 一次http请求，谁会先断开TCP连接？什么情况下客户端先断，什么情况下服务端先断
+### 一次 HTTP 请求，谁会先断开 TCP 连接？什么情况下客户端先断，什么情况下服务端先断
 
 http1.0和http1.1之间保持连接的差异以及http头中connection、content-length、Transfer-encoding等参数有关
 
-### http1.0  
+### HTTP/1.0
 1. 带 content-length，body 长度可知，客户端在接收 body 时，就可以依据这个长度来接受数据。接受完毕后，就表示这个请求完毕了。客户端主动调用 close 进入四次挥手。
 2. 不带 content-length ，body 长度不可知，客户端一直接受数据，直到服务端主动断开
 
-### http1.1
+### HTTP/1.1
 1. 带 content-length body 长度可知，客户端主动断开
 2. 带 Transfer-encoding：chunked，body 会被分成多个块，每块的开始会标识出当前块的长度，body 就不需要通过 content-length 来指定了。但依然可以知道 body 的长度 客户端主动断开
 3. 不带 Transfer-encoding：chunked 且不带 content-length ，客户端接收数据，直到服务端主动断开连接
 
 >即：如果能够有办法知道服务器传来的长度，都是客户端首先断开。如果不知道就一直接收数据。直到服务端断开
+
+### HTTP/1.1 该如何优化
+1. 尽量避免发送 HTTP 请求；
+2. 在需要发送 HTTP 请求时，考虑如何减少请求次数；
+3. 减少服务器的 HTTP 响应的数据大小；
+
+![](../images/20210225160248.png)
 
 ### 请求行
 请求行 由请求方法字段、URL 字段和 HTTP 协议版本字段 3 个字段组成，它们用空格分隔。
