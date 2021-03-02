@@ -89,3 +89,17 @@ chrome://net-internals/#dnsChrome
 
 
 ```
+
+### V2rayU 闪退处理
+
+> 项目地址： https://github.com/yanue/V2rayU/tree/master
+>> Subscribe： https://proxypoolss.tk
+
+问题描述： 在配置完订阅链接后出现闪退并无法再次打开的情况
+参考解决方案： https://github.com/yanue/V2rayU/tree/master#%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98
+执行 `rm ~/Library/Preferences/net.yanue.V2rayU.plist` 后可以重新运行
+
+
+
+
+
