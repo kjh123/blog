@@ -41,6 +41,7 @@
 ### MySQL
 - [MySQL基础知识](https://github.com/kjh123/blog/blob/master/mysql/mysql.md)
 - [在 MySQL 中是如何通过 MVCC 机制来解决不可重复读和幻读问题的？](https://mp.weixin.qq.com/s/CGb94hM9POkdUQFNIrQXwA)
+- [undo log 版本链与 ReadView 机制如何让事务读取到该读的数据](https://mp.weixin.qq.com/s/DOlCuvnWm87zeE51baDqhA)
 
 ### Linux
 - [Linux常用命令](https://github.com/kjh123/blog/blob/master/linux/Linux常用命令.md)
