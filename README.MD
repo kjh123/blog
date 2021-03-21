@@ -50,7 +50,7 @@
 - [Vim常用命令](https://github.com/kjh123/blog/blob/master/linux/vim常用命令.md)
 
 ### 算法
-- [袁厨的算法小屋](https://mp.weixin.qq.com/s/7jd6U03Drd6HGhHyd10FqQ)
+- [袁厨的算法小屋](https://github.com/chefyuan/algorithm-base)
 
 ### HTTP/TCP
 - [网络括朴图的演示(如果让你来设计网络)](https://mp.weixin.qq.com/s/jiPMUk6zUdOY6eKxAjNDbQ)
