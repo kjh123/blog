@@ -52,6 +52,8 @@
 ### 算法
 - [袁厨的算法小屋](https://github.com/chefyuan/algorithm-base)
 
+- [红黑树](https://mp.weixin.qq.com/s/UY6fHTOFSRt_fHWp-wVqNA)
+
 ### HTTP/TCP
 - [网络括朴图的演示(如果让你来设计网络)](https://mp.weixin.qq.com/s/jiPMUk6zUdOY6eKxAjNDbQ)
 - [TCP协议](https://mp.weixin.qq.com/s/Uf42QEL6WUSHOwJ403FwOA)
