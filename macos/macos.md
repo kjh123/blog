@@ -1,5 +1,39 @@
 # Mac OS 配置
 
+## 其他
+
+```bash
+# 清除系统 DNS 缓存
+sudo killall -HUP mDNSResponder
+
+# 清除 Chrome 浏览器缓存
+chrome://net-internals/#dnsChrome
+
+
+```
+
+### SSH登陆超时后自动断开
+
+```bash
+# sudo vim /etc/ssh/ssh_config
+# Host * 
+#   ServerAliveInterval 60  表示每分钟发送一次, 然后客户端响应, 从而保持长连接
+#   ServerAliveCountMax 5   请求后客户端没有响应的次数达到5次, 就自动断开
+ServerAliveInterval 60  
+ServerAliveCountMax 5
+```
+
+### V2rayU 闪退处理
+
+> 项目地址： https://github.com/yanue/V2rayU/tree/master
+>> Subscribe： https://proxypoolss.tk
+
+问题描述： 在配置完订阅链接后出现闪退并无法再次打开的情况
+参考解决方案： https://github.com/yanue/V2rayU/tree/master#%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98
+执行 `rm ~/Library/Preferences/net.yanue.V2rayU.plist` 后可以重新运行
+
+
+
 ## 系统项优化
 
 ```bash
@@ -77,29 +111,5 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
 ```
-
-## 其他
-
-```bash
-# 清除系统 DNS 缓存
-sudo killall -HUP mDNSResponder
-
-# 清除 Chrome 浏览器缓存
-chrome://net-internals/#dnsChrome
-
-
-```
-
-### V2rayU 闪退处理
-
-> 项目地址： https://github.com/yanue/V2rayU/tree/master
->> Subscribe： https://proxypoolss.tk
-
-问题描述： 在配置完订阅链接后出现闪退并无法再次打开的情况
-参考解决方案： https://github.com/yanue/V2rayU/tree/master#%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98
-执行 `rm ~/Library/Preferences/net.yanue.V2rayU.plist` 后可以重新运行
-
-
-
 
 
