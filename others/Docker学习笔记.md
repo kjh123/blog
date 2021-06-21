@@ -420,7 +420,8 @@ services:
 5. `sudo docker search <name>` 搜索某个镜像
 6. `sudo docker pull [options] <name[:tag]>` 拉取/下载某个镜像
 7. `sudo docker exec [OPTIONS] <container> <command> [ARG...]` 在运行的容器中执行命令
-8. 查看 phpfpm 容器的 IP 地址:
+8. `sudo docker cp xx.log container:/path/target` 拷贝文件到 docker 容器中
+9. 查看 phpfpm 容器的 IP 地址:
 
 ```bash
 sudo docker inspect --format '{{ .NetworkSettings.IPAddress }}' [phpfpm]
