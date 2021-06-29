@@ -9,6 +9,8 @@ sudo killall -HUP mDNSResponder
 # 清除 Chrome 浏览器缓存
 chrome://net-internals/#dnsChrome
 
+# 移除 quarantine 属性
+sudo xattr -r -d com.apple.quarantine /xxx/path
 
 ```
 
