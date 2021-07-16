@@ -4,25 +4,28 @@
 
 ## 安装
 ### Debian 和 Ubuntu 安装
+
 #### 安装 JAVA 环境
+
 *Elasticsearch requires Java 8 or later. (**Elasticsearch需要Java 8或更高版本**)*
+
 ```bash
-sudo apt-get install openjdk-8-dbg
+sudo apt-get install openjdk-8-jre
 ```
 
-#### 安装 apt-transport-https package
-```bash
-sudo apt-get install apt-transport-https
-```
+#### 安装 Elasticsearch
 
-#### 安装软件源
 ```bash
-echo "deb https://artifacts.elastic.co/packages/6.x/apt stable main"  | sudo tee -a /etc/apt/sources.list.d/elastic-6.x.list
-```
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.13.3-amd64.deb
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.13.3-amd64.deb.sha512
+shasum -a 512 -c elasticsearch-7.13.3-amd64.deb.sha512 
+sudo dpkg -i elasticsearch-7.13.3-amd64.deb
 
-#### 更新软件源并安装 Elasticsearch
-```bash
-sudo apt-get update && sudo apt-get install elasticsearch
+sudo -i service elasticsearch start
+sudo -i service elasticsearch stop
+
+sudo /bin/systemctl daemon-reload
+sudo /bin/systemctl enable elasticsearch.service
 ```
 
 #### 配置自动启动
@@ -75,9 +78,9 @@ network.publish_host: \_non_loopback:ipv4_
 
  下载最新包
 ```bash
-wget https://github.com/medcl/elasticsearch-analysis-ik/archive/v6.5.1.tar.gz
+wget https://github.com/medcl/elasticsearch-analysis-ik/archive/v7.13.3.tar.gz
 ```
-解压: `tar -zxvf v6.5.1.tar.gz`
+解压: `tar -zxvf v7.13.3.tar.gz`
 
  安装
 > 两种安装方式选择其一即可
@@ -98,7 +101,7 @@ unzip target/releases/elasticsearch-analysis-ik-1.9.4.zip -d /usr/share/elastics
 #### 插件方式安装
 在 Elasticsearch 安装目录下: `/usr/share/elasticsearch/` 执行
 ```bash
-./bin/elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v6.3.0/elasticsearch-analysis-ik-6.3.0.zip
+./bin/elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v7.13.3/elasticsearch-analysis-ik-7.13.3.zip
 ```
 
 ## 在 PHP 项目中使用
@@ -202,6 +205,7 @@ class Demo extends Model
 > 如果是在已有的 Model 中建立索引， 则执行 `php artisan scout:import "App\Demo"` 导入数据
 
 ### 查看索引中导入的数据
+
 ```bash
 GET curl 127.0.0.1:9200/demo/demo/_search?pretty
 {
@@ -224,6 +228,7 @@ GET curl 127.0.0.1:9200/demo/demo/_search?pretty
 ```
 
 ### 使用
+
 ```php
 Demo::search('keyword')->get();
 ```
