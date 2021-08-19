@@ -20,9 +20,9 @@ sudo xattr -r -d com.apple.quarantine /xxx/path
 # sudo vim /etc/ssh/ssh_config
 # Host * 
 #   ServerAliveInterval 60  表示每分钟发送一次, 然后服务端响应, 从而保持长连接
-#   ServerAliveCountMax 5   请求后服务端没有响应的次数达到5次, 就自动断开
+#   ServerAliveCountMax 10   请求后服务端没有响应的次数达到5次, 就自动断开
 ServerAliveInterval 60  
-ServerAliveCountMax 5
+ServerAliveCountMax 10
 ```
 
 ### V2rayU 闪退处理
