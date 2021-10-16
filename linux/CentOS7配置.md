@@ -1,9 +1,83 @@
+# CentOS7
 
-# CentOS7配置LNMP
+## 磁盘
+
+### 加载 NTFS 格式的硬盘
+
+```bash
+# 安装 ntfs 扩展
+yum install ntfs-3g 
+
+# 查看磁盘分区
+fdisk -l
+
+# 挂载硬盘
+mount -t ntfs-3g /dev/<sdb1> /media
+```
+
+### 开机加载硬盘
+
+```bash
+# 格式化需要挂载的硬盘 （如有必要）
+mkfs -t ext3 -c /dev/<sdb6>
+
+# 创建硬盘的挂载目录
+mkdir /data
+
+# 挂载硬盘
+mount /dev/<sdb6> /data
+
+# 设置开机自动挂载
+vim /etc/fstab
+
+#添加一条挂载记录
+# /dev/sdb6 选择一个分区；ext3 是当前分区的格式
+# defaults = rw, suid, dev, exec, auto, nouser, and async
+# 1 需要 dump；0 不需要 dump
+# 2 开机时检查顺序，非 boot 文件系统为 1，其它文件系统都为 2，如要检查就为 0
+/dev/<sdb6>    /data     ext3    defaults   1 2
+```
+
+## 网络配置
+
+### WiFi配置
+
+```bash
+yum -y install NetworkManager-wifi
+
+# 开启无线网
+nmcli r wifi on
+
+# 系统内置网络配置界面
+nmtui
+
+# 扫描可用于连接wifi
+nmcli dev wifi 
+ 
+# 添加一个wifi的连接
+nmcli dev wifi con "无线网络名称" password "无线网络密码" name "任意连接名称（删除，修改时用）"
+
+#添加成功后查看已创建的wifi连接
+nmcli conn
+
+# 如果wifi没有连接上
+nmcli con up <wifi连接名（刚才nmtui创建的连接）>
+
+# 修改该连接为开机自动连接
+nmcli con mod wifi连接名 connection.autoconnect yes
+
+# 如果无线网卡安装不正常，可以lspci命令查看网卡型号，使用lspci命令需要先安装
+yum -y install pciutils*
+
+# 查询内核日志，查看是否需要安装无线网卡的固件
+dmesg | grep firmware
+```
+
+## CentOS7配置LNMP
 
 > 先查看当前服务器的版本： `cat /proc/version`
 
-## Nginx 安装
+### Nginx 安装
 
 > 安装 yum repo, 在 **http://nginx.org/packages/centos/** 找到对应的版本
 
@@ -14,7 +88,7 @@ rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0
 - 设置**Nginx**开机启动: `systemctl enable nginx`
 - 查看**Nginx**当前状态: `systemctl status nginx`
 
-## MySQL V5.7 安装
+### MySQL V5.7 安装
 > 安装 yum repo
 
 ```bash
@@ -28,7 +102,7 @@ rpm -Uvh http://dev.mysql.com/get/mysql57-community-release-el7-7.noarch.rpm
 - 启动**MySQL**: `systemctl start mysqld`
 - 修改**MySQL**密码: `ALTER USER 'root'@'localhost' IDENTIFIED BY '022.Admin';` *不写到这我还真记不住*
 
-## PHP V7 安装
+### PHP V7 安装
 下载**PHP 7.1.5** 的源码包: `wget -c http://cn2.php.net/distributions/php-7.1.5.tar.gz`
 解压并进入文件夹 
 >    
@@ -83,7 +157,7 @@ rpm -Uvh http://dev.mysql.com/get/mysql57-community-release-el7-7.noarch.rpm
     # 查看php71-fpm当前状态
     systemctl status php71-fpm
 ```
-## 配置 Nginx
+### 配置 Nginx
 添加 nginx 配置文件
 ```nginx
 server {
@@ -105,7 +179,7 @@ server {
  测试验证~
  ![phpinfo](../images/32360315.jpg)
 
-## Redis V4.0 安装
+### Redis V4.0 安装
 在 PHP 官网扩展包里下载 **Reids** 包 `wget -c http://pecl.php.net/get/redis-4.0.0RC2.tgz`
 1. 解压 `tar zxf redis-4.0.0RC2.tgz && cd redis-4.0.0RC2`
 2. 执行 `phpize` 生成配置文件
@@ -121,5 +195,31 @@ server {
  . . .
 ```
 
-## CentOS7 安装 Nodejs
+### CentOS7 安装 Nodejs
 `curl --silent --location https://rpm.nodesource.com/setup_10.x | bash -` 10.x 可切换为对应版本号安装其他版本 执行完后再执行 `sudo yum install -y nodejs` 安装
+
+
+## 其他
+
+### CentOS7设置笔记本合盖不休眠
+
+```bash
+vim /etc/systemd/logind.conf
+
+# 配置文件中找到我们要修改的配置项：
+#HandlePowerKey=poweroff        按下电源键后的行为，默认power off
+#HandleSuspendKey=suspend       按下挂起键后的行为，默认suspend
+#HandleHibernateKey=hibernate   按下休眠键后的行为，默认hibernate
+#HandleLidSwitch=suspend        合上笔记本盖后的行为，默认suspend
+
+# 把HandleLidSwitch后面的suspend修改为lock，即：
+HandleLidSwitch=lock
+
+systemctl restart systemd-logind
+```
+
+
+
+
+
+

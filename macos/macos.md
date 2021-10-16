@@ -35,6 +35,24 @@ ServerAliveCountMax 10
 执行 `rm ~/Library/Preferences/net.yanue.V2rayU.plist` 后可以重新运行
 
 
+### brew 命令执行失败
+
+> Git: https://github.com/Homebrew/homebrew-core
+
+#### 一般的排查命令
+
+1. brew config
+2. brew doctor
+3. brew update-reset
+4. brew tap (重新关联相关源，一般删除对应源之后执行这个)
+
+```bash
+#背景： 执行 brew upgrade 后执行失败，提示: Warning: Calling cellar in a bottle block is deprecated! Use brew style –fix on the formula to update the style or use sha256 with a cellar: argument instead.
+
+rm -rf $(brew --repo homebrew/core)
+brew tap homebrew/core
+```
+
 
 ## 系统项优化
 

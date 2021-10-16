@@ -46,7 +46,7 @@
 ### Linux
 - [Linux常用命令](https://github.com/kjh123/blog/blob/master/linux/Linux常用命令.md)
 - [Git常用命令和技巧](https://github.com/kjh123/blog/blob/master/linux/Git常用命令和技巧.md)
-- [CentOS7配置LNMP](https://github.com/kjh123/blog/blob/master/linux/CentOS7配置LNMP.md)
+- [CentOS7配置](https://github.com/kjh123/blog/blob/master/linux/CentOS7配置.md)
 - [Vim常用命令](https://github.com/kjh123/blog/blob/master/linux/vim常用命令.md)
 
 ### 算法
