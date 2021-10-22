@@ -196,68 +196,233 @@ function refresh(){
   unset FILE;
 }
 
-# md5decode
-function md5decode() {
- curl -s -X POST https://www.md5online.org/md5-decrypt.html -d hash=$1 | grep -o -E 'b>[a-zA-Z0-9]+' | sed 's/b>/decode: /'
-}
-
-# 切换文件夹，并列出当前目录文件列表
-function cc() {
-  TARGET_DIR="$*";
-    # if no DIR given, go home
-    if [ $# -lt 1 ]; then
-        TARGET_DIR=$HOME;
-    fi;
-    builtin cd "${TARGET_DIR}" && \
-    # use your preferred ls command
-    ls -F
-    unset TARGET_DIR;
-}
-
-function licenses() {
-  # 安装解压工具
-  command -v unar >/dev/null 2>&1 || brew install unar
-
-  wget "http://idea.medeming.com/jets/images/jihuoma.zip" && \
-    unar -e GBK jihuoma.zip && \
-    rm -f jihuoma.zip && \
-    pbcopy < jihuoma/2018.1* && \
-    rm -rf jihuoma/
-}
-
-# 获取 JSON 
-function get_json_value()
-{
-  local json=$1
-  local key=$2
-
-  if [[ -z "$3" ]]; then
-    local num=1
-  else
-    local num=$3
-  fi
-
-  local value=$(echo "${json}" | awk -F"[,:}]" '{for(i=1;i<=NF;i++){if($i~/'${key}'\042/){print $(i+1)}}}' | tr -d '"' | sed -n ${num}p)
-
-  echo ${value}
-}
-
-# 长链 转 短链
-function url() {
-  command -v jq >/dev/null 2>&1 || brew install jq
-  curl 'https://api.bejson.com/Bejson/Api/ShortUrl/getShortUrl' \
-    -X 'POST' \
-    -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36' \
-    -H 'content-type: application/x-www-form-urlencoded; charset=UTF-8' \
-    -H 'referer: https://www.bejson.com/' \
-    --data-raw 'url='$1 \
-    --compressed | jq '.' | tee /dev/null
-}
-
 # 文件共享
 function transfer() {
-    curl --progress-bar --upload-file "$1" https://transfer.sh/$(basename "$1") | tee /dev/null;
-    echo
+  if [ $# -eq 0 ]; then
+    echo "Usage:\n transfer <file|directory> \n" >&2
+    return 1
+  fi
+  if tty -s; then
+    file="$1"
+    file_name=$(basename "$file")
+    if [ ! -e "$file" ]; then
+      echo "$file: No such file or directory" >&2
+      return 1
+    fi
+    if [ -d "$file" ]; then
+      file_name="$file_name.zip" ,
+      (cd "$file" && zip -r -q - .) | curl --progress-bar --upload-file "-" "https://transfer.sh/$file_name" | tee /dev/null
+    else
+      cat "$file" | curl --progress-bar --upload-file "-" "https://transfer.sh/$file_name" | tee /dev/null
+    fi
+  else
+    file_name=$1
+    curl --progress-bar --upload-file "-" "https://transfer.sh/$file_name" | tee /dev/null
+  fi
+}
+
+# mkcd is equivalent to takedir
+function mkcd takedir() {
+  mkdir -p $@ && cd ${@:$#}
+}
+
+function takeurl() {
+  local data thedir
+  data="$(mktemp)"
+  curl -L "$1" > "$data"
+  tar xf "$data"
+  thedir="$(tar tf "$data" | head -1)"
+  rm "$data"
+  cd "$thedir"
+}
+
+function takegit() {
+  git clone "$1"
+  cd "$(basename ${1%%.git})"
+}
+
+function take() {
+  if [[ $1 =~ ^(https?|ftp).*\.tar\.(gz|bz2|xz)$ ]]; then
+    takeurl "$1"
+  elif [[ $1 =~ ^([A-Za-z0-9]\+@|https?|git|ssh|ftps?|rsync).*\.git/?$ ]]; then
+    takegit "$1"
+  else
+    takedir "$@"
+  fi
+}
+
+# URL-encode a string
+#
+# Encodes a string using RFC 2396 URL-encoding (%-escaped).
+# See: https://www.ietf.org/rfc/rfc2396.txt
+#
+# By default, reserved characters and unreserved "mark" characters are
+# not escaped by this function. This allows the common usage of passing
+# an entire URL in, and encoding just special characters in it, with
+# the expectation that reserved and mark characters are used appropriately.
+# The -r and -m options turn on escaping of the reserved and mark characters,
+# respectively, which allows arbitrary strings to be fully escaped for
+# embedding inside URLs, where reserved characters might be misinterpreted.
+#
+# Prints the encoded string on stdout.
+# Returns nonzero if encoding failed.
+#
+# Usage:
+#  omz_urlencode [-r] [-m] [-P] <string>
+#
+#    -r causes reserved characters (;/?:@&=+$,) to be escaped
+#
+#    -m causes "mark" characters (_.!~*''()-) to be escaped
+#
+#    -P causes spaces to be encoded as '%20' instead of '+'
+function omz_urlencode() {
+  emulate -L zsh
+  local -a opts
+  zparseopts -D -E -a opts r m P
+
+  local in_str=$1
+  local url_str=""
+  local spaces_as_plus
+  if [[ -z $opts[(r)-P] ]]; then spaces_as_plus=1; fi
+  local str="$in_str"
+
+  # URLs must use UTF-8 encoding; convert str to UTF-8 if required
+  local encoding=$langinfo[CODESET]
+  local safe_encodings
+  safe_encodings=(UTF-8 utf8 US-ASCII)
+  if [[ -z ${safe_encodings[(r)$encoding]} ]]; then
+    str=$(echo -E "$str" | iconv -f $encoding -t UTF-8)
+    if [[ $? != 0 ]]; then
+      echo "Error converting string from $encoding to UTF-8" >&2
+      return 1
+    fi
+  fi
+
+  # Use LC_CTYPE=C to process text byte-by-byte
+  local i byte ord LC_ALL=C
+  export LC_ALL
+  local reserved=';/?:@&=+$,'
+  local mark='_.!~*''()-'
+  local dont_escape="[A-Za-z0-9"
+  if [[ -z $opts[(r)-r] ]]; then
+    dont_escape+=$reserved
+  fi
+  # $mark must be last because of the "-"
+  if [[ -z $opts[(r)-m] ]]; then
+    dont_escape+=$mark
+  fi
+  dont_escape+="]"
+
+  # Implemented to use a single printf call and avoid subshells in the loop,
+  # for performance (primarily on Windows).
+  local url_str=""
+  for (( i = 1; i <= ${#str}; ++i )); do
+    byte="$str[i]"
+    if [[ "$byte" =~ "$dont_escape" ]]; then
+      url_str+="$byte"
+    else
+      if [[ "$byte" == " " && -n $spaces_as_plus ]]; then
+        url_str+="+"
+      else
+        ord=$(( [##16] #byte ))
+        url_str+="%$ord"
+      fi
+    fi
+  done
+  echo -E "$url_str"
+}
+
+# URL-decode a string
+#
+# Decodes a RFC 2396 URL-encoded (%-escaped) string.
+# This decodes the '+' and '%' escapes in the input string, and leaves
+# other characters unchanged. Does not enforce that the input is a
+# valid URL-encoded string. This is a convenience to allow callers to
+# pass in a full URL or similar strings and decode them for human
+# presentation.
+#
+# Outputs the encoded string on stdout.
+# Returns nonzero if encoding failed.
+#
+# Usage:
+#   omz_urldecode <urlstring>  - prints decoded string followed by a newline
+function omz_urldecode {
+  emulate -L zsh
+  local encoded_url=$1
+
+  # Work bytewise, since URLs escape UTF-8 octets
+  local caller_encoding=$langinfo[CODESET]
+  local LC_ALL=C
+  export LC_ALL
+
+  # Change + back to ' '
+  local tmp=${encoded_url:gs/+/ /}
+  # Protect other escapes to pass through the printf unchanged
+  tmp=${tmp:gs/\\/\\\\/}
+  # Handle %-escapes by turning them into `\xXX` printf escapes
+  tmp=${tmp:gs/%/\\x/}
+  local decoded
+  eval "decoded=\$'$tmp'"
+
+  # Now we have a UTF-8 encoded string in the variable. We need to re-encode
+  # it if caller is in a non-UTF-8 locale.
+  local safe_encodings
+  safe_encodings=(UTF-8 utf8 US-ASCII)
+  if [[ -z ${safe_encodings[(r)$caller_encoding]} ]]; then
+    decoded=$(echo -E "$decoded" | iconv -f UTF-8 -t $caller_encoding)
+    if [[ $? != 0 ]]; then
+      echo "Error converting string from UTF-8 to $caller_encoding" >&2
+      return 1
+    fi
+  fi
+
+  echo -E "$decoded"
+}
+
+function fshow() {
+  git log --graph --color=always \
+      --format="%C(auto)%h%d %s %C(black)%C(bold)%cr" "$@" \
+  | fzf --ansi --preview "echo {} \
+    | grep -o '[a-f0-9]\{7\}' \
+    | head -1 \
+    | xargs -I % sh -c 'git show --color=always %'" \
+        --bind "enter:execute:
+            (grep -o '[a-f0-9]\{7\}' \
+                | head -1 \
+                | xargs -I % sh -c 'git show --color=always % \
+                | less -R') << 'FZF-EOF'
+            {}
+FZF-EOF"
+}
+
+function  mans(){
+    man -k . \
+    | fzf -n1,2 --preview "echo {} \
+    | cut -d' ' -f1 \
+    | sed 's# (#.#' \
+    | sed 's#)##' \
+    | xargs -I% man %" --bind "enter:execute: \
+      (echo {} \
+      | cut -d' ' -f1 \
+      | sed 's# (#.#' \
+      | sed 's#)##' \
+      | xargs -I% man % \
+      | less -R)"
+}
+
+function h() {
+    # check if we passed any parameters
+    if [ -z "$*" ]; then
+        # if no parameters were passed print entire history
+        history 1
+    else
+        # if words were passed use it as a search
+        history 1 | egrep --color=auto "$@"
+    fi
+}
+
+function fh() {
+    eval $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
 }
 
 ```

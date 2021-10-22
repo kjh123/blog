@@ -44,6 +44,8 @@
 - [undo log 版本链与 ReadView 机制如何让事务读取到该读的数据](https://mp.weixin.qq.com/s/DOlCuvnWm87zeE51baDqhA)
 
 ### Linux
+> makefile : wget https://raw.githubusercontent.com/kjh123/blog/master/linux/makefile
+
 - [Linux常用命令](https://github.com/kjh123/blog/blob/master/linux/Linux常用命令.md)
 - [Git常用命令和技巧](https://github.com/kjh123/blog/blob/master/linux/Git常用命令和技巧.md)
 - [CentOS7配置](https://github.com/kjh123/blog/blob/master/linux/CentOS7配置.md)
