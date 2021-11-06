@@ -29,6 +29,10 @@
 
 </details>
 
+### Makefiles
+- **Linux Makefile** `curl --output Makefile https://raw.githubusercontent.com/kjh123/blog/master/makefiles/InstallMakefile`
+- **Go Makefile** `curl --output Makefile https://raw.githubusercontent.com/kjh123/blog/master/makefiles/GoMakefile`
+
 ### Golang
 - [Go基本语法整理](https://github.com/kjh123/blog/blob/master/golang/Go基本语法整理.md)
 - [Go标准库](https://github.com/kjh123/blog/blob/master/golang/Go标准库.md)
@@ -44,8 +48,6 @@
 - [undo log 版本链与 ReadView 机制如何让事务读取到该读的数据](https://mp.weixin.qq.com/s/DOlCuvnWm87zeE51baDqhA)
 
 ### Linux
-> makefile : wget https://raw.githubusercontent.com/kjh123/blog/master/linux/makefile
-
 - [Linux常用命令](https://github.com/kjh123/blog/blob/master/linux/Linux常用命令.md)
 - [Git常用命令和技巧](https://github.com/kjh123/blog/blob/master/linux/Git常用命令和技巧.md)
 - [CentOS7配置](https://github.com/kjh123/blog/blob/master/linux/CentOS7配置.md)
@@ -76,7 +78,6 @@
 ### Learning
 - [解决死锁之路 - 常见 SQL 语句的加锁分析](https://www.aneasystone.com/archives/2017/12/solving-dead-locks-three.html)
 - [跳跃表详细介绍（Skip List）](https://mp.weixin.qq.com/s/KN9irTdsuiREuiqujWYSTQ)
-- [基于prometheus的微服务指标监控](https://github.com/tal-tech/zero-doc/blob/main/doc/metric.md)
 - [150行Go实现高性能socks5代理](https://mp.weixin.qq.com/s/WjRRCU3xKvDRKgru9dZ7hg)
 - [开发内功修炼-网络篇](https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&album_id=1532487451997454337)
 
