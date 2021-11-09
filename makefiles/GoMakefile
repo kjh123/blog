@@ -13,35 +13,35 @@ init:
 .PHONY: fmt
 # go fmt
 fmt:
-    $(info ******************** checking formatting ********************)
-    @test -z $(shell gofmt -l $(SRC)) || (gofmt -d $(SRC); exit 1)
+	$(info ******************** checking formatting ********************)
+	@test -z $(shell gofmt -l $(SRC)) || (gofmt -d $(SRC); exit 1)
 
 .PHONY: lint
 # lint
-lint:
-    $(info ******************** running lint ********************)
-    golangci-lint run ./...
+lint: fmt
+	$(info ******************** running lint ********************)
+	golangci-lint run ./...
 
 .PHONY: test
 # go test
-test:
-    $(info ******************** running testing ********************)
-    go test -v ./...
+test: lint
+	$(info ******************** running testing ********************)
+	go test -v ./...
 
 .PHONY: build
 # go build
 build:
-    $(info ******************** go build ********************)
-    mkdir -p bin/ && go build -ldflags "-X main.Version=$(VERSION)" -o ./bin/ ./...
+	$(info ******************** go build ********************)
+	mkdir -p bin/ && go build -mod=vendor -ldflags "-X main.Version=$(VERSION)" -o ./bin/ ./...
 
 # show help
 help:
-    @echo ''
-    @echo 'Usage:'
-    @echo ' make [target]'
-    @echo ''
-    @echo 'Targets:'
-    @awk '/^[a-zA-Z\-\_0-9]+:/ { \
+	@echo ''
+	@echo 'Usage:'
+	@echo ' make [target]'
+	@echo ''
+	@echo 'Targets:'
+	@awk '/^[a-zA-Z\-\_0-9]+:/ { \
     helpMessage = match(lastLine, /^# (.*)/); \
         if (helpMessage) { \
             helpCommand = substr($$1, 0, index($$1, ":")-1); \

@@ -30,8 +30,17 @@
 </details>
 
 ### Makefiles
-- **Linux Makefile** `curl --output Makefile https://raw.githubusercontent.com/kjh123/blog/master/makefiles/InstallMakefile`
-- **Go Makefile** `curl --output Makefile https://raw.githubusercontent.com/kjh123/blog/master/makefiles/GoMakefile`
+
+> [Linux Makefile](https://github.com/kjh123/blog/blob/master/makefiles/InstallMakefile)
+> [Go Makefile](https://github.com/kjh123/blog/blob/master/makefiles/GoMakefile)
+
+```bash
+# Linux Makefile
+curl --output Makefile https://raw.githubusercontent.com/kjh123/blog/master/makefiles/InstallMakefile
+# Go Makefile
+curl --output Makefile https://raw.githubusercontent.com/kjh123/blog/master/makefiles/GoMakefile
+
+```
 
 ### Golang
 - [Go基本语法整理](https://github.com/kjh123/blog/blob/master/golang/Go基本语法整理.md)
