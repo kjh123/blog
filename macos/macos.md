@@ -57,6 +57,10 @@ brew tap homebrew/core
 ## 系统项优化
 
 ```bash
+
+# 任意来源软件安装
+sudo spctl --master-disable
+
 # 将当前目录路径显示在 Finder 窗口标题
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 
