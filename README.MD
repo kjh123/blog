@@ -8,8 +8,8 @@
 
 ```hosts
 # GitHub Start
-140.82.113.26                 alive.github.com
-140.82.114.6                  api.github.com
+140.82.112.25                 alive.github.com
+140.82.113.5                  api.github.com
 185.199.110.153               assets-cdn.github.com
 185.199.108.133               avatars.githubusercontent.com
 185.199.108.133               avatars0.githubusercontent.com
@@ -19,27 +19,27 @@
 185.199.108.133               avatars4.githubusercontent.com
 185.199.108.133               avatars5.githubusercontent.com
 185.199.108.133               camo.githubusercontent.com
-140.82.112.22                 central.github.com
+140.82.114.22                 central.github.com
 185.199.108.133               cloud.githubusercontent.com
-140.82.112.9                  codeload.github.com
+140.82.112.10                 codeload.github.com
 140.82.113.21                 collector.github.com
 185.199.108.133               desktop.githubusercontent.com
 185.199.108.133               favicons.githubusercontent.com
-140.82.114.4                  gist.github.com
-54.231.132.193                github-cloud.s3.amazonaws.com
-52.217.87.76                  github-com.s3.amazonaws.com
-54.231.139.249                github-production-release-asset-2e65be.s3.amazonaws.com
-52.216.170.179                github-production-repository-file-5c1aeb.s3.amazonaws.com
-52.216.206.59                 github-production-user-asset-6210df.s3.amazonaws.com
+140.82.112.4                  gist.github.com
+52.217.70.140                 github-cloud.s3.amazonaws.com
+52.217.43.116                 github-com.s3.amazonaws.com
+52.217.83.124                 github-production-release-asset-2e65be.s3.amazonaws.com
+52.217.9.180                  github-production-repository-file-5c1aeb.s3.amazonaws.com
+52.216.208.201                github-production-user-asset-6210df.s3.amazonaws.com
 192.0.66.2                    github.blog
-140.82.112.3                  github.com
-140.82.113.18                 github.community
+140.82.114.3                  github.com
+140.82.114.18                 github.community
 185.199.109.154               github.githubassets.com
-151.101.129.194               github.global.ssl.fastly.net
+151.101.65.194                github.global.ssl.fastly.net
 185.199.110.153               github.io
 185.199.108.133               github.map.fastly.net
 185.199.110.153               githubstatus.com
-140.82.112.26                 live.github.com
+140.82.112.25                 live.github.com
 185.199.108.133               media.githubusercontent.com
 185.199.108.133               objects.githubusercontent.com
 13.107.42.16                  pipelines.actions.githubusercontent.com
@@ -105,6 +105,7 @@ curl --output Makefile https://raw.githubusercontent.com/kjh123/blog/master/make
 - [其他开发问题](https://github.com/kjh123/blog/blob/master/others/other.md)
 - [Elasticsearch全文搜索的安装和使用](https://github.com/kjh123/blog/blob/master/others/Elasticsearch.md)
 - [Mac OS 优化](https://github.com/kjh123/blog/blob/master/macos/macos.md)
+- [工具](https://github.com/kjh123/blog/blob/master/others/tools.md)
 
 ### Learning
 - [解决死锁之路 - 常见 SQL 语句的加锁分析](https://www.aneasystone.com/archives/2017/12/solving-dead-locks-three.html)

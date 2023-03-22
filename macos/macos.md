@@ -12,6 +12,8 @@ chrome://net-internals/#dnsChrome
 # 移除 quarantine 属性
 sudo xattr -r -d com.apple.quarantine /xxx/path
 
+# 安装任意来源的软件
+sudo spctl --master-disable
 ```
 
 ### SSH登陆超时后自动断开
