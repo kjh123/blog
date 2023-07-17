@@ -1,40 +1,10 @@
-
-# 我的 Bash 脚本记录
-
-## tmux 配置
-
-```bash
-# 设置前缀为Ctrl + x
-set -g prefix C-x
-
-#解除Ctrl+b 与前缀的对应关系
-unbind C-b
-
-## 切换面板
-#up
-bind-key k select-pane -U
-#down
-bind-key j select-pane -D
-#left
-bind-key h select-pane -L
-#right
-bind-key l select-pane -R
-```
-
-## bashrc 配置
-
-```bash
 alias ~="cd ~"
 alias ..="cd .."
 alias ...="cd ../.."
 alias l="ls"
 alias la="ls -ahs"
 PS1='host-name-127.0.0.1@jiahui\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$ '
-```
 
-## zshrc 配置
-
-```bash
 # 历史命令显示日期
 HIST_STAMPS="yyyy-mm-dd"
 
@@ -424,5 +394,3 @@ function h() {
 function fh() {
     eval $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
 }
-
-```

@@ -105,7 +105,14 @@ curl --output Makefile https://raw.githubusercontent.com/kjh123/blog/master/make
 - [其他开发问题](https://github.com/kjh123/blog/blob/master/others/other.md)
 - [Elasticsearch全文搜索的安装和使用](https://github.com/kjh123/blog/blob/master/others/Elasticsearch.md)
 - [Mac OS 优化](https://github.com/kjh123/blog/blob/master/macos/macos.md)
+
+### 工具类
 - [工具](https://github.com/kjh123/blog/blob/master/others/tools.md)
+- [腾讯工具箱](https://tool.browser.qq.com/)
+
+#### 图书搜索📚
+- [安娜的档案](https://zh.annas-archive.org/)
+- [ZLibrary](https://find.looks.wang/)
 
 ### Learning
 - [解决死锁之路 - 常见 SQL 语句的加锁分析](https://www.aneasystone.com/archives/2017/12/solving-dead-locks-three.html)
