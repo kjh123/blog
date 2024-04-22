@@ -86,8 +86,8 @@ services:
     image: gitlab/gitlab-runner:latest
     restart: always
     volumes:
-      - "./gitlab-runner:/etc/gitlab-runner"
-      - ".gitlab-runner:/home/gitlab-runner"
+      - ".local/runner/config:/etc/gitlab-runner"
+      - ".local/runner/home_config:/home/gitlab-runner"
       - '//var/run/docker.sock:/var/run/docker.sock'  #  windows
       # - '/var/run/docker.sock:/var/run/docker.sock' #  linux
     links:
