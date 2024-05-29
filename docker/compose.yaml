@@ -99,6 +99,12 @@ services:
       gitlab:
         ipv4_address: 192.168.201.3
 
+  etcdkeeper:
+    image: evildecay/etcdkeeper:latest
+    restart: always
+    # environment:
+    
+
 volumes:
   mysql_data:
   mongo_data:
