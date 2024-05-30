@@ -34,8 +34,11 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-      loadNavbar: true,
+      auto2top: true,
+      executeScript: true,
       loadSidebar: true,
+      loadNavbar: true,
+      mergeNavbar: true,
       name: 'Documents',
        // complete configuration parameters
       search: {
@@ -62,7 +65,7 @@
         //
         // When initialiazing an index, we look for the first path from the sidebar.
         // If it matches the prefix from the list, we switch to the corresponding index.
-        pathNamespaces: ['/'],
+        pathNamespaces: ['/#/'],
       },
       tabs: {
         persist: true, // default
