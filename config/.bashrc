@@ -27,12 +27,12 @@ alias la="ls -ahs"
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+alias gotrace='go run -ldflags="-H windowsgui" honnef.co/go/gotraceui/cmd/gotraceui@latest'
 
 # Git
 alias gitlog="git log --graph --abbrev-commit --decorate --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)'"
-alias pl="git pull"
+alias pl="git pull --rebase"
 alias stash=stash
-alias checkout=checkout
 
 # 在单个列中显示每个项目的大小，然后按大小对其进行排序，并使用符号表示文件类型
 # GUN 系统中该命令为： alias lt='ls --human-readable --size -1 -S --classify'
@@ -86,18 +86,13 @@ function stash() {
 function shortcut() {
     case ${@: -1} in
         open) # Finder 打开文件
-            if [ $2 = 'blog' ]; then
-                open $1'myblog';
-            else
-                open $1$2;
-            fi
+            open $1$2;
             ;;
         hui)  # sublime 打开文件
-            if [ $2 = 'blog' ]; then
-                hui $1'myblog';
-            else
-                hui $1$2;
-            fi
+            hui $1$2;
+            ;;
+        doc) # doc
+            docsify serve $1$2;
             ;;
         *)
             switchdir -p $1 -d $2;
@@ -164,31 +159,6 @@ function refresh(){
             ;;
     esac
   unset FILE;
-}
-
-# 文件共享
-function transfer() {
-  if [ $# -eq 0 ]; then
-    echo "Usage:\n transfer <file|directory> \n" >&2
-    return 1
-  fi
-  if tty -s; then
-    file="$1"
-    file_name=$(basename "$file")
-    if [ ! -e "$file" ]; then
-      echo "$file: No such file or directory" >&2
-      return 1
-    fi
-    if [ -d "$file" ]; then
-      file_name="$file_name.zip" ,
-      (cd "$file" && zip -r -q - .) | curl --progress-bar --upload-file "-" "https://transfer.sh/$file_name" | tee /dev/null
-    else
-      cat "$file" | curl --progress-bar --upload-file "-" "https://transfer.sh/$file_name" | tee /dev/null
-    fi
-  else
-    file_name=$1
-    curl --progress-bar --upload-file "-" "https://transfer.sh/$file_name" | tee /dev/null
-  fi
 }
 
 # mkcd is equivalent to takedir
