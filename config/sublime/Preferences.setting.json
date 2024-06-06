@@ -1,0 +1,15 @@
+{
+	"ignored_packages":[
+	],
+	"index_files": true,
+	"show_encoding": true,
+	"highlight_line": true,
+	// 加粗文件夹名称
+  	"bold_folder_labels": true,
+  	// 在窗口title上显示当前编辑的文件的全路径
+  	"show_full_path": true,
+  	"auto_indent": true,
+  	// 自动补全代码，设置以下两项
+	"auto_complete": true,
+  	"auto_match_enabled": true,
+}
