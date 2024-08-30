@@ -2,7 +2,7 @@
   <img src="images/tada.png" link="https://github.com/kjh123/blog">
 </div>
 
-## Articles 
+## Articles
 
 <details><summary><b>如文章内图片无法展示, 注以下 hosts </b></summary>
 
@@ -62,6 +62,14 @@ curl --output Makefile https://raw.githubusercontent.com/kjh123/blog/master/make
 # Go Makefile
 curl --output Makefile https://raw.githubusercontent.com/kjh123/blog/master/makefiles/GoMakefile
 
+```
+
+### Tips
+
+```bash
+# 快速查看 docker 容器启动的命令
+docker inspect --format "$(curl -s https://gist.githubusercontent.com/efrecon/8ce9c75d518b6eb863f667442d7bc679/raw/r
+un.tpl)" container_name_or_id
 ```
 
 ### Golang
