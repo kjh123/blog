@@ -4,52 +4,17 @@
 
 ## Articles
 
-<details><summary><b>如文章内图片无法展示, 注以下 hosts </b></summary>
+### Links
 
-```hosts
-# GitHub Start
-140.82.112.25                 alive.github.com
-140.82.113.5                  api.github.com
-185.199.110.153               assets-cdn.github.com
-185.199.108.133               avatars.githubusercontent.com
-185.199.108.133               avatars0.githubusercontent.com
-185.199.108.133               avatars1.githubusercontent.com
-185.199.108.133               avatars2.githubusercontent.com
-185.199.108.133               avatars3.githubusercontent.com
-185.199.108.133               avatars4.githubusercontent.com
-185.199.108.133               avatars5.githubusercontent.com
-185.199.108.133               camo.githubusercontent.com
-140.82.114.22                 central.github.com
-185.199.108.133               cloud.githubusercontent.com
-140.82.112.10                 codeload.github.com
-140.82.113.21                 collector.github.com
-185.199.108.133               desktop.githubusercontent.com
-185.199.108.133               favicons.githubusercontent.com
-140.82.112.4                  gist.github.com
-52.217.70.140                 github-cloud.s3.amazonaws.com
-52.217.43.116                 github-com.s3.amazonaws.com
-52.217.83.124                 github-production-release-asset-2e65be.s3.amazonaws.com
-52.217.9.180                  github-production-repository-file-5c1aeb.s3.amazonaws.com
-52.216.208.201                github-production-user-asset-6210df.s3.amazonaws.com
-192.0.66.2                    github.blog
-140.82.114.3                  github.com
-140.82.114.18                 github.community
-185.199.109.154               github.githubassets.com
-151.101.65.194                github.global.ssl.fastly.net
-185.199.110.153               github.io
-185.199.108.133               github.map.fastly.net
-185.199.110.153               githubstatus.com
-140.82.112.25                 live.github.com
-185.199.108.133               media.githubusercontent.com
-185.199.108.133               objects.githubusercontent.com
-13.107.42.16                  pipelines.actions.githubusercontent.com
-185.199.108.133               raw.githubusercontent.com
-185.199.108.133               user-images.githubusercontent.com
-13.107.238.51                 vscode.dev
-# GitHub End
-```
-
-</details>
+- [Pqoqubbw](https://icons.pqoqubbw.dev/) 开源的动画 icon 库
+- [Send](https://send.cyberjake.xyz/) 文件共享
+- [Send](https://send.bitiful.com/) 文件共享
+- [图片转ASCII](https://meatfighter.com/ascii-silhouettify/spa/index.html#/) 把图片转成 ASCII 轮廓化效果
+- [Keyviz](https://mularahul.github.io/keyviz/) 在屏幕显示当前的按键
+- [Ping网站](https://jsdelivr.com/globalping) Ping 下网站在全球网络连接情况如何
+- [Telegraph-Image](https://github.com/cf-pages/Telegraph-Image) 外网图床工具
+- [imFile](https://imfile.io/) 下载工具
+- [Sink](https://github.com/ccbikai/sink) 短链工具
 
 ### Makefiles
 
