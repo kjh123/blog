@@ -38,11 +38,8 @@
 
 ## 文件批量重命名
 ```bash 
-# 使用 for 循环
-for fn in *.jpg; do convert "$fn" `echo $fn | sed 's/jpg$/png/'`; done
-
-# 使用 xargs 
-ls *.jpg | xargs -I{} convert "{}" `echo {} | sed 's/jpg$/png/'`
+# 使用 find 查找 login_data_*.csv 的文件, 并重命名为 *.csv, (移除 login_data_ 前缀)
+find . -name 'login_data_*.csv' -exec rename 's/login_data_//' {} \;
 ```
 
 ## 禁止 root 用户 SSH 登录服务器

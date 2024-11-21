@@ -1,0 +1,1393 @@
+{
+  "export_version": 2,
+  "packages": [
+    {
+      "Id": "nmap",
+      "Name": "Nmap",
+      "Version": "7.95.0",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "imagemagick.app",
+      "Name": "Imagemagick.app",
+      "Version": "7.1.1.3800",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": true,
+        "IgnoredVersion": "*"
+      }
+    },
+    {
+      "Id": "ripgrep",
+      "Name": "Ripgrep",
+      "Version": "14.1.0",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "bat",
+      "Name": "Bat",
+      "Version": "0.24.0",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "vcredist-all",
+      "Name": "Vcredist All",
+      "Version": "1.0.1",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "vcredist2012",
+      "Name": "Vcredist2012",
+      "Version": "11.0.61031.20230518",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "chocolatey-dotnetfx.extension",
+      "Name": "Chocolatey Dotnetfx.extension",
+      "Version": "1.0.1",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "wingetui",
+      "Name": "Wingetui",
+      "Version": "3.1.2",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "lrzsz",
+      "Name": "Lrzsz",
+      "Version": "0.12.21",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "chocolatey-compatibility.extension",
+      "Name": "Chocolatey Compatibility.extension",
+      "Version": "1.0.0",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "dotnetfx",
+      "Name": "Dotnetfx",
+      "Version": "4.8.0.20220524",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "scoop-search",
+      "Name": "Scoop Search",
+      "Version": "1.5.0",
+      "Source": "main",
+      "ManagerName": "Scoop",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "zoxide",
+      "Name": "Zoxide",
+      "Version": "0.9.2",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "fd",
+      "Name": "Fd",
+      "Version": "10.2.0",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "vcredist2008",
+      "Name": "Vcredist2008",
+      "Version": "9.0.30729.616104",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "KB2919355",
+      "Name": "KB2919355",
+      "Version": "1.0.20160915",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "delta",
+      "Name": "Delta",
+      "Version": "0.18.2",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "ngrok",
+      "Name": "Ngrok",
+      "Version": "3.17.0",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "bulk-crap-uninstaller",
+      "Name": "Bulk Crap Uninstaller",
+      "Version": "5.8.2",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "vcredist2010",
+      "Name": "Vcredist2010",
+      "Version": "10.0.40219.32503",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "localsend",
+      "Name": "Localsend",
+      "Version": "1.15.4",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "python3",
+      "Name": "Python3",
+      "Version": "3.12.2",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": true,
+        "IgnoredVersion": "*"
+      }
+    },
+    {
+      "Id": "Microsoft.WinGet.Client",
+      "Name": "Microsoft.WinGet.Client",
+      "Version": "1.9.2411",
+      "Source": "PSGallery",
+      "ManagerName": "PowerShell7",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "KB3035131",
+      "Name": "KB3035131",
+      "Version": "1.0.3",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "visualstudio2019-workload-vctools",
+      "Name": "Visualstudio2019 Workload Vctools",
+      "Version": "1.0.1",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "localsend.portable",
+      "Name": "Localsend",
+      "Version": "1.15.4",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "less",
+      "Name": "Less",
+      "Version": "643.0.0",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "chocolatey-os-dependency.extension",
+      "Name": "Chocolatey Os Dependency.extension",
+      "Version": "0.0.1",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "tldr",
+      "Name": "Tldr",
+      "Version": "3.4.0",
+      "Source": "npm",
+      "ManagerName": "Npm",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "kubernetes-cli",
+      "Name": "Kubernetes Cli",
+      "Version": "1.31.0",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": true,
+        "IgnoredVersion": "*"
+      }
+    },
+    {
+      "Id": "yazi",
+      "Name": "Yazi",
+      "Version": "0.3.3",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "chocolatey",
+      "Name": "Chocolatey",
+      "Version": "2.3.0",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "nssm",
+      "Name": "Nssm",
+      "Version": "2.24-103",
+      "Source": "main",
+      "ManagerName": "Scoop",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "webview2-runtime",
+      "Name": "Webview2 Runtime",
+      "Version": "130.0.2849.46",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "autohotkey",
+      "Name": "Autohotkey",
+      "Version": "1.1.37.1",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "visualstudio2019buildtools",
+      "Name": "Visualstudio2019buildtools",
+      "Version": "16.11.34",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": true,
+        "IgnoredVersion": "*"
+      }
+    },
+    {
+      "Id": "vcredist2005",
+      "Name": "Vcredist2005",
+      "Version": "8.0.50727.619501",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "chocolatey-core.extension",
+      "Name": "Chocolatey Core.extension",
+      "Version": "1.4.0",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "vcredist2013",
+      "Name": "Vcredist2013",
+      "Version": "12.0.40660.20180427",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "DotNet3.5",
+      "Name": "DotNet3.5",
+      "Version": "3.5.20160716",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Wget",
+      "Name": "Wget",
+      "Version": "1.21.4",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "chocolatey-visualstudio.extension",
+      "Name": "Chocolatey Visualstudio.extension",
+      "Version": "1.11.1",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "chocolatey-windowsupdate.extension",
+      "Name": "Chocolatey Windowsupdate.extension",
+      "Version": "1.0.5",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "KB4019990",
+      "Name": "KB4019990",
+      "Version": "1.0.2",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "vcredist2017",
+      "Name": "Vcredist2017",
+      "Version": "14.16.27052",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "docker-desktop",
+      "Name": "Docker Desktop",
+      "Version": "4.13.0",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": true,
+        "IgnoredVersion": "*"
+      }
+    },
+    {
+      "Id": "python312",
+      "Name": "Python312",
+      "Version": "3.12.2",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": true,
+        "IgnoredVersion": "*"
+      }
+    },
+    {
+      "Id": "vcredist140",
+      "Name": "Vcredist140",
+      "Version": "14.40.33816",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": true,
+        "IgnoredVersion": "*"
+      }
+    },
+    {
+      "Id": "bulk-crap-uninstaller",
+      "Name": "Bulk Crap Uninstaller",
+      "Version": "5.8.1",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "7zip",
+      "Name": "7zip",
+      "Version": "24.8.0",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "KB3033929",
+      "Name": "KB3033929",
+      "Version": "1.0.5",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "autohotkey.install",
+      "Name": "Autohotkey",
+      "Version": "1.1.37.1",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "python",
+      "Name": "Python",
+      "Version": "3.12.2",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": true,
+        "IgnoredVersion": "*"
+      }
+    },
+    {
+      "Id": "yarn",
+      "Name": "Yarn",
+      "Version": "1.22.22",
+      "Source": "npm",
+      "ManagerName": "Npm",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "7zip.install",
+      "Name": "7zip",
+      "Version": "24.8.0",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "vcredist2015",
+      "Name": "Vcredist2015",
+      "Version": "14.0.24215.20170201",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "KB2919442",
+      "Name": "KB2919442",
+      "Version": "1.0.20160915",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "imagemagick",
+      "Name": "Imagemagick",
+      "Version": "7.1.1.3800",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": true,
+        "IgnoredVersion": "*"
+      }
+    },
+    {
+      "Id": "Microsoft.WinGet.CommandNotFound",
+      "Name": "Microsoft.WinGet.CommandNotFound",
+      "Version": "1.0.4.0",
+      "Source": "PSGallery",
+      "ManagerName": "PowerShell7",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "visualstudio-installer",
+      "Name": "Visualstudio Installer",
+      "Version": "2.0.3",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "KB2999226",
+      "Name": "KB2999226",
+      "Version": "1.0.20181019",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "docsify-cli",
+      "Name": "Docsify Cli",
+      "Version": "4.4.4",
+      "Source": "npm",
+      "ManagerName": "Npm",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "poppler",
+      "Name": "Poppler",
+      "Version": "22.11.0.20240421",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    }
+  ],
+  "incompatible_packages_info": "Incompatible packages cannot be installed from WingetUI, but they have been listed here for logging purposes.",
+  "incompatible_packages": []
+}
