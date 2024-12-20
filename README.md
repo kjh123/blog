@@ -15,6 +15,9 @@
 - [Telegraph-Image](https://github.com/cf-pages/Telegraph-Image) 外网图床工具
 - [imFile](https://imfile.io/) 下载工具
 - [Sink](https://github.com/ccbikai/sink) 短链工具
+- [ScreenSharing](https://screensharing.net/) 屏幕共享工具
+- [EasyTransfer](https://file.ch3nyang.top/) 点对点传输工具
+- [Tiktokvoice](https://tiktokvoice.net/en/sounds-effect) 音效生成器
 
 ### Makefiles
 
