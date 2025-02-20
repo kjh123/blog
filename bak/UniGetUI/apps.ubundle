@@ -2,11 +2,11 @@
   "export_version": 2,
   "packages": [
     {
-      "Id": "vcredist2005",
-      "Name": "Vcredist2005",
-      "Version": "8.0.50727.619501",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
+      "Id": "AppFlowy.AppFlowy",
+      "Name": "AppFlowy",
+      "Version": "0.8.1",
+      "Source": "winget",
+      "ManagerName": "Winget",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -24,693 +24,11 @@
       }
     },
     {
-      "Id": "visualstudio-installer",
-      "Name": "Visualstudio Installer",
-      "Version": "2.0.3",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "zeal",
-      "Name": "Zeal",
-      "Version": "0.7.2",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "localsend.portable",
-      "Name": "Localsend",
-      "Version": "1.15.4",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "tldr",
-      "Name": "Tldr",
-      "Version": "3.4.0",
-      "Source": "npm",
-      "ManagerName": "Npm",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "chocolatey-windowsupdate.extension",
-      "Name": "Chocolatey Windowsupdate.extension",
-      "Version": "1.0.5",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "chocolatey-os-dependency.extension",
-      "Name": "Chocolatey Os Dependency.extension",
-      "Version": "0.0.1",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "kubernetes-cli",
-      "Name": "Kubernetes Cli",
-      "Version": "1.31.0",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": true,
-        "IgnoredVersion": "*"
-      }
-    },
-    {
-      "Id": "vcredist2017",
-      "Name": "Vcredist2017",
-      "Version": "14.16.27052",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "chocolatey",
-      "Name": "Chocolatey",
-      "Version": "2.4.1",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "python312",
-      "Name": "Python312",
-      "Version": "3.12.2",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": true,
-        "IgnoredVersion": "*"
-      }
-    },
-    {
-      "Id": "7zip",
-      "Name": "7zip",
-      "Version": "24.8.0",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "localsend",
-      "Name": "Localsend",
-      "Version": "1.15.4",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "poppler",
-      "Name": "Poppler",
-      "Version": "22.11.0.20240421",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "vcredist2008",
-      "Name": "Vcredist2008",
-      "Version": "9.0.30729.616104",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "zoxide",
-      "Name": "Zoxide",
-      "Version": "0.9.2",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "@openhpi/xikolo-video-player",
-      "Name": "Xikolo Video Player",
-      "Version": "1.2.5",
-      "Source": "npm",
-      "ManagerName": "Npm",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "dotnetfx",
-      "Name": "Dotnetfx",
-      "Version": "4.8.0.20220524",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "vcredist140",
-      "Name": "Vcredist140",
-      "Version": "14.40.33816",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": true,
-        "IgnoredVersion": "*"
-      }
-    },
-    {
-      "Id": "visualstudio2019-workload-vctools",
-      "Name": "Visualstudio2019 Workload Vctools",
-      "Version": "1.0.1",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "Microsoft.WinGet.CommandNotFound",
-      "Name": "Microsoft.WinGet.CommandNotFound",
-      "Version": "1.0.4.0",
-      "Source": "PSGallery",
-      "ManagerName": "PowerShell7",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "delta",
-      "Name": "Delta",
-      "Version": "0.18.2",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "KB2919355",
-      "Name": "KB2919355",
-      "Version": "1.0.20160915",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "bulk-crap-uninstaller",
-      "Name": "Bulk Crap Uninstaller",
-      "Version": "5.8.2",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "vcredist2012",
-      "Name": "Vcredist2012",
-      "Version": "11.0.61031.20230518",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "yarn",
-      "Name": "Yarn",
-      "Version": "1.22.22",
-      "Source": "npm",
-      "ManagerName": "Npm",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "autohotkey.install",
-      "Name": "Autohotkey",
-      "Version": "1.1.37.1",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "chocolatey-compatibility.extension",
-      "Name": "Chocolatey Compatibility.extension",
-      "Version": "1.0.0",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "nssm",
-      "Name": "Nssm",
-      "Version": "2.24-103",
-      "Source": "main",
-      "ManagerName": "Scoop",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "Microsoft.WinGet.Client",
-      "Name": "Microsoft.WinGet.Client",
-      "Version": "1.9.2411",
-      "Source": "PSGallery",
-      "ManagerName": "PowerShell7",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "zeal.install",
-      "Name": "Zeal",
-      "Version": "0.7.2",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "KB3035131",
-      "Name": "KB3035131",
-      "Version": "1.0.3",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "chocolatey-core.extension",
-      "Name": "Chocolatey Core.extension",
-      "Version": "1.4.0",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
+      "Id": "orhun.git-cliff",
+      "Name": "git-cliff",
+      "Version": "2.1.2",
+      "Source": "winget",
+      "ManagerName": "Winget",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -750,11 +68,11 @@
       }
     },
     {
-      "Id": "vcredist2015",
-      "Name": "Vcredist2015",
-      "Version": "14.0.24215.20170201",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
+      "Id": "XPDC2RH70K22MN",
+      "Name": "Discord",
+      "Version": "1.0.9003",
+      "Source": "msstore",
+      "ManagerName": "Winget",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -772,11 +90,11 @@
       }
     },
     {
-      "Id": "fd",
-      "Name": "Fd",
-      "Version": "10.2.0",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
+      "Id": "Microsoft.VCRedist.2013.x64",
+      "Name": "Microsoft Visual C\u002B\u002B 2013 Redistributable (x64)",
+      "Version": "12.0.40660.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -794,9 +112,31 @@
       }
     },
     {
-      "Id": "python",
-      "Name": "Python",
-      "Version": "3.12.2",
+      "Id": "Sogou.SogouInput",
+      "Name": "\u641C\u72D7\u8F93\u5165\u6CD5",
+      "Version": "14.10.0.1161",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "vcredist140",
+      "Name": "Vcredist140",
+      "Version": "14.40.33816",
       "Source": "community",
       "ManagerName": "Chocolatey",
       "InstallationOptions": {
@@ -816,77 +156,11 @@
       }
     },
     {
-      "Id": "imagemagick.app",
-      "Name": "Imagemagick.app",
-      "Version": "7.1.1.3800",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": true,
-        "IgnoredVersion": "*"
-      }
-    },
-    {
-      "Id": "imagemagick",
-      "Name": "Imagemagick",
-      "Version": "7.1.1.3800",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": true,
-        "IgnoredVersion": "*"
-      }
-    },
-    {
-      "Id": "docker-desktop",
-      "Name": "Docker Desktop",
-      "Version": "4.13.0",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": true,
-        "IgnoredVersion": "*"
-      }
-    },
-    {
-      "Id": "bat",
-      "Name": "Bat",
-      "Version": "0.24.0",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
+      "Id": "Python.Python.3.12",
+      "Name": "Python 3.12",
+      "Version": "3.12.4",
+      "Source": "winget",
+      "ManagerName": "Winget",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -904,11 +178,11 @@
       }
     },
     {
-      "Id": "KB2919442",
-      "Name": "KB2919442",
-      "Version": "1.0.20160915",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
+      "Id": "MongoDB.Compass.Full",
+      "Name": "MongoDB Compass",
+      "Version": "1.45.3",
+      "Source": "winget",
+      "ManagerName": "Winget",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -926,55 +200,11 @@
       }
     },
     {
-      "Id": "7zip.install",
-      "Name": "7zip",
-      "Version": "24.8.0",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "less",
-      "Name": "Less",
-      "Version": "643.0.0",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "autohotkey",
-      "Name": "Autohotkey",
-      "Version": "1.1.37.1",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
+      "Id": "yarn",
+      "Name": "Yarn",
+      "Version": "1.22.22",
+      "Source": "npm",
+      "ManagerName": "Npm",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -1014,53 +244,9 @@
       }
     },
     {
-      "Id": "DotNet3.5",
-      "Name": "DotNet3.5",
-      "Version": "3.5.20160716",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "Wget",
-      "Name": "Wget",
-      "Version": "1.21.4",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "scoop-search",
-      "Name": "Scoop Search",
-      "Version": "1.5.0",
+      "Id": "python",
+      "Name": "Python",
+      "Version": "3.13.1",
       "Source": "main",
       "ManagerName": "Scoop",
       "InstallationOptions": {
@@ -1080,9 +266,75 @@
       }
     },
     {
-      "Id": "ngrok",
-      "Name": "Ngrok",
-      "Version": "3.17.0",
+      "Id": "Microsoft.OneDrive",
+      "Name": "Microsoft OneDrive",
+      "Version": "25.005.0112.0003",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "mycli",
+      "Name": "Mycli",
+      "Version": "1.5.1",
+      "Source": "npm",
+      "ManagerName": "Npm",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Microsoft.PowerShell",
+      "Name": "PowerShell",
+      "Version": "7.4.6.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "kubernetes-cli",
+      "Name": "Kubernetes Cli",
+      "Version": "1.31.0",
       "Source": "community",
       "ManagerName": "Chocolatey",
       "InstallationOptions": {
@@ -1097,16 +349,16 @@
         "Version": ""
       },
       "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
+        "UpdatesIgnored": true,
+        "IgnoredVersion": "*"
       }
     },
     {
-      "Id": "Microsoft.WinGet.Client",
-      "Name": "Microsoft.WinGet.Client",
-      "Version": "1.10.90",
-      "Source": "PSGallery",
-      "ManagerName": "PowerShell",
+      "Id": "Insecure.Nmap",
+      "Name": "Nmap",
+      "Version": "7.95",
+      "Source": "winget",
+      "ManagerName": "Winget",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -1124,31 +376,9 @@
       }
     },
     {
-      "Id": "wingetui",
-      "Name": "Wingetui",
-      "Version": "3.1.2",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "vcredist2013",
-      "Name": "Vcredist2013",
-      "Version": "12.0.40660.20180427",
+      "Id": "lrzsz",
+      "Name": "Lrzsz",
+      "Version": "0.12.21",
       "Source": "community",
       "ManagerName": "Chocolatey",
       "InstallationOptions": {
@@ -1190,9 +420,75 @@
       }
     },
     {
-      "Id": "KB4019990",
-      "Name": "KB4019990",
-      "Version": "1.0.2",
+      "Id": "Microsoft.VCRedist.2013.x86",
+      "Name": "Microsoft Visual C\u002B\u002B 2013 Redistributable (x86)",
+      "Version": "12.0.40660.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Microsoft.VCRedist.2005.x86",
+      "Name": "Microsoft Visual C\u002B\u002B 2005 Redistributable",
+      "Version": "8.0.61001",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Microsoft.VCRedist.2008.x64",
+      "Name": "Microsoft Visual C\u002B\u002B 2008 Redistributable - x64",
+      "Version": "9.0.30729.6161",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "vcredist2017",
+      "Name": "Vcredist2017",
+      "Version": "14.16.27052",
       "Source": "community",
       "ManagerName": "Chocolatey",
       "InstallationOptions": {
@@ -1212,33 +508,11 @@
       }
     },
     {
-      "Id": "visualstudio2019buildtools",
-      "Name": "Visualstudio2019buildtools",
-      "Version": "16.11.34",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": true,
-        "IgnoredVersion": "*"
-      }
-    },
-    {
-      "Id": "vcredist2010",
-      "Name": "Vcredist2010",
-      "Version": "10.0.40219.32503",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
+      "Id": "WiresharkFoundation.Wireshark",
+      "Name": "Wireshark",
+      "Version": "4.4.2",
+      "Source": "winget",
+      "ManagerName": "Winget",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -1256,11 +530,11 @@
       }
     },
     {
-      "Id": "KB3033929",
-      "Name": "KB3033929",
-      "Version": "1.0.5",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
+      "Id": "Microsoft.VCRedist.2010.x64",
+      "Name": "Microsoft Visual C\u002B\u002B 2010 x64 Redistributable",
+      "Version": "10.0.40219",
+      "Source": "winget",
+      "ManagerName": "Winget",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -1278,11 +552,11 @@
       }
     },
     {
-      "Id": "docsify-cli",
-      "Name": "Docsify Cli",
-      "Version": "4.4.4",
-      "Source": "npm",
-      "ManagerName": "Npm",
+      "Id": "Microsoft.WinGet.Client",
+      "Name": "Microsoft.WinGet.Client",
+      "Version": "1.9.2411",
+      "Source": "PSGallery",
+      "ManagerName": "PowerShell7",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -1300,11 +574,11 @@
       }
     },
     {
-      "Id": "webview2-runtime",
-      "Name": "Webview2 Runtime",
-      "Version": "130.0.2849.46",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
+      "Id": "aliae",
+      "Name": "Aliae",
+      "Version": "0.26.0",
+      "Source": "https://github.com/JanDeDobbeleer/aliae/releases/latest/download/aliae.json",
+      "ManagerName": "Scoop",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -1322,11 +596,11 @@
       }
     },
     {
-      "Id": "vcredist-all",
-      "Name": "Vcredist All",
-      "Version": "1.0.1",
-      "Source": "community",
-      "ManagerName": "Chocolatey",
+      "Id": "Microsoft.VCRedist.2015\u002B.x64",
+      "Name": "Microsoft Visual C\u002B\u002B 2015-2022 Redistributable (x64)",
+      "Version": "14.40.33816.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -1366,11 +640,275 @@
       }
     },
     {
-      "Id": "chocolatey-visualstudio.extension",
-      "Name": "Chocolatey Visualstudio.extension",
-      "Version": "1.11.1",
+      "Id": "Alibaba.aDrive",
+      "Name": "\u963F\u91CC\u4E91\u76D8",
+      "Version": "6.1.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Atlassian.Sourcetree",
+      "Name": "Sourcetree",
+      "Version": "3.4.17",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "ByteDance.Trae",
+      "Name": "Trae",
+      "Version": "1.96.4",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "7zip.7zip",
+      "Name": "7-Zip",
+      "Version": "24.08",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "visualstudio2019-workload-vctools",
+      "Name": "Visualstudio2019 Workload Vctools",
+      "Version": "1.0.1",
       "Source": "community",
       "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "docker-desktop",
+      "Name": "Docker Desktop",
+      "Version": "4.13.0",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": true,
+        "IgnoredVersion": "*"
+      }
+    },
+    {
+      "Id": "Microsoft.UI.Xaml.2.7",
+      "Name": "Microsoft.UI.Xaml",
+      "Version": "7.2409.9001.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "AutoHotkey.AutoHotkey",
+      "Name": "AutoHotkey",
+      "Version": "1.1.37.01",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "zeal.install",
+      "Name": "Zeal",
+      "Version": "0.7.2",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Logseq.Logseq",
+      "Name": "Logseq",
+      "Version": "0.10.10",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "vcredist-all",
+      "Name": "Vcredist All",
+      "Version": "1.0.1",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Wget",
+      "Name": "Wget",
+      "Version": "1.21.4",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Microsoft.VSTOR",
+      "Name": "Microsoft Visual Studio 2010 Tools for Office Runtime",
+      "Version": "10.0.50903",
+      "Source": "winget",
+      "ManagerName": "Winget",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -1410,11 +948,1199 @@
       }
     },
     {
-      "Id": "lrzsz",
-      "Name": "Lrzsz",
-      "Version": "0.12.21",
+      "Id": "AdrienAllard.FileConverter",
+      "Name": "File Converter",
+      "Version": "2.0.2",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Microsoft.WindowsTerminal",
+      "Name": "Windows Terminal",
+      "Version": "1.21.10351.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "autohotkey.install",
+      "Name": "Autohotkey",
+      "Version": "1.1.37.1",
       "Source": "community",
       "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "webview2-runtime",
+      "Name": "Webview2 Runtime",
+      "Version": "130.0.2849.46",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "ngrok",
+      "Name": "Ngrok",
+      "Version": "3.17.0",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Zen-Team.Zen-Browser",
+      "Name": "Zen Browser",
+      "Version": "1.0.0-a.29",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "poppler",
+      "Name": "Poppler",
+      "Version": "22.11.0.20240421",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "imagemagick.app",
+      "Name": "Imagemagick.app",
+      "Version": "7.1.1.3800",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": true,
+        "IgnoredVersion": "*"
+      }
+    },
+    {
+      "Id": "Postman.Postman",
+      "Name": "Postman",
+      "Version": "11.33.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "visualstudio2019buildtools",
+      "Name": "Visualstudio2019buildtools",
+      "Version": "16.11.34",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": true,
+        "IgnoredVersion": "*"
+      }
+    },
+    {
+      "Id": "Docker.DockerDesktop",
+      "Name": "Docker Desktop",
+      "Version": "4.31.1",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Tencent.WeixinDevTools",
+      "Name": "\u5FAE\u4FE1\u5F00\u53D1\u8005\u5DE5\u5177",
+      "Version": "1.06.2407110",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "hoppscotch.Hoppscotch",
+      "Name": "Hoppscotch",
+      "Version": "\u003C 24.3.1.2",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "zeal",
+      "Name": "Zeal",
+      "Version": "0.7.2",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Canonical.Ubuntu",
+      "Name": "Ubuntu",
+      "Version": "2404.1.68.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Meld.Meld",
+      "Name": "Meld",
+      "Version": "3.22.2",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "pavlobu.deskreen",
+      "Name": "Deskreen",
+      "Version": "2.0.4",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "fd",
+      "Name": "Fd",
+      "Version": "10.2.0",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Microsoft.UI.Xaml.2.8",
+      "Name": "Microsoft.UI.Xaml",
+      "Version": "8.2501.31001.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "chocolatey-compatibility.extension",
+      "Name": "Chocolatey Compatibility.extension",
+      "Version": "1.0.0",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "DotNet3.5",
+      "Name": "DotNet3.5",
+      "Version": "3.5.20160716",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "vcredist2008",
+      "Name": "Vcredist2008",
+      "Version": "9.0.30729.616104",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Microsoft.VCRedist.2012.x64",
+      "Name": "Microsoft Visual C\u002B\u002B 2012 Redistributable (x64)",
+      "Version": "11.0.61030.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Microsoft.DevHome",
+      "Name": "Dev Home (Preview)",
+      "Version": "0.2001.758.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "visualstudio-installer",
+      "Name": "Visualstudio Installer",
+      "Version": "2.0.3",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Unity.Unity.2022",
+      "Name": "Unity 2022",
+      "Version": "2022.3.28f1",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "localsend.portable",
+      "Name": "Localsend",
+      "Version": "1.15.4",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "zoxide",
+      "Name": "Zoxide",
+      "Version": "0.9.2",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Microsoft.WinGet.Client",
+      "Name": "Microsoft.WinGet.Client",
+      "Version": "1.10.90",
+      "Source": "PSGallery",
+      "ManagerName": "PowerShell",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "commitizen",
+      "Name": "Commitizen",
+      "Version": "4.3.1",
+      "Source": "npm",
+      "ManagerName": "Npm",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "chocolatey",
+      "Name": "Chocolatey",
+      "Version": "2.4.1",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "vcredist2015",
+      "Name": "Vcredist2015",
+      "Version": "14.0.24215.20170201",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "vcredist2012",
+      "Name": "Vcredist2012",
+      "Version": "11.0.61031.20230518",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Microsoft.PowerToys",
+      "Name": "PowerToys",
+      "Version": "0.85.1",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Microsoft.AppInstaller",
+      "Name": "App Installer",
+      "Version": "1.24.25200.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Graphviz.Graphviz",
+      "Name": "Graphviz",
+      "Version": "10.0.1",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "docsify-cli",
+      "Name": "Docsify Cli",
+      "Version": "4.4.4",
+      "Source": "npm",
+      "ManagerName": "Npm",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Microsoft.VCRedist.2015\u002B.x86",
+      "Name": "Microsoft Visual C\u002B\u002B 2015-2022 Redistributable (x86)",
+      "Version": "14.40.33816.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Microsoft.VCLibs.Desktop.14",
+      "Name": "Microsoft Visual C\u002B\u002B 2015 UWP Desktop Runtime Package",
+      "Version": "14.0.33728.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "wingetui",
+      "Name": "Wingetui",
+      "Version": "3.1.2",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Microsoft.VCRedist.2008.x86",
+      "Name": "Microsoft Visual C\u002B\u002B 2008 Redistributable - x86",
+      "Version": "9.0.30729.6161",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Microsoft.Edge",
+      "Name": "Microsoft Edge",
+      "Version": "133.0.3065.69",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "JetBrains.GoLand",
+      "Name": "GoLand",
+      "Version": "2024.1.4",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "GnuWin32.Make",
+      "Name": "GnuWin32: Make",
+      "Version": "3.81",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "tldr",
+      "Name": "Tldr",
+      "Version": "3.4.0",
+      "Source": "npm",
+      "ManagerName": "Npm",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "less",
+      "Name": "Less",
+      "Version": "643.0.0",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Ditto.Ditto",
+      "Name": "Ditto",
+      "Version": "3.24.246.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "bulk-crap-uninstaller",
+      "Name": "Bulk Crap Uninstaller",
+      "Version": "5.8.2",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "chocolatey-os-dependency.extension",
+      "Name": "Chocolatey Os Dependency.extension",
+      "Version": "0.0.1",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "scoop-search",
+      "Name": "Scoop Search",
+      "Version": "1.5.0",
+      "Source": "main",
+      "ManagerName": "Scoop",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Microsoft.VCRedist.2010.x86",
+      "Name": "Microsoft Visual C\u002B\u002B 2010 x86 Redistributable",
+      "Version": "10.0.40219",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "KB3033929",
+      "Name": "KB3033929",
+      "Version": "1.0.5",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "nats-server",
+      "Name": "Nats Server",
+      "Version": "2.10.25",
+      "Source": "main",
+      "ManagerName": "Scoop",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "7zip",
+      "Name": "7zip",
+      "Version": "24.8.0",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "vim.vim.nightly",
+      "Name": "Vim",
+      "Version": "9.1.0412",
+      "Source": "winget",
+      "ManagerName": "Winget",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -1452,8 +2178,2429 @@
         "UpdatesIgnored": false,
         "IgnoredVersion": ""
       }
+    },
+    {
+      "Id": "nssm",
+      "Name": "Nssm",
+      "Version": "2.24-103",
+      "Source": "main",
+      "ManagerName": "Scoop",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Ruihu.Apifox",
+      "Name": "Apifox",
+      "Version": "2.5.13",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "jqlang.jq",
+      "Name": "jq",
+      "Version": "1.7.1",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "chocolatey-visualstudio.extension",
+      "Name": "Chocolatey Visualstudio.extension",
+      "Version": "1.11.1",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "XK72.Charles",
+      "Name": "Charles",
+      "Version": "4.6.6.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "KB2919355",
+      "Name": "KB2919355",
+      "Version": "1.0.20160915",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "bat",
+      "Name": "Bat",
+      "Version": "0.24.0",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "vcredist2013",
+      "Name": "Vcredist2013",
+      "Version": "12.0.40660.20180427",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Unity.Unity.2020",
+      "Name": "Unity",
+      "Version": "2021.2.5f1c302",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "TablePlus.TablePlus",
+      "Name": "TablePlus",
+      "Version": "5.8.8",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Unity.UnityHub",
+      "Name": "Unity Hub",
+      "Version": "3.11.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "TortoiseGit.TortoiseGit",
+      "Name": "TortoiseGit",
+      "Version": "2.16.0.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Chocolatey.Chocolatey",
+      "Name": "Chocolatey",
+      "Version": "2.2.2.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "OlegShparber.Zeal",
+      "Name": "Zeal",
+      "Version": "0.7.2",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "python312",
+      "Name": "Python312",
+      "Version": "3.12.2",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": true,
+        "IgnoredVersion": "*"
+      }
+    },
+    {
+      "Id": "EliasFotinis.DeskPins",
+      "Name": "DeskPins",
+      "Version": "1.32",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Oracle.VirtualBox",
+      "Name": "Oracle VM VirtualBox",
+      "Version": "7.0.14",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "vcredist2005",
+      "Name": "Vcredist2005",
+      "Version": "8.0.50727.619501",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "3TSoftwareLabs.Studio3T",
+      "Name": "Studio 3T",
+      "Version": "2024.3.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "GoLang.Go",
+      "Name": "Go Programming Language",
+      "Version": "1.21.8",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "SumatraPDF.SumatraPDF",
+      "Name": "SumatraPDF",
+      "Version": "3.5.2",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Ollama.Ollama",
+      "Name": "Ollama",
+      "Version": "0.5.7",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "imagemagick",
+      "Name": "Imagemagick",
+      "Version": "7.1.1.3800",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": true,
+        "IgnoredVersion": "*"
+      }
+    },
+    {
+      "Id": "7zip.install",
+      "Name": "7zip",
+      "Version": "24.8.0",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "KB3035131",
+      "Name": "KB3035131",
+      "Version": "1.0.3",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "TortoiseSVN.TortoiseSVN",
+      "Name": "TortoiseSVN",
+      "Version": "1.14.29723",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "localsend",
+      "Name": "Localsend",
+      "Version": "1.15.4",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Python.Launcher",
+      "Name": "Python Launcher",
+      "Version": "\u003E 3.12.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "ImageMagick.ImageMagick",
+      "Name": "ImageMagick Q16-HDRI",
+      "Version": "7.1.1.38",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "dotnetfx",
+      "Name": "Dotnetfx",
+      "Version": "4.8.0.20220524",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "autohotkey",
+      "Name": "Autohotkey",
+      "Version": "1.1.37.1",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Wox.Wox",
+      "Name": "Wox",
+      "Version": "1.4.1196",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Microsoft.WSL",
+      "Name": "Windows Subsystem for Linux",
+      "Version": "2.1.5.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Klocman.BulkCrapUninstaller",
+      "Name": "Bulk Crap Uninstaller",
+      "Version": "5.8.2.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Telerik.Fiddler.Everywhere",
+      "Name": "Fiddler Everywhere",
+      "Version": "5.8.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "dark",
+      "Name": "Dark",
+      "Version": "3.14",
+      "Source": "main",
+      "ManagerName": "Scoop",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "KB4019990",
+      "Name": "KB4019990",
+      "Version": "1.0.2",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "adb",
+      "Name": "Adb",
+      "Version": "35.0.2",
+      "Source": "main",
+      "ManagerName": "Scoop",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Python.Python.3.7",
+      "Name": "Python 3.7",
+      "Version": "3.7.7",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Google.Chrome.EXE",
+      "Name": "Google Chrome (EXE)",
+      "Version": "133.0.6943.126",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Tencent.WeChat",
+      "Name": "WeChat",
+      "Version": "3.9.12.35",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Bin-Huang.Chatbox",
+      "Name": "Chatbox",
+      "Version": "1.9.7",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Microsoft.VCRedist.2012.x86",
+      "Name": "Microsoft Visual C\u002B\u002B 2012 Redistributable (x86)",
+      "Version": "11.0.61030.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "python",
+      "Name": "Python",
+      "Version": "3.12.2",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": true,
+        "IgnoredVersion": "*"
+      }
+    },
+    {
+      "Id": "Microsoft.WinGet.CommandNotFound",
+      "Name": "Microsoft.WinGet.CommandNotFound",
+      "Version": "1.0.4.0",
+      "Source": "PSGallery",
+      "ManagerName": "PowerShell7",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Alibaba.DingTalk",
+      "Name": "DingTalk",
+      "Version": "7.5.11-Release.3179106",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "chocolatey-core.extension",
+      "Name": "Chocolatey Core.extension",
+      "Version": "1.4.0",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "TinyCraft.TinyRDM",
+      "Name": "Tiny RDM",
+      "Version": "1.2.2",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "@openhpi/xikolo-video-player",
+      "Name": "Xikolo Video Player",
+      "Version": "1.2.5",
+      "Source": "npm",
+      "ManagerName": "Npm",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "ouch",
+      "Name": "Ouch",
+      "Version": "0.5.1",
+      "Source": "main",
+      "ManagerName": "Scoop",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "delta",
+      "Name": "Delta",
+      "Version": "0.18.2",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "KB2919442",
+      "Name": "KB2919442",
+      "Version": "1.0.20160915",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Hashicorp.Vagrant",
+      "Name": "Vagrant",
+      "Version": "2.4.1",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "OpenJS.NodeJS.LTS",
+      "Name": "Node.js (LTS)",
+      "Version": "20.12.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "QL-Win.QuickLook",
+      "Name": "QuickLook",
+      "Version": "3.7.3.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "vcredist2010",
+      "Name": "Vcredist2010",
+      "Version": "10.0.40219.32503",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "JanDeDobbeleer.Aliae",
+      "Name": "Aliae",
+      "Version": "0.26.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "chocolatey-windowsupdate.extension",
+      "Name": "Chocolatey Windowsupdate.extension",
+      "Version": "1.0.5",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Daum.PotPlayer",
+      "Name": "PotPlayer",
+      "Version": "24.10.15.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
     }
   ],
   "incompatible_packages_info": "Incompatible packages cannot be installed from WingetUI, but they have been listed here for logging purposes.",
-  "incompatible_packages": []
+  "incompatible_packages": [
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{7669B523-05A9-4A48-92EB-4EE87FE6A8DB}",
+      "Name": "Security Update for Microsoft Office 2013 (KB5002477) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X64\\Git_is1",
+      "Name": "Git",
+      "Version": "2.45.1",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{BB92A877-3443-4FAF-B4BB-470B9792AFBE}",
+      "Name": "Update for Microsoft Office 2013 (KB3114499) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-002A-0000-1000-0000000FF1CE}_Office15.VISPROR_{F97B139A-D8BF-46FF-A6F6-50710FED8644}",
+      "Name": "Update for Skype for Business 2015 (KB4484289) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.Xbox.TCUI_1.24.10001.0_x64__8wekyb3d8bbwe",
+      "Name": "Xbox TCUI",
+      "Version": "1.24.10001.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-006E-0804-0000-0000000FF1CE}_Office15.VISPROR_{18D2E3B4-34A4-49A7-9E08-6A35049A7F89}",
+      "Name": "Security Update for Microsoft Office 2013 (KB4022188) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{1CFB07F8-17F2-4C42-8D83-4E65947141F0}",
+      "Name": "Security Update for Microsoft Office 2013 (KB4022189) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.MicrosoftOfficeHub_18.2502.1134.0_x64__8wekyb3d8bbwe",
+      "Name": "Microsoft 365 Copilot",
+      "Version": "18.2502.1134.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.NET.Native.Runtime.2.2_2.2.28604.0_x64__8wekyb3d8bbwe",
+      "Name": "Microsoft .Net Native Runtime Package 2.2",
+      "Version": "2.2.28604.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WindowsStore_22501.1401.4.0_x64__8wekyb3d8bbwe",
+      "Name": "Microsoft Store",
+      "Version": "22501.1401.4.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-006E-0804-0000-0000000FF1CE}_Office15.VISPROR_{66B828E2-7C7D-46AF-93AB-5C2DAA285260}",
+      "Name": "Security Update for Microsoft Office 2013 (KB3213564) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.OfficePushNotificationUtility_16.0.18429.20158_neutral__8wekyb3d8bbwe",
+      "Name": "OfficePushNotificationsUtility",
+      "Version": "16.0.18429.20158",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{FC519FD8-5B83-4761-B02C-13DF5B2D9598}",
+      "Name": "Update for Microsoft Office 2013 (KB4022212) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-002A-0000-1000-0000000FF1CE}_Office15.VISPROR_{910A082C-6ACB-4186-8976-306357C799E1}",
+      "Name": "Security Update for Microsoft Project 2013 (KB4484489) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{C60D0F6F-9E41-4AC8-BAA8-D2D8380F88C4}",
+      "Name": "Update for Microsoft Outlook 2013 (KB5002514) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\PCMaster",
+      "Name": "\u8F6F\u5A92\u9B54\u65B9",
+      "Version": "6.2.5.0",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.VCLibs.140.00_14.0.33519.0_x86__8wekyb3d8bbwe",
+      "Name": "Microsoft Visual C\u002B\u002B 2015 UWP Runtime Package",
+      "Version": "14.0.33519.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-006E-0804-0000-0000000FF1CE}_Office15.VISPROR_{4C0453B1-7020-4F23-885E-D14FF63A989F}",
+      "Name": "Security Update for Microsoft Excel 2013 (KB5002488) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{AA8C16EA-D595-47E0-9F49-101C11B860E8}",
+      "Name": "Update for Microsoft Office 2013 (KB3085587) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1.5_5001.159.55.0_x64__8wekyb3d8bbwe",
+      "Name": "WindowsAppRuntime.1.5",
+      "Version": "5001.159.55.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-006E-0804-0000-0000000FF1CE}_Office15.VISPROR_{76FD4884-6875-484E-8502-BF7E9E3D4E75}",
+      "Name": "Security Update for Microsoft Office 2013 (KB4484108) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{C454E844-4F27-49EA-966D-94E0F834B4BE}",
+      "Name": "Update for Microsoft Office 2013 (KB5002151) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.PowerToys.ImageResizerContextMenu_0.85.1.0_neutral__8wekyb3d8bbwe",
+      "Name": "PowerToys ImageResizer Context Menu",
+      "Version": "0.85.1.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.HEIFImageExtension_1.2.3.0_x64__8wekyb3d8bbwe",
+      "Name": "HEIF Image Extensions",
+      "Version": "1.2.3.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.BingNews_4.55.62231.0_x64__8wekyb3d8bbwe",
+      "Name": "\u8D44\u8BAF",
+      "Version": "4.55.62231.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.Paint_11.2411.471.0_x64__8wekyb3d8bbwe",
+      "Name": "\u753B\u56FE",
+      "Version": "11.2411.471.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.Services.Store.Engagement_10.0.23012.0_x64__8wekyb3d8bbwe",
+      "Name": "Microsoft Engagement Framework",
+      "Version": "10.0.23012.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X64\\{78FB6A0D-791A-4F08-99F9-375B19C33491}",
+      "Name": "kuaiVPN",
+      "Version": "1.0.0",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.Winget.Source_2025.220.319.37_neutral__8wekyb3d8bbwe",
+      "Name": "Windows Package Manager Source (winget) V2",
+      "Version": "2025.220.319.37",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{87F6726E-6F99-42F0-8E11-55D798E57DD5}",
+      "Name": "Update for Microsoft Office 2013 (KB2899522) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{0D50B52F-AB5A-44B7-A67C-2DE4F61443D0}",
+      "Name": "Update for Microsoft Office 2013 (KB3172545) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{46A53AEC-D290-4E2E-A5EE-FE7F3AE1BBAB}",
+      "Name": "Security Update for Microsoft Office 2013 (KB4462205) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1.5_5001.311.2039.0_x64__8wekyb3d8bbwe",
+      "Name": "WindowsAppRuntime.1.5",
+      "Version": "5001.311.2039.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WindowsAlarms_1.0.205.0_x64__8wekyb3d8bbwe",
+      "Name": "Windows \u65F6\u949F",
+      "Version": "1.0.205.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X64\\Everything",
+      "Name": "Everything 1.4.1.969 (x64)",
+      "Version": "1.4.1.969",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1.5_5001.373.1736.0_x64__8wekyb3d8bbwe",
+      "Name": "WindowsAppRuntime.1.5",
+      "Version": "5001.373.1736.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-002A-0000-1000-0000000FF1CE}_Office15.VISPROR_{BF493817-CADD-4F13-BB51-598FBABB521A}",
+      "Name": "Update for Microsoft Office 2013 (KB3039756) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-001F-0409-0000-0000000FF1CE}_Office15.VISPROR_{45B5E686-A7A1-457D-B98B-2EE3110B537D}",
+      "Name": "Update for Microsoft Office 2013 (KB4011677) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.ScreenSketch_11.2409.25.0_x64__8wekyb3d8bbwe",
+      "Name": "\u622A\u56FE\u5DE5\u5177",
+      "Version": "11.2409.25.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\leidian9",
+      "Name": "\u96F7\u7535\u6A21\u62DF\u5668",
+      "Version": "9.0.68",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.BingWeather_4.54.63007.0_x64__8wekyb3d8bbwe",
+      "Name": "MSN \u5929\u6C14",
+      "Version": "4.54.63007.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.OneDriveSync_25005.112.3.0_neutral__8wekyb3d8bbwe",
+      "Name": "OneDrive",
+      "Version": "25005.112.3.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{2B9AA1BD-8E86-4C6D-BA05-32749C8C268B}",
+      "Name": "Security Update for Microsoft Office 2013 (KB3191875) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-002A-0000-1000-0000000FF1CE}_Office15.VISPROR_{0359ABD1-5FD5-489D-851D-303BF7C5BBBE}",
+      "Name": "Update for Microsoft Office 2013 (KB3178640) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.PowerToys.FileLocksmithContextMenu_0.85.1.0_neutral__8wekyb3d8bbwe",
+      "Name": "PowerToys FileLocksmith Context Menu",
+      "Version": "0.85.1.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\TDM-GCC",
+      "Name": "TDM-GCC",
+      "Version": "1.2105.1",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1.5_5001.178.1908.0_x64__8wekyb3d8bbwe",
+      "Name": "WindowsAppRuntime.1.5",
+      "Version": "5001.178.1908.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{5C7851D1-B548-4BFE-A4FC-DF1967857A47}",
+      "Name": "Security Update for Microsoft Office 2013 (KB3039794) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-006E-0804-0000-0000000FF1CE}_Office15.VISPROR_{16F64A9D-6561-4378-98F2-BD2095B78511}",
+      "Name": "Update for Microsoft Office 2013 (KB3039720) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\MicrosoftWindows.Client.WebExperience_525.1301.30.0_x64__cw5n1h2txyewy",
+      "Name": "Windows Web Experience Pack",
+      "Version": "525.1301.30.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-001F-0409-0000-0000000FF1CE}_Office15.VISPROR_{16F64A9D-6561-4378-98F2-BD2095B78511}",
+      "Name": "Update for Microsoft Office 2013 (KB3039720) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\c8e20ad6",
+      "Name": "Visual Studio Community 2019 (2)",
+      "Version": "16.11.35",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-006E-0804-0000-0000000FF1CE}_Office15.VISPROR_{FC017EDD-645B-44D8-9D84-623DE069F1B9}",
+      "Name": "Update for Microsoft Office 2013 (KB3023052) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{0359ABD1-5FD5-489D-851D-303BF7C5BBBE}",
+      "Name": "Update for Microsoft Office 2013 (KB3178640) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X64\\{ad8a2fa1-06e7-4b0d-927d-6e54b3d31028}",
+      "Name": "Microsoft Visual C\u002B\u002B 2005 Redistributable (x64)",
+      "Version": "8.0.61000",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-002A-0000-1000-0000000FF1CE}_Office15.VISPROR_{0D50B52F-AB5A-44B7-A67C-2DE4F61443D0}",
+      "Name": "Update for Microsoft Office 2013 (KB3172545) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-002A-0000-1000-0000000FF1CE}_Office15.VISPROR_{B2FFC7EA-8F6D-4C1C-8932-D590A7C027E8}",
+      "Name": "Update for Microsoft Visio 2013 (KB5002479) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.VCLibs.140.00_14.0.33519.0_x64__8wekyb3d8bbwe",
+      "Name": "Microsoft Visual C\u002B\u002B 2015 UWP Runtime Package",
+      "Version": "14.0.33519.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-002A-0804-1000-0000000FF1CE}_Office15.VISPROR_{FB83D80E-C78E-41B0-8D08-4FAD6889E867}",
+      "Name": "Update for Microsoft OneDrive for Business (KB4022226) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\MicrosoftWindows.CrossDevice_1.25012.50.0_x64__cw5n1h2txyewy",
+      "Name": "\u8DE8\u8BBE\u5907\u4F53\u9A8C\u4E3B\u673A",
+      "Version": "1.25012.50.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X64\\{F8474A47-8B5D-4466-ACE3-78EAB3BF21A8}",
+      "Name": "Windows Subsystem for Linux Update",
+      "Version": "5.10.102.1",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WindowsSoundRecorder_1.0.80.0_x64__8wekyb3d8bbwe",
+      "Name": "Windows \u5F55\u97F3\u673A",
+      "Version": "1.0.80.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{76FD4884-6875-484E-8502-BF7E9E3D4E75}",
+      "Name": "Security Update for Microsoft Office 2013 (KB4484108) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X64\\USBPcap",
+      "Name": "USBPcap 1.5.4.0",
+      "Version": "1.5.4.0",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\0BF99681-825C-4B2A-A14F-2AC01DB9B70E_1.0.0.0_x64__n6n75k5gy501g",
+      "Name": "TortoiseGit",
+      "Version": "1.0.0.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WindowsFeedbackHub_1.2411.17101.0_x64__8wekyb3d8bbwe",
+      "Name": "\u53CD\u9988\u4E2D\u5FC3",
+      "Version": "1.2411.17101.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-002A-0000-1000-0000000FF1CE}_Office15.VISPROR_{16F64A9D-6561-4378-98F2-BD2095B78511}",
+      "Name": "Update for Microsoft Office 2013 (KB3039720) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1.5_5001.275.500.0_x64__8wekyb3d8bbwe",
+      "Name": "WindowsAppRuntime.1.5",
+      "Version": "5001.275.500.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.RawImageExtension_2.5.3.0_x64__8wekyb3d8bbwe",
+      "Name": "Raw Image Extension",
+      "Version": "2.5.3.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.LanguageExperiencePackzh-CN_22621.108.379.0_neutral__8wekyb3d8bbwe",
+      "Name": "\u4E2D\u6587(\u7B80\u4F53)\u672C\u5730\u4F53\u9A8C\u5305",
+      "Version": "22621.108.379.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{BF493817-CADD-4F13-BB51-598FBABB521A}",
+      "Name": "Update for Microsoft Office 2013 (KB3039756) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{2113B49B-7A19-4592-863E-CD4124792AAE}",
+      "Name": "Security Update for Microsoft Office 2013 (KB3039798) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{83DE9B8F-E294-411F-977F-4707E6424BBB}",
+      "Name": "Update for Microsoft Office 2013 (KB3039701) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-00E1-0804-0000-0000000FF1CE}_Office15.VISPROR_{16F64A9D-6561-4378-98F2-BD2095B78511}",
+      "Name": "Update for Microsoft Office 2013 (KB3039720) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-006E-0804-0000-0000000FF1CE}_Office15.VISPROR_{EBB64A55-FA3E-42EE-A4C3-1E427F867C55}",
+      "Name": "Security Update for Microsoft Office 2013 (KB4011580) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1.5_5001.373.1736.0_x86__8wekyb3d8bbwe",
+      "Name": "WindowsAppRuntime.1.5",
+      "Version": "5001.373.1736.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1.6_6000.318.2304.0_x64__8wekyb3d8bbwe",
+      "Name": "WindowsAppRuntime.1.6",
+      "Version": "6000.318.2304.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\3A48D7FC-AEE2-4CBC-91D1-0007951B8006_1.14.8.29723_x64__yyj3t4bx8qhke",
+      "Name": "TortoiseSVN",
+      "Version": "1.14.8.29723",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.XboxGamingOverlay_7.224.11211.0_x64__8wekyb3d8bbwe",
+      "Name": "Game Bar",
+      "Version": "7.224.11211.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\User\\X64\\Poe",
+      "Name": "Poe",
+      "Version": "1.1.23",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X64\\Sublime Text_is1",
+      "Name": "Sublime Text",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.Todos_2.114.7122.0_x64__8wekyb3d8bbwe",
+      "Name": "Microsoft To Do",
+      "Version": "2.114.7122.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\letsvpn",
+      "Name": "letsvpn",
+      "Version": "3.8.0",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\shell.cloud.google.com-53DCE899_1.0.0.0_neutral__4gm83hsfmg5pr",
+      "Name": "Cloud Shell",
+      "Version": "1.0.0.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-002A-0000-1000-0000000FF1CE}_Office15.VISPROR_{FB83D80E-C78E-41B0-8D08-4FAD6889E867}",
+      "Name": "Update for Microsoft OneDrive for Business (KB4022226) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WindowsCalculator_11.2411.1.0_x64__8wekyb3d8bbwe",
+      "Name": "Windows \u8BA1\u7B97\u5668",
+      "Version": "11.2411.1.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-002A-0000-1000-0000000FF1CE}_Office15.VISPROR_{51731902-8ECD-4C42-A7F4-E57150D54987}",
+      "Name": "Security Update for Microsoft Office 2013 (KB4462142) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.VP9VideoExtensions_1.2.2.0_x64__8wekyb3d8bbwe",
+      "Name": "VP9 Video Extensions",
+      "Version": "1.2.2.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.MicrosoftEdge.Stable_127.0.2651.74_neutral__8wekyb3d8bbwe",
+      "Name": "Microsoft Edge",
+      "Version": "127.0.2651.74",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X64\\8153-2964-2028-4488-3",
+      "Name": "Offset Explorer 3 3.0",
+      "Version": "3.0",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-0054-0804-0000-0000000FF1CE}_Office15.VISPROR_{16F64A9D-6561-4378-98F2-BD2095B78511}",
+      "Name": "Update for Microsoft Office 2013 (KB3039720) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-006E-0804-0000-0000000FF1CE}_Office15.VISPROR_{25C61889-2E44-4BE1-9E96-9364BFDCF501}",
+      "Name": "Update for Microsoft Visio Viewer 2013 (KB2817301) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X64\\{6F320B93-EE3C-4826-85E0-ADF79F8D4C61}",
+      "Name": "Microsoft Visual Studio Installer",
+      "Version": "3.6.2122.36397",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.Windows.Photos_2024.11120.5010.0_x64__8wekyb3d8bbwe",
+      "Name": "Microsoft \u7167\u7247",
+      "Version": "2024.11120.5010.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1.6_6000.401.2352.0_x64__8wekyb3d8bbwe",
+      "Name": "WindowsAppRuntime.1.6",
+      "Version": "6000.401.2352.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.549981C3F5F10_4.2308.1005.0_x64__8wekyb3d8bbwe",
+      "Name": "Cortana",
+      "Version": "4.2308.1005.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-0054-0804-0000-0000000FF1CE}_Office15.VISPROR_{B2FFC7EA-8F6D-4C1C-8932-D590A7C027E8}",
+      "Name": "Update for Microsoft Visio 2013 (KB5002479) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X64\\HuorongSysdiag",
+      "Name": "\u706B\u7ED2\u5B89\u5168\u8F6F\u4EF6",
+      "Version": "6.0.5.1",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{2FDF7953-75A9-4341-A769-EC0CAA09FFF3}",
+      "Name": "Update for Microsoft Office 2013 (KB4018378) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{18D2E3B4-34A4-49A7-9E08-6A35049A7F89}",
+      "Name": "Security Update for Microsoft Office 2013 (KB4022188) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X64\\{46E9AA59-9D66-4CA8-82E9-CFA4EA3F3136}_is1",
+      "Name": "X-Mirage version 3.0.1",
+      "Version": "3.0.1",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.MicrosoftPCManager_3.15.5.0_x64__8wekyb3d8bbwe",
+      "Name": "\u7535\u8111\u7BA1\u5BB6",
+      "Version": "3.15.5.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{96903939-431D-4BD1-ADCD-B578900397D7}",
+      "Name": "Definition Update for Microsoft Office 2013 (KB3115404) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.UI.Xaml.2.6_2.62112.3002.0_x86__8wekyb3d8bbwe",
+      "Name": "Microsoft.UI.Xaml.2.6",
+      "Version": "2.62112.3002.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.OutlookForWindows_1.2024.214.400_x64__8wekyb3d8bbwe",
+      "Name": "Outlook for Windows",
+      "Version": "1.2024.214.400",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X64\\{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_Display.Driver",
+      "Name": "NVIDIA \u56FE\u5F62\u9A71\u52A8\u7A0B\u5E8F 560.94",
+      "Version": "560.94",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X64\\Microsoft Visual Studio 2010 Tools for Office Runtime (x64) Language Pack - CHS",
+      "Name": "Microsoft Visual Studio 2010 Tools for Office Runtime (x64)\u8BED\u8A00\u5305 - \u7B80\u4F53\u4E2D\u6587",
+      "Version": "10.0.50903",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.NET.Native.Framework.2.2_2.2.29512.0_x86__8wekyb3d8bbwe",
+      "Name": "Microsoft .Net Native Framework Package 2.2",
+      "Version": "2.2.29512.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.StorePurchaseApp_22411.1401.1.0_x64__8wekyb3d8bbwe",
+      "Name": "Microsoft Store \u4F53\u9A8C\u4E3B\u673A",
+      "Version": "22411.1401.1.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.UI.Xaml.2.6_2.62112.3002.0_x64__8wekyb3d8bbwe",
+      "Name": "Microsoft.UI.Xaml.2.6",
+      "Version": "2.62112.3002.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.ZuneMusic_11.2412.6.0_x64__8wekyb3d8bbwe",
+      "Name": "Windows \u5A92\u4F53\u64AD\u653E\u5668",
+      "Version": "11.2412.6.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.ZuneVideo_10.25011.10061.0_x64__8wekyb3d8bbwe",
+      "Name": "\u7535\u5F71\u548C\u7535\u89C6",
+      "Version": "10.25011.10061.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WidgetsPlatformRuntime_1.6.2.0_x64__8wekyb3d8bbwe",
+      "Name": "Widgets Platform Runtime",
+      "Version": "1.6.2.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{51731902-8ECD-4C42-A7F4-E57150D54987}",
+      "Name": "Security Update for Microsoft Office 2013 (KB4462142) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{92F3ED8D-88A2-495B-A106-638B6264BDA2}",
+      "Name": "Security Update for Microsoft Office 2013 (KB5001952) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{B2FFC7EA-8F6D-4C1C-8932-D590A7C027E8}",
+      "Name": "Update for Microsoft Visio 2013 (KB5002479) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{E4B6204A-AC54-477D-9AEF-3D420EF162A2}",
+      "Name": "Update for Microsoft Office 2013 (KB3023049) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{16F64A9D-6561-4378-98F2-BD2095B78511}",
+      "Name": "Update for Microsoft Office 2013 (KB3039720) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WebpImageExtension_1.1.1711.0_x64__8wekyb3d8bbwe",
+      "Name": "Webp Image Extensions",
+      "Version": "1.1.1711.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\microsoft.windowscommunicationsapps_16005.14326.22301.0_x64__8wekyb3d8bbwe",
+      "Name": "\u90AE\u4EF6\u548C\u65E5\u5386",
+      "Version": "16005.14326.22301.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\ldremoteyun",
+      "Name": "\u65E0\u754C\u8DA3\u8FDE",
+      "Version": "1.3.20.11",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{FC017EDD-645B-44D8-9D84-623DE069F1B9}",
+      "Name": "Update for Microsoft Office 2013 (KB3023052) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.People_10.2202.100.0_x64__8wekyb3d8bbwe",
+      "Name": "Microsoft \u4EBA\u8109",
+      "Version": "10.2202.100.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{8EA03F4D-754D-42D0-980B-5D803363EC99}",
+      "Name": "Update for Microsoft Office 2013 (KB3172533) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.GetHelp_10.2409.22951.0_x64__8wekyb3d8bbwe",
+      "Name": "\u83B7\u53D6\u5E2E\u52A9",
+      "Version": "10.2409.22951.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.GamingApp_2501.1001.3.0_x64__8wekyb3d8bbwe",
+      "Name": "Xbox",
+      "Version": "2501.1001.3.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.Services.Store.Engagement_10.0.23012.0_x86__8wekyb3d8bbwe",
+      "Name": "Microsoft Engagement Framework",
+      "Version": "10.0.23012.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{8D1685F4-1C36-4AB5-ACC0-486A6BE71435}",
+      "Name": "Update for Microsoft Office 2013 (KB3039778) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-006E-0804-0000-0000000FF1CE}_Office15.VISPROR_{7669B523-05A9-4A48-92EB-4EE87FE6A8DB}",
+      "Name": "Security Update for Microsoft Office 2013 (KB5002477) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1.4_4000.1309.2056.0_x64__8wekyb3d8bbwe",
+      "Name": "WindowsAppRuntime.1.4",
+      "Version": "4000.1309.2056.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WebMediaExtensions_1.1.1295.0_x64__8wekyb3d8bbwe",
+      "Name": "Web \u5A92\u4F53\u6269\u5C55",
+      "Version": "1.1.1295.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-006E-0804-0000-0000000FF1CE}_Office15.VISPROR_{6120444C-EB75-452F-A0EA-1ADADC4B4B3F}",
+      "Name": "Update for Microsoft InfoPath 2013 (KB3114946) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.MicrosoftSolitaireCollection_4.21.12110.0_x64__8wekyb3d8bbwe",
+      "Name": "Solitaire \u0026 Casual Games",
+      "Version": "4.21.12110.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-002A-0000-1000-0000000FF1CE}_Office15.VISPROR_{6120444C-EB75-452F-A0EA-1ADADC4B4B3F}",
+      "Name": "Update for Microsoft InfoPath 2013 (KB3114946) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{08A6E501-E396-4D0B-8C02-2D5233FE82FD}",
+      "Name": "Security Update for Microsoft Office 2013 (KB5002069) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\10186emoacht.Monitorian_4.10.1.0_neutral__0q7myvhtpbc7w",
+      "Name": "Monitorian",
+      "Version": "4.10.1.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\21090PaddyXu.QuickLook_3.7.3.0_neutral__egxr34yet59cg",
+      "Name": "QuickLook",
+      "Version": "3.7.3.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\PDFShellExt_3.0.0.0_x64__8wekyb3d8bbwe",
+      "Name": "PDFToolExtension",
+      "Version": "3.0.0.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X64\\O365HomePremRetail - zh-cn",
+      "Name": "Microsoft 365 - zh-cn",
+      "Version": "16.0.18429.20158",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\NpcapInst",
+      "Name": "Npcap",
+      "Version": "1.79",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-002C-0804-0000-0000000FF1CE}_Office15.VISPROR_{16F64A9D-6561-4378-98F2-BD2095B78511}",
+      "Name": "Update for Microsoft Office 2013 (KB3039720) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X64\\{C6FD611E-7EFE-488C-A0E0-974C09EF6473}",
+      "Name": "Microsoft Update Health Tools",
+      "Version": "5.72.0.0",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.PowerAutomateDesktop_11.2501.298.0_x64__8wekyb3d8bbwe",
+      "Name": "Power Automate",
+      "Version": "11.2501.298.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-002A-0000-1000-0000000FF1CE}_Office15.VISPROR_{28193F03-CC73-4C27-ABA5-AA763C7EBE30}",
+      "Name": "Security Update for Microsoft OneNote 2013 (KB4022167) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1.6_6000.373.1641.0_x86__8wekyb3d8bbwe",
+      "Name": "WindowsAppRuntime.1.6",
+      "Version": "6000.373.1641.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{A7A41ACD-C1EA-4628-BCD2-8CA7AA8DDB29}",
+      "Name": "Update for Microsoft Office 2013 (KB4011155) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.MicrosoftStickyNotes_4.0.6104.0_x64__8wekyb3d8bbwe",
+      "Name": "Microsoft \u4FBF\u7B3A",
+      "Version": "4.0.6104.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X64\\af61d581-bfa6-515e-bf22-56b60d25a5b3",
+      "Name": "Clash for Windows 0.20.10",
+      "Version": "0.20.10",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Clipchamp.Clipchamp_3.1.12020.0_neutral__yxz26nhyzhsrt",
+      "Name": "Microsoft Clipchamp",
+      "Version": "3.1.12020.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{889610CC-4337-4BDB-AC3B-4F21806C0BDE}_is1",
+      "Name": "UniGetUI (formerly WingetUI)",
+      "Version": "3.1.2",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.NET.Native.Runtime.2.2_2.2.28604.0_x86__8wekyb3d8bbwe",
+      "Name": "Microsoft .Net Native Runtime Package 2.2",
+      "Version": "2.2.28604.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.SecHealthUI_1000.27703.1006.0_x64__8wekyb3d8bbwe",
+      "Name": "Windows \u5B89\u5168\u4E2D\u5FC3",
+      "Version": "1000.27703.1006.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{5C568FE6-A269-4A88-8256-DC1A8B89E622}",
+      "Name": "Update for Microsoft Office 2013 (KB3114488) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{C44AEF2A-B479-4059-901B-BBA149E4788D}",
+      "Name": "Security Update for Microsoft Office 2013 (KB3178643) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1.5_5001.214.1843.0_x64__8wekyb3d8bbwe",
+      "Name": "WindowsAppRuntime.1.5",
+      "Version": "5001.214.1843.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{B2B5F640-E7C8-4DAC-AF41-35FAE36FE2F6}",
+      "Name": "Update for Microsoft Office 2013 (KB3085565) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\NVIDIACorp.NVIDIAControlPanel_8.1.967.0_x64__56jybvy8sckqj",
+      "Name": "NVIDIA Control Panel",
+      "Version": "8.1.967.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.YourPhone_1.25011.56.0_x64__8wekyb3d8bbwe",
+      "Name": "\u624B\u673A\u8FDE\u63A5",
+      "Version": "1.25011.56.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.NET.Native.Framework.2.2_2.2.29512.0_x64__8wekyb3d8bbwe",
+      "Name": "Microsoft .Net Native Framework Package 2.2",
+      "Version": "2.2.29512.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-001F-0804-0000-0000000FF1CE}_Office15.VISPROR_{16F64A9D-6561-4378-98F2-BD2095B78511}",
+      "Name": "Update for Microsoft Office 2013 (KB3039720) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.XboxGameOverlay_1.54.4001.0_x64__8wekyb3d8bbwe",
+      "Name": "Xbox Game Bar Plugin",
+      "Version": "1.54.4001.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{25C61889-2E44-4BE1-9E96-9364BFDCF501}",
+      "Name": "Update for Microsoft Visio Viewer 2013 (KB2817301) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\User\\X64\\{928a71b0-6613-4101-8c0f-1f76828c7b19}",
+      "Name": "MSYS2",
+      "Version": "20240113",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WindowsMaps_1.0.64.0_x64__8wekyb3d8bbwe",
+      "Name": "Windows \u5730\u56FE",
+      "Version": "1.0.64.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WindowsNotepad_11.2410.21.0_x64__8wekyb3d8bbwe",
+      "Name": "Windows \u8BB0\u4E8B\u672C",
+      "Version": "11.2410.21.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\Office15.VISPROR",
+      "Name": "Microsoft Visio Professional 2013",
+      "Version": "15.0.4569.1506",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.Getstarted_10.2312.1.0_x64__8wekyb3d8bbwe",
+      "Name": "Microsoft \u4F7F\u7528\u6280\u5DE7",
+      "Version": "10.2312.1.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\KatMouse",
+      "Name": "KatMouse (remove only)",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{021993D4-1183-455F-94F7-D5817C1B7B46}",
+      "Name": "Update for Microsoft Office 2013 (KB5002274) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WindowsCamera_2024.2408.1.0_x64__8wekyb3d8bbwe",
+      "Name": "Windows \u76F8\u673A",
+      "Version": "2024.2408.1.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\HRContextMenu_1.0.0.0_neutral__m6ed0pe7fcjg8",
+      "Name": "HRContextMenu",
+      "Version": "1.0.0.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.XboxIdentityProvider_12.115.1001.0_x64__8wekyb3d8bbwe",
+      "Name": "Xbox Identity Provider",
+      "Version": "12.115.1001.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-002A-0804-1000-0000000FF1CE}_Office15.VISPROR_{16F64A9D-6561-4378-98F2-BD2095B78511}",
+      "Name": "Update for Microsoft Office 2013 (KB3039720) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.XboxSpeechToTextOverlay_1.21.13002.0_x64__8wekyb3d8bbwe",
+      "Name": "Xbox Game Speech Window",
+      "Version": "1.21.13002.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.BingSearch_1.1.34.0_x64__8wekyb3d8bbwe",
+      "Name": "Microsoft \u5FC5\u5E94",
+      "Version": "1.1.34.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1.4_4000.1309.2056.0_x86__8wekyb3d8bbwe",
+      "Name": "WindowsAppRuntime.1.4",
+      "Version": "4000.1309.2056.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1.6_6000.373.1641.0_x64__8wekyb3d8bbwe",
+      "Name": "WindowsAppRuntime.1.6",
+      "Version": "6000.373.1641.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\InstallShield_{2C5F58B0-1BF6-4BD3-A665-C1B5206BDC17}",
+      "Name": "Xshell 7",
+      "Version": "7.0.0170",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{4B7382DD-C92C-4942-BFE6-9B892B915E5C}",
+      "Name": "Update for Microsoft Office 2013 (KB3039766) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1.6_6000.401.2352.0_x86__8wekyb3d8bbwe",
+      "Name": "WindowsAppRuntime.1.6",
+      "Version": "6000.401.2352.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-006E-0804-0000-0000000FF1CE}_Office15.VISPROR_{C454E844-4F27-49EA-966D-94E0F834B4BE}",
+      "Name": "Update for Microsoft Office 2013 (KB5002151) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{07BE4996-5557-4A17-9B98-AD57883607EA}",
+      "Name": "Update for Microsoft Office 2013 (KB3101503) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-002A-0000-1000-0000000FF1CE}_Office15.VISPROR_{2113B49B-7A19-4592-863E-CD4124792AAE}",
+      "Name": "Security Update for Microsoft Office 2013 (KB3039798) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{A7610F07-E844-4444-8E1D-D5BC8AD0B4C5}",
+      "Name": "Update for Microsoft Office 2013 (KB2760344) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X64\\MSOfficePLUS",
+      "Name": "\u5FAE\u8F6FOfficePLUS",
+      "Version": "3.7.0.63487",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-001F-0804-0000-0000000FF1CE}_Office15.VISPROR_{8C2F6BFE-7279-485F-BF55-8E1C6A11D03B}",
+      "Name": "Update for Microsoft Office 2013 (KB4011677) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X64\\{7FAD6F97-D84E-42CC-A600-5F4EC3460FF5}",
+      "Name": "Vector",
+      "Version": "0.37.0",
+      "Source": "\u672C\u5730\u7535\u8111"
+    }
+  ]
 }

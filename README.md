@@ -18,6 +18,7 @@
 - [ScreenSharing](https://screensharing.net/) 屏幕共享工具
 - [EasyTransfer](https://file.ch3nyang.top/) 点对点传输工具
 - [Tiktokvoice](https://tiktokvoice.net/en/sounds-effect) 音效生成器
+- [Telegra](https://telegra.ph/) 匿名发布文章并分享
 
 ### Makefiles
 
