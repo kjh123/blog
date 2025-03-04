@@ -1,7 +1,7 @@
 
 # Docker学习笔记
 
-## 安装 Docker 
+## 安装 Docker
 
 > - 版本：社区版（Docker Community Edition）
 > - 介绍：[Docker在PHP项目开发中的应用](https://avnpc.com/pages/build-php-develop-env-by-docker)
@@ -56,7 +56,7 @@ curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://9d4cd35f
 systemctl restart docker
 ```
 
-## 安装 docker-compose 
+## 安装 docker-compose
 
 > [docker-compose介绍](http://dockone.io/article/34)
 
@@ -428,3 +428,16 @@ sudo docker inspect --format '{{ .NetworkSettings.IPAddress }}' [phpfpm]
 # 或者
 sudo docker inspect [phpfpm] | grep IPAddress
 ```
+
+## 使用 docker run 启动镜像并保持容器运行
+
+> 在后台运行一个 `golang:1.21` 的镜像
+
+```bash
+docker run -d --name game-workspace golang:1.21 tail -f /dev/null
+```
+
+参数解释：
+- `-d`：表示以“分离模式”（detached mode）运行容器，即在后台运行。
+- `--name game-workspace`：为容器指定一个名称（这里是 game-workspace），方便后续管理。
+- `tail -f /dev/null`：这是一个常见的技巧，用于让容器保持运行状态而不退出。 **/dev/null** 是一个特殊的空文件，tail -f 会持续读取它，从而保持容器运行。

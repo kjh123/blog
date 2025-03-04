@@ -50,9 +50,18 @@ alias whaler="docker run -t --rm -v /var/run/docker.sock:/var/run/docker.sock:ro
 ![docker4](../images/docker-tools/docker4.png)
 
 
+### 使用 `docker save` 和 `docker load` 导出/导入镜像
 
+> 如果需要在不同机器之间传输镜像，可以使用 `docker save` 和 `docker load`
 
+导出镜像:
 
+```bash
+docker save -o my-image.tar my-image:latest
+```
 
+导入镜像：
 
-
+```bash
+docker load -i my-image.tar
+```

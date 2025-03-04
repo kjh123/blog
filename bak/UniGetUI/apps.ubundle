@@ -266,28 +266,6 @@
       }
     },
     {
-      "Id": "Microsoft.OneDrive",
-      "Name": "Microsoft OneDrive",
-      "Version": "25.005.0112.0003",
-      "Source": "winget",
-      "ManagerName": "Winget",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
       "Id": "mycli",
       "Name": "Mycli",
       "Version": "1.5.1",
@@ -313,6 +291,28 @@
       "Id": "Microsoft.PowerShell",
       "Name": "PowerShell",
       "Version": "7.4.6.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Microsoft.AppInstaller",
+      "Name": "App Installer",
+      "Version": "1.25.320.0",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -637,6 +637,28 @@
       "Updates": {
         "UpdatesIgnored": true,
         "IgnoredVersion": "*"
+      }
+    },
+    {
+      "Id": "csvlens",
+      "Name": "Csvlens",
+      "Version": "0.11.0",
+      "Source": "main",
+      "ManagerName": "Scoop",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
       }
     },
     {
@@ -1388,6 +1410,28 @@
       }
     },
     {
+      "Id": "go-task",
+      "Name": "Go Task",
+      "Version": "3.40.1",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
       "Id": "DotNet3.5",
       "Name": "DotNet3.5",
       "Version": "3.5.20160716",
@@ -1437,6 +1481,28 @@
       "Version": "11.0.61030.0",
       "Source": "winget",
       "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "pipx",
+      "Name": "Pipx",
+      "Version": "1.7.1",
+      "Source": "main",
+      "ManagerName": "Scoop",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -1545,6 +1611,28 @@
       "Id": "zoxide",
       "Name": "Zoxide",
       "Version": "0.9.2",
+      "Source": "community",
+      "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "rsync",
+      "Name": "Rsync",
+      "Version": "6.3.0",
       "Source": "community",
       "ManagerName": "Chocolatey",
       "InstallationOptions": {
@@ -1696,28 +1784,6 @@
       }
     },
     {
-      "Id": "Microsoft.AppInstaller",
-      "Name": "App Installer",
-      "Version": "1.24.25200.0",
-      "Source": "winget",
-      "ManagerName": "Winget",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
       "Id": "Graphviz.Graphviz",
       "Name": "Graphviz",
       "Version": "10.0.1",
@@ -1831,28 +1897,6 @@
       "Id": "Microsoft.VCRedist.2008.x86",
       "Name": "Microsoft Visual C\u002B\u002B 2008 Redistributable - x86",
       "Version": "9.0.30729.6161",
-      "Source": "winget",
-      "ManagerName": "Winget",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "Microsoft.Edge",
-      "Name": "Microsoft Edge",
-      "Version": "133.0.3065.69",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -2026,11 +2070,55 @@
       }
     },
     {
+      "Id": "syncthing",
+      "Name": "Syncthing",
+      "Version": "1.29.2",
+      "Source": "main",
+      "ManagerName": "Scoop",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
       "Id": "scoop-search",
       "Name": "Scoop Search",
       "Version": "1.5.0",
       "Source": "main",
       "ManagerName": "Scoop",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Google.Chrome.EXE",
+      "Name": "Google Chrome (EXE)",
+      "Version": "133.0.6943.142",
+      "Source": "winget",
+      "ManagerName": "Winget",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -2119,28 +2207,6 @@
       "Version": "24.8.0",
       "Source": "community",
       "ManagerName": "Chocolatey",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "vim.vim.nightly",
-      "Name": "Vim",
-      "Version": "9.1.0412",
-      "Source": "winget",
-      "ManagerName": "Winget",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -2708,6 +2774,72 @@
       }
     },
     {
+      "Id": "openark",
+      "Name": "Openark",
+      "Version": "1.3.8",
+      "Source": "extras",
+      "ManagerName": "Scoop",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Microsoft.Edge",
+      "Name": "Microsoft Edge",
+      "Version": "133.0.3065.92",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Microsoft.OneDrive",
+      "Name": "Microsoft OneDrive",
+      "Version": "25.015.0126.0002",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
       "Id": "KB3035131",
       "Name": "KB3035131",
       "Version": "1.0.3",
@@ -3038,28 +3170,6 @@
       }
     },
     {
-      "Id": "Google.Chrome.EXE",
-      "Name": "Google Chrome (EXE)",
-      "Version": "133.0.6943.126",
-      "Source": "winget",
-      "ManagerName": "Winget",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
       "Id": "Tencent.WeChat",
       "Name": "WeChat",
       "Version": "3.9.12.35",
@@ -3217,6 +3327,28 @@
       "Id": "TinyCraft.TinyRDM",
       "Name": "Tiny RDM",
       "Version": "1.2.2",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Git.Git",
+      "Name": "Git",
+      "Version": "2.45.1",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -3487,12 +3619,6 @@
       "Source": "\u672C\u5730\u7535\u8111"
     },
     {
-      "Id": "ARP\\Machine\\X64\\Git_is1",
-      "Name": "Git",
-      "Version": "2.45.1",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
       "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{BB92A877-3443-4FAF-B4BB-470B9792AFBE}",
       "Name": "Update for Microsoft Office 2013 (KB3114499) 32-Bit Edition",
       "Version": "Unknown",
@@ -3631,6 +3757,12 @@
       "Source": "Microsoft Store"
     },
     {
+      "Id": "ARP\\User\\X64\\{DADADADA-ADAD-ADAD-ADAD-ADADADADADAD}}_is1",
+      "Name": "Cursor (User)",
+      "Version": "0.45.15",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
       "Id": "MSIX\\Microsoft.Paint_11.2411.471.0_x64__8wekyb3d8bbwe",
       "Name": "\u753B\u56FE",
       "Version": "11.2411.471.0",
@@ -3647,12 +3779,6 @@
       "Name": "kuaiVPN",
       "Version": "1.0.0",
       "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "MSIX\\Microsoft.Winget.Source_2025.220.319.37_neutral__8wekyb3d8bbwe",
-      "Name": "Windows Package Manager Source (winget) V2",
-      "Version": "2025.220.319.37",
-      "Source": "Microsoft Store"
     },
     {
       "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{87F6726E-6F99-42F0-8E11-55D798E57DD5}",
@@ -3724,12 +3850,6 @@
       "Id": "MSIX\\Microsoft.BingWeather_4.54.63007.0_x64__8wekyb3d8bbwe",
       "Name": "MSN \u5929\u6C14",
       "Version": "4.54.63007.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "MSIX\\Microsoft.OneDriveSync_25005.112.3.0_neutral__8wekyb3d8bbwe",
-      "Name": "OneDrive",
-      "Version": "25005.112.3.0",
       "Source": "Microsoft Store"
     },
     {
@@ -3949,12 +4069,6 @@
       "Source": "Microsoft Store"
     },
     {
-      "Id": "MSIX\\Microsoft.XboxGamingOverlay_7.224.11211.0_x64__8wekyb3d8bbwe",
-      "Name": "Game Bar",
-      "Version": "7.224.11211.0",
-      "Source": "Microsoft Store"
-    },
-    {
       "Id": "ARP\\User\\X64\\Poe",
       "Name": "Poe",
       "Version": "1.1.23",
@@ -4033,6 +4147,12 @@
       "Source": "\u672C\u5730\u7535\u8111"
     },
     {
+      "Id": "MSIX\\Microsoft.XboxGamingOverlay_7.225.2131.0_x64__8wekyb3d8bbwe",
+      "Name": "Game Bar",
+      "Version": "7.225.2131.0",
+      "Source": "Microsoft Store"
+    },
+    {
       "Id": "ARP\\Machine\\X64\\{6F320B93-EE3C-4826-85E0-ADF79F8D4C61}",
       "Name": "Microsoft Visual Studio Installer",
       "Version": "3.6.2122.36397",
@@ -4081,16 +4201,16 @@
       "Source": "\u672C\u5730\u7535\u8111"
     },
     {
+      "Id": "MSIX\\Microsoft.Winget.Source_2025.303.2450.8_neutral__8wekyb3d8bbwe",
+      "Name": "Windows Package Manager Source (winget) V2",
+      "Version": "2025.303.2450.8",
+      "Source": "Microsoft Store"
+    },
+    {
       "Id": "ARP\\Machine\\X64\\{46E9AA59-9D66-4CA8-82E9-CFA4EA3F3136}_is1",
       "Name": "X-Mirage version 3.0.1",
       "Version": "3.0.1",
       "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "MSIX\\Microsoft.MicrosoftPCManager_3.15.5.0_x64__8wekyb3d8bbwe",
-      "Name": "\u7535\u8111\u7BA1\u5BB6",
-      "Version": "3.15.5.0",
-      "Source": "Microsoft Store"
     },
     {
       "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{96903939-431D-4BD1-ADCD-B578900397D7}",
@@ -4159,6 +4279,12 @@
       "Source": "Microsoft Store"
     },
     {
+      "Id": "ARP\\Machine\\X64\\Vim 9.1",
+      "Name": "Vim 9.1 (x64)",
+      "Version": "9.1.0412",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
       "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{51731902-8ECD-4C42-A7F4-E57150D54987}",
       "Name": "Security Update for Microsoft Office 2013 (KB4462142) 32-Bit Edition",
       "Version": "Unknown",
@@ -4187,6 +4313,12 @@
       "Name": "Update for Microsoft Office 2013 (KB3039720) 32-Bit Edition",
       "Version": "Unknown",
       "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.MicrosoftPCManager_3.15.7.0_x64__8wekyb3d8bbwe",
+      "Name": "\u7535\u8111\u7BA1\u5BB6",
+      "Version": "3.15.7.0",
+      "Source": "Microsoft Store"
     },
     {
       "Id": "MSIX\\Microsoft.WebpImageExtension_1.1.1711.0_x64__8wekyb3d8bbwe",
@@ -4219,16 +4351,16 @@
       "Source": "Microsoft Store"
     },
     {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{8EA03F4D-754D-42D0-980B-5D803363EC99}",
-      "Name": "Update for Microsoft Office 2013 (KB3172533) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
       "Id": "MSIX\\Microsoft.GetHelp_10.2409.22951.0_x64__8wekyb3d8bbwe",
       "Name": "\u83B7\u53D6\u5E2E\u52A9",
       "Version": "10.2409.22951.0",
       "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{8EA03F4D-754D-42D0-980B-5D803363EC99}",
+      "Name": "Update for Microsoft Office 2013 (KB3172533) 32-Bit Edition",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
     },
     {
       "Id": "MSIX\\Microsoft.GamingApp_2501.1001.3.0_x64__8wekyb3d8bbwe",
@@ -4423,12 +4555,6 @@
       "Source": "Microsoft Store"
     },
     {
-      "Id": "MSIX\\Microsoft.YourPhone_1.25011.56.0_x64__8wekyb3d8bbwe",
-      "Name": "\u624B\u673A\u8FDE\u63A5",
-      "Version": "1.25011.56.0",
-      "Source": "Microsoft Store"
-    },
-    {
       "Id": "MSIX\\Microsoft.NET.Native.Framework.2.2_2.2.29512.0_x64__8wekyb3d8bbwe",
       "Name": "Microsoft .Net Native Framework Package 2.2",
       "Version": "2.2.29512.0",
@@ -4487,6 +4613,18 @@
       "Name": "KatMouse (remove only)",
       "Version": "Unknown",
       "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.OneDriveSync_25015.126.2.0_neutral__8wekyb3d8bbwe",
+      "Name": "OneDrive",
+      "Version": "25015.126.2.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.YourPhone_1.25012.100.0_x64__8wekyb3d8bbwe",
+      "Name": "\u624B\u673A\u8FDE\u63A5",
+      "Version": "1.25012.100.0",
+      "Source": "Microsoft Store"
     },
     {
       "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{021993D4-1183-455F-94F7-D5817C1B7B46}",
