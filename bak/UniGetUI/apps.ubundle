@@ -3,7 +3,7 @@
   "packages": [
     {
       "Id": "Bin-Huang.Chatbox",
-      "Name": "Chatbox",
+      "Name": "Chatbox 1.9.7",
       "Version": "1.9.7",
       "Source": "winget",
       "ManagerName": "Winget",
@@ -47,7 +47,7 @@
     },
     {
       "Id": "Microsoft.VCRedist.2005.x86",
-      "Name": "Microsoft Visual C\u002B\u002B 2005 Redistributable",
+      "Name": "Microsoft Visual C\u002B\u002B 2005 Redistri\u2026",
       "Version": "8.0.61001",
       "Source": "winget",
       "ManagerName": "Winget",
@@ -90,8 +90,118 @@
       }
     },
     {
+      "Id": "parse_pip_search",
+      "Name": "Parse Pip Search",
+      "Version": "0.0.1",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Unity.Unity.2022",
+      "Name": "Unity 2022.3.58f1",
+      "Version": "2022.3.58f1",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Microsoft.VCRedist.2015\u002B.x64",
+      "Name": "Microsoft Visual C\u002B\u002B 2015-2022 Red\u2026",
+      "Version": "14.42.34433.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "safetensors",
+      "Name": "Safetensors",
+      "Version": "0.4.3",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Unity.Unity.2020",
+      "Name": "Unity 2020.3.48f1",
+      "Version": "2020.3.48f1",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
       "Id": "7zip.7zip",
-      "Name": "7-Zip",
+      "Name": "7-Zip 24.08 (x64)",
       "Version": "24.08",
       "Source": "winget",
       "ManagerName": "Winget",
@@ -134,6 +244,28 @@
       }
     },
     {
+      "Id": "file-uri-to-path",
+      "Name": "File Uri To Path",
+      "Version": "1.0.0",
+      "Source": "npm",
+      "ManagerName": "Npm",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
       "Id": "visualstudio2019-workload-vctools",
       "Name": "Visualstudio2019 Workload Vctools",
       "Version": "1.0.1",
@@ -156,11 +288,11 @@
       }
     },
     {
-      "Id": "OpenJS.NodeJS.LTS",
-      "Name": "Node.js (LTS)",
-      "Version": "20.12.0",
-      "Source": "winget",
-      "ManagerName": "Winget",
+      "Id": "torchvision",
+      "Name": "Torchvision",
+      "Version": "0.22.0\u002Bcpu",
+      "Source": "pip",
+      "ManagerName": "Pip",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -179,7 +311,7 @@
     },
     {
       "Id": "SSHFS-Win.SSHFS-Win",
-      "Name": "SSHFS-Win",
+      "Name": "SSHFS-Win 2021 (x64)",
       "Version": "3.5.20357",
       "Source": "winget",
       "ManagerName": "Winget",
@@ -200,11 +332,55 @@
       }
     },
     {
-      "Id": "pipx",
-      "Name": "Pipx",
-      "Version": "1.7.1",
-      "Source": "main",
-      "ManagerName": "Scoop",
+      "Id": "frida",
+      "Name": "Frida",
+      "Version": "17.2.5",
+      "Source": "npm",
+      "ManagerName": "Npm",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "QL-Win.QuickLook",
+      "Name": "QuickLook",
+      "Version": "4.0.2.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "parso",
+      "Name": "Parso",
+      "Version": "0.8.4",
+      "Source": "pip",
+      "ManagerName": "Pip",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -311,54 +487,10 @@
     },
     {
       "Id": "Oracle.VirtualBox",
-      "Name": "Oracle VM VirtualBox",
+      "Name": "Oracle VM VirtualBox 7.0.14",
       "Version": "7.0.14",
       "Source": "winget",
       "ManagerName": "Winget",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "MongoDB.Compass.Full",
-      "Name": "MongoDB Compass",
-      "Version": "1.45.4",
-      "Source": "winget",
-      "ManagerName": "Winget",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "dark",
-      "Name": "Dark",
-      "Version": "3.14",
-      "Source": "main",
-      "ManagerName": "Scoop",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -401,7 +533,7 @@
     },
     {
       "Id": "Microsoft.VCRedist.2008.x86",
-      "Name": "Microsoft Visual C\u002B\u002B 2008 Redistributable - x86",
+      "Name": "Microsoft Visual C\u002B\u002B 2008 Redistri\u2026",
       "Version": "9.0.30729.6161",
       "Source": "winget",
       "ManagerName": "Winget",
@@ -422,11 +554,11 @@
       }
     },
     {
-      "Id": "Tailscale.Tailscale",
-      "Name": "Tailscale",
-      "Version": "1.82.0",
-      "Source": "winget",
-      "ManagerName": "Winget",
+      "Id": "bottle",
+      "Name": "Bottle",
+      "Version": "0.12.25",
+      "Source": "pip",
+      "ManagerName": "Pip",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -445,7 +577,7 @@
     },
     {
       "Id": "Tencent.WeixinDevTools",
-      "Name": "\u5FAE\u4FE1\u5F00\u53D1\u8005\u5DE5\u5177",
+      "Name": "\u5FAE\u4FE1\u5F00\u53D1\u8005\u5DE5\u5177 1.06.2407110",
       "Version": "1.06.2407110",
       "Source": "winget",
       "ManagerName": "Winget",
@@ -488,9 +620,9 @@
       }
     },
     {
-      "Id": "jqlang.jq",
-      "Name": "jq",
-      "Version": "1.7.1",
+      "Id": "Telerik.Fiddler.Classic",
+      "Name": "Progress Telerik Fiddler Classic",
+      "Version": "5.0.20253.3311",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -510,8 +642,30 @@
       }
     },
     {
+      "Id": "pycparser",
+      "Name": "Pycparser",
+      "Version": "2.22",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
       "Id": "Klocman.BulkCrapUninstaller",
-      "Name": "Bulk Crap Uninstaller",
+      "Name": "BCUninstaller",
       "Version": "5.8.2.0",
       "Source": "winget",
       "ManagerName": "Winget",
@@ -532,9 +686,9 @@
       }
     },
     {
-      "Id": "Telerik.Fiddler.Everywhere",
-      "Name": "Fiddler Everywhere",
-      "Version": "5.8.0",
+      "Id": "JetBrains.GoLand",
+      "Name": "GoLand 2025.1",
+      "Version": "2025.1",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -577,8 +731,52 @@
     },
     {
       "Id": "Ruihu.Apifox",
-      "Name": "Apifox",
+      "Name": "Apifox 2.5.13",
       "Version": "2.5.13",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Unity.UnityHub",
+      "Name": "Unity Hub 3.12.1",
+      "Version": "3.12.1",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "ayangweb.BongoCat",
+      "Name": "BongoCat",
+      "Version": "0.3.0",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -603,6 +801,28 @@
       "Version": "10.0.40219.32503",
       "Source": "community",
       "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "@isaacs/balanced-match",
+      "Name": "Balanced Match",
+      "Version": "4.0.1",
+      "Source": "npm",
+      "ManagerName": "Npm",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -665,7 +885,7 @@
     },
     {
       "Id": "Alibaba.DingTalk",
-      "Name": "DingTalk",
+      "Name": "\u9489\u9489",
       "Version": "7.5.11-Release.3179106",
       "Source": "winget",
       "ManagerName": "Winget",
@@ -687,7 +907,7 @@
     },
     {
       "Id": "Microsoft.VSTOR",
-      "Name": "Microsoft Visual Studio 2010 Tools for Office Runtime",
+      "Name": "Microsoft Visual Studio 2010 Tools\u2026",
       "Version": "10.0.50903",
       "Source": "winget",
       "ManagerName": "Winget",
@@ -752,11 +972,55 @@
       }
     },
     {
-      "Id": "nats-server",
-      "Name": "Nats Server",
-      "Version": "2.10.25",
-      "Source": "main",
-      "ManagerName": "Scoop",
+      "Id": "Python.Launcher",
+      "Name": "Python Launcher",
+      "Version": "3.12.4",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "tunnel-agent",
+      "Name": "Tunnel Agent",
+      "Version": "0.6.0",
+      "Source": "npm",
+      "ManagerName": "Npm",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "stack-data",
+      "Name": "Stack Data",
+      "Version": "0.6.3",
+      "Source": "pip",
+      "ManagerName": "Pip",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -840,11 +1104,55 @@
       }
     },
     {
+      "Id": "JetBrains.WebStorm",
+      "Name": "WebStorm 2025.1.3",
+      "Version": "2025.1.3",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
       "Id": "visualstudio-installer",
       "Name": "Visualstudio Installer",
       "Version": "2.0.3",
       "Source": "community",
       "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "mdurl",
+      "Name": "Mdurl",
+      "Version": "0.1.2",
+      "Source": "pip",
+      "ManagerName": "Pip",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -928,6 +1236,72 @@
       }
     },
     {
+      "Id": "asttokens",
+      "Name": "Asttokens",
+      "Version": "2.4.1",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "scipy",
+      "Name": "Scipy",
+      "Version": "1.13.1",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "prompt_toolkit",
+      "Name": "Prompt Toolkit",
+      "Version": "3.0.47",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
       "Id": "tldr-plusplus",
       "Name": "Tldr Plusplus",
       "Version": "0.6.1",
@@ -951,7 +1325,7 @@
     },
     {
       "Id": "Unity.Unity.2022",
-      "Name": "Unity 2022",
+      "Name": "Unity 2022.3.28f1",
       "Version": "2022.3.28f1",
       "Source": "winget",
       "ManagerName": "Winget",
@@ -972,11 +1346,55 @@
       }
     },
     {
-      "Id": "scoop-search",
-      "Name": "Scoop Search",
-      "Version": "1.5.0",
-      "Source": "main",
-      "ManagerName": "Scoop",
+      "Id": "prebuild-install",
+      "Name": "Prebuild Install",
+      "Version": "7.1.3",
+      "Source": "npm",
+      "ManagerName": "Npm",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "chownr",
+      "Name": "Chownr",
+      "Version": "1.1.4",
+      "Source": "npm",
+      "ManagerName": "Npm",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "PySocks",
+      "Name": "PySocks",
+      "Version": "1.7.1",
+      "Source": "pip",
+      "ManagerName": "Pip",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -1016,6 +1434,28 @@
       }
     },
     {
+      "Id": "httpie",
+      "Name": "Httpie",
+      "Version": "3.2.2",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
       "Id": "dotnetfx",
       "Name": "Dotnetfx",
       "Version": "4.8.0.20220524",
@@ -1038,11 +1478,55 @@
       }
     },
     {
-      "Id": "JetBrains.GoLand",
-      "Name": "GoLand",
-      "Version": "2024.1.4",
-      "Source": "winget",
-      "ManagerName": "Winget",
+      "Id": "virtualenv",
+      "Name": "Virtualenv",
+      "Version": "20.26.0",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "charset-normalizer",
+      "Name": "Charset Normalizer",
+      "Version": "3.3.2",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "numba",
+      "Name": "Numba",
+      "Version": "0.60.0",
+      "Source": "pip",
+      "ManagerName": "Pip",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -1082,11 +1566,11 @@
       }
     },
     {
-      "Id": "ImageMagick.ImageMagick",
-      "Name": "ImageMagick Q16-HDRI",
-      "Version": "7.1.1.38",
-      "Source": "winget",
-      "ManagerName": "Winget",
+      "Id": "networkx",
+      "Name": "Networkx",
+      "Version": "3.3",
+      "Source": "pip",
+      "ManagerName": "Pip",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -1104,11 +1588,11 @@
       }
     },
     {
-      "Id": "Microsoft.WSL",
-      "Name": "Windows Subsystem for Linux",
-      "Version": "2.1.5.0",
-      "Source": "winget",
-      "ManagerName": "Winget",
+      "Id": "base64-js",
+      "Name": "Base64 Js",
+      "Version": "1.5.1",
+      "Source": "npm",
+      "ManagerName": "Npm",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -1126,11 +1610,55 @@
       }
     },
     {
-      "Id": "ouch",
-      "Name": "Ouch",
-      "Version": "0.5.1",
-      "Source": "main",
-      "ManagerName": "Scoop",
+      "Id": "frida",
+      "Name": "Frida",
+      "Version": "17.2.2",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "tar-stream",
+      "Name": "Tar Stream",
+      "Version": "2.2.0",
+      "Source": "npm",
+      "ManagerName": "Npm",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "rich",
+      "Name": "Rich",
+      "Version": "13.7.1",
+      "Source": "pip",
+      "ManagerName": "Pip",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -1149,8 +1677,30 @@
     },
     {
       "Id": "Microsoft.VCRedist.2012.x86",
-      "Name": "Microsoft Visual C\u002B\u002B 2012 Redistributable (x86)",
+      "Name": "Microsoft Visual C\u002B\u002B 2012 Redistri\u2026",
       "Version": "11.0.61030.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "ByteDance.Trae.CN",
+      "Name": "Trae CN (User)",
+      "Version": "1.98.2",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -1214,9 +1764,31 @@
       }
     },
     {
-      "Id": "Postman.Postman",
-      "Name": "Postman",
-      "Version": "11.35.0",
+      "Id": "frozendict",
+      "Name": "Frozendict",
+      "Version": "2.4.4",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Microsoft.PowerShell",
+      "Name": "PowerShell 7.5.2.0-x64",
+      "Version": "7.5.2.0",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -1236,11 +1808,11 @@
       }
     },
     {
-      "Id": "adb",
-      "Name": "Adb",
-      "Version": "35.0.2",
-      "Source": "main",
-      "ManagerName": "Scoop",
+      "Id": "ujson",
+      "Name": "Ujson",
+      "Version": "5.9.0",
+      "Source": "pip",
+      "ManagerName": "Pip",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -1258,11 +1830,11 @@
       }
     },
     {
-      "Id": "syncthing",
-      "Name": "Syncthing",
-      "Version": "1.29.2",
-      "Source": "main",
-      "ManagerName": "Scoop",
+      "Id": "Pygments",
+      "Name": "Pygments",
+      "Version": "2.18.0",
+      "Source": "pip",
+      "ManagerName": "Pip",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -1346,6 +1918,28 @@
       }
     },
     {
+      "Id": "vector-quantize-pytorch",
+      "Name": "Vector Quantize Pytorch",
+      "Version": "1.14.30",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
       "Id": "vcredist-all",
       "Name": "Vcredist All",
       "Version": "1.0.1",
@@ -1368,8 +1962,52 @@
       }
     },
     {
+      "Id": "omegaconf",
+      "Name": "Omegaconf",
+      "Version": "2.3.0",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "markdown-it-py",
+      "Name": "Markdown It Py",
+      "Version": "3.0.0",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
       "Id": "Microsoft.PowerToys",
-      "Name": "PowerToys",
+      "Name": "PowerToys (Preview) x64",
       "Version": "0.85.1",
       "Source": "winget",
       "ManagerName": "Winget",
@@ -1395,6 +2033,28 @@
       "Version": "1.21.4",
       "Source": "community",
       "ManagerName": "Chocolatey",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "MarkupSafe",
+      "Name": "MarkupSafe",
+      "Version": "2.1.5",
+      "Source": "pip",
+      "ManagerName": "Pip",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -1501,10 +2161,54 @@
     },
     {
       "Id": "Python.Python.3.12",
-      "Name": "Python 3.12",
+      "Name": "Python 3.12.4 (64-bit)",
       "Version": "3.12.4",
       "Source": "winget",
       "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "regex",
+      "Name": "Regex",
+      "Version": "2024.5.15",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "packaging",
+      "Name": "Packaging",
+      "Version": "24.0",
+      "Source": "pip",
+      "ManagerName": "Pip",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -1544,6 +2248,28 @@
       }
     },
     {
+      "Id": "Alibaba.DingTalk",
+      "Name": "\u9489\u9489",
+      "Version": "5.1.39-Release.5",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
       "Id": "@openhpi/xikolo-video-player",
       "Name": "Xikolo Video Player",
       "Version": "1.2.5",
@@ -1567,7 +2293,7 @@
     },
     {
       "Id": "Microsoft.VCRedist.2008.x64",
-      "Name": "Microsoft Visual C\u002B\u002B 2008 Redistributable - x64",
+      "Name": "Microsoft Visual C\u002B\u002B 2008 Redistri\u2026",
       "Version": "9.0.30729.6161",
       "Source": "winget",
       "ManagerName": "Winget",
@@ -1588,9 +2314,53 @@
       }
     },
     {
-      "Id": "Microsoft.Edge",
-      "Name": "Microsoft Edge",
-      "Version": "134.0.3124.93",
+      "Id": "util-deprecate",
+      "Name": "Util Deprecate",
+      "Version": "1.0.2",
+      "Source": "npm",
+      "ManagerName": "Npm",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "transformers",
+      "Name": "Transformers",
+      "Version": "4.41.2",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Microsoft.VCLibs.Desktop.14",
+      "Name": "Microsoft Visual C\u002B\u002B 2015 UWP Desk\u2026",
+      "Version": "14.0.33728.0",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -1610,11 +2380,11 @@
       }
     },
     {
-      "Id": "Microsoft.VCLibs.Desktop.14",
-      "Name": "Microsoft Visual C\u002B\u002B 2015 UWP Desktop Runtime Package",
-      "Version": "14.0.33728.0",
-      "Source": "winget",
-      "ManagerName": "Winget",
+      "Id": "PyYAML",
+      "Name": "PyYAML",
+      "Version": "6.0.1",
+      "Source": "pip",
+      "ManagerName": "Pip",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -1654,6 +2424,28 @@
       }
     },
     {
+      "Id": "pillow",
+      "Name": "Pillow",
+      "Version": "11.0.0",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
       "Id": "chocolatey-compatibility.extension",
       "Name": "Chocolatey Compatibility.extension",
       "Version": "1.0.0",
@@ -1676,8 +2468,52 @@
       }
     },
     {
+      "Id": "mkl",
+      "Name": "Mkl",
+      "Version": "2021.4.0",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "idna",
+      "Name": "Idna",
+      "Version": "3.7",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
       "Id": "TortoiseSVN.TortoiseSVN",
-      "Name": "TortoiseSVN",
+      "Name": "TortoiseSVN 1.14.8.29723 (64 bit)",
       "Version": "1.14.29723",
       "Source": "winget",
       "ManagerName": "Winget",
@@ -1699,30 +2535,8 @@
     },
     {
       "Id": "Microsoft.VCRedist.2010.x64",
-      "Name": "Microsoft Visual C\u002B\u002B 2010 x64 Redistributable",
+      "Name": "Microsoft Visual C\u002B\u002B 2010  x64 Red\u2026",
       "Version": "10.0.40219",
-      "Source": "winget",
-      "ManagerName": "Winget",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "Wox.Wox",
-      "Name": "Wox",
-      "Version": "1.4.1196",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -1786,6 +2600,28 @@
       }
     },
     {
+      "Id": "torch",
+      "Name": "Torch",
+      "Version": "2.7.0\u002Bcpu",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
       "Id": "python3",
       "Name": "Python3",
       "Version": "3.12.2",
@@ -1830,6 +2666,50 @@
       }
     },
     {
+      "Id": "websockets",
+      "Name": "Websockets",
+      "Version": "13.1",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "multidict",
+      "Name": "Multidict",
+      "Version": "6.0.5",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
       "Id": "winfsp",
       "Name": "Winfsp",
       "Version": "2.0.23075",
@@ -1852,11 +2732,11 @@
       }
     },
     {
-      "Id": "Microsoft.DevHome",
-      "Name": "Dev Home (Preview)",
-      "Version": "0.2001.758.0",
-      "Source": "winget",
-      "ManagerName": "Winget",
+      "Id": "pybase16384",
+      "Name": "Pybase16384",
+      "Version": "0.3.7",
+      "Source": "pip",
+      "ManagerName": "Pip",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -1893,6 +2773,72 @@
       "Updates": {
         "UpdatesIgnored": true,
         "IgnoredVersion": "*"
+      }
+    },
+    {
+      "Id": "python-certifi-win32",
+      "Name": "Python Certifi Win32",
+      "Version": "1.6.1",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "psutil",
+      "Name": "Psutil",
+      "Version": "5.9.8",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "vite",
+      "Name": "Vite",
+      "Version": "7.0.4",
+      "Source": "npm",
+      "ManagerName": "Npm",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
       }
     },
     {
@@ -1963,7 +2909,7 @@
     },
     {
       "Id": "WiresharkFoundation.Wireshark",
-      "Name": "Wireshark",
+      "Name": "Wireshark 4.4.2 x64",
       "Version": "4.4.2",
       "Source": "winget",
       "ManagerName": "Winget",
@@ -1985,7 +2931,7 @@
     },
     {
       "Id": "Microsoft.UI.Xaml.2.7",
-      "Name": "Microsoft.UI.Xaml",
+      "Name": "Microsoft.UI.Xaml.2.7",
       "Version": "7.2409.9001.0",
       "Source": "winget",
       "ManagerName": "Winget",
@@ -2050,6 +2996,28 @@
       }
     },
     {
+      "Id": "cffi",
+      "Name": "Cffi",
+      "Version": "1.16.0",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
       "Id": "chocolatey-core.extension",
       "Name": "Chocolatey Core.extension",
       "Version": "1.4.0",
@@ -2072,9 +3040,9 @@
       }
     },
     {
-      "Id": "ByteDance.Trae",
-      "Name": "Trae",
-      "Version": "1.96.4",
+      "Id": "Microsoft.AppInstaller",
+      "Name": "\u5E94\u7528\u5B89\u88C5\u7A0B\u5E8F",
+      "Version": "1.26.430.0",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -2094,9 +3062,9 @@
       }
     },
     {
-      "Id": "AppFlowy.AppFlowy",
-      "Name": "AppFlowy",
-      "Version": "0.8.1",
+      "Id": "Discord.Discord",
+      "Name": "Discord",
+      "Version": "1.0.9003",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -2116,11 +3084,11 @@
       }
     },
     {
-      "Id": "Microsoft.PowerShell",
-      "Name": "PowerShell",
-      "Version": "7.4.7.0",
-      "Source": "winget",
-      "ManagerName": "Winget",
+      "Id": "setuptools-scm",
+      "Name": "Setuptools Scm",
+      "Version": "8.1.0",
+      "Source": "pip",
+      "ManagerName": "Pip",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -2139,7 +3107,7 @@
     },
     {
       "Id": "Ditto.Ditto",
-      "Name": "Ditto",
+      "Name": "Ditto 3.24.246.0",
       "Version": "3.24.246.0",
       "Source": "winget",
       "ManagerName": "Winget",
@@ -2161,7 +3129,7 @@
     },
     {
       "Id": "Anysphere.Cursor",
-      "Name": "Cursor",
+      "Name": "Cursor (User)",
       "Version": "0.45.15",
       "Source": "winget",
       "ManagerName": "Winget",
@@ -2205,7 +3173,7 @@
     },
     {
       "Id": "Zen-Team.Zen-Browser",
-      "Name": "Zen Browser",
+      "Name": "Zen Browser (x64 en-US)",
       "Version": "1.0.0-a.29",
       "Source": "winget",
       "ManagerName": "Winget",
@@ -2226,11 +3194,77 @@
       }
     },
     {
+      "Id": "tqdm",
+      "Name": "Tqdm",
+      "Version": "4.66.4",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "@isaacs/brace-expansion",
+      "Name": "Brace Expansion",
+      "Version": "5.0.0",
+      "Source": "npm",
+      "ManagerName": "Npm",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
       "Id": "GoLang.Go",
-      "Name": "Go Programming Language",
+      "Name": "Go Programming Language amd64 go1.\u2026",
       "Version": "1.21.8",
       "Source": "winget",
       "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "platformdirs",
+      "Name": "Platformdirs",
+      "Version": "4.2.1",
+      "Source": "pip",
+      "ManagerName": "Pip",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -2315,7 +3349,7 @@
     },
     {
       "Id": "AutoHotkey.AutoHotkey",
-      "Name": "AutoHotkey",
+      "Name": "AutoHotkey 1.1.37.01",
       "Version": "1.1.37.01",
       "Source": "winget",
       "ManagerName": "Winget",
@@ -2336,11 +3370,11 @@
       }
     },
     {
-      "Id": "Microsoft.AppInstaller",
-      "Name": "App Installer",
-      "Version": "1.25.340.0",
-      "Source": "winget",
-      "ManagerName": "Winget",
+      "Id": "soupsieve",
+      "Name": "Soupsieve",
+      "Version": "2.7",
+      "Source": "pip",
+      "ManagerName": "Pip",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -2380,11 +3414,77 @@
       }
     },
     {
+      "Id": "fsspec",
+      "Name": "Fsspec",
+      "Version": "2024.6.0",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "mkdirp-classic",
+      "Name": "Mkdirp Classic",
+      "Version": "0.5.3",
+      "Source": "npm",
+      "ManagerName": "Npm",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
       "Id": "Chocolatey.Chocolatey",
-      "Name": "Chocolatey",
+      "Name": "Chocolatey (Install Only)",
       "Version": "2.2.2.0",
       "Source": "winget",
       "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Glances",
+      "Name": "Glances",
+      "Version": "3.4.0.5",
+      "Source": "pip",
+      "ManagerName": "Pip",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -2424,11 +3524,11 @@
       }
     },
     {
-      "Id": "openark",
-      "Name": "Openark",
-      "Version": "1.3.8",
-      "Source": "extras",
-      "ManagerName": "Scoop",
+      "Id": "Warp.Warp",
+      "Name": "Warp",
+      "Version": "v0.2025.04.30.08.11.st\u2026",
+      "Source": "winget",
+      "ManagerName": "Winget",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -2446,8 +3546,30 @@
       }
     },
     {
-      "Id": "Microsoft.VCRedist.2015\u002B.x64",
-      "Name": "Microsoft Visual C\u002B\u002B 2015-2022 Redistributable (x64)",
+      "Id": "windows-curses",
+      "Name": "Windows Curses",
+      "Version": "2.3.2",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Microsoft.VCRedist.2015\u002B.x86",
+      "Name": "Microsoft Visual C\u002B\u002B 2015-2022 Red\u2026",
       "Version": "14.40.33816.0",
       "Source": "winget",
       "ManagerName": "Winget",
@@ -2490,11 +3612,11 @@
       }
     },
     {
-      "Id": "Microsoft.VCRedist.2015\u002B.x86",
-      "Name": "Microsoft Visual C\u002B\u002B 2015-2022 Redistributable (x86)",
-      "Version": "14.40.33816.0",
-      "Source": "winget",
-      "ManagerName": "Winget",
+      "Id": "ieee754",
+      "Name": "Ieee754",
+      "Version": "1.2.1",
+      "Source": "npm",
+      "ManagerName": "Npm",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -2512,11 +3634,11 @@
       }
     },
     {
-      "Id": "Microsoft.WindowsTerminal",
-      "Name": "Windows Terminal",
-      "Version": "1.22.10731.0",
-      "Source": "winget",
-      "ManagerName": "Winget",
+      "Id": "typing_extensions",
+      "Name": "Typing Extensions",
+      "Version": "4.12.2",
+      "Source": "pip",
+      "ManagerName": "Pip",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -2622,9 +3744,53 @@
       }
     },
     {
-      "Id": "Unity.UnityHub",
-      "Name": "Unity Hub",
-      "Version": "3.11.0",
+      "Id": "github-from-package",
+      "Name": "Github From Package",
+      "Version": "0.0.0",
+      "Source": "npm",
+      "ManagerName": "Npm",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "pre-commit",
+      "Name": "Pre Commit",
+      "Version": "3.7.0",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "XK72.Charles",
+      "Name": "Charles Proxy",
+      "Version": "5.0.1.3",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -2666,11 +3832,11 @@
       }
     },
     {
-      "Id": "Google.Chrome.EXE",
-      "Name": "Google Chrome (EXE)",
-      "Version": "134.0.6998.178",
-      "Source": "winget",
-      "ManagerName": "Winget",
+      "Id": "vocos",
+      "Name": "Vocos",
+      "Version": "0.1.0",
+      "Source": "pip",
+      "ManagerName": "Pip",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -2688,11 +3854,11 @@
       }
     },
     {
-      "Id": "python",
-      "Name": "Python",
-      "Version": "3.13.1",
-      "Source": "main",
-      "ManagerName": "Scoop",
+      "Id": "frida-tools",
+      "Name": "Frida Tools",
+      "Version": "14.3.1",
+      "Source": "pip",
+      "ManagerName": "Pip",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -2711,7 +3877,7 @@
     },
     {
       "Id": "Microsoft.VCRedist.2012.x64",
-      "Name": "Microsoft Visual C\u002B\u002B 2012 Redistributable (x64)",
+      "Name": "Microsoft Visual C\u002B\u002B 2012 Redistri\u2026",
       "Version": "11.0.61030.0",
       "Source": "winget",
       "ManagerName": "Winget",
@@ -2732,8 +3898,30 @@
       }
     },
     {
+      "Id": "numpy",
+      "Name": "Numpy",
+      "Version": "1.26.4",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
       "Id": "Sogou.SogouInput",
-      "Name": "\u641C\u72D7\u8F93\u5165\u6CD5",
+      "Name": "\u641C\u72D7\u8F93\u5165\u6CD5 14.10.0\u6B63\u5F0F\u7248",
       "Version": "14.10.0.1161",
       "Source": "winget",
       "ManagerName": "Winget",
@@ -2755,10 +3943,32 @@
     },
     {
       "Id": "Unity.Unity.2020",
-      "Name": "Unity",
+      "Name": "Unity 2021.2.5f1c302",
       "Version": "2021.2.5f1c302",
       "Source": "winget",
       "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "executing",
+      "Name": "Executing",
+      "Version": "2.0.1",
+      "Source": "pip",
+      "ManagerName": "Pip",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -2820,11 +4030,77 @@
       }
     },
     {
-      "Id": "Python.Launcher",
-      "Name": "Python Launcher",
-      "Version": "\u003E 3.12.0",
-      "Source": "winget",
-      "ManagerName": "Winget",
+      "Id": "Jinja2",
+      "Name": "Jinja2",
+      "Version": "3.1.4",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "sympy",
+      "Name": "Sympy",
+      "Version": "1.13.3",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "antlr4-python3-runtime",
+      "Name": "Antlr4 Python3 Runtime",
+      "Version": "4.9.3",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "simple-concat",
+      "Name": "Simple Concat",
+      "Version": "1.0.1",
+      "Source": "npm",
+      "ManagerName": "Npm",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -2864,11 +4140,33 @@
       }
     },
     {
-      "Id": "csvlens",
-      "Name": "Csvlens",
-      "Version": "0.11.0",
-      "Source": "main",
-      "ManagerName": "Scoop",
+      "Id": "jedi",
+      "Name": "Jedi",
+      "Version": "0.19.1",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "pip",
+      "Name": "Pip",
+      "Version": "25.1.1",
+      "Source": "pip",
+      "ManagerName": "Pip",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -2908,8 +4206,52 @@
       }
     },
     {
+      "Id": "filelock",
+      "Name": "Filelock",
+      "Version": "3.13.4",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "bindings",
+      "Name": "Bindings",
+      "Version": "1.5.0",
+      "Source": "npm",
+      "ManagerName": "Npm",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
       "Id": "Microsoft.VCRedist.2013.x86",
-      "Name": "Microsoft Visual C\u002B\u002B 2013 Redistributable (x86)",
+      "Name": "Microsoft Visual C\u002B\u002B 2013 Redistri\u2026",
       "Version": "12.0.40660.0",
       "Source": "winget",
       "ManagerName": "Winget",
@@ -2930,10 +4272,32 @@
       }
     },
     {
-      "Id": "XPDC2RH70K22MN",
-      "Name": "Discord",
-      "Version": "1.0.9003",
-      "Source": "msstore",
+      "Id": "encodec",
+      "Name": "Encodec",
+      "Version": "0.1.1",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Microsoft.WindowsTerminal",
+      "Name": "Windows \u7EC8\u7AEF",
+      "Version": "1.22.12111.0",
+      "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
         "SkipHashCheck": false,
@@ -2953,7 +4317,7 @@
     },
     {
       "Id": "Insecure.Nmap",
-      "Name": "Nmap",
+      "Name": "Nmap 7.95",
       "Version": "7.95",
       "Source": "winget",
       "ManagerName": "Winget",
@@ -2974,30 +4338,8 @@
       }
     },
     {
-      "Id": "Hashicorp.Vagrant",
-      "Name": "Vagrant",
-      "Version": "2.4.1",
-      "Source": "winget",
-      "ManagerName": "Winget",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
       "Id": "TablePlus.TablePlus",
-      "Name": "TablePlus",
+      "Name": "TablePlus 5.8.8",
       "Version": "5.8.8",
       "Source": "winget",
       "ManagerName": "Winget",
@@ -3040,6 +4382,50 @@
       }
     },
     {
+      "Id": "tokenizers",
+      "Name": "Tokenizers",
+      "Version": "0.19.1",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "wrapt",
+      "Name": "Wrapt",
+      "Version": "1.16.0",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
       "Id": "vcredist2005",
       "Name": "Vcredist2005",
       "Version": "8.0.50727.619501",
@@ -3062,11 +4448,99 @@
       }
     },
     {
-      "Id": "aliae",
-      "Name": "Aliae",
-      "Version": "0.26.0",
-      "Source": "https://github.com/JanDeDobbeleer/aliae/releases/latest/download/aliae.json",
-      "ManagerName": "Scoop",
+      "Id": "nodeenv",
+      "Name": "Nodeenv",
+      "Version": "1.8.0",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "mpmath",
+      "Name": "Mpmath",
+      "Version": "1.3.0",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "einx",
+      "Name": "Einx",
+      "Version": "0.3.0",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "matplotlib-inline",
+      "Name": "Matplotlib Inline",
+      "Version": "0.1.7",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "beautifulsoup4",
+      "Name": "Beautifulsoup4",
+      "Version": "4.13.4",
+      "Source": "pip",
+      "ManagerName": "Pip",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -3128,8 +4602,74 @@
       }
     },
     {
+      "Id": "einops",
+      "Name": "Einops",
+      "Version": "0.8.0",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "decorator",
+      "Name": "Decorator",
+      "Version": "5.1.1",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "SublimeHQ.SublimeText.4",
+      "Name": "Sublime Text",
+      "Version": "Unknown",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
       "Id": "Microsoft.VCRedist.2013.x64",
-      "Name": "Microsoft Visual C\u002B\u002B 2013 Redistributable (x64)",
+      "Name": "Microsoft Visual C\u002B\u002B 2013 Redistri\u2026",
       "Version": "12.0.40660.0",
       "Source": "winget",
       "ManagerName": "Winget",
@@ -3150,11 +4690,77 @@
       }
     },
     {
-      "Id": "Alibaba.aDrive",
-      "Name": "\u963F\u91CC\u4E91\u76D8",
-      "Version": "6.1.0",
-      "Source": "winget",
-      "ManagerName": "Winget",
+      "Id": "intel-openmp",
+      "Name": "Intel Openmp",
+      "Version": "2021.4.0",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "tbb",
+      "Name": "Tbb",
+      "Version": "2021.13.0",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "distlib",
+      "Name": "Distlib",
+      "Version": "0.3.8",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "certifi",
+      "Name": "Certifi",
+      "Version": "2025.4.26",
+      "Source": "pip",
+      "ManagerName": "Pip",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -3194,11 +4800,99 @@
       }
     },
     {
+      "Id": "fs-constants",
+      "Name": "Fs Constants",
+      "Version": "1.0.0",
+      "Source": "npm",
+      "ManagerName": "Npm",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
       "Id": "commitizen",
       "Name": "Commitizen",
       "Version": "4.3.1",
       "Source": "npm",
       "ManagerName": "Npm",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Tailscale.Tailscale",
+      "Name": "Tailscale",
+      "Version": "1.82.5",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Tencent.WeChat",
+      "Name": "\u5FAE\u4FE1",
+      "Version": "3.9.12.55",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "requests",
+      "Name": "Requests",
+      "Version": "2.32.3",
+      "Source": "pip",
+      "ManagerName": "Pip",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -3283,10 +4977,54 @@
     },
     {
       "Id": "GnuWin32.Make",
-      "Name": "GnuWin32: Make",
+      "Name": "GnuWin32: Make-3.81",
       "Version": "3.81",
       "Source": "winget",
       "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "@google/gemini-cli",
+      "Name": "Gemini Cli",
+      "Version": "0.1.9",
+      "Source": "npm",
+      "ManagerName": "Npm",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "expand-template",
+      "Name": "Expand Template",
+      "Version": "2.0.3",
+      "Source": "npm",
+      "ManagerName": "Npm",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -3326,8 +5064,118 @@
       }
     },
     {
+      "Id": "defusedxml",
+      "Name": "Defusedxml",
+      "Version": "0.7.1",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "variar.klogg",
+      "Name": "klogg",
+      "Version": "24.11.0.1685",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "six",
+      "Name": "Six",
+      "Version": "1.16.0",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "cfgv",
+      "Name": "Cfgv",
+      "Version": "3.4.0",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "colorama",
+      "Name": "Colorama",
+      "Version": "0.4.6",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
       "Id": "JanDeDobbeleer.Aliae",
-      "Name": "Aliae",
+      "Name": "aliae version 0.26.0",
       "Version": "0.26.0",
       "Source": "winget",
       "ManagerName": "Winget",
@@ -3348,11 +5196,341 @@
       }
     },
     {
-      "Id": "Tencent.WeChat",
-      "Name": "WeChat",
-      "Version": "3.9.12.51",
+      "Id": "node-abi",
+      "Name": "Node Abi",
+      "Version": "3.75.0",
+      "Source": "npm",
+      "ManagerName": "Npm",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "string_decoder",
+      "Name": "String Decoder",
+      "Version": "1.3.0",
+      "Source": "npm",
+      "ManagerName": "Npm",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "jqlang.jq",
+      "Name": "jq",
+      "Version": "1.8.0",
       "Source": "winget",
       "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "tar-fs",
+      "Name": "Tar Fs",
+      "Version": "2.1.3",
+      "Source": "npm",
+      "ManagerName": "Npm",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "bytenode",
+      "Name": "Bytenode",
+      "Version": "1.5.7",
+      "Source": "npm",
+      "ManagerName": "Npm",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Microsoft.OneDrive",
+      "Name": "Microsoft OneDrive",
+      "Version": "25.065.0406.0002",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "YouXiao.YXCalendar",
+      "Name": "\u4F18\u6548\u65E5\u5386",
+      "Version": "2.5.5.8",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Google.Chrome.EXE",
+      "Name": "Google Chrome",
+      "Version": "138.0.7204.184",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "huggingface-hub",
+      "Name": "Huggingface Hub",
+      "Version": "0.23.4",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "napi-build-utils",
+      "Name": "Napi Build Utils",
+      "Version": "2.0.0",
+      "Source": "npm",
+      "ManagerName": "Npm",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "tsx",
+      "Name": "Tsx",
+      "Version": "4.20.3",
+      "Source": "npm",
+      "ManagerName": "Npm",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "wcwidth",
+      "Name": "Wcwidth",
+      "Version": "0.2.13",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "detect-libc",
+      "Name": "Detect Libc",
+      "Version": "2.0.4",
+      "Source": "npm",
+      "ManagerName": "Npm",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "SlackTechnologies.Slack",
+      "Name": "Slack",
+      "Version": "4.44.60",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "identify",
+      "Name": "Identify",
+      "Version": "2.5.36",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "readable-stream",
+      "Name": "Readable Stream",
+      "Version": "3.6.2",
+      "Source": "npm",
+      "ManagerName": "Npm",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -3392,11 +5570,33 @@
       }
     },
     {
-      "Id": "XK72.Charles",
-      "Name": "Charles Proxy",
-      "Version": "4.6.6.0",
-      "Source": "winget",
-      "ManagerName": "Winget",
+      "Id": "buffer",
+      "Name": "Buffer",
+      "Version": "5.7.1",
+      "Source": "npm",
+      "ManagerName": "Npm",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "llvmlite",
+      "Name": "Llvmlite",
+      "Version": "0.43.0",
+      "Source": "pip",
+      "ManagerName": "Pip",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -3480,8 +5680,74 @@
       }
     },
     {
+      "Id": "pure-eval",
+      "Name": "Pure Eval",
+      "Version": "0.2.2",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "bl",
+      "Name": "Bl",
+      "Version": "4.1.0",
+      "Source": "npm",
+      "ManagerName": "Npm",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "traitlets",
+      "Name": "Traitlets",
+      "Version": "5.14.3",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
       "Id": "Atlassian.Sourcetree",
-      "Name": "Sourcetree",
+      "Name": "SourceTree",
       "Version": "3.4.17",
       "Source": "winget",
       "ManagerName": "Winget",
@@ -3524,11 +5790,55 @@
       }
     },
     {
-      "Id": "nssm",
-      "Name": "Nssm",
-      "Version": "2.24-103",
-      "Source": "main",
-      "ManagerName": "Scoop",
+      "Id": "MongoDB.Compass.Full",
+      "Name": "MongoDB Compass",
+      "Version": "1.46.7",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "urllib3",
+      "Name": "Urllib3",
+      "Version": "2.2.2",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "simple-get",
+      "Name": "Simple Get",
+      "Version": "4.0.1",
+      "Source": "npm",
+      "ManagerName": "Npm",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -3568,8 +5878,30 @@
       }
     },
     {
+      "Id": "requests-toolbelt",
+      "Name": "Requests Toolbelt",
+      "Version": "1.0.0",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
       "Id": "TortoiseGit.TortoiseGit",
-      "Name": "TortoiseGit",
+      "Name": "TortoiseGit 2.16.0.0 (64 bit)",
       "Version": "2.16.0.0",
       "Source": "winget",
       "ManagerName": "Winget",
@@ -3591,7 +5923,7 @@
     },
     {
       "Id": "Microsoft.VCRedist.2010.x86",
-      "Name": "Microsoft Visual C\u002B\u002B 2010 x86 Redistributable",
+      "Name": "Microsoft Visual C\u002B\u002B 2010  x86 Red\u2026",
       "Version": "10.0.40219",
       "Source": "winget",
       "ManagerName": "Winget",
@@ -3613,10 +5945,54 @@
     },
     {
       "Id": "Ollama.Ollama",
-      "Name": "Ollama",
+      "Name": "Ollama version 0.5.7",
       "Version": "0.5.7",
       "Source": "winget",
       "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "torchaudio",
+      "Name": "Torchaudio",
+      "Version": "2.7.0\u002Bcpu",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "chattts",
+      "Name": "Chattts",
+      "Version": "0.1.0",
+      "Source": "pip",
+      "ManagerName": "Pip",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -3656,30 +6032,8 @@
       }
     },
     {
-      "Id": "Microsoft.OneDrive",
-      "Name": "Microsoft OneDrive",
-      "Version": "25.041.0303.0002",
-      "Source": "winget",
-      "ManagerName": "Winget",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
       "Id": "Python.Python.3.7",
-      "Name": "Python 3.7",
+      "Name": "Python 3.7.7 (32-bit)",
       "Version": "3.7.7",
       "Source": "winget",
       "ManagerName": "Winget",
@@ -3700,9 +6054,9 @@
       }
     },
     {
-      "Id": "QL-Win.QuickLook",
-      "Name": "QuickLook",
-      "Version": "3.7.3.0",
+      "Id": "Postman.Postman",
+      "Name": "Postman x86_64 11.44.0",
+      "Version": "11.44.0",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -3723,10 +6077,76 @@
     },
     {
       "Id": "Daum.PotPlayer",
-      "Name": "PotPlayer",
+      "Name": "PotPlayer-64 bit",
       "Version": "24.10.15.0",
       "Source": "winget",
       "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "bs4",
+      "Name": "Bs4",
+      "Version": "0.0.2",
+      "Source": "pip",
+      "ManagerName": "Pip",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Microsoft.Edge",
+      "Name": "Microsoft Edge",
+      "Version": "138.0.3351.121",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "setuptools",
+      "Name": "Setuptools",
+      "Version": "69.5.1",
+      "Source": "pip",
+      "ManagerName": "Pip",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -3766,8 +6186,30 @@
       }
     },
     {
+      "Id": "Microsoft.VCRedist.2013.x64",
+      "Name": "Microsoft Visual C\u002B\u002B 2013 Redistri\u2026",
+      "Version": "12.0.30501.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
       "Id": "pavlobu.deskreen",
-      "Name": "Deskreen",
+      "Name": "Deskreen 2.0.4",
       "Version": "2.0.4",
       "Source": "winget",
       "ManagerName": "Winget",
@@ -3789,10 +6231,32 @@
     },
     {
       "Id": "Microsoft.UI.Xaml.2.8",
-      "Name": "Microsoft.UI.Xaml",
+      "Name": "Microsoft.UI.Xaml.2.8",
       "Version": "8.2501.31001.0",
       "Source": "winget",
       "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "ipython",
+      "Name": "Ipython",
+      "Version": "8.25.0",
+      "Source": "pip",
+      "ManagerName": "Pip",
       "InstallationOptions": {
         "SkipHashCheck": false,
         "InteractiveInstallation": false,
@@ -3835,27 +6299,15 @@
   "incompatible_packages_info": "Incompatible packages cannot be installed from WingetUI, but they have been listed here for logging purposes.",
   "incompatible_packages": [
     {
-      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1.3_3000.934.1904.0_x86__8wekyb3d8bbwe",
-      "Name": "Microsoft.WindowsAppRuntime.1.3",
-      "Version": "3000.934.1904.0",
-      "Source": "Microsoft Store"
+      "Id": "ARP\\Machine\\X86\\{91150000-0051-000\u2026",
+      "Name": "Update for Microsoft Office 2013 (\u2026",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
     },
     {
-      "Id": "MSIX\\Microsoft.OfficePushNotificationUtility_16.0.18526.20168_neutral__8wekyb3d8bbwe",
+      "Id": "MSIX\\Microsoft.OfficePushNotificat\u2026",
       "Name": "OfficePushNotificationsUtility",
-      "Version": "16.0.18526.20168",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "MSIX\\Microsoft.WindowsSoundRecorder_1.0.90.0_x64__8wekyb3d8bbwe",
-      "Name": "Windows \u5F55\u97F3\u673A",
-      "Version": "1.0.90.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "MSIX\\Microsoft.XboxGamingOverlay_7.225.2131.0_x64__8wekyb3d8bbwe",
-      "Name": "Game Bar",
-      "Version": "7.225.2131.0",
+      "Version": "16.0.19029.20156",
       "Source": "Microsoft Store"
     },
     {
@@ -3865,244 +6317,142 @@
       "Source": "\u672C\u5730\u7535\u8111"
     },
     {
-      "Id": "MSIX\\3A48D7FC-AEE2-4CBC-91D1-0007951B8006_1.14.8.29723_x64__yyj3t4bx8qhke",
-      "Name": "TortoiseSVN",
-      "Version": "1.14.8.29723",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "MSIX\\0BF99681-825C-4B2A-A14F-2AC01DB9B70E_1.0.0.0_x64__n6n75k5gy501g",
+      "Id": "MSIX\\0BF99681-825C-4B2A-A14F-2AC01\u2026",
       "Name": "TortoiseGit",
       "Version": "1.0.0.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "ARP\\Machine\\X64\\{ad8a2fa1-06e7-4b0d-927d-6e54b3d31028}",
-      "Name": "Microsoft Visual C\u002B\u002B 2005 Redistributable (x64)",
-      "Version": "8.0.61000",
+      "Id": "ARP\\Machine\\X64\\{7FAD6F97-D84E-42C\u2026",
+      "Name": "Vector",
+      "Version": "0.37.0",
       "Source": "\u672C\u5730\u7535\u8111"
     },
     {
-      "Id": "MSIX\\Microsoft.GetHelp_10.2409.22951.0_x64__8wekyb3d8bbwe",
-      "Name": "\u83B7\u53D6\u5E2E\u52A9",
-      "Version": "10.2409.22951.0",
+      "Id": "MSIX\\Microsoft.ApplicationCompatib\u2026",
+      "Name": "Windows \u5E94\u7528\u7A0B\u5E8F\u517C\u5BB9\u6027\u589E\u5F3A",
+      "Version": "1.2411.16.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "MSIX\\Microsoft.GamingApp_2503.1001.9.0_x64__8wekyb3d8bbwe",
-      "Name": "Xbox",
-      "Version": "2503.1001.9.0",
-      "Source": "Microsoft Store"
+      "Id": "ARP\\Machine\\X64\\O365HomePremRetail\u2026",
+      "Name": "Microsoft 365 - zh-cn",
+      "Version": "16.0.19029.20156",
+      "Source": "\u672C\u5730\u7535\u8111"
     },
     {
-      "Id": "MSIX\\Microsoft.VP9VideoExtensions_1.2.2.0_x64__8wekyb3d8bbwe",
-      "Name": "VP9 Video Extensions",
-      "Version": "1.2.2.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "MSIX\\Microsoft.Services.Store.Engagement_10.0.23012.0_x64__8wekyb3d8bbwe",
-      "Name": "Microsoft Engagement Framework",
-      "Version": "10.0.23012.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{90150000-002A-0000-1000-0000000FF1CE}_Office15.VISPROR_{FB83D80E-C78E-41B0-8D08-4FAD6889E867}",
-      "Name": "Update for Microsoft OneDrive for Business (KB4022226) 32-Bit Edition",
+      "Id": "ARP\\Machine\\X86\\{90150000-006E-080\u2026",
+      "Name": "Update for Microsoft Office 2013 (\u2026",
       "Version": "Unknown",
       "Source": "\u672C\u5730\u7535\u8111"
     },
     {
-      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1.6_6000.373.1641.0_x64__8wekyb3d8bbwe",
-      "Name": "WindowsAppRuntime.1.6",
-      "Version": "6000.373.1641.0",
+      "Id": "ARP\\Machine\\X64\\mitmproxy",
+      "Name": "mitmproxy",
+      "Version": "12.1.1",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X64\\ImageMagick",
+      "Name": "ImageMagick 7.1.1-38 Q16-HDRI (64-\u2026",
+      "Version": "7.1.1.38",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.People_10.2202.100.\u2026",
+      "Name": "Microsoft \u4EBA\u8109",
+      "Version": "10.2202.100.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "MSIX\\NVIDIACorp.NVIDIAControlPanel_8.1.967.0_x64__56jybvy8sckqj",
-      "Name": "NVIDIA Control Panel",
-      "Version": "8.1.967.0",
+      "Id": "ARP\\Machine\\X86\\{90150000-002A-080\u2026",
+      "Name": "Update for Microsoft Office 2013 (\u2026",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.Xbox.TCUI_1.24.1000\u2026",
+      "Name": "Xbox TCUI",
+      "Version": "1.24.10001.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "MSIX\\Microsoft.RawImageExtension_2.5.3.0_x64__8wekyb3d8bbwe",
-      "Name": "Raw Image Extension",
-      "Version": "2.5.3.0",
+      "Id": "MSIX\\Microsoft.YourPhone_1.25071.5\u2026",
+      "Name": "\u624B\u673A\u8FDE\u63A5",
+      "Version": "1.25071.54.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "MSIX\\Microsoft.NET.Native.Framework.2.2_2.2.29512.0_x64__8wekyb3d8bbwe",
-      "Name": "Microsoft .Net Native Framework Package 2.2",
-      "Version": "2.2.29512.0",
+      "Id": "MSIX\\Microsoft.WindowsAlarms_1.1.2\u2026",
+      "Name": "Windows \u65F6\u949F",
+      "Version": "1.1.29.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{8EA03F4D-754D-42D0-980B-5D803363EC99}",
-      "Name": "Update for Microsoft Office 2013 (KB3172533) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{B2B5F640-E7C8-4DAC-AF41-35FAE36FE2F6}",
-      "Name": "Update for Microsoft Office 2013 (KB3085565) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "MSIX\\Microsoft.WebpImageExtension_1.1.1711.0_x64__8wekyb3d8bbwe",
-      "Name": "Webp Image Extensions",
-      "Version": "1.1.1711.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "MSIX\\Microsoft.MicrosoftPCManager_3.16.2.0_x64__8wekyb3d8bbwe",
-      "Name": "\u7535\u8111\u7BA1\u5BB6",
-      "Version": "3.16.2.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{E4B6204A-AC54-477D-9AEF-3D420EF162A2}",
-      "Name": "Update for Microsoft Office 2013 (KB3023049) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{92F3ED8D-88A2-495B-A106-638B6264BDA2}",
-      "Name": "Security Update for Microsoft Office 2013 (KB5001952) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{18D2E3B4-34A4-49A7-9E08-6A35049A7F89}",
-      "Name": "Security Update for Microsoft Office 2013 (KB4022188) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{90150000-002A-0000-1000-0000000FF1CE}_Office15.VISPROR_{910A082C-6ACB-4186-8976-306357C799E1}",
-      "Name": "Security Update for Microsoft Project 2013 (KB4484489) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{51731902-8ECD-4C42-A7F4-E57150D54987}",
-      "Name": "Security Update for Microsoft Office 2013 (KB4462142) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{90150000-006E-0804-0000-0000000FF1CE}_Office15.VISPROR_{4C0453B1-7020-4F23-885E-D14FF63A989F}",
-      "Name": "Security Update for Microsoft Excel 2013 (KB5002488) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\User\\X64\\{928a71b0-6613-4101-8c0f-1f76828c7b19}",
-      "Name": "MSYS2",
-      "Version": "20240113",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1.6_6000.424.1611.0_x64__8wekyb3d8bbwe",
-      "Name": "WindowsAppRuntime.1.6",
-      "Version": "6000.424.1611.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "ARP\\Machine\\X64\\Vim 9.1",
-      "Name": "Vim 9.1 (x64)",
-      "Version": "9.1.0412",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "MSIX\\Microsoft.XboxSpeechToTextOverlay_1.97.17002.0_x64__8wekyb3d8bbwe",
-      "Name": "Game Speech Window",
-      "Version": "1.97.17002.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "MSIX\\Microsoft.PowerAutomateDesktop_11.2503.293.0_x64__8wekyb3d8bbwe",
-      "Name": "Power Automate",
-      "Version": "11.2503.293.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "MSIX\\Microsoft.BingWeather_4.54.63007.0_x64__8wekyb3d8bbwe",
-      "Name": "MSN \u5929\u6C14",
-      "Version": "4.54.63007.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{90150000-002A-0000-1000-0000000FF1CE}_Office15.VISPROR_{0359ABD1-5FD5-489D-851D-303BF7C5BBBE}",
-      "Name": "Update for Microsoft Office 2013 (KB3178640) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "MSIX\\Microsoft.Paint_11.2412.311.0_x64__8wekyb3d8bbwe",
-      "Name": "\u753B\u56FE",
-      "Version": "11.2412.311.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{90150000-002A-0000-1000-0000000FF1CE}_Office15.VISPROR_{6120444C-EB75-452F-A0EA-1ADADC4B4B3F}",
-      "Name": "Update for Microsoft InfoPath 2013 (KB3114946) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{46A53AEC-D290-4E2E-A5EE-FE7F3AE1BBAB}",
-      "Name": "Security Update for Microsoft Office 2013 (KB4462205) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{FC519FD8-5B83-4761-B02C-13DF5B2D9598}",
-      "Name": "Update for Microsoft Office 2013 (KB4022212) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1.5_5001.159.55.0_x64__8wekyb3d8bbwe",
+      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1\u2026",
       "Name": "WindowsAppRuntime.1.5",
-      "Version": "5001.159.55.0",
+      "Version": "5001.214.1843.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "ARP\\Machine\\X64\\{B2FE1952-0186-46C3-BAEC-A80AA35AC5B8}_Display.Driver",
-      "Name": "NVIDIA \u56FE\u5F62\u9A71\u52A8\u7A0B\u5E8F 560.94",
-      "Version": "560.94",
+      "Id": "MSIX\\Microsoft.MicrosoftSolitaireC\u2026",
+      "Name": "Solitaire \u0026 Casual Games",
+      "Version": "4.23.7100.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X64\\{46E9AA59-9D66-4CA\u2026",
+      "Name": "X-Mirage version 3.0.1",
+      "Version": "3.0.1",
       "Source": "\u672C\u5730\u7535\u8111"
     },
     {
-      "Id": "MSIX\\21090PaddyXu.QuickLook_3.7.3.0_neutral__egxr34yet59cg",
-      "Name": "QuickLook",
-      "Version": "3.7.3.0",
+      "Id": "ARP\\Machine\\X64\\{C6FD611E-7EFE-488\u2026",
+      "Name": "Microsoft Update Health Tools",
+      "Version": "5.72.0.0",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.AVCEncoderVideoExte\u2026",
+      "Name": "AVC \u7F16\u7801\u5668\u89C6\u9891\u6269\u5C55",
+      "Version": "1.1.17.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "MSIX\\HRContextMenu_1.0.0.0_neutral__m6ed0pe7fcjg8",
-      "Name": "HRContextMenu",
-      "Version": "1.0.0.0",
+      "Id": "MSIX\\microsoft.windowscommunicatio\u2026",
+      "Name": "\u90AE\u4EF6\u548C\u65E5\u5386",
+      "Version": "16005.14326.22342.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "ARP\\Machine\\X86\\{90150000-002A-0000-1000-0000000FF1CE}_Office15.VISPROR_{2113B49B-7A19-4592-863E-CD4124792AAE}",
-      "Name": "Security Update for Microsoft Office 2013 (KB3039798) 32-Bit Edition",
+      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1\u2026",
+      "Name": "WindowsAppRuntime.1.4",
+      "Version": "4000.1309.2056.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WebMediaExtensions_\u2026",
+      "Name": "Web \u5A92\u4F53\u6269\u5C55",
+      "Version": "1.2.14.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-002C-080\u2026",
+      "Name": "Update for Microsoft Office 2013 (\u2026",
       "Version": "Unknown",
       "Source": "\u672C\u5730\u7535\u8111"
     },
     {
-      "Id": "ARP\\Machine\\X64\\{6F320B93-EE3C-4826-85E0-ADF79F8D4C61}",
-      "Name": "Microsoft Visual Studio Installer",
-      "Version": "3.6.2122.36397",
-      "Source": "\u672C\u5730\u7535\u8111"
+      "Id": "MSIX\\3A48D7FC-AEE2-4CBC-91D1-00079\u2026",
+      "Name": "TortoiseSVN",
+      "Version": "1.14.8.29723",
+      "Source": "Microsoft Store"
     },
     {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{5C568FE6-A269-4A88-8256-DC1A8B89E622}",
-      "Name": "Update for Microsoft Office 2013 (KB3114488) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
+      "Id": "MSIX\\aimgr_0.20.18.0_x64__8wekyb3d\u2026",
+      "Name": "Local Artificial Intelligence Mana\u2026",
+      "Version": "0.20.18.0",
+      "Source": "Microsoft Store"
     },
     {
       "Id": "ARP\\Machine\\X64\\HuorongSysdiag",
@@ -4111,376 +6461,268 @@
       "Source": "\u672C\u5730\u7535\u8111"
     },
     {
-      "Id": "MSIX\\Microsoft.AV1VideoExtension_1.3.4.0_x64__8wekyb3d8bbwe",
+      "Id": "ARP\\Machine\\X86\\{889610CC-4337-4BD\u2026",
+      "Name": "UniGetUI (formerly WingetUI)",
+      "Version": "3.1.2",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.LanguageExperienceP\u2026",
+      "Name": "\u4E2D\u6587(\u7B80\u4F53)\u672C\u5730\u4F53\u9A8C\u5305",
+      "Version": "26100.18.39.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.AV1VideoExtension_1\u2026",
       "Name": "AV1 Video Extension",
-      "Version": "1.3.4.0",
+      "Version": "1.3.20.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "MSIX\\Microsoft.Winget.Source_2025.401.938.37_neutral__8wekyb3d8bbwe",
-      "Name": "Windows Package Manager Source (winget) V2",
-      "Version": "2025.401.938.37",
+      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1\u2026",
+      "Name": "WindowsAppRuntime.1.6",
+      "Version": "6000.424.1611.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "MSIX\\Microsoft.StorePurchaseApp_22411.1401.1.0_x64__8wekyb3d8bbwe",
-      "Name": "Microsoft Store \u4F53\u9A8C\u4E3B\u673A",
-      "Version": "22411.1401.1.0",
+      "Id": "MSIX\\Microsoft.GamingApp_2508.1001\u2026",
+      "Name": "Xbox",
+      "Version": "2508.1001.27.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{C44AEF2A-B479-4059-901B-BBA149E4788D}",
-      "Name": "Security Update for Microsoft Office 2013 (KB3178643) 32-Bit Edition",
-      "Version": "Unknown",
+      "Id": "ARP\\Machine\\X64\\Vim",
+      "Name": "Vim 9.1 (x64)",
+      "Version": "9.1.0412",
       "Source": "\u672C\u5730\u7535\u8111"
     },
     {
-      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1.4_4000.1309.2056.0_x86__8wekyb3d8bbwe",
-      "Name": "WindowsAppRuntime.1.4",
-      "Version": "4000.1309.2056.0",
+      "Id": "ARP\\Machine\\X64\\{78FB6A0D-791A-4F0\u2026",
+      "Name": "kuaiVPN",
+      "Version": "1.0.0",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X64\\af61d581-bfa6-515e\u2026",
+      "Name": "Clash for Windows 0.20.10",
+      "Version": "0.20.10",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.BingNews_4.55.62231\u2026",
+      "Name": "\u8D44\u8BAF",
+      "Version": "4.55.62231.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{2FDF7953-75A9-4341-A769-EC0CAA09FFF3}",
-      "Name": "Update for Microsoft Office 2013 (KB4018378) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{4B7382DD-C92C-4942-BFE6-9B892B915E5C}",
-      "Name": "Update for Microsoft Office 2013 (KB3039766) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\letsvpn",
-      "Name": "letsvpn",
-      "Version": "3.8.0",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "MSIX\\Microsoft.BingSearch_1.1.34.0_x64__8wekyb3d8bbwe",
-      "Name": "Microsoft \u5FC5\u5E94",
-      "Version": "1.1.34.0",
+      "Id": "MSIX\\Microsoft.WindowsCamera_2025.\u2026",
+      "Name": "Windows \u76F8\u673A",
+      "Version": "2025.2505.2.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "MSIX\\login.tailscale.com-A4DA0B51_1.0.0.0_neutral__5yb0xb77cns0p",
-      "Name": "Tailscale",
+      "Id": "MSIX\\HRContextMenu_1.0.0.0_neutral\u2026",
+      "Name": "HRContextMenu",
       "Version": "1.0.0.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1.5_5001.214.1843.0_x64__8wekyb3d8bbwe",
+      "Id": "ARP\\Machine\\X86\\leidian64",
+      "Name": "\u96F7\u7535\u6A21\u62DF\u5668",
+      "Version": "5.0.82",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1\u2026",
+      "Name": "WindowsAppRuntime.1.6",
+      "Version": "6000.486.517.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WindowsMaps_1.0.65.\u2026",
+      "Name": "Windows \u5730\u56FE",
+      "Version": "1.0.65.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X64\\F19A28208E50431E4C\u2026",
+      "Name": "Windows Driver Package - Oracle Co\u2026",
+      "Version": "01/07/2022 6.1.34.44090",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X64\\MSOfficePLUS",
+      "Name": "\u5FAE\u8F6FOfficePLUS",
+      "Version": "3.8.0.13669",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\InstallShield_{4E3\u2026",
+      "Name": "Xshell 8",
+      "Version": "8.0.0067",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1\u2026",
       "Name": "WindowsAppRuntime.1.5",
-      "Version": "5001.214.1843.0",
+      "Version": "5001.159.55.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "MSIX\\Microsoft.XboxGameOverlay_1.54.4001.0_x64__8wekyb3d8bbwe",
-      "Name": "Xbox Game Bar Plugin",
-      "Version": "1.54.4001.0",
+      "Id": "MSIX\\Microsoft.VP9VideoExtensions_\u2026",
+      "Name": "VP9 Video Extensions",
+      "Version": "1.2.6.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "MSIX\\Microsoft.UI.Xaml.2.6_2.62112.3002.0_x64__8wekyb3d8bbwe",
-      "Name": "Microsoft.UI.Xaml.2.6",
-      "Version": "2.62112.3002.0",
+      "Id": "MSIX\\Clipchamp.Clipchamp_4.3.10120\u2026",
+      "Name": "Microsoft Clipchamp",
+      "Version": "4.3.10120.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "MSIX\\Microsoft.OneDriveSync_25041.303.2.0_neutral__8wekyb3d8bbwe",
-      "Name": "OneDrive",
-      "Version": "25041.303.2.0",
+      "Id": "MSIX\\Microsoft.RawImageExtension_2\u2026",
+      "Name": "Raw Image Extension",
+      "Version": "2.5.5.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{0D50B52F-AB5A-44B7-A67C-2DE4F61443D0}",
-      "Name": "Update for Microsoft Office 2013 (KB3172545) 32-Bit Edition",
+      "Id": "MSIX\\Microsoft.WindowsFeedbackHub_\u2026",
+      "Name": "\u53CD\u9988\u4E2D\u5FC3",
+      "Version": "1.2506.12104.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-0054-080\u2026",
+      "Name": "Update for Microsoft Office 2013 (\u2026",
       "Version": "Unknown",
       "Source": "\u672C\u5730\u7535\u8111"
     },
     {
-      "Id": "ARP\\Machine\\X86\\{90150000-001F-0804-0000-0000000FF1CE}_Office15.VISPROR_{8C2F6BFE-7279-485F-BF55-8E1C6A11D03B}",
-      "Name": "Update for Microsoft Office 2013 (KB4011677) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1.4_4000.1309.2056.0_x64__8wekyb3d8bbwe",
-      "Name": "WindowsAppRuntime.1.4",
-      "Version": "4000.1309.2056.0",
+      "Id": "MSIX\\Microsoft.PowerToys.FileLocks\u2026",
+      "Name": "PowerToys FileLocksmith Context Me\u2026",
+      "Version": "0.85.1.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "ARP\\Machine\\X86\\{90150000-006E-0804-0000-0000000FF1CE}_Office15.VISPROR_{18D2E3B4-34A4-49A7-9E08-6A35049A7F89}",
-      "Name": "Security Update for Microsoft Office 2013 (KB4022188) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{90150000-006E-0804-0000-0000000FF1CE}_Office15.VISPROR_{66B828E2-7C7D-46AF-93AB-5C2DAA285260}",
-      "Name": "Security Update for Microsoft Office 2013 (KB3213564) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "MSIX\\Microsoft.Todos_2.114.7122.0_x64__8wekyb3d8bbwe",
-      "Name": "Microsoft To Do",
-      "Version": "2.114.7122.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "MSIX\\Microsoft.MicrosoftStickyNotes_4.0.6104.0_x64__8wekyb3d8bbwe",
-      "Name": "Microsoft \u4FBF\u7B3A",
-      "Version": "4.0.6104.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "MSIX\\Microsoft.WindowsAlarms_1.0.211.0_x64__8wekyb3d8bbwe",
-      "Name": "Windows \u65F6\u949F",
-      "Version": "1.0.211.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "MSIX\\microsoft.windowscommunicationsapps_16005.14326.22328.0_x64__8wekyb3d8bbwe",
-      "Name": "\u90AE\u4EF6\u548C\u65E5\u5386",
-      "Version": "16005.14326.22328.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1.5_5001.373.1736.0_x86__8wekyb3d8bbwe",
-      "Name": "WindowsAppRuntime.1.5",
-      "Version": "5001.373.1736.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "MSIX\\Microsoft.SecHealthUI_1000.27703.1006.0_x64__8wekyb3d8bbwe",
-      "Name": "Windows \u5B89\u5168\u4E2D\u5FC3",
-      "Version": "1000.27703.1006.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{96903939-431D-4BD1-ADCD-B578900397D7}",
-      "Name": "Definition Update for Microsoft Office 2013 (KB3115404) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{1CFB07F8-17F2-4C42-8D83-4E65947141F0}",
-      "Name": "Security Update for Microsoft Office 2013 (KB4022189) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1.3_3000.934.1904.0_x64__8wekyb3d8bbwe",
-      "Name": "Microsoft.WindowsAppRuntime.1.3",
-      "Version": "3000.934.1904.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{5C7851D1-B548-4BFE-A4FC-DF1967857A47}",
-      "Name": "Security Update for Microsoft Office 2013 (KB3039794) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\InstallShield_{2C5F58B0-1BF6-4BD3-A665-C1B5206BDC17}",
-      "Name": "Xshell 7",
-      "Version": "7.0.0170",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{2113B49B-7A19-4592-863E-CD4124792AAE}",
-      "Name": "Security Update for Microsoft Office 2013 (KB3039798) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{FC017EDD-645B-44D8-9D84-623DE069F1B9}",
-      "Name": "Update for Microsoft Office 2013 (KB3023052) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X64\\{C6FD611E-7EFE-488C-A0E0-974C09EF6473}",
-      "Name": "Microsoft Update Health Tools",
-      "Version": "5.72.0.0",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "MSIX\\Microsoft.ZuneMusic_11.2502.4.0_x64__8wekyb3d8bbwe",
-      "Name": "Windows \u5A92\u4F53\u64AD\u653E\u5668",
-      "Version": "11.2502.4.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "MSIX\\MicrosoftCorporationII.QuickAssist_2.0.29.0_x64__8wekyb3d8bbwe",
-      "Name": "\u5FEB\u901F\u52A9\u624B",
-      "Version": "2.0.29.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{8D1685F4-1C36-4AB5-ACC0-486A6BE71435}",
-      "Name": "Update for Microsoft Office 2013 (KB3039778) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{90150000-00E1-0804-0000-0000000FF1CE}_Office15.VISPROR_{16F64A9D-6561-4378-98F2-BD2095B78511}",
-      "Name": "Update for Microsoft Office 2013 (KB3039720) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\User\\X64\\Poe",
-      "Name": "Poe",
-      "Version": "1.1.23",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "MSIX\\Microsoft.WindowsCalculator_11.2502.2.0_x64__8wekyb3d8bbwe",
-      "Name": "Windows \u8BA1\u7B97\u5668",
-      "Version": "11.2502.2.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "MSIX\\Microsoft.NET.Native.Runtime.2.2_2.2.28604.0_x64__8wekyb3d8bbwe",
-      "Name": "Microsoft .Net Native Runtime Package 2.2",
-      "Version": "2.2.28604.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "MSIX\\Microsoft.MicrosoftOfficeHub_18.2503.1198.0_x64__8wekyb3d8bbwe",
-      "Name": "Microsoft 365 Copilot",
-      "Version": "18.2503.1198.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{90150000-006E-0804-0000-0000000FF1CE}_Office15.VISPROR_{C454E844-4F27-49EA-966D-94E0F834B4BE}",
-      "Name": "Update for Microsoft Office 2013 (KB5002151) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{C60D0F6F-9E41-4AC8-BAA8-D2D8380F88C4}",
-      "Name": "Update for Microsoft Outlook 2013 (KB5002514) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{90150000-002A-0000-1000-0000000FF1CE}_Office15.VISPROR_{B2FFC7EA-8F6D-4C1C-8932-D590A7C027E8}",
-      "Name": "Update for Microsoft Visio 2013 (KB5002479) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X64\\Sublime Text_is1",
-      "Name": "Sublime Text",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "MSIX\\Microsoft.WidgetsPlatformRuntime_1.6.8.0_x64__8wekyb3d8bbwe",
-      "Name": "Widgets Platform Runtime",
-      "Version": "1.6.8.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{2B9AA1BD-8E86-4C6D-BA05-32749C8C268B}",
-      "Name": "Security Update for Microsoft Office 2013 (KB3191875) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "MSIX\\MicrosoftWindows.Client.WebExperience_525.1301.30.0_x64__cw5n1h2txyewy",
-      "Name": "Windows Web Experience Pack",
-      "Version": "525.1301.30.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "MSIX\\Microsoft.NET.Native.Framework.2.2_2.2.29512.0_x86__8wekyb3d8bbwe",
-      "Name": "Microsoft .Net Native Framework Package 2.2",
-      "Version": "2.2.29512.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{90150000-006E-0804-0000-0000000FF1CE}_Office15.VISPROR_{16F64A9D-6561-4378-98F2-BD2095B78511}",
-      "Name": "Update for Microsoft Office 2013 (KB3039720) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{90150000-002A-0000-1000-0000000FF1CE}_Office15.VISPROR_{0D50B52F-AB5A-44B7-A67C-2DE4F61443D0}",
-      "Name": "Update for Microsoft Office 2013 (KB3172545) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "MSIX\\10186emoacht.Monitorian_4.10.2.0_neutral__0q7myvhtpbc7w",
-      "Name": "Monitorian",
-      "Version": "4.10.2.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "ARP\\Machine\\X64\\{7FAD6F97-D84E-42CC-A600-5F4EC3460FF5}",
-      "Name": "Vector",
-      "Version": "0.37.0",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{A7610F07-E844-4444-8E1D-D5BC8AD0B4C5}",
-      "Name": "Update for Microsoft Office 2013 (KB2760344) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "MSIX\\Microsoft.ZuneVideo_10.25021.10041.0_x64__8wekyb3d8bbwe",
-      "Name": "\u7535\u5F71\u548C\u7535\u89C6",
-      "Version": "10.25021.10041.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{90150000-002A-0804-1000-0000000FF1CE}_Office15.VISPROR_{16F64A9D-6561-4378-98F2-BD2095B78511}",
-      "Name": "Update for Microsoft Office 2013 (KB3039720) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\KatMouse",
-      "Name": "KatMouse (remove only)",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{90150000-0054-0804-0000-0000000FF1CE}_Office15.VISPROR_{B2FFC7EA-8F6D-4C1C-8932-D590A7C027E8}",
-      "Name": "Update for Microsoft Visio 2013 (KB5002479) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "MSIX\\Microsoft.MicrosoftSolitaireCollection_4.22.3190.0_x64__8wekyb3d8bbwe",
-      "Name": "Solitaire \u0026 Casual Games",
-      "Version": "4.22.3190.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "MSIX\\Microsoft.MicrosoftEdge.Stable_134.0.3124.51_neutral__8wekyb3d8bbwe",
+      "Id": "MSIX\\Microsoft.MicrosoftEdge.Stabl\u2026",
       "Name": "Microsoft Edge",
       "Version": "134.0.3124.51",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "ARP\\Machine\\X86\\{90150000-002C-0804-0000-0000000FF1CE}_Office15.VISPROR_{16F64A9D-6561-4378-98F2-BD2095B78511}",
-      "Name": "Update for Microsoft Office 2013 (KB3039720) 32-Bit Edition",
+      "Id": "MSIX\\Microsoft.BingWeather_4.54.63\u2026",
+      "Name": "MSN \u5929\u6C14",
+      "Version": "4.54.63026.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X64\\{ad8a2fa1-06e7-4b0\u2026",
+      "Name": "Microsoft Visual C\u002B\u002B 2005 Redistri\u2026",
+      "Version": "8.0.61000",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1\u2026",
+      "Name": "WindowsAppRuntime.1.5",
+      "Version": "5001.311.2039.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.XboxIdentityProvide\u2026",
+      "Name": "Xbox Identity Provider",
+      "Version": "12.115.1001.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.MicrosoftOfficeHub_\u2026",
+      "Name": "Microsoft 365 Copilot",
+      "Version": "19.2508.37081.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X64\\{399D48CD-53F4-4AA\u2026",
+      "Name": "Node.js",
+      "Version": "24.2.0",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\letsvpn",
+      "Name": "letsvpn",
+      "Version": "3.14.2",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WebpImageExtension_\u2026",
+      "Name": "WebP \u6620\u50CF\u6269\u5C55",
+      "Version": "1.2.10.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.PowerToys.ImageResi\u2026",
+      "Name": "PowerToys ImageResizer Context Menu",
+      "Version": "0.85.1.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.XboxSpeechToTextOve\u2026",
+      "Name": "Game Speech Window",
+      "Version": "1.97.17002.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.NET.Native.Runtime.\u2026",
+      "Name": "Microsoft .Net Native Runtime Pack\u2026",
+      "Version": "2.2.28604.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.ZuneMusic_11.2505.2\u2026",
+      "Name": "Windows \u5A92\u4F53\u64AD\u653E\u5668",
+      "Version": "11.2505.2.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-00E1-080\u2026",
+      "Name": "Update for Microsoft Office 2013 (\u2026",
       "Version": "Unknown",
       "Source": "\u672C\u5730\u7535\u8111"
     },
     {
-      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1.5_5001.311.2039.0_x64__8wekyb3d8bbwe",
-      "Name": "WindowsAppRuntime.1.5",
-      "Version": "5001.311.2039.0",
+      "Id": "ARP\\Machine\\X64\\{F8474A47-8B5D-446\u2026",
+      "Name": "Windows Subsystem for Linux Update",
+      "Version": "5.10.102.1",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.Winget.Source_2025.\u2026",
+      "Name": "Windows Package Manager Source (wi\u2026",
+      "Version": "2025.804.706.54",
       "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X64\\{6F320B93-EE3C-482\u2026",
+      "Name": "Microsoft Visual Studio Installer",
+      "Version": "3.6.2122.36397",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\MicrosoftCorporationII.QuickA\u2026",
+      "Name": "\u5FEB\u901F\u52A9\u624B",
+      "Version": "2.0.29.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.OneDriveSync_25065.\u2026",
+      "Name": "OneDrive",
+      "Version": "25065.406.2.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-002A-000\u2026",
+      "Name": "Update for Microsoft Office 2013 (\u2026",
+      "Version": "Unknown",
+      "Source": "\u672C\u5730\u7535\u8111"
     },
     {
       "Id": "ARP\\Machine\\X86\\c8e20ad6",
@@ -4489,58 +6731,58 @@
       "Source": "\u672C\u5730\u7535\u8111"
     },
     {
-      "Id": "MSIX\\Microsoft.WebMediaExtensions_1.1.1295.0_x64__8wekyb3d8bbwe",
-      "Name": "Web \u5A92\u4F53\u6269\u5C55",
-      "Version": "1.1.1295.0",
+      "Id": "MSIX\\MicrosoftWindows.CrossDevice_\u2026",
+      "Name": "\u8DE8\u8BBE\u5907\u4F53\u9A8C\u4E3B\u673A",
+      "Version": "1.25071.33.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "ARP\\Machine\\X64\\8153-2964-2028-4488-3",
-      "Name": "Offset Explorer 3 3.0",
-      "Version": "3.0",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1.6_6000.401.2352.0_x64__8wekyb3d8bbwe",
-      "Name": "WindowsAppRuntime.1.6",
-      "Version": "6000.401.2352.0",
+      "Id": "MSIX\\Microsoft.XboxGameOverlay_1.5\u2026",
+      "Name": "Xbox Game Bar Plugin",
+      "Version": "1.54.4001.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{C454E844-4F27-49EA-966D-94E0F834B4BE}",
-      "Name": "Update for Microsoft Office 2013 (KB5002151) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
+      "Id": "MSIX\\Microsoft.VCLibs.140.00_14.0.\u2026",
+      "Name": "Microsoft Visual C\u002B\u002B 2015 UWP Runt\u2026",
+      "Version": "14.0.33519.0",
+      "Source": "Microsoft Store"
     },
     {
-      "Id": "ARP\\Machine\\X86\\{90150000-006E-0804-0000-0000000FF1CE}_Office15.VISPROR_{25C61889-2E44-4BE1-9E96-9364BFDCF501}",
-      "Name": "Update for Microsoft Visio Viewer 2013 (KB2817301) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
+      "Id": "MSIX\\Microsoft.WidgetsPlatformRunt\u2026",
+      "Name": "Widgets Platform Runtime",
+      "Version": "1.6.9.0",
+      "Source": "Microsoft Store"
     },
     {
-      "Id": "MSIX\\Microsoft.ScreenSketch_11.2502.18.0_x64__8wekyb3d8bbwe",
+      "Id": "MSIX\\Microsoft.HEIFImageExtension_\u2026",
+      "Name": "HEIF \u56FE\u50CF\u6269\u5C55",
+      "Version": "1.2.20.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1\u2026",
+      "Name": "Microsoft.WindowsAppRuntime.1.3",
+      "Version": "3000.934.1904.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.XboxGamingOverlay_7\u2026",
+      "Name": "Game Bar",
+      "Version": "7.325.7090.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\MicrosoftWindows.Client.WebEx\u2026",
+      "Name": "Windows Web Experience Pack",
+      "Version": "525.18101.90.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.ScreenSketch_11.250\u2026",
       "Name": "\u622A\u56FE\u5DE5\u5177",
-      "Version": "11.2502.18.0",
+      "Version": "11.2506.25.0",
       "Source": "Microsoft Store"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{87F6726E-6F99-42F0-8E11-55D798E57DD5}",
-      "Name": "Update for Microsoft Office 2013 (KB2899522) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{7669B523-05A9-4A48-92EB-4EE87FE6A8DB}",
-      "Name": "Security Update for Microsoft Office 2013 (KB5002477) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\InstallShield_{4E3C6853-2BAC-4D1D-AD22-D820D0426FE0}",
-      "Name": "Xshell 8",
-      "Version": "8.0.0068",
-      "Source": "\u672C\u5730\u7535\u8111"
     },
     {
       "Id": "ARP\\Machine\\X86\\leidian9",
@@ -4549,75 +6791,57 @@
       "Source": "\u672C\u5730\u7535\u8111"
     },
     {
-      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1.5_5001.178.1908.0_x64__8wekyb3d8bbwe",
-      "Name": "WindowsAppRuntime.1.5",
-      "Version": "5001.178.1908.0",
+      "Id": "MSIX\\Microsoft.WindowsCalculator_1\u2026",
+      "Name": "Windows \u8BA1\u7B97\u5668",
+      "Version": "11.2502.2.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{AA8C16EA-D595-47E0-9F49-101C11B860E8}",
-      "Name": "Update for Microsoft Office 2013 (KB3085587) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "MSIX\\Microsoft.UI.Xaml.2.6_2.62112.3002.0_x86__8wekyb3d8bbwe",
-      "Name": "Microsoft.UI.Xaml.2.6",
-      "Version": "2.62112.3002.0",
+      "Id": "MSIX\\Microsoft.NET.Native.Framewor\u2026",
+      "Name": "Microsoft .Net Native Framework Pa\u2026",
+      "Version": "2.2.29512.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "MSIX\\Microsoft.Xbox.TCUI_1.24.10001.0_x64__8wekyb3d8bbwe",
-      "Name": "Xbox TCUI",
-      "Version": "1.24.10001.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "MSIX\\shell.cloud.google.com-53DCE899_1.0.0.0_neutral__4gm83hsfmg5pr",
-      "Name": "Cloud Shell",
-      "Version": "1.0.0.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "MSIX\\Microsoft.WindowsStore_22502.1401.7.0_x64__8wekyb3d8bbwe",
-      "Name": "Microsoft Store",
-      "Version": "22502.1401.7.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1.5_5001.373.1736.0_x64__8wekyb3d8bbwe",
+      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1\u2026",
       "Name": "WindowsAppRuntime.1.5",
       "Version": "5001.373.1736.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "ARP\\Machine\\X86\\{90150000-002A-0000-1000-0000000FF1CE}_Office15.VISPROR_{BF493817-CADD-4F13-BB51-598FBABB521A}",
-      "Name": "Update for Microsoft Office 2013 (KB3039756) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "MSIX\\Microsoft.PowerToys.ImageResizerContextMenu_0.85.1.0_neutral__8wekyb3d8bbwe",
-      "Name": "PowerToys ImageResizer Context Menu",
-      "Version": "0.85.1.0",
+      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1\u2026",
+      "Name": "WindowsAppRuntime.1.7",
+      "Version": "7000.522.1444.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "ARP\\Machine\\X86\\{90150000-006E-0804-0000-0000000FF1CE}_Office15.VISPROR_{FC017EDD-645B-44D8-9D84-623DE069F1B9}",
-      "Name": "Update for Microsoft Office 2013 (KB3023052) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "MSIX\\Microsoft.VCLibs.140.00_14.0.33519.0_x64__8wekyb3d8bbwe",
-      "Name": "Microsoft Visual C\u002B\u002B 2015 UWP Runtime Package",
-      "Version": "14.0.33519.0",
+      "Id": "MSIX\\Microsoft.Services.Store.Enga\u2026",
+      "Name": "Microsoft Engagement Framework",
+      "Version": "10.0.23012.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "MSIX\\Clipchamp.Clipchamp_4.1.10320.0_x64__yxz26nhyzhsrt",
-      "Name": "Microsoft Clipchamp",
-      "Version": "4.1.10320.0",
+      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1\u2026",
+      "Name": "WindowsAppRuntime.1.6",
+      "Version": "6000.401.2352.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X64\\IDA",
+      "Name": "IDA Free 9.1",
+      "Version": "9.1",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\User\\X64\\Poe",
+      "Name": "Poe",
+      "Version": "1.1.32",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "MSIX\\Microsoft.StorePurchaseApp_22\u2026",
+      "Name": "Microsoft Store \u4F53\u9A8C\u4E3B\u673A",
+      "Version": "22506.1401.4.0",
       "Source": "Microsoft Store"
     },
     {
@@ -4627,10 +6851,10 @@
       "Source": "\u672C\u5730\u7535\u8111"
     },
     {
-      "Id": "ARP\\Machine\\X86\\{90150000-001F-0409-0000-0000000FF1CE}_Office15.VISPROR_{16F64A9D-6561-4378-98F2-BD2095B78511}",
-      "Name": "Update for Microsoft Office 2013 (KB3039720) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
+      "Id": "MSIX\\10186emoacht.Monitorian_4.13.\u2026",
+      "Name": "Monitorian",
+      "Version": "4.13.0.0",
+      "Source": "Microsoft Store"
     },
     {
       "Id": "ARP\\Machine\\X86\\ldremoteyun",
@@ -4639,148 +6863,76 @@
       "Source": "\u672C\u5730\u7535\u8111"
     },
     {
-      "Id": "ARP\\Machine\\X64\\O365HomePremRetail - zh-cn",
-      "Name": "Microsoft 365 - zh-cn",
-      "Version": "16.0.18526.20168",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "MSIX\\Microsoft.Windows.Photos_2025.11030.12002.0_x64__8wekyb3d8bbwe",
-      "Name": "Microsoft \u7167\u7247",
-      "Version": "2025.11030.12002.0",
+      "Id": "MSIX\\NVIDIACorp.NVIDIAControlPanel\u2026",
+      "Name": "NVIDIA Control Panel",
+      "Version": "8.1.968.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "MSIX\\Microsoft.YourPhone_1.25022.70.0_x64__8wekyb3d8bbwe",
-      "Name": "\u624B\u673A\u8FDE\u63A5",
-      "Version": "1.25022.70.0",
+      "Id": "MSIX\\Microsoft.Paint_11.2506.91.0_\u2026",
+      "Name": "\u753B\u56FE",
+      "Version": "11.2506.91.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "MSIX\\Microsoft.WindowsMaps_1.0.64.0_x64__8wekyb3d8bbwe",
-      "Name": "Windows \u5730\u56FE",
-      "Version": "1.0.64.0",
+      "Id": "MSIX\\Microsoft.BingSearch_1.1.37.0\u2026",
+      "Name": "Microsoft \u5FC5\u5E94",
+      "Version": "1.1.37.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1.5_5001.275.500.0_x64__8wekyb3d8bbwe",
+      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1\u2026",
+      "Name": "WindowsAppRuntime.1.6",
+      "Version": "6000.457.2140.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1\u2026",
       "Name": "WindowsAppRuntime.1.5",
-      "Version": "5001.275.500.0",
+      "Version": "5001.178.1908.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "MSIX\\Microsoft.OutlookForWindows_1.2024.214.400_x64__8wekyb3d8bbwe",
+      "Id": "MSIX\\Microsoft.SecHealthUI_1000.27\u2026",
+      "Name": "Windows \u5B89\u5168\u4E2D\u5FC3",
+      "Version": "1000.27840.1000.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.MicrosoftPCManager_\u2026",
+      "Name": "\u7535\u8111\u7BA1\u5BB6",
+      "Version": "3.17.10.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.OutlookForWindows_1\u2026",
       "Name": "Outlook for Windows",
       "Version": "1.2024.214.400",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "MSIX\\Microsoft.AVCEncoderVideoExtension_1.1.13.0_x64__8wekyb3d8bbwe",
-      "Name": "AVC \u7F16\u7801\u5668\u89C6\u9891\u6269\u5C55",
-      "Version": "1.1.13.0",
+      "Id": "MSIX\\Microsoft.Todos_2.148.3611.0_\u2026",
+      "Name": "Microsoft To Do",
+      "Version": "2.148.3611.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "MSIX\\Microsoft.MPEG2VideoExtension_1.0.61931.0_x64__8wekyb3d8bbwe",
-      "Name": "MPEG-2 \u89C6\u9891\u6269\u5C55",
-      "Version": "1.0.61931.0",
+      "Id": "MSIX\\Microsoft.WindowsSoundRecorde\u2026",
+      "Name": "Windows \u5F55\u97F3\u673A",
+      "Version": "1.1.5.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "ARP\\Machine\\X86\\{90150000-002A-0804-1000-0000000FF1CE}_Office15.VISPROR_{FB83D80E-C78E-41B0-8D08-4FAD6889E867}",
-      "Name": "Update for Microsoft OneDrive for Business (KB4022226) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{25C61889-2E44-4BE1-9E96-9364BFDCF501}",
-      "Name": "Update for Microsoft Visio Viewer 2013 (KB2817301) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X64\\MSOfficePLUS",
-      "Name": "\u5FAE\u8F6FOfficePLUS",
-      "Version": "3.8.0.12160",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{90150000-001F-0409-0000-0000000FF1CE}_Office15.VISPROR_{45B5E686-A7A1-457D-B98B-2EE3110B537D}",
-      "Name": "Update for Microsoft Office 2013 (KB4011677) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{07BE4996-5557-4A17-9B98-AD57883607EA}",
-      "Name": "Update for Microsoft Office 2013 (KB3101503) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{90150000-002A-0000-1000-0000000FF1CE}_Office15.VISPROR_{28193F03-CC73-4C27-ABA5-AA763C7EBE30}",
-      "Name": "Security Update for Microsoft OneNote 2013 (KB4022167) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "MSIX\\Microsoft.ApplicationCompatibilityEnhancements_1.2411.16.0_x64__8wekyb3d8bbwe",
-      "Name": "Windows \u5E94\u7528\u7A0B\u5E8F\u517C\u5BB9\u6027\u589E\u5F3A",
-      "Version": "1.2411.16.0",
+      "Id": "MSIX\\shell.cloud.google.com-53DCE8\u2026",
+      "Name": "Cloud Shell",
+      "Version": "1.0.0.1",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{08A6E501-E396-4D0B-8C02-2D5233FE82FD}",
-      "Name": "Security Update for Microsoft Office 2013 (KB5002069) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{90150000-006E-0804-0000-0000000FF1CE}_Office15.VISPROR_{7669B523-05A9-4A48-92EB-4EE87FE6A8DB}",
-      "Name": "Security Update for Microsoft Office 2013 (KB5002477) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{021993D4-1183-455F-94F7-D5817C1B7B46}",
-      "Name": "Update for Microsoft Office 2013 (KB5002274) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X64\\af61d581-bfa6-515e-bf22-56b60d25a5b3",
-      "Name": "Clash for Windows 0.20.10",
-      "Version": "0.20.10",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{BB92A877-3443-4FAF-B4BB-470B9792AFBE}",
-      "Name": "Update for Microsoft Office 2013 (KB3114499) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X64\\{F8474A47-8B5D-4466-ACE3-78EAB3BF21A8}",
-      "Name": "Windows Subsystem for Linux Update",
-      "Version": "5.10.102.1",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "MSIX\\Microsoft.XboxIdentityProvider_12.115.1001.0_x64__8wekyb3d8bbwe",
-      "Name": "Xbox Identity Provider",
-      "Version": "12.115.1001.0",
+      "Id": "MSIX\\Microsoft.Edge.GameAssist_1.0\u2026",
+      "Name": "Microsoft Edge \u6E38\u620F\u52A9\u624B",
+      "Version": "1.0.3336.0",
       "Source": "Microsoft Store"
-    },
-    {
-      "Id": "ARP\\Machine\\X64\\{46E9AA59-9D66-4CA8-82E9-CFA4EA3F3136}_is1",
-      "Name": "X-Mirage version 3.0.1",
-      "Version": "3.0.1",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{90150000-002A-0000-1000-0000000FF1CE}_Office15.VISPROR_{F97B139A-D8BF-46FF-A6F6-50710FED8644}",
-      "Name": "Update for Skype for Business 2015 (KB4484289) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
     },
     {
       "Id": "ARP\\Machine\\X86\\NpcapInst",
@@ -4789,39 +6941,9 @@
       "Source": "\u672C\u5730\u7535\u8111"
     },
     {
-      "Id": "ARP\\Machine\\X86\\{90150000-002A-0000-1000-0000000FF1CE}_Office15.VISPROR_{51731902-8ECD-4C42-A7F4-E57150D54987}",
-      "Name": "Security Update for Microsoft Office 2013 (KB4462142) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "MSIX\\Microsoft.NET.Native.Runtime.2.2_2.2.28604.0_x86__8wekyb3d8bbwe",
-      "Name": "Microsoft .Net Native Runtime Package 2.2",
-      "Version": "2.2.28604.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "MSIX\\Microsoft.WindowsFeedbackHub_1.2411.17101.0_x64__8wekyb3d8bbwe",
-      "Name": "\u53CD\u9988\u4E2D\u5FC3",
-      "Version": "1.2411.17101.0",
-      "Source": "Microsoft Store"
-    },
-    {
       "Id": "ARP\\Machine\\X86\\Office15.VISPROR",
       "Name": "Microsoft Visio Professional 2013",
       "Version": "15.0.4569.1506",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{90150000-002A-0000-1000-0000000FF1CE}_Office15.VISPROR_{16F64A9D-6561-4378-98F2-BD2095B78511}",
-      "Name": "Update for Microsoft Office 2013 (KB3039720) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{0359ABD1-5FD5-489D-851D-303BF7C5BBBE}",
-      "Name": "Update for Microsoft Office 2013 (KB3178640) 32-Bit Edition",
-      "Version": "Unknown",
       "Source": "\u672C\u5730\u7535\u8111"
     },
     {
@@ -4831,52 +6953,64 @@
       "Source": "\u672C\u5730\u7535\u8111"
     },
     {
-      "Id": "ARP\\Machine\\X64\\{78FB6A0D-791A-4F08-99F9-375B19C33491}",
-      "Name": "kuaiVPN",
-      "Version": "1.0.0",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "MSIX\\MicrosoftWindows.CrossDevice_1.25022.57.0_x64__cw5n1h2txyewy",
-      "Name": "\u8DE8\u8BBE\u5907\u4F53\u9A8C\u4E3B\u673A",
-      "Version": "1.25022.57.0",
+      "Id": "MSIX\\Microsoft.PowerAutomateDeskto\u2026",
+      "Name": "Power Automate",
+      "Version": "11.2508.104.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{83DE9B8F-E294-411F-977F-4707E6424BBB}",
-      "Name": "Update for Microsoft Office 2013 (KB3039701) 32-Bit Edition",
+      "Id": "MSIX\\MicrosoftCorporationII.Window\u2026",
+      "Name": "\u9002\u7528\u4E8E Linux \u7684 Windows \u5B50\u7CFB\u7EDF",
+      "Version": "2.4.13.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-001F-080\u2026",
+      "Name": "Update for Microsoft Office 2013 (\u2026",
       "Version": "Unknown",
       "Source": "\u672C\u5730\u7535\u8111"
     },
     {
-      "Id": "ARP\\Machine\\X86\\{90150000-006E-0804-0000-0000000FF1CE}_Office15.VISPROR_{76FD4884-6875-484E-8502-BF7E9E3D4E75}",
-      "Name": "Security Update for Microsoft Office 2013 (KB4484108) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "MSIX\\Microsoft.People_10.2202.100.0_x64__8wekyb3d8bbwe",
-      "Name": "Microsoft \u4EBA\u8109",
-      "Version": "10.2202.100.0",
+      "Id": "MSIX\\Microsoft.UI.Xaml.2.6_2.62112\u2026",
+      "Name": "Microsoft.UI.Xaml.2.6",
+      "Version": "2.62112.3002.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "MSIX\\Microsoft.Services.Store.Engagement_10.0.23012.0_x86__8wekyb3d8bbwe",
-      "Name": "Microsoft Engagement Framework",
-      "Version": "10.0.23012.0",
+      "Id": "MSIX\\Microsoft.Windows.Photos_2025\u2026",
+      "Name": "Microsoft \u7167\u7247",
+      "Version": "2025.11070.8001.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "MSIX\\Microsoft.LanguageExperiencePackzh-CN_26100.18.39.0_neutral__8wekyb3d8bbwe",
-      "Name": "\u4E2D\u6587(\u7B80\u4F53)\u672C\u5730\u4F53\u9A8C\u5305",
-      "Version": "26100.18.39.0",
+      "Id": "MSIX\\PDFShellExt_4.0.0.0_x64__8wek\u2026",
+      "Name": "PDFToolExtension",
+      "Version": "4.0.0.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{B2FFC7EA-8F6D-4C1C-8932-D590A7C027E8}",
-      "Name": "Update for Microsoft Visio 2013 (KB5002479) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
+      "Id": "MSIX\\Microsoft.GetHelp_10.2409.229\u2026",
+      "Name": "\u83B7\u53D6\u5E2E\u52A9",
+      "Version": "10.2409.22951.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.WindowsNotepad_11.2\u2026",
+      "Name": "Windows \u8BB0\u4E8B\u672C",
+      "Version": "11.2506.35.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\Microsoft.MicrosoftStickyNote\u2026",
+      "Name": "Microsoft \u4FBF\u7B3A",
+      "Version": "4.0.6104.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "MSIX\\login.tailscale.com-A4DA0B51_\u2026",
+      "Name": "Tailscale",
+      "Version": "1.0.0.1",
+      "Source": "Microsoft Store"
     },
     {
       "Id": "ARP\\Machine\\X86\\PCMaster",
@@ -4885,123 +7019,81 @@
       "Source": "\u672C\u5730\u7535\u8111"
     },
     {
-      "Id": "MSIX\\Microsoft.VCLibs.140.00_14.0.33519.0_x86__8wekyb3d8bbwe",
-      "Name": "Microsoft Visual C\u002B\u002B 2015 UWP Runtime Package",
-      "Version": "14.0.33519.0",
+      "Id": "MSIX\\Microsoft.Office.ActionsServe\u2026",
+      "Name": "Microsoft.Office.ActionsServer",
+      "Version": "16.0.19029.20156",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "ARP\\Machine\\X86\\{889610CC-4337-4BDB-AC3B-4F21806C0BDE}_is1",
-      "Name": "UniGetUI (formerly WingetUI)",
-      "Version": "3.1.2",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "MSIX\\Microsoft.PowerToys.FileLocksmithContextMenu_0.85.1.0_neutral__8wekyb3d8bbwe",
-      "Name": "PowerToys FileLocksmith Context Menu",
-      "Version": "0.85.1.0",
+      "Id": "MSIX\\Microsoft.ZuneVideo_10.25071.\u2026",
+      "Name": "\u7535\u5F71\u548C\u7535\u89C6",
+      "Version": "10.25071.10101.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "ARP\\Machine\\X86\\{90150000-0054-0804-0000-0000000FF1CE}_Office15.VISPROR_{16F64A9D-6561-4378-98F2-BD2095B78511}",
-      "Name": "Update for Microsoft Office 2013 (KB3039720) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
+      "Id": "MSIX\\Microsoft.MPEG2VideoExtension\u2026",
+      "Name": "MPEG-2 \u89C6\u9891\u6269\u5C55",
+      "Version": "1.2.10.0",
+      "Source": "Microsoft Store"
     },
     {
-      "Id": "ARP\\Machine\\X64\\Microsoft Visual Studio 2010 Tools for Office Runtime (x64) Language Pack - CHS",
-      "Name": "Microsoft Visual Studio 2010 Tools for Office Runtime (x64)\u8BED\u8A00\u5305 - \u7B80\u4F53\u4E2D\u6587",
+      "Id": "ARP\\Machine\\X64\\Microsoft",
+      "Name": "Microsoft Visual Studio 2010 Tools\u2026",
       "Version": "10.0.50903",
       "Source": "\u672C\u5730\u7535\u8111"
     },
     {
-      "Id": "MSIX\\Microsoft.HEIFImageExtension_1.2.3.0_x64__8wekyb3d8bbwe",
-      "Name": "HEIF Image Extensions",
-      "Version": "1.2.3.0",
+      "Id": "MSIX\\Microsoft.WindowsStore_22506.\u2026",
+      "Name": "Microsoft Store",
+      "Version": "22506.1401.10.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "ARP\\Machine\\X86\\{90150000-001F-0804-0000-0000000FF1CE}_Office15.VISPROR_{16F64A9D-6561-4378-98F2-BD2095B78511}",
-      "Name": "Update for Microsoft Office 2013 (KB3039720) 32-Bit Edition",
+      "Id": "MSIX\\21090PaddyXu.QuickLook_4.1.1.\u2026",
+      "Name": "QuickLook",
+      "Version": "4.1.1.0",
+      "Source": "Microsoft Store"
+    },
+    {
+      "Id": "ARP\\User\\X64\\{928a71b0-6613-4101-8\u2026",
+      "Name": "MSYS2",
+      "Version": "20240113",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X64\\{B2FE1952-0186-46C\u2026",
+      "Name": "NVIDIA \u56FE\u5F62\u9A71\u52A8\u7A0B\u5E8F 560.94",
+      "Version": "560.94",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X64\\8153-2964-2028-448\u2026",
+      "Name": "Offset Explorer 3 3.0",
+      "Version": "3.0",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X86\\{90150000-001F-040\u2026",
+      "Name": "Update for Microsoft Office 2013 (\u2026",
       "Version": "Unknown",
       "Source": "\u672C\u5730\u7535\u8111"
     },
     {
-      "Id": "MSIX\\PDFShellExt_4.0.0.0_x64__8wekyb3d8bbwe",
-      "Name": "PDFToolExtension",
-      "Version": "4.0.0.0",
+      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1\u2026",
+      "Name": "WindowsAppRuntime.1.5",
+      "Version": "5001.275.500.0",
       "Source": "Microsoft Store"
     },
     {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{BF493817-CADD-4F13-BB51-598FBABB521A}",
-      "Name": "Update for Microsoft Office 2013 (KB3039756) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
+      "Id": "MSIX\\Microsoft.Windows.DevHome_0.2\u2026",
+      "Name": "Windows Advanced Settings",
+      "Version": "0.2101.858.0",
+      "Source": "Microsoft Store"
     },
     {
-      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1.6_6000.318.2304.0_x64__8wekyb3d8bbwe",
+      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1\u2026",
       "Name": "WindowsAppRuntime.1.6",
-      "Version": "6000.318.2304.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "MSIX\\Microsoft.BingNews_4.55.62231.0_x64__8wekyb3d8bbwe",
-      "Name": "\u8D44\u8BAF",
-      "Version": "4.55.62231.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{76FD4884-6875-484E-8502-BF7E9E3D4E75}",
-      "Name": "Security Update for Microsoft Office 2013 (KB4484108) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "MSIX\\Microsoft.WindowsCamera_2025.2501.1.0_x64__8wekyb3d8bbwe",
-      "Name": "Windows \u76F8\u673A",
-      "Version": "2025.2501.1.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{90150000-006E-0804-0000-0000000FF1CE}_Office15.VISPROR_{EBB64A55-FA3E-42EE-A4C3-1E427F867C55}",
-      "Name": "Security Update for Microsoft Office 2013 (KB4011580) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1.6_6000.424.1611.0_x86__8wekyb3d8bbwe",
-      "Name": "WindowsAppRuntime.1.6",
-      "Version": "6000.424.1611.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{16F64A9D-6561-4378-98F2-BD2095B78511}",
-      "Name": "Update for Microsoft Office 2013 (KB3039720) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{91150000-0051-0000-0000-0000000FF1CE}_Office15.VISPROR_{A7A41ACD-C1EA-4628-BCD2-8CA7AA8DDB29}",
-      "Name": "Update for Microsoft Office 2013 (KB4011155) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "ARP\\Machine\\X86\\{90150000-006E-0804-0000-0000000FF1CE}_Office15.VISPROR_{6120444C-EB75-452F-A0EA-1ADADC4B4B3F}",
-      "Name": "Update for Microsoft InfoPath 2013 (KB3114946) 32-Bit Edition",
-      "Version": "Unknown",
-      "Source": "\u672C\u5730\u7535\u8111"
-    },
-    {
-      "Id": "MSIX\\Microsoft.WindowsAppRuntime.1.6_6000.401.2352.0_x86__8wekyb3d8bbwe",
-      "Name": "WindowsAppRuntime.1.6",
-      "Version": "6000.401.2352.0",
-      "Source": "Microsoft Store"
-    },
-    {
-      "Id": "MSIX\\Microsoft.WindowsNotepad_11.2501.30.0_x64__8wekyb3d8bbwe",
-      "Name": "Windows \u8BB0\u4E8B\u672C",
-      "Version": "11.2501.30.0",
+      "Version": "6000.519.329.0",
       "Source": "Microsoft Store"
     }
   ]

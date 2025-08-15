@@ -22,6 +22,9 @@
 - [Telegra](https://telegra.ph/) 匿名发布文章并分享
 - [PDF Translator](https://deeppdf.ai/pdf-translator) PDF翻译
 - [OpenAPK](https://www.openapk.net/) 开源的 APK 下载网站
+- [excalidraw](https://excalidraw.com/) 在线画图
+- [TTS-Omni](https://www.ttsomni.com/) 在线文本转语音
+- [系统设计](https://learning-guide.gitbook.io/system-design-interview) 系统设计面试：内幕指南
 
 ### Makefiles
 
