@@ -25,6 +25,7 @@
 - [excalidraw](https://excalidraw.com/) 在线画图
 - [TTS-Omni](https://www.ttsomni.com/) 在线文本转语音
 - [系统设计](https://learning-guide.gitbook.io/system-design-interview) 系统设计面试：内幕指南
+- [学习单词](https://2study.top/words)
 
 ### Makefiles
 
