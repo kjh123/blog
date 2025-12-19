@@ -12,6 +12,10 @@
             "id": "User.copy.644BA8F2"
         },
         {
+            "command": "paste",
+            "id": "User.paste"
+        },
+        {
             "command": 
             {
                 "action": "newTab"
@@ -19,8 +23,8 @@
             "id": "User.newTab.5DEADB41"
         },
         {
-            "command": "paste",
-            "id": "User.paste"
+            "command": "find",
+            "id": "User.find"
         },
         {
             "command": 
@@ -30,10 +34,6 @@
                 "splitMode": "duplicate"
             },
             "id": "User.splitPane.A6751878"
-        },
-        {
-            "command": "find",
-            "id": "User.find"
         },
         {
             "command": 
@@ -65,15 +65,17 @@
             "id": "User.nextTab.0"
         }
     ],
-    "confirmCloseAllTabs": false,
     "copyFormatting": "none",
     "copyOnSelect": true,
     "defaultProfile": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+    "initialCols": 80,
+    "initialPosition": "900,500",
+    "initialRows": 20,
     "keybindings": 
     [
         {
             "id": null,
-            "keys": "ctrl+tab"
+            "keys": "ctrl+shift+tab"
         },
         {
             "id": "User.copy.644BA8F2",
@@ -81,15 +83,11 @@
         },
         {
             "id": null,
-            "keys": "ctrl+shift+tab"
+            "keys": "ctrl+tab"
         },
         {
             "id": null,
-            "keys": "ctrl+shift+8"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+right"
+            "keys": "alt+shift+plus"
         },
         {
             "id": null,
@@ -97,7 +95,11 @@
         },
         {
             "id": null,
-            "keys": "alt+shift+plus"
+            "keys": "ctrl+right"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+8"
         },
         {
             "id": null,
@@ -242,29 +244,36 @@
             "type": "remainingProfiles"
         }
     ],
+    "newTabPosition": "afterCurrentTab",
     "profiles": 
     {
         "defaults": 
         {
+            "colorScheme": "Tango Dark",
             "font": 
             {
-                "size": 14
+                "face": "JetBrains Maple Mono",
+                "size": 15,
+                "weight": "medium"
             },
             "startingDirectory": "D:\\code"
         },
         "list": 
         [
             {
+                "commandline": "D:\\app\\Git\\usr\\bin\\zsh.exe",
                 "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
                 "hidden": false,
-                "name": "Git Bash",
+                "icon": "C:\\Users\\appcpi-pc\\OneDrive\\\u56fe\u7247\\supplies_3_l.png",
+                "name": "ZSH Bash",
                 "source": "Git"
             },
             {
                 "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
-                "hidden": true,
+                "hidden": false,
                 "name": "Ubuntu",
-                "source": "Windows.Terminal.Wsl"
+                "source": "Windows.Terminal.Wsl",
+                "tabTitle": "Ubuntu"
             },
             {
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
@@ -273,47 +282,31 @@
                 "source": "Windows.Terminal.PowershellCore"
             },
             {
-                "guid": "{46ca431a-3a87-5fb3-83cd-11ececc031d2}",
-                "hidden": false,
-                "name": "kali-linux",
-                "source": "Windows.Terminal.Wsl"
-            },
-            {
-                "commandline": "wsl -d kali-linux kex --wtstart -s",
-                "guid": "{55ca431a-3a87-5fb3-83cd-11ececc031d2}",
-                "hidden": false,
-                "name": "Win-KeX"
-            },
-            {
-                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-                "hidden": false,
-                "name": "Windows PowerShell"
-            },
-            {
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": true,
                 "name": "Command Prompt"
             },
             {
-                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-                "hidden": true,
-                "name": "Azure Cloud Shell",
-                "source": "Windows.Terminal.Azure"
+                "commandline": "trzsz ssh -p 2222 kongjiahui@8.137.79.149",
+                "guid": "{66bf9861-2651-507b-b738-741d0b2530c7}",
+                "hidden": false,
+                "name": "JumpServer"
             },
             {
-                "guid": "{2cf13e13-fa2b-56ae-8708-ebcee33e80c3}",
-                "hidden": true,
-                "name": "Developer Command Prompt for VS 2019 (2)",
+                "guid": "{a5a22a0a-73aa-5b25-9d4e-0e5dcf502f1a}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
             },
             {
-                "guid": "{2acb8b6b-d45a-5906-b6a3-230d06778897}",
-                "hidden": true,
-                "name": "Developer PowerShell for VS 2019 (2)",
+                "guid": "{61b1d248-101e-5465-afdc-e15443dcc3ff}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
     "schemes": [],
-    "themes": []
+    "themes": [],
+    "warning.confirmCloseAllTabs": false
 }

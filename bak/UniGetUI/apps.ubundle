@@ -248,8 +248,22 @@
     },
     {
       "Id": "JetBrains.GoLand",
+      "Name": "GoLand",
+      "Version": "\u003E 2025.2.5",
+      "Source": "winget",
+      "ManagerName": "Winget"
+    },
+    {
+      "Id": "JetBrains.GoLand",
       "Name": "GoLand 2025.1",
       "Version": "2025.1",
+      "Source": "winget",
+      "ManagerName": "Winget"
+    },
+    {
+      "Id": "JetBrains.Toolbox",
+      "Name": "JetBrains Toolbox",
+      "Version": "3.1.2.64642",
       "Source": "winget",
       "ManagerName": "Winget"
     },
@@ -497,7 +511,7 @@
     {
       "Id": "Microsoft.VisualStudio.2022.Commun\u2026",
       "Name": "Visual Studio Community 2022",
-      "Version": "17.14.13",
+      "Version": "17.14.13 (August 2025)",
       "Source": "winget",
       "ManagerName": "Winget"
     },
@@ -1798,6 +1812,13 @@
       "Version": "2021.13.0",
       "Source": "pip",
       "ManagerName": "Pip"
+    },
+    {
+      "Id": "terraform",
+      "Name": "Terraform",
+      "Version": "1.14.2",
+      "Source": "community",
+      "ManagerName": "Chocolatey"
     },
     {
       "Id": "tldr",
