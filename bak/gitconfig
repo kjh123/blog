@@ -1,0 +1,49 @@
+[user]
+	name = jiahui
+	email = learner.hui@gmail.com
+[core]
+	autocrlf = true
+	pager = delta
+	preloadindex = true
+	fscache = true
+	quotepath = false
+[mergetool "sourcetree"]
+	cmd = "'' "
+	trustExitCode = true
+###### delta ######
+[interactive]
+    diffFilter = delta --color-only 
+
+[delta]
+    features = decorations
+    navigate = true
+
+[delta "interactive"]
+    keep-plus-minus-markers = false
+
+[delta "decorations"]
+    commit-decoration-style = blue ol
+    commit-style = raw
+    file-style = omit
+    hunk-header-decoration-style = blue box
+    hunk-header-file-style = red
+    hunk-header-line-number-style = "#067a00"
+    hunk-header-style = file line-number syntax
+[receive]
+	maxTransferBytes = 10000000
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[gc]
+	auto = 256
+[oh-my-zsh]
+	hide-status = 1
+[pull]
+	rebase = false
+[i18n]
+	logOutputEncoding = utf-8
+	commitEncoding = utf-8
+[log]
+	date = iso8601
