@@ -242,7 +242,7 @@
     {
       "Id": "JetBrains.GoLand",
       "Name": "GoLand",
-      "Version": "\u003E 2025.2.5",
+      "Version": "\u003E 2025.3",
       "Source": "winget",
       "ManagerName": "Winget"
     },
@@ -256,7 +256,7 @@
     {
       "Id": "JetBrains.Toolbox",
       "Name": "JetBrains Toolbox",
-      "Version": "3.1.2.64642",
+      "Version": "3.2.0.65851",
       "Source": "winget",
       "ManagerName": "Winget"
     },
@@ -554,13 +554,6 @@
       "Id": "OlegShparber.Zeal",
       "Name": "Zeal",
       "Version": "0.7.2",
-      "Source": "winget",
-      "ManagerName": "Winget"
-    },
-    {
-      "Id": "OpenJS.NodeJS",
-      "Name": "Node.js",
-      "Version": "24.2.0",
       "Source": "winget",
       "ManagerName": "Winget"
     },
@@ -893,15 +886,15 @@
       "Id": "apktool",
       "Name": "Apktool",
       "Version": "2.11.1",
-      "Source": "main",
-      "ManagerName": "Scoop"
+      "Source": "community",
+      "ManagerName": "Chocolatey"
     },
     {
       "Id": "apktool",
       "Name": "Apktool",
       "Version": "2.11.1",
-      "Source": "community",
-      "ManagerName": "Chocolatey"
+      "Source": "main",
+      "ManagerName": "Scoop"
     },
     {
       "Id": "astral-sh.uv",
@@ -2204,7 +2197,7 @@
     {
       "Id": "ARP\\Machine\\X64\\O365HomePremRetail\u2026",
       "Name": "Microsoft 365 - zh-cn",
-      "Version": "16.0.19426.20186",
+      "Version": "16.0.19530.20074",
       "Source": "\u672C\u5730\u7535\u8111"
     },
     {
@@ -2229,6 +2222,12 @@
       "Id": "ARP\\Machine\\X64\\mitmproxy",
       "Name": "mitmproxy",
       "Version": "12.1.1",
+      "Source": "\u672C\u5730\u7535\u8111"
+    },
+    {
+      "Id": "ARP\\Machine\\X64\\{399D48CD-53F4-4AA\u2026",
+      "Name": "Node.js",
+      "Version": "24.2.0",
       "Source": "\u672C\u5730\u7535\u8111"
     },
     {
@@ -2430,9 +2429,9 @@
       "Source": "Microsoft Store"
     },
     {
-      "Id": "MSIX\\aimgr_0.20.34.0_x64__8wekyb3d\u2026",
-      "Name": "Local AI Manager for Microsoft 365",
-      "Version": "0.20.34.0",
+      "Id": "MSIX\\aimgr_0.20.36.0_x64__8wekyb3d\u2026",
+      "Name": "Local AI Manager for Microsoft\u00AE 365",
+      "Version": "0.20.36.0",
       "Source": "Microsoft Store"
     }
   ]
