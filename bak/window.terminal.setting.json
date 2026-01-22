@@ -12,10 +12,6 @@
             "id": "User.copy.644BA8F2"
         },
         {
-            "command": "paste",
-            "id": "User.paste"
-        },
-        {
             "command": 
             {
                 "action": "newTab"
@@ -23,8 +19,8 @@
             "id": "User.newTab.5DEADB41"
         },
         {
-            "command": "find",
-            "id": "User.find"
+            "command": "paste",
+            "id": "User.paste"
         },
         {
             "command": 
@@ -34,6 +30,10 @@
                 "splitMode": "duplicate"
             },
             "id": "User.splitPane.A6751878"
+        },
+        {
+            "command": "find",
+            "id": "User.find"
         },
         {
             "command": 
@@ -75,7 +75,7 @@
     [
         {
             "id": null,
-            "keys": "ctrl+shift+tab"
+            "keys": "ctrl+tab"
         },
         {
             "id": "User.copy.644BA8F2",
@@ -83,15 +83,11 @@
         },
         {
             "id": null,
-            "keys": "ctrl+tab"
+            "keys": "ctrl+shift+tab"
         },
         {
             "id": null,
-            "keys": "alt+shift+plus"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+left"
+            "keys": "ctrl+shift+8"
         },
         {
             "id": null,
@@ -99,7 +95,11 @@
         },
         {
             "id": null,
-            "keys": "ctrl+shift+8"
+            "keys": "ctrl+left"
+        },
+        {
+            "id": null,
+            "keys": "alt+shift+plus"
         },
         {
             "id": null,
@@ -170,7 +170,7 @@
             "keys": "ctrl+shift+4"
         },
         {
-            "id": null,
+            "id": "User.newTab.5DEADB41",
             "keys": "ctrl+shift+t"
         },
         {
@@ -223,7 +223,7 @@
         },
         {
             "id": "User.splitPane.864CD510",
-            "keys": "ctrl+d"
+            "keys": "ctrl+shift+'"
         },
         {
             "id": "User.prevTab.0",
@@ -232,10 +232,6 @@
         {
             "id": "User.nextTab.0",
             "keys": "alt+right"
-        },
-        {
-            "id": "User.newTab.5DEADB41",
-            "keys": "ctrl+t"
         }
     ],
     "newTabMenu": 
